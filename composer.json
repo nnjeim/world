@@ -1,0 +1,50 @@
+{
+    "name": "nnjeim/world",
+    "description": "Countries, cities and states",
+    "keywords": [ "laravel", "lumen", "countries", "cities", "states", "timezones", "currencies" ],
+    "homepage": "https://github.com/nnjeim/world.git",
+    "license": "MIT",
+    "type": "laravel-package",
+    "authors": [
+        {
+            "name": "Najm Njeim",
+            "email": "najm@njeim.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "require-dev": {
+        "orchestra/testbench": ">=v4.0.0",
+        "phpunit/phpunit": ">=8.5.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Nnjeim\\World\\": "src/",
+            "Nnjeim\\World\\Database\\Seeders\\": "src/Database/Seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nnjeim\\World\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+              "Nnjeim\\World\\WorldServiceProvider"
+            ],
+            "aliases": {
+                "Country": "Nnjeim\\World\\World"
+            }
+        }
+    }
+}
