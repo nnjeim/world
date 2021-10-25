@@ -36,7 +36,7 @@ if ($action->success) {
 }
 ``` 
 
-#### Country Helper Class
+#### World Helper Class
 ``` 
 use Nnjeim\World\WorldHelper;
 
@@ -67,9 +67,6 @@ if ($action->success) {
 | cities | lists all the cities | string fields | array filters |
 | timezones | lists all the timezones | string fields | array filters |
 | currencies | lists all the currencies | string fields | array filters |
-| stripPhone | returns the stripped phone number with the country dialling code | number, phone_code | no |
-| formatPhone | returns the formatted phone number with the country dialling code | number, phone_code | no |
-| validatePhone | validated the format of a given phone number | number, phone_code | no |
 
 ### Countries database table fields
 ```
