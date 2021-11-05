@@ -6,14 +6,14 @@ return [
 		'record_not_found' => 'Es wurde kein :attribute gefunden!',
 	],
 	'actions' => [
-		'format_error' => 'Die telefonnummer ist falsch formatiert!',
-		'format_valid' => 'Das telefonnummernformat ist gültig.',
+		'format_error' => 'Die Telefonnummer ist falsch formatiert!',
+		'format_valid' => 'Das Format der Telefonnummer ist gültig.',
 	],
 	'attributes' => [
-		'phone' => 'telefon|telefone',
-		'country' => 'land|länder',
-		'city' => 'stadt|städte',
-		'timezone' => 'zeitzone|zeitzonen',
-		'currency' => 'währung|währungen',
+		'phone' => 'Telefon|Telefone',
+		'country' => 'Land|Länder',
+		'city' => 'Stadt|Städte',
+		'timezone' => 'Zeitzone|Zeitzonen',
+		'currency' => 'Währung|Währungen',
 	],
 ];
