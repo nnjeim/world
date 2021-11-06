@@ -22,7 +22,4 @@ return [
 		'ru',
 		'zh',
 	],
-	'features' => [
-
-	],
 ];

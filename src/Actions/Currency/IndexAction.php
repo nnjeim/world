@@ -39,7 +39,7 @@ class IndexAction extends BaseAction implements ActionInterface
 	 * @param  array  $args
 	 * @return $this
 	 */
-	public function execute(array $args): self
+	public function execute(array $args = []): self
 	{
 		[
 			'fields' => $fields,

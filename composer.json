@@ -1,7 +1,15 @@
 {
     "name": "nnjeim/world",
-    "description": "Countries, cities and states",
-    "keywords": [ "laravel", "lumen", "countries", "cities", "states", "timezones", "currencies" ],
+    "description": "Laravel countries, states, cities and currencies",
+    "keywords": [
+        "laravel",
+        "lumen",
+        "countries",
+        "cities",
+        "states",
+        "timezones",
+        "currencies"
+    ],
     "homepage": "https://github.com/nnjeim/world.git",
     "license": "MIT",
     "type": "laravel-package",
@@ -40,11 +48,13 @@
     "extra": {
         "laravel": {
             "providers": [
-              "Nnjeim\\World\\WorldServiceProvider"
+                "Nnjeim\\World\\WorldServiceProvider"
             ],
             "aliases": {
                 "Country": "Nnjeim\\World\\World"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

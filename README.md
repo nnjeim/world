@@ -316,7 +316,13 @@ id, name, country_id
 id, country_id, name, code, precision, symbol, symbol_native, symbol_first, decimal_mark, thousands_separator
 ```
 
-### Testing
+### Testing  
+
+Requirements  
+- The database is seeded.
+- The database connection is defined in the .env file. 
+
+Browse to the package root folder and run:
 
 ``` bash
 composer test
