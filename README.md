@@ -1,11 +1,11 @@
 <p><img src="https://eu.ui-avatars.com/api/?name=Najm+Njeim?size=100" width="100"/></p>
 
-A Laravel package to provide a list of the countries, cities, timezones, currencies and phone numbers
+A Laravel package to provide a list of the countries, states, cities, timezones, currencies and phone numbers
 formatting/validation helpers.
 
 The package can be consumed through Facades, Helpers and Api routes.
 
-## Installation
+### Installation
 
 ```
 composer require nnjeim/world
@@ -16,6 +16,10 @@ php artisan migrate
 
 php artisan db:seed --class=WorldSeeder (requires ~ 5 - 10min)
 ```
+
+### Changelog
+
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.  
 
 ### Usage
 
@@ -325,11 +329,8 @@ Requirements
 Browse to the package root folder and run:
 
 ``` bash
+composer install //installs the package dev dependencies
 composer test
 ```
-
-### Changelog
-
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.
 
 `* optional`
