@@ -41,12 +41,12 @@ class SeedAction
 				$return = [];
 				foreach (array_keys($country) as $key) {
 					if ($key === 'subregion') {
-						$return['sub_region'] = $this->trimString((string) $country[$key]);
+						$return['sub_region'] = trim((string) $country[$key]);
 						continue;
 					}
 
 					if (in_array($key, $countryFillables)) {
-						$return[$key] = $this->trimString((string) $country[$key]);
+						$return[$key] = trim((string) $country[$key]);
 					}
 				}
 				return $return;
@@ -103,7 +103,7 @@ class SeedAction
 
 			$stateInstance = Models\State::create([
 				'country_id' => $country->id,
-				'name' => $this->trimString((string) $state['name']),
+				'name' => trim((string) $state['name']),
 			]);
 			/*-- state cities --*/
 			$stateCities = Arr::where($countryCities, fn($city) => $city['state_id'] === $state['id']);
@@ -122,17 +122,8 @@ class SeedAction
 			Models\City::create([
 				'country_id' => $country->id,
 				'state_id' => $state->id,
-				'name' => $this->trimString((string) $city['name']),
+				'name' => trim((string) $city['name']),
 			]);
 		}
-	}
-
-	/**
-	 * @param  string  $string
-	 * @return string
-	 */
-	private function trimString(string $string): string
-	{
-		return preg_replace('/\s+/', '', $string);
 	}
 }
