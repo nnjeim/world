@@ -1,4 +1,4 @@
-<p><img src="https://eu.ui-avatars.com/api/?name=Najm+Njeim?size=100" width="100"/></p>
+<p><img src="./logo.jpg" width="100" alt="Laravel world"/></p>
 
 A Laravel package to provide a list of the countries, states, cities, timezones, currencies and phone numbers
 formatting/validation helpers.
