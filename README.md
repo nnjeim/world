@@ -285,7 +285,10 @@ Include in the request header
 ```
 accept-language=locale
 ```
-If you want to add middleware in the specific route, you can use `locale.set` middleware. So that your result will be by requested header.
+Alternativley, you can use specific locale with `World` Facade. For this, use `setLocale('locale')` method. Example:
+```
+World::setLocale('zh')->countries();
+```
 
 ### Schema
 
