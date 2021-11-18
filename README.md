@@ -19,7 +19,11 @@ php artisan db:seed --class=WorldSeeder (requires ~ 5 - 10min)
 
 ### Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently.  
+Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently. 
+
+### Contributing
+
+Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Usage
 
