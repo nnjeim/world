@@ -11,7 +11,7 @@ The following is a set of guidelines for contributing to Laravel's World package
 Explain the problem and include additional details to help maintainers reproduce the problem:
 
 * **Use a clear and descriptive title** for the issue to identify the problem.
-* **Describe the exact steps which reproduce the problem**   
+* **Describe the exact steps which reproduce the problem.**   
 * **Provide specific examples to demonstrate the steps**.  
 * **Describe the behavior you observed after following the steps** and point out what exactly is the problem with that behavior.
 * **Explain which behavior you expected to see instead and why.**
