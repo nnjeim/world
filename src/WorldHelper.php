@@ -67,4 +67,19 @@ class WorldHelper
 	{
 		return implode('\\', [$actionBasePath, ucfirst($function)]) . 'Action';
 	}
+
+    /**
+     * @param string $requestLocale
+     * @return $this
+     */
+    public function setLocale(string $requestLocale): WorldHelper
+    {
+        $setLocale = in_array($requestLocale, config('world.accepted_locales'), true)
+            ? $requestLocale
+            : config('app.fallback_locale');
+
+        app()->setLocale($setLocale);
+
+        return $this;
+    }
 }

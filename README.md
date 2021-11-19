@@ -289,6 +289,10 @@ Include in the request header
 ```
 accept-language=locale
 ```
+Alternativley, you can use specific locale with `World` Facade. For this, use `setLocale('locale')` method. Example:
+```
+World::setLocale('zh')->countries();
+```
 
 ### Schema
 
