@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.0.8 - 2021-11-19
+- @ivanshamir: Bangla Localization.
+- 
 ### 1.0.7 - 2021-11-19
 - @ivanshamir: Addition of the setLocale helper method.
 
