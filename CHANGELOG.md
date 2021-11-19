@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.0.7 - 2021-11-19
+- @ivanshamir: Addition of the setLocale helper method.
+
 ### 1.0.6 - 2021-11-10
 - @parth391: Correction for found duplicates in  indian cities.
 
