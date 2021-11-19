@@ -9,6 +9,7 @@ return [
 	'default_phone_code' => '40',
 	'accepted_locales' => [
 		'ar',
+        'bn',
 		'br',
 		'de',
 		'en',

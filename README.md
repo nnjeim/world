@@ -282,7 +282,7 @@ config('world.default_phone_code')
 
 ### Localization
 
-The available locales are ar, br, de, en, es, fr, ja, kr, pl, pt, ro, ru and zh.  
+The available locales are ar, bn, br, de, en, es, fr, ja, kr, pl, pt, ro, ru and zh.  
 The default locale is en.  
 Include in the request header
 
