@@ -196,7 +196,7 @@ The methods' return is structured as below:
 
 #### languages method
 
-* fields*: comma seperated string(currencies table fields).
+* fields*: comma seperated string(languages table fields).
 * filters*: array of keys(languages table fields) and their corresponding values.
 
 ### Available routes
