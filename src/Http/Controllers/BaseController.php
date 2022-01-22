@@ -2,17 +2,16 @@
 
 namespace Nnjeim\World\Http\Controllers;
 
-use Nnjeim\World\Http\Controllers\Traits\ResponseBuilder;
-
 use Illuminate\Http\JsonResponse;
+use Nnjeim\World\Http\Controllers\Traits\ResponseBuilder;
 
 class BaseController
 {
 	use ResponseBuilder;
 
-    protected string $requestBasePath = 'Nnjeim\\World\\Http\\Requests';
+	protected string $requestBasePath = 'Nnjeim\\World\\Http\\Requests';
 
-    protected string $actionBasePath = 'Nnjeim\\World\\Actions';
+	protected string $actionBasePath = 'Nnjeim\\World\\Actions';
 
 	/**
 	 * @param $function
@@ -52,7 +51,7 @@ class BaseController
 	 * @param  string  $function
 	 * @return string
 	 */
-	private function composeRequestClass(string $function)
+	private function composeRequestClass(string $function): string
 	{
 		return implode('\\', [$this->requestBasePath, ucfirst($function)]) . 'Request';
 	}
@@ -61,7 +60,7 @@ class BaseController
 	 * @param  string  $function
 	 * @return string
 	 */
-	private function composeActionClass(string $function)
+	private function composeActionClass(string $function): string
 	{
 		return implode('\\', [$this->actionBasePath, ucfirst($function)]) . 'Action';
 	}

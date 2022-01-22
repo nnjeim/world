@@ -2,17 +2,19 @@
 
 namespace Nnjeim\World\Http\Controllers\Traits;
 
-use Nnjeim\World\Actions\ActionInterface;
 use Illuminate\Http\JsonResponse;
+use Nnjeim\World\Actions\ActionInterface;
 
 trait ResponseBuilder
 {
 	protected ActionInterface $action;
+
 	protected array $response = [
 		'success' => true,
 		'message' => '',
 		'data' => [],
 	];
+
 	protected int $statusCode = 200;
 
 	/**
@@ -28,7 +30,7 @@ trait ResponseBuilder
 			->setData()
 			->setErrors()
 			->setMeta([
-				'response_time' => 1000 * number_format((microtime(true) - LARAVEL_START), 2) . ' ms'
+				'response_time' => 1000 * number_format((microtime(true) - LARAVEL_START), 2) . ' ms',
 			])
 			->setStatusCode();
 
@@ -72,7 +74,7 @@ trait ResponseBuilder
 	 */
 	protected function setErrors(): static
 	{
-		if (isset($this->action->errors) && !empty($this->action->errors)) {
+		if (isset($this->action->errors) && ! empty($this->action->errors)) {
 			$this->response = array_merge(
 				$this->response,
 				['errors' => $this->action->errors]

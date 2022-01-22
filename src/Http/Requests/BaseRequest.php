@@ -2,8 +2,8 @@
 
 namespace Nnjeim\World\Http\Requests;
 
-use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Foundation\Http\FormRequest;
 use Illuminate\Http\Exceptions\HttpResponseException;
 
 class BaseRequest extends FormRequest
@@ -13,7 +13,7 @@ class BaseRequest extends FormRequest
 	 *
 	 * @return bool
 	 */
-	public function authorize()
+	public function authorize(): bool
 	{
 		return true;
 	}
@@ -23,7 +23,7 @@ class BaseRequest extends FormRequest
 		throw new HttpResponseException(response()->json([
 			'success' => false,
 			'error' => true,
-			'errors' => $validator->errors()
+			'errors' => $validator->errors(),
 		], 422));
 	}
 }

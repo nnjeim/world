@@ -2,11 +2,9 @@
 
 namespace Nnjeim\World;
 
-use Nnjeim\World\Http\Middleware;
 use Nnjeim\World\WorldHelper;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Routing\Router;
 
 class WorldServiceProvider extends ServiceProvider
 {
@@ -24,28 +22,30 @@ class WorldServiceProvider extends ServiceProvider
 	/**
 	 * @param  Router  $router
 	 */
-	public function boot(Router $router)
+	public function boot()
 	{
-		//Helpers
+		// Helpers
 		require __DIR__ . '/Helpers/Helpers.php';
-		// Load Middleware
-		$router->aliasMiddleware('locale.set', Middleware\Localization::class);
-		//Load migrations
-		$this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
 		// Load routes
 		$this->loadRoutesFrom(__DIR__ . '/Routes/index.php');
 		// Load translations
 		$this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'world');
-		// Load the configuration
-		$this->mergeConfigFrom(__DIR__ . '/../config/world.php', 'world');
 
 		if ($this->app->runningInConsole()) {
-
+			// Load the database migrations.
+			$this->loadMigrations();
+			// Publis the resources.
 			$this->publishResources();
 		}
 	}
 
-	protected function publishResources()
+	private function loadMigrations()
+	{
+		$this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
+	}
+
+
+	private function publishResources()
 	{
 		$this->publishes([
 			__DIR__ . '/../config/world.php' => config_path('world.php'),

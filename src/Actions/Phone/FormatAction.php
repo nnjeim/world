@@ -2,8 +2,8 @@
 
 namespace Nnjeim\World\Actions\Phone;
 
-use Nnjeim\World\Actions\BaseAction;
 use Nnjeim\World\Actions\ActionInterface;
+use Nnjeim\World\Actions\BaseAction;
 
 class FormatAction extends BaseAction implements ActionInterface
 {
@@ -15,13 +15,12 @@ class FormatAction extends BaseAction implements ActionInterface
 	{
 		list(
 			'number' => $number,
-			'phone_code' => $phone_code,
-			) = $args + [
-				'phone_code' => null
+			'phone_code' => $phone_code) = $args + [
+				'phone_code' => null,
 			];
 
-		/*-- Response --*/
-		return $this->formResponse([
+		// response
+		return $this->respond([
 			'number' => formatPhone($number, $phone_code),
 		]);
 	}
@@ -30,7 +29,7 @@ class FormatAction extends BaseAction implements ActionInterface
 	 * @param $data
 	 * @return $this
 	 */
-	private function formResponse($data): self
+	private function respond($data): self
 	{
 		$this->success = true;
 		$this->message = trans('world::response.phone.singular');

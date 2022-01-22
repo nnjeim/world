@@ -2,18 +2,20 @@
 
 namespace Nnjeim\World\Actions\Currency;
 
+use Illuminate\Support\Facades\Cache;
+use Nnjeim\World\Actions\ActionInterface;
+use Nnjeim\World\Actions\BaseAction;
 use Nnjeim\World\Actions\Currency\Queries\IndexQuery;
 use Nnjeim\World\Actions\Currency\Transformers\IndexTransformer;
-
-use Nnjeim\World\Actions\{BaseAction, ActionInterface};
-use Illuminate\Support\Facades\Cache;
 
 class IndexAction extends BaseAction implements ActionInterface
 {
 	use IndexTransformer;
 
 	protected string $cacheTag = 'currencies';
+
 	protected string $attribute = 'currency';
+
 	protected array $availableFields = [
 		'id',
 		'name',
@@ -27,10 +29,12 @@ class IndexAction extends BaseAction implements ActionInterface
 		'thousands_separator',
 		'country',
 	];
+
 	protected array $fields = [
 		'id',
 		'name',
 	];
+
 	protected array $relations = [
 		'country',
 	];
@@ -54,12 +58,12 @@ class IndexAction extends BaseAction implements ActionInterface
 		$this->formWith();
 		$this->formCacheKey();
 
-		/*-- cache --*/
+		// cache
 		$currencies = Cache::rememberForever(
 			$this->cacheKey,
-			fn() => $this->transform((new IndexQuery($this->wheres, $this->with))(), $this->fields)
+			fn () => $this->transform((new IndexQuery($this->wheres, $this->with))(), $this->fields)
 		);
-		/*-- Response --*/
+		// response
 		return $this->formResponse($currencies);
 	}
 }

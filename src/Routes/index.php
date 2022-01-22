@@ -2,12 +2,13 @@
 
 use Illuminate\Support\Facades\Route;
 use Nnjeim\World\Http\Controllers;
+use Nnjeim\World\Http\Middleware\Localization;
 
 Route::group([
 	'prefix' => '{prefix?}',
 	'middleware' => [
 		'throttle:60,1',
-		'locale.set',
+		Localization::class,
 		'bindings',
 	],
 ], function () {

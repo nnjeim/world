@@ -2,18 +2,20 @@
 
 namespace Nnjeim\World\Actions\City;
 
+use Illuminate\Support\Facades\Cache;
+use Nnjeim\World\Actions\ActionInterface;
+use Nnjeim\World\Actions\BaseAction;
 use Nnjeim\World\Actions\City\Queries\IndexQuery;
 use Nnjeim\World\Actions\City\Transformers\IndexTransformer;
-
-use Nnjeim\World\Actions\{BaseAction, ActionInterface};
-use Illuminate\Support\Facades\Cache;
 
 class IndexAction extends BaseAction implements ActionInterface
 {
 	use IndexTransformer;
 
 	protected string $cacheTag = 'cities';
+
 	protected string $attribute = 'city';
+
 	protected array $availableFields = [
 		'id',
 		'name',
@@ -22,10 +24,12 @@ class IndexAction extends BaseAction implements ActionInterface
 		'country',
 		'state',
 	];
+
 	protected array $fields = [
 		'id',
 		'name',
 	];
+
 	protected array $relations = [
 		'country',
 		'state',
@@ -50,12 +54,12 @@ class IndexAction extends BaseAction implements ActionInterface
 		$this->formWith();
 		$this->formCacheKey();
 
-		/*-- cache --*/
+		// cache
 		$cities = Cache::rememberForever(
 			$this->cacheKey,
-			fn() => $this->transform((new IndexQuery($this->wheres, $this->with))(), $this->fields)
+			fn () => $this->transform((new IndexQuery($this->wheres, $this->with))(), $this->fields)
 		);
-		/*-- Response --*/
+		// response
 		return $this->formResponse($cities);
 	}
 }

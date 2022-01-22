@@ -7,6 +7,7 @@ use Nnjeim\World\Models\Country;
 class IndexQuery
 {
 	private array $wheres;
+
 	private array $with;
 
 	public function __construct(array $wheres, array $with)
@@ -17,21 +18,19 @@ class IndexQuery
 
 	public function __invoke()
 	{
-		/*-- query --*/
+		// query
 		$query = Country::query();
 
 		$query->when(
-			!empty($this->with),
-			fn($q) => $q->with($this->with)
+			! empty($this->with),
+			fn ($q) => $q->with($this->with)
 		);
 
 		$query->when(
-			!empty($this->wheres),
-			fn($q) => $q->where($this->wheres)
+			! empty($this->wheres),
+			fn ($q) => $q->where($this->wheres)
 		);
 
-		return $query
-			->whereStatus(1)
-			->get();
+		return $query->get();
 	}
 }

@@ -7,30 +7,43 @@ use Illuminate\Support\Collection;
 class BaseAction
 {
 	public bool $success = true;
+
 	public string $message;
+
 	public Collection $data;
+
 	public array $errors = [];
+
 	public int $statusCode = 200;
+
 	protected string $cacheTag;
+
 	protected string $attribute;
+
 	protected array $availableFields = ['id', 'name'];
+
 	protected array $fields = ['id', 'name'];
+
 	protected array $relations = [];
+
 	protected array $wheres = [];
+
 	protected array $with = [];
+
 	protected string $cacheKey;
 
 	protected function formCacheKey(): void
 	{
 		sort($this->fields);
 		sort($this->with);
-		$cacheKey =  implode('_', array_unique(array_merge([$this->cacheTag], $this->fields, $this->with)));
+		$cacheKey = implode('_', array_unique(array_merge([$this->cacheTag], $this->fields, $this->with)));
 		foreach ($this->wheres as $where) {
 			$cacheKey .= '_' . implode('', $where);
 		}
 		$cacheKey .= '_' . config('app.locale');
 		$this->cacheKey = $cacheKey;
 	}
+
 	/**
 	 * @param  string|null  $fields
 	 */
@@ -65,7 +78,7 @@ class BaseAction
 
 	protected function formWith(): void
 	{
-		foreach($this->relations as $relation) {
+		foreach ($this->relations as $relation) {
 			if (in_array($relation, $this->fields)) {
 				$this->with += [$relation];
 			}
@@ -106,8 +119,8 @@ class BaseAction
 
 		$this->errors = [
 			'message' => trans('world::response.errors.record_not_found', [
-				'attribute' => trans('world::response.' . $record . '.singular')
-			])
+				'attribute' => trans('world::response.' . $record . '.singular'),
+			]),
 		];
 
 		$this->statusCode = 404;

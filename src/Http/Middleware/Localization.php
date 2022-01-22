@@ -12,7 +12,7 @@ class Localization
 	 * @param  Closure  $next
 	 * @return mixed
 	 */
-	public function handle(Request $request, Closure $next)
+	public function handle(Request $request, Closure $next): mixed
 	{
 		$requestLocale = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'] ?? config('app.fallback_locale'), 0, 2);
 

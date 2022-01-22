@@ -15,11 +15,10 @@ trait IndexTransformer
 	{
 		return $timezones
 			->map(
-				function($timezone) use ($fields) {
-
+				function ($timezone) use ($fields) {
 					$return = $timezone->only($fields);
 
-					if(in_array('country', $fields)) {
+					if (in_array('country', $fields)) {
 						$return = array_merge(
 							$return,
 							['country' => $timezone->country->only('id', 'name')]

@@ -15,11 +15,10 @@ trait IndexTransformer
 	{
 		return $currencies
 			->map(
-				function($currency) use ($fields) {
-
+				function ($currency) use ($fields) {
 					$return = $currency->only($fields);
 
-					if(in_array('country', $fields)) {
+					if (in_array('country', $fields)) {
 						$return = array_merge(
 							$return,
 							['country' => $currency->country->only('id', 'name')]

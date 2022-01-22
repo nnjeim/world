@@ -2,10 +2,9 @@
 
 namespace Nnjeim\World\Models\Traits;
 
-use Nnjeim\World\Models;
-
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Nnjeim\World\Models;
 
 trait StateRelations
 {

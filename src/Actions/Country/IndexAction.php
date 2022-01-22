@@ -2,18 +2,20 @@
 
 namespace Nnjeim\World\Actions\Country;
 
+use Illuminate\Support\Facades\Cache;
+use Nnjeim\World\Actions\ActionInterface;
+use Nnjeim\World\Actions\BaseAction;
 use Nnjeim\World\Actions\Country\Queries\IndexQuery;
 use Nnjeim\World\Actions\Country\Transformers\IndexTransformer;
-
-use Nnjeim\World\Actions\{BaseAction, ActionInterface};
-use Illuminate\Support\Facades\Cache;
 
 class IndexAction extends BaseAction implements ActionInterface
 {
 	use IndexTransformer;
 
 	protected string $cacheTag = 'countries';
+
 	protected string $attribute = 'country';
+
 	protected array $availableFields = [
 		'id',
 		'iso2',
@@ -28,15 +30,17 @@ class IndexAction extends BaseAction implements ActionInterface
 		'timezones',
 		'currency',
 	];
+
 	protected array $fields = [
 		'id',
-		'name'
+		'name',
 	];
+
 	protected array $relations = [
 		'states',
 		'cities',
 		'timezones',
-		'currency'
+		'currency',
 	];
 
 	/**
@@ -58,12 +62,12 @@ class IndexAction extends BaseAction implements ActionInterface
 		$this->formWith();
 		$this->formCacheKey();
 
-		/*-- cache --*/
+		// cache
 		$countries = Cache::rememberForever(
 			$this->cacheKey,
-			fn() => $this->transform((new IndexQuery($this->wheres, $this->with))(), $this->fields)
+			fn () => $this->transform((new IndexQuery($this->wheres, $this->with))(), $this->fields)
 		);
-		/*-- Response --*/
+		// response
 		return $this->formResponse($countries);
 	}
 }

@@ -11,11 +11,11 @@ class IndexRequest extends BaseRequest
 	 *
 	 * @return array
 	 */
-	public function rules()
+	public function rules(): array
 	{
 		return [
 			'fields' => 'sometimes',
-            'filters' => 'sometimes',
+			'filters' => 'sometimes',
 		];
 	}
 }

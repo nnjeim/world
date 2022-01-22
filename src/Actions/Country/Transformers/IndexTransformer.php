@@ -15,8 +15,7 @@ trait IndexTransformer
 	{
 		return $countries
 			->map(
-				function($country) use ($fields) {
-
+				function ($country) use ($fields) {
 					$return = $country->only($fields);
 
 					$return = array_merge(
@@ -24,26 +23,26 @@ trait IndexTransformer
 						['name' => trans('world::country.' . $country->iso2)]
 					);
 
-					if(in_array('states', $fields)) {
+					if (in_array('states', $fields)) {
 						$return = array_merge(
 							$return,
-							['states' => $country->states->map(fn($state) => $state->only('id', 'name'))]
+							['states' => $country->states->map(fn ($state) => $state->only('id', 'name'))]
 						);
 					}
 
-					if(in_array('cities', $fields)) {
+					if (in_array('cities', $fields)) {
 						$return = array_merge(
 							$return,
-							['cities' => $country->cities->map(fn($city) => $city->only('id', 'name'))]
+							['cities' => $country->cities->map(fn ($city) => $city->only('id', 'name'))]
 						);
 					}
 
-                    if(in_array('timezones', $fields)) {
-                        $return = array_merge(
-                            $return,
-                            ['timezones' => $country->timezones->map(fn($timezone) => $timezone->only('id', 'name'))]
-                        );
-                    }
+					if (in_array('timezones', $fields)) {
+						$return = array_merge(
+							$return,
+							['timezones' => $country->timezones->map(fn ($timezone) => $timezone->only('id', 'name'))]
+						);
+					}
 
 					return $return;
 				}

@@ -6,7 +6,7 @@ use Nnjeim\World\Http\Controllers\BaseController;
 
 class CountryController extends BaseController
 {
-    protected string $requestBasePath = 'Nnjeim\\World\\Http\\Requests\\Country';
+	protected string $requestBasePath = 'Nnjeim\\World\\Http\\Requests\\Country';
 
-    protected string $actionBasePath = 'Nnjeim\\World\\Actions\\Country';
+	protected string $actionBasePath = 'Nnjeim\\World\\Actions\\Country';
 }

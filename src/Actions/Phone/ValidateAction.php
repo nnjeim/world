@@ -2,8 +2,8 @@
 
 namespace Nnjeim\World\Actions\Phone;
 
-use Nnjeim\World\Actions\BaseAction;
 use Nnjeim\World\Actions\ActionInterface;
+use Nnjeim\World\Actions\BaseAction;
 
 class ValidateAction extends BaseAction implements ActionInterface
 {
@@ -15,18 +15,16 @@ class ValidateAction extends BaseAction implements ActionInterface
 	{
 		list(
 			'number' => $number,
-			'phone_code' => $phone_code,
-			) = $args + [
-				'phone_code' => null
+			'phone_code' => $phone_code) = $args + [
+				'phone_code' => null,
 			];
 
 		list(
 			'number' => $number,
-			'digits' => $digits,
-			) = stripPhone($number, $phone_code);
+			'digits' => $digits) = stripPhone($number, $phone_code);
 
-		/*-- Response --*/
-		return $this->formResponse($number, $digits);
+		// response
+		return $this->repsond($number, $digits);
 	}
 
 	/**
@@ -34,7 +32,7 @@ class ValidateAction extends BaseAction implements ActionInterface
 	 * @param $digits
 	 * @return $this
 	 */
-	private function formResponse($number, $digits): self
+	private function repsond($number, $digits): self
 	{
 		$this->success = (strlen($number) - $digits) >= 0;
 		$this->message = trans('world::response.actions.' . ($this->success ? 'format_valid' : 'format_error'));

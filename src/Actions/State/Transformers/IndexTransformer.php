@@ -15,21 +15,20 @@ trait IndexTransformer
 	{
 		return $states
 			->map(
-				function($state) use ($fields) {
-
+				function ($state) use ($fields) {
 					$return = $state->only($fields);
 
-					if(in_array('country', $fields)) {
+					if (in_array('country', $fields)) {
 						$return = array_merge(
 							$return,
 							['country' => $state->country->only('id', 'name')]
 						);
 					}
 
-					if(in_array('cities', $fields)) {
+					if (in_array('cities', $fields)) {
 						$return = array_merge(
 							$return,
-							['cities' => $state->cities->map(fn($city) => $city->only('id', 'name'))]
+							['cities' => $state->cities->map(fn ($city) => $city->only('id', 'name'))]
 						);
 					}
 

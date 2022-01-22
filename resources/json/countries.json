@@ -36,6 +36,11 @@
             "it": "Afghanistan",
             "cn": "阿富汗"
         },
+        "languages": [
+            "ps",
+            "uz",
+            "tk"
+        ],
         "latitude": "33.00000000",
         "longitude": "65.00000000",
         "emoji": "🇦🇫",
@@ -78,6 +83,9 @@
             "it": "Isole Aland",
             "cn": "奥兰群岛"
         },
+        "languages": [
+            "sv"
+        ],
         "latitude": "60.11666700",
         "longitude": "19.90000000",
         "emoji": "🇦🇽",
@@ -120,6 +128,9 @@
             "it": "Albania",
             "cn": "阿尔巴尼亚"
         },
+        "languages": [
+            "sq"
+        ],
         "latitude": "41.00000000",
         "longitude": "20.00000000",
         "emoji": "🇦🇱",
@@ -162,6 +173,9 @@
             "it": "Algeria",
             "cn": "阿尔及利亚"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "28.00000000",
         "longitude": "3.00000000",
         "emoji": "🇩🇿",
@@ -204,6 +218,10 @@
             "it": "Samoa Americane",
             "cn": "美属萨摩亚"
         },
+        "languages": [
+            "sm",
+            "en"
+        ],
         "latitude": "-14.33333333",
         "longitude": "-170.00000000",
         "emoji": "🇦🇸",
@@ -246,6 +264,9 @@
             "it": "Andorra",
             "cn": "安道尔"
         },
+        "languages": [
+            "ca"
+        ],
         "latitude": "42.50000000",
         "longitude": "1.50000000",
         "emoji": "🇦🇩",
@@ -288,6 +309,9 @@
             "it": "Angola",
             "cn": "安哥拉"
         },
+        "languages": [
+            "pt"
+        ],
         "latitude": "-12.50000000",
         "longitude": "18.50000000",
         "emoji": "🇦🇴",
@@ -330,6 +354,9 @@
             "it": "Anguilla",
             "cn": "安圭拉"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "18.25000000",
         "longitude": "-63.16666666",
         "emoji": "🇦🇮",
@@ -435,6 +462,7 @@
             "it": "Antartide",
             "cn": "南极洲"
         },
+        "languages": [],
         "latitude": "-74.65000000",
         "longitude": "4.48000000",
         "emoji": "🇦🇶",
@@ -477,6 +505,9 @@
             "it": "Antigua e Barbuda",
             "cn": "安提瓜和巴布达"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "17.05000000",
         "longitude": "-61.80000000",
         "emoji": "🇦🇬",
@@ -596,6 +627,10 @@
             "it": "Argentina",
             "cn": "阿根廷"
         },
+        "languages": [
+            "es",
+            "gn"
+        ],
         "latitude": "-34.00000000",
         "longitude": "-64.00000000",
         "emoji": "🇦🇷",
@@ -638,6 +673,10 @@
             "it": "Armenia",
             "cn": "亚美尼亚"
         },
+        "languages": [
+            "hy",
+            "ru"
+        ],
         "latitude": "40.00000000",
         "longitude": "45.00000000",
         "emoji": "🇦🇲",
@@ -680,6 +719,10 @@
             "it": "Aruba",
             "cn": "阿鲁巴"
         },
+        "languages": [
+            "nl",
+            "pa"
+        ],
         "latitude": "12.50000000",
         "longitude": "-69.96666666",
         "emoji": "🇦🇼",
@@ -806,6 +849,9 @@
             "it": "Australia",
             "cn": "澳大利亚"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-27.00000000",
         "longitude": "133.00000000",
         "emoji": "🇦🇺",
@@ -848,6 +894,9 @@
             "it": "Austria",
             "cn": "奥地利"
         },
+        "languages": [
+            "de"
+        ],
         "latitude": "47.33333333",
         "longitude": "13.33333333",
         "emoji": "🇦🇹",
@@ -890,6 +939,9 @@
             "it": "Azerbaijan",
             "cn": "阿塞拜疆"
         },
+        "languages": [
+            "az"
+        ],
         "latitude": "40.50000000",
         "longitude": "47.50000000",
         "emoji": "🇦🇿",
@@ -932,6 +984,9 @@
             "it": "Bahamas",
             "cn": "巴哈马"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "24.25000000",
         "longitude": "-76.00000000",
         "emoji": "🇧🇸",
@@ -974,6 +1029,9 @@
             "it": "Bahrein",
             "cn": "巴林"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "26.00000000",
         "longitude": "50.55000000",
         "emoji": "🇧🇭",
@@ -1016,6 +1074,9 @@
             "it": "Bangladesh",
             "cn": "孟加拉"
         },
+        "languages": [
+            "bn"
+        ],
         "latitude": "24.00000000",
         "longitude": "90.00000000",
         "emoji": "🇧🇩",
@@ -1058,6 +1119,9 @@
             "it": "Barbados",
             "cn": "巴巴多斯"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "13.16666666",
         "longitude": "-59.53333333",
         "emoji": "🇧🇧",
@@ -1100,6 +1164,10 @@
             "it": "Bielorussia",
             "cn": "白俄罗斯"
         },
+        "languages": [
+            "be",
+            "ru"
+        ],
         "latitude": "53.00000000",
         "longitude": "28.00000000",
         "emoji": "🇧🇾",
@@ -1142,6 +1210,11 @@
             "it": "Belgio",
             "cn": "比利时"
         },
+        "languages": [
+            "nl",
+            "fr",
+            "de"
+        ],
         "latitude": "50.83333333",
         "longitude": "4.00000000",
         "emoji": "🇧🇪",
@@ -1184,6 +1257,10 @@
             "it": "Belize",
             "cn": "伯利兹"
         },
+        "languages": [
+            "en",
+            "es"
+        ],
         "latitude": "17.25000000",
         "longitude": "-88.75000000",
         "emoji": "🇧🇿",
@@ -1226,6 +1303,9 @@
             "it": "Benin",
             "cn": "贝宁"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "9.50000000",
         "longitude": "2.25000000",
         "emoji": "🇧🇯",
@@ -1268,6 +1348,9 @@
             "it": "Bermuda",
             "cn": "百慕大"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "32.33333333",
         "longitude": "-64.75000000",
         "emoji": "🇧🇲",
@@ -1310,6 +1393,9 @@
             "it": "Bhutan",
             "cn": "不丹"
         },
+        "languages": [
+            "dz"
+        ],
         "latitude": "27.50000000",
         "longitude": "90.50000000",
         "emoji": "🇧🇹",
@@ -1352,6 +1438,11 @@
             "it": "Bolivia",
             "cn": "玻利维亚"
         },
+        "languages": [
+            "es",
+            "ay",
+            "qu"
+        ],
         "latitude": "-17.00000000",
         "longitude": "-65.00000000",
         "emoji": "🇧🇴",
@@ -1390,6 +1481,9 @@
             "it": "Bonaire, Saint-Eustache e Saba",
             "cn": "博内尔岛、圣尤斯特歇斯和萨巴岛"
         },
+        "languages": [
+            "nl"
+        ],
         "latitude": "12.15000000",
         "longitude": "-68.26666700",
         "emoji": "🇧🇶",
@@ -1432,6 +1526,11 @@
             "it": "Bosnia ed Erzegovina",
             "cn": "波斯尼亚和黑塞哥维那"
         },
+        "languages": [
+            "bs",
+            "hr",
+            "sr"
+        ],
         "latitude": "44.00000000",
         "longitude": "18.00000000",
         "emoji": "🇧🇦",
@@ -1474,6 +1573,10 @@
             "it": "Botswana",
             "cn": "博茨瓦纳"
         },
+        "languages": [
+            "en",
+            "tn"
+        ],
         "latitude": "-22.00000000",
         "longitude": "24.00000000",
         "emoji": "🇧🇼",
@@ -1516,6 +1619,11 @@
             "it": "Isola Bouvet",
             "cn": "布维岛"
         },
+        "languages": [
+            "no",
+            "nb",
+            "nn"
+        ],
         "latitude": "-54.43333333",
         "longitude": "3.40000000",
         "emoji": "🇧🇻",
@@ -1663,6 +1771,9 @@
             "it": "Brasile",
             "cn": "巴西"
         },
+        "languages": [
+            "pt"
+        ],
         "latitude": "-10.00000000",
         "longitude": "-55.00000000",
         "emoji": "🇧🇷",
@@ -1705,6 +1816,9 @@
             "it": "Territorio britannico dell'oceano indiano",
             "cn": "英属印度洋领地"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-6.00000000",
         "longitude": "71.50000000",
         "emoji": "🇮🇴",
@@ -1747,6 +1861,9 @@
             "it": "Brunei",
             "cn": "文莱"
         },
+        "languages": [
+            "ms"
+        ],
         "latitude": "4.50000000",
         "longitude": "114.66666666",
         "emoji": "🇧🇳",
@@ -1789,6 +1906,9 @@
             "it": "Bulgaria",
             "cn": "保加利亚"
         },
+        "languages": [
+            "bg"
+        ],
         "latitude": "43.00000000",
         "longitude": "25.00000000",
         "emoji": "🇧🇬",
@@ -1831,6 +1951,10 @@
             "it": "Burkina Faso",
             "cn": "布基纳法索"
         },
+        "languages": [
+            "fr",
+            "ff"
+        ],
         "latitude": "13.00000000",
         "longitude": "-2.00000000",
         "emoji": "🇧🇫",
@@ -1873,6 +1997,10 @@
             "it": "Burundi",
             "cn": "布隆迪"
         },
+        "languages": [
+            "fr",
+            "rn"
+        ],
         "latitude": "-3.50000000",
         "longitude": "30.00000000",
         "emoji": "🇧🇮",
@@ -1915,6 +2043,9 @@
             "it": "Cambogia",
             "cn": "柬埔寨"
         },
+        "languages": [
+            "km"
+        ],
         "latitude": "13.00000000",
         "longitude": "105.00000000",
         "emoji": "🇰🇭",
@@ -1957,6 +2088,10 @@
             "it": "Camerun",
             "cn": "喀麦隆"
         },
+        "languages": [
+            "en",
+            "fr"
+        ],
         "latitude": "6.00000000",
         "longitude": "12.00000000",
         "emoji": "🇨🇲",
@@ -2188,6 +2323,10 @@
             "it": "Canada",
             "cn": "加拿大"
         },
+        "languages": [
+            "en",
+            "fr"
+        ],
         "latitude": "60.00000000",
         "longitude": "-95.00000000",
         "emoji": "🇨🇦",
@@ -2230,6 +2369,9 @@
             "it": "Capo Verde",
             "cn": "佛得角"
         },
+        "languages": [
+            "pt"
+        ],
         "latitude": "16.00000000",
         "longitude": "-24.00000000",
         "emoji": "🇨🇻",
@@ -2272,6 +2414,9 @@
             "it": "Isole Cayman",
             "cn": "开曼群岛"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "19.50000000",
         "longitude": "-80.50000000",
         "emoji": "🇰🇾",
@@ -2314,6 +2459,10 @@
             "it": "Repubblica Centrafricana",
             "cn": "中非"
         },
+        "languages": [
+            "fr",
+            "sg"
+        ],
         "latitude": "7.00000000",
         "longitude": "21.00000000",
         "emoji": "🇨🇫",
@@ -2356,6 +2505,10 @@
             "it": "Ciad",
             "cn": "乍得"
         },
+        "languages": [
+            "fr",
+            "ar"
+        ],
         "latitude": "15.00000000",
         "longitude": "19.00000000",
         "emoji": "🇹🇩",
@@ -2412,6 +2565,9 @@
             "it": "Cile",
             "cn": "智利"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "-30.00000000",
         "longitude": "-71.00000000",
         "emoji": "🇨🇱",
@@ -2461,6 +2617,9 @@
             "it": "Cina",
             "cn": "中国"
         },
+        "languages": [
+            "zh"
+        ],
         "latitude": "35.00000000",
         "longitude": "105.00000000",
         "emoji": "🇨🇳",
@@ -2503,6 +2662,9 @@
             "it": "Isola di Natale",
             "cn": "圣诞岛"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-10.50000000",
         "longitude": "105.66666666",
         "emoji": "🇨🇽",
@@ -2545,6 +2707,9 @@
             "it": "Isole Cocos e Keeling",
             "cn": "科科斯（基林）群岛"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-12.50000000",
         "longitude": "96.83333333",
         "emoji": "🇨🇨",
@@ -2587,6 +2752,9 @@
             "it": "Colombia",
             "cn": "哥伦比亚"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "4.00000000",
         "longitude": "-72.00000000",
         "emoji": "🇨🇴",
@@ -2629,6 +2797,10 @@
             "it": "Comore",
             "cn": "科摩罗"
         },
+        "languages": [
+            "ar",
+            "fr"
+        ],
         "latitude": "-12.16666666",
         "longitude": "44.25000000",
         "emoji": "🇰🇲",
@@ -2671,6 +2843,13 @@
             "it": "Congo",
             "cn": "刚果"
         },
+        "languages": [
+            "fr",
+            "ln",
+            "kg",
+            "sw",
+            "lu"
+        ],
         "latitude": "-1.00000000",
         "longitude": "15.00000000",
         "emoji": "🇨🇬",
@@ -2713,6 +2892,9 @@
             "it": "Isole Cook",
             "cn": "库克群岛"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-21.23333333",
         "longitude": "-159.76666666",
         "emoji": "🇨🇰",
@@ -2755,6 +2937,9 @@
             "it": "Costa Rica",
             "cn": "哥斯达黎加"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "10.00000000",
         "longitude": "-84.00000000",
         "emoji": "🇨🇷",
@@ -2797,6 +2982,9 @@
             "it": "Costa D'Avorio",
             "cn": "科特迪瓦"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "8.00000000",
         "longitude": "-5.00000000",
         "emoji": "🇨🇮",
@@ -2839,6 +3027,9 @@
             "it": "Croazia",
             "cn": "克罗地亚"
         },
+        "languages": [
+            "hr"
+        ],
         "latitude": "45.16666666",
         "longitude": "15.50000000",
         "emoji": "🇭🇷",
@@ -2881,6 +3072,9 @@
             "it": "Cuba",
             "cn": "古巴"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "21.50000000",
         "longitude": "-80.00000000",
         "emoji": "🇨🇺",
@@ -2920,6 +3114,11 @@
             "it": "Curaçao",
             "cn": "库拉索"
         },
+        "languages": [
+            "nl",
+            "pa",
+            "en"
+        ],
         "latitude": "12.11666700",
         "longitude": "-68.93333300",
         "emoji": "🇨🇼",
@@ -2969,6 +3168,11 @@
             "it": "Cipro",
             "cn": "塞浦路斯"
         },
+        "languages": [
+            "el",
+            "tr",
+            "hy"
+        ],
         "latitude": "35.00000000",
         "longitude": "33.00000000",
         "emoji": "🇨🇾",
@@ -3011,6 +3215,10 @@
             "it": "Repubblica Ceca",
             "cn": "捷克"
         },
+        "languages": [
+            "cs",
+            "sk"
+        ],
         "latitude": "49.75000000",
         "longitude": "15.50000000",
         "emoji": "🇨🇿",
@@ -3060,6 +3268,13 @@
             "it": "Congo (Rep. Dem.)",
             "cn": "刚果（金）"
         },
+        "languages": [
+            "fr",
+            "ln",
+            "kg",
+            "sw",
+            "lu"
+        ],
         "latitude": "0.00000000",
         "longitude": "25.00000000",
         "emoji": "🇨🇩",
@@ -3102,6 +3317,9 @@
             "it": "Danimarca",
             "cn": "丹麦"
         },
+        "languages": [
+            "da"
+        ],
         "latitude": "56.00000000",
         "longitude": "10.00000000",
         "emoji": "🇩🇰",
@@ -3144,6 +3362,10 @@
             "it": "Gibuti",
             "cn": "吉布提"
         },
+        "languages": [
+            "fr",
+            "ar"
+        ],
         "latitude": "11.50000000",
         "longitude": "43.00000000",
         "emoji": "🇩🇯",
@@ -3186,6 +3408,9 @@
             "it": "Dominica",
             "cn": "多米尼加"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "15.41666666",
         "longitude": "-61.33333333",
         "emoji": "🇩🇲",
@@ -3228,6 +3453,9 @@
             "it": "Repubblica Dominicana",
             "cn": "多明尼加共和国"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "19.00000000",
         "longitude": "-70.66666666",
         "emoji": "🇩🇴",
@@ -3270,6 +3498,9 @@
             "it": "Timor Est",
             "cn": "东帝汶"
         },
+        "languages": [
+            "pt"
+        ],
         "latitude": "-8.83333333",
         "longitude": "125.91666666",
         "emoji": "🇹🇱",
@@ -3319,6 +3550,9 @@
             "it": "Ecuador",
             "cn": "厄瓜多尔"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "-2.00000000",
         "longitude": "-77.50000000",
         "emoji": "🇪🇨",
@@ -3361,6 +3595,9 @@
             "it": "Egitto",
             "cn": "埃及"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "27.00000000",
         "longitude": "30.00000000",
         "emoji": "🇪🇬",
@@ -3403,6 +3640,9 @@
             "it": "El Salvador",
             "cn": "萨尔瓦多"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "13.83333333",
         "longitude": "-88.91666666",
         "emoji": "🇸🇻",
@@ -3445,6 +3685,10 @@
             "it": "Guinea Equatoriale",
             "cn": "赤道几内亚"
         },
+        "languages": [
+            "es",
+            "fr"
+        ],
         "latitude": "2.00000000",
         "longitude": "10.00000000",
         "emoji": "🇬🇶",
@@ -3487,6 +3731,11 @@
             "it": "Eritrea",
             "cn": "厄立特里亚"
         },
+        "languages": [
+            "ti",
+            "ar",
+            "en"
+        ],
         "latitude": "15.00000000",
         "longitude": "39.00000000",
         "emoji": "🇪🇷",
@@ -3529,6 +3778,9 @@
             "it": "Estonia",
             "cn": "爱沙尼亚"
         },
+        "languages": [
+            "et"
+        ],
         "latitude": "59.00000000",
         "longitude": "26.00000000",
         "emoji": "🇪🇪",
@@ -3571,6 +3823,9 @@
             "it": "Etiopia",
             "cn": "埃塞俄比亚"
         },
+        "languages": [
+            "am"
+        ],
         "latitude": "8.00000000",
         "longitude": "38.00000000",
         "emoji": "🇪🇹",
@@ -3613,6 +3868,9 @@
             "it": "Isole Falkland o Isole Malvine",
             "cn": "福克兰群岛"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-51.75000000",
         "longitude": "-59.00000000",
         "emoji": "🇫🇰",
@@ -3655,6 +3913,9 @@
             "it": "Isole Far Oer",
             "cn": "法罗群岛"
         },
+        "languages": [
+            "fo"
+        ],
         "latitude": "62.00000000",
         "longitude": "-7.00000000",
         "emoji": "🇫🇴",
@@ -3697,6 +3958,12 @@
             "it": "Figi",
             "cn": "斐济"
         },
+        "languages": [
+            "en",
+            "fj",
+            "hi",
+            "ur"
+        ],
         "latitude": "-18.00000000",
         "longitude": "175.00000000",
         "emoji": "🇫🇯",
@@ -3739,6 +4006,10 @@
             "it": "Finlandia",
             "cn": "芬兰"
         },
+        "languages": [
+            "fi",
+            "sv"
+        ],
         "latitude": "64.00000000",
         "longitude": "26.00000000",
         "emoji": "🇫🇮",
@@ -3781,6 +4052,9 @@
             "it": "Francia",
             "cn": "法国"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "46.00000000",
         "longitude": "2.00000000",
         "emoji": "🇫🇷",
@@ -3823,6 +4097,9 @@
             "it": "Guyana francese",
             "cn": "法属圭亚那"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "4.00000000",
         "longitude": "-53.00000000",
         "emoji": "🇬🇫",
@@ -3879,6 +4156,9 @@
             "it": "Polinesia Francese",
             "cn": "法属波利尼西亚"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "-15.00000000",
         "longitude": "-140.00000000",
         "emoji": "🇵🇫",
@@ -3921,6 +4201,9 @@
             "it": "Territori Francesi del Sud",
             "cn": "法属南部领地"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "-49.25000000",
         "longitude": "69.16700000",
         "emoji": "🇹🇫",
@@ -3963,6 +4246,9 @@
             "it": "Gabon",
             "cn": "加蓬"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "-1.00000000",
         "longitude": "11.75000000",
         "emoji": "🇬🇦",
@@ -4005,6 +4291,9 @@
             "it": "Gambia",
             "cn": "冈比亚"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "13.46666666",
         "longitude": "-16.56666666",
         "emoji": "🇬🇲",
@@ -4047,6 +4336,9 @@
             "it": "Georgia",
             "cn": "格鲁吉亚"
         },
+        "languages": [
+            "ka"
+        ],
         "latitude": "42.00000000",
         "longitude": "43.50000000",
         "emoji": "🇬🇪",
@@ -4096,6 +4388,9 @@
             "it": "Germania",
             "cn": "德国"
         },
+        "languages": [
+            "de"
+        ],
         "latitude": "51.00000000",
         "longitude": "9.00000000",
         "emoji": "🇩🇪",
@@ -4138,6 +4433,9 @@
             "it": "Ghana",
             "cn": "加纳"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "8.00000000",
         "longitude": "-2.00000000",
         "emoji": "🇬🇭",
@@ -4180,6 +4478,9 @@
             "it": "Gibilterra",
             "cn": "直布罗陀"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "36.13333333",
         "longitude": "-5.35000000",
         "emoji": "🇬🇮",
@@ -4222,6 +4523,9 @@
             "it": "Grecia",
             "cn": "希腊"
         },
+        "languages": [
+            "el"
+        ],
         "latitude": "39.00000000",
         "longitude": "22.00000000",
         "emoji": "🇬🇷",
@@ -4285,6 +4589,9 @@
             "it": "Groenlandia",
             "cn": "格陵兰岛"
         },
+        "languages": [
+            "kl"
+        ],
         "latitude": "72.00000000",
         "longitude": "-40.00000000",
         "emoji": "🇬🇱",
@@ -4327,6 +4634,9 @@
             "it": "Grenada",
             "cn": "格林纳达"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "12.11666666",
         "longitude": "-61.66666666",
         "emoji": "🇬🇩",
@@ -4369,6 +4679,9 @@
             "it": "Guadeloupa",
             "cn": "瓜德罗普岛"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "16.25000000",
         "longitude": "-61.58333300",
         "emoji": "🇬🇵",
@@ -4411,6 +4724,11 @@
             "it": "Guam",
             "cn": "关岛"
         },
+        "languages": [
+            "en",
+            "ch",
+            "es"
+        ],
         "latitude": "13.46666666",
         "longitude": "144.78333333",
         "emoji": "🇬🇺",
@@ -4453,6 +4771,9 @@
             "it": "Guatemala",
             "cn": "危地马拉"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "15.50000000",
         "longitude": "-90.25000000",
         "emoji": "🇬🇹",
@@ -4495,6 +4816,10 @@
             "it": "Guernsey",
             "cn": "根西岛"
         },
+        "languages": [
+            "en",
+            "fr"
+        ],
         "latitude": "49.46666666",
         "longitude": "-2.58333333",
         "emoji": "🇬🇬",
@@ -4537,6 +4862,10 @@
             "it": "Guinea",
             "cn": "几内亚"
         },
+        "languages": [
+            "fr",
+            "ff"
+        ],
         "latitude": "11.00000000",
         "longitude": "-10.00000000",
         "emoji": "🇬🇳",
@@ -4579,6 +4908,9 @@
             "it": "Guinea-Bissau",
             "cn": "几内亚比绍"
         },
+        "languages": [
+            "pt"
+        ],
         "latitude": "12.00000000",
         "longitude": "-15.00000000",
         "emoji": "🇬🇼",
@@ -4621,6 +4953,9 @@
             "it": "Guyana",
             "cn": "圭亚那"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "5.00000000",
         "longitude": "-59.00000000",
         "emoji": "🇬🇾",
@@ -4663,6 +4998,10 @@
             "it": "Haiti",
             "cn": "海地"
         },
+        "languages": [
+            "fr",
+            "ht"
+        ],
         "latitude": "19.00000000",
         "longitude": "-72.41666666",
         "emoji": "🇭🇹",
@@ -4705,6 +5044,9 @@
             "it": "Isole Heard e McDonald",
             "cn": "赫德·唐纳岛及麦唐纳岛"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-53.10000000",
         "longitude": "72.51666666",
         "emoji": "🇭🇲",
@@ -4747,6 +5089,9 @@
             "it": "Honduras",
             "cn": "洪都拉斯"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "15.00000000",
         "longitude": "-86.50000000",
         "emoji": "🇭🇳",
@@ -4789,6 +5134,10 @@
             "it": "Hong Kong",
             "cn": "中国香港"
         },
+        "languages": [
+            "zh",
+            "en"
+        ],
         "latitude": "22.25000000",
         "longitude": "114.16666666",
         "emoji": "🇭🇰",
@@ -4831,6 +5180,9 @@
             "it": "Ungheria",
             "cn": "匈牙利"
         },
+        "languages": [
+            "hu"
+        ],
         "latitude": "47.00000000",
         "longitude": "20.00000000",
         "emoji": "🇭🇺",
@@ -4873,6 +5225,9 @@
             "it": "Islanda",
             "cn": "冰岛"
         },
+        "languages": [
+            "is"
+        ],
         "latitude": "65.00000000",
         "longitude": "-18.00000000",
         "emoji": "🇮🇸",
@@ -4915,6 +5270,10 @@
             "it": "India",
             "cn": "印度"
         },
+        "languages": [
+            "hi",
+            "en"
+        ],
         "latitude": "20.00000000",
         "longitude": "77.00000000",
         "emoji": "🇮🇳",
@@ -4978,6 +5337,9 @@
             "it": "Indonesia",
             "cn": "印度尼西亚"
         },
+        "languages": [
+            "id"
+        ],
         "latitude": "-5.00000000",
         "longitude": "120.00000000",
         "emoji": "🇮🇩",
@@ -5019,6 +5381,9 @@
             "ja": "イラン・イスラム共和国",
             "cn": "伊朗"
         },
+        "languages": [
+            "fa"
+        ],
         "latitude": "32.00000000",
         "longitude": "53.00000000",
         "emoji": "🇮🇷",
@@ -5061,6 +5426,10 @@
             "it": "Iraq",
             "cn": "伊拉克"
         },
+        "languages": [
+            "ar",
+            "ku"
+        ],
         "latitude": "33.00000000",
         "longitude": "44.00000000",
         "emoji": "🇮🇶",
@@ -5103,6 +5472,10 @@
             "it": "Irlanda",
             "cn": "爱尔兰"
         },
+        "languages": [
+            "ga",
+            "en"
+        ],
         "latitude": "53.00000000",
         "longitude": "-8.00000000",
         "emoji": "🇮🇪",
@@ -5145,6 +5518,10 @@
             "it": "Israele",
             "cn": "以色列"
         },
+        "languages": [
+            "he",
+            "ar"
+        ],
         "latitude": "31.50000000",
         "longitude": "34.75000000",
         "emoji": "🇮🇱",
@@ -5187,6 +5564,9 @@
             "it": "Italia",
             "cn": "意大利"
         },
+        "languages": [
+            "it"
+        ],
         "latitude": "42.83333333",
         "longitude": "12.83333333",
         "emoji": "🇮🇹",
@@ -5229,6 +5609,9 @@
             "it": "Giamaica",
             "cn": "牙买加"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "18.25000000",
         "longitude": "-77.50000000",
         "emoji": "🇯🇲",
@@ -5271,6 +5654,9 @@
             "it": "Giappone",
             "cn": "日本"
         },
+        "languages": [
+            "ja"
+        ],
         "latitude": "36.00000000",
         "longitude": "138.00000000",
         "emoji": "🇯🇵",
@@ -5313,6 +5699,10 @@
             "it": "Isola di Jersey",
             "cn": "泽西岛"
         },
+        "languages": [
+            "en",
+            "fr"
+        ],
         "latitude": "49.25000000",
         "longitude": "-2.16666666",
         "emoji": "🇯🇪",
@@ -5355,6 +5745,9 @@
             "it": "Giordania",
             "cn": "约旦"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "31.00000000",
         "longitude": "36.00000000",
         "emoji": "🇯🇴",
@@ -5439,6 +5832,10 @@
             "it": "Kazakistan",
             "cn": "哈萨克斯坦"
         },
+        "languages": [
+            "kk",
+            "ru"
+        ],
         "latitude": "48.00000000",
         "longitude": "68.00000000",
         "emoji": "🇰🇿",
@@ -5481,6 +5878,10 @@
             "it": "Kenya",
             "cn": "肯尼亚"
         },
+        "languages": [
+            "en",
+            "sw"
+        ],
         "latitude": "1.00000000",
         "longitude": "38.00000000",
         "emoji": "🇰🇪",
@@ -5537,6 +5938,9 @@
             "it": "Kiribati",
             "cn": "基里巴斯"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "1.41666666",
         "longitude": "173.00000000",
         "emoji": "🇰🇮",
@@ -5569,6 +5973,10 @@
             "kr": "코소보",
             "cn": "科索沃"
         },
+        "languages": [
+            "sq",
+            "sr"
+        ],
         "latitude": "42.56129090",
         "longitude": "20.34030350",
         "emoji": "🇽🇰",
@@ -5611,6 +6019,9 @@
             "it": "Kuwait",
             "cn": "科威特"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "29.50000000",
         "longitude": "45.75000000",
         "emoji": "🇰🇼",
@@ -5653,6 +6064,10 @@
             "it": "Kirghizistan",
             "cn": "吉尔吉斯斯坦"
         },
+        "languages": [
+            "ky",
+            "ru"
+        ],
         "latitude": "41.00000000",
         "longitude": "75.00000000",
         "emoji": "🇰🇬",
@@ -5695,6 +6110,9 @@
             "it": "Laos",
             "cn": "寮人民民主共和国"
         },
+        "languages": [
+            "lo"
+        ],
         "latitude": "18.00000000",
         "longitude": "105.00000000",
         "emoji": "🇱🇦",
@@ -5737,6 +6155,9 @@
             "it": "Lettonia",
             "cn": "拉脱维亚"
         },
+        "languages": [
+            "lv"
+        ],
         "latitude": "57.00000000",
         "longitude": "25.00000000",
         "emoji": "🇱🇻",
@@ -5779,6 +6200,10 @@
             "it": "Libano",
             "cn": "黎巴嫩"
         },
+        "languages": [
+            "ar",
+            "fr"
+        ],
         "latitude": "33.83333333",
         "longitude": "35.83333333",
         "emoji": "🇱🇧",
@@ -5821,6 +6246,10 @@
             "it": "Lesotho",
             "cn": "莱索托"
         },
+        "languages": [
+            "en",
+            "st"
+        ],
         "latitude": "-29.50000000",
         "longitude": "28.50000000",
         "emoji": "🇱🇸",
@@ -5863,6 +6292,9 @@
             "it": "Liberia",
             "cn": "利比里亚"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "6.50000000",
         "longitude": "-9.50000000",
         "emoji": "🇱🇷",
@@ -5905,6 +6337,9 @@
             "it": "Libia",
             "cn": "利比亚"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "25.00000000",
         "longitude": "17.00000000",
         "emoji": "🇱🇾",
@@ -5947,6 +6382,9 @@
             "it": "Liechtenstein",
             "cn": "列支敦士登"
         },
+        "languages": [
+            "de"
+        ],
         "latitude": "47.26666666",
         "longitude": "9.53333333",
         "emoji": "🇱🇮",
@@ -5989,6 +6427,9 @@
             "it": "Lituania",
             "cn": "立陶宛"
         },
+        "languages": [
+            "lt"
+        ],
         "latitude": "56.00000000",
         "longitude": "24.00000000",
         "emoji": "🇱🇹",
@@ -6031,6 +6472,11 @@
             "it": "Lussemburgo",
             "cn": "卢森堡"
         },
+        "languages": [
+            "fr",
+            "de",
+            "lb"
+        ],
         "latitude": "49.75000000",
         "longitude": "6.16666666",
         "emoji": "🇱🇺",
@@ -6115,6 +6561,9 @@
             "it": "Macedonia",
             "cn": "马其顿"
         },
+        "languages": [
+            "mk"
+        ],
         "latitude": "41.83333333",
         "longitude": "22.00000000",
         "emoji": "🇲🇰",
@@ -6157,6 +6606,10 @@
             "it": "Madagascar",
             "cn": "马达加斯加"
         },
+        "languages": [
+            "fr",
+            "mg"
+        ],
         "latitude": "-20.00000000",
         "longitude": "47.00000000",
         "emoji": "🇲🇬",
@@ -6199,6 +6652,10 @@
             "it": "Malawi",
             "cn": "马拉维"
         },
+        "languages": [
+            "en",
+            "ny"
+        ],
         "latitude": "-13.50000000",
         "longitude": "34.00000000",
         "emoji": "🇲🇼",
@@ -6248,6 +6705,9 @@
             "it": "Malesia",
             "cn": "马来西亚"
         },
+        "languages": [
+            "ms"
+        ],
         "latitude": "2.50000000",
         "longitude": "112.50000000",
         "emoji": "🇲🇾",
@@ -6290,6 +6750,9 @@
             "it": "Maldive",
             "cn": "马尔代夫"
         },
+        "languages": [
+            "dv"
+        ],
         "latitude": "3.25000000",
         "longitude": "73.00000000",
         "emoji": "🇲🇻",
@@ -6332,6 +6795,9 @@
             "it": "Mali",
             "cn": "马里"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "17.00000000",
         "longitude": "-4.00000000",
         "emoji": "🇲🇱",
@@ -6374,6 +6840,10 @@
             "it": "Malta",
             "cn": "马耳他"
         },
+        "languages": [
+            "mt",
+            "en"
+        ],
         "latitude": "35.83333333",
         "longitude": "14.58333333",
         "emoji": "🇲🇹",
@@ -6416,6 +6886,10 @@
             "it": "Isola di Man",
             "cn": "马恩岛"
         },
+        "languages": [
+            "en",
+            "gv"
+        ],
         "latitude": "54.25000000",
         "longitude": "-4.50000000",
         "emoji": "🇮🇲",
@@ -6465,6 +6939,10 @@
             "it": "Isole Marshall",
             "cn": "马绍尔群岛"
         },
+        "languages": [
+            "en",
+            "mh"
+        ],
         "latitude": "9.00000000",
         "longitude": "168.00000000",
         "emoji": "🇲🇭",
@@ -6507,6 +6985,9 @@
             "it": "Martinica",
             "cn": "马提尼克岛"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "14.66666700",
         "longitude": "-61.00000000",
         "emoji": "🇲🇶",
@@ -6549,6 +7030,9 @@
             "it": "Mauritania",
             "cn": "毛里塔尼亚"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "20.00000000",
         "longitude": "-12.00000000",
         "emoji": "🇲🇷",
@@ -6591,6 +7075,9 @@
             "it": "Mauritius",
             "cn": "毛里求斯"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-20.28333333",
         "longitude": "57.55000000",
         "emoji": "🇲🇺",
@@ -6633,6 +7120,9 @@
             "it": "Mayotte",
             "cn": "马约特"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "-12.83333333",
         "longitude": "45.16666666",
         "emoji": "🇾🇹",
@@ -6745,6 +7235,9 @@
             "it": "Messico",
             "cn": "墨西哥"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "23.00000000",
         "longitude": "-102.00000000",
         "emoji": "🇲🇽",
@@ -6801,6 +7294,9 @@
             "it": "Micronesia",
             "cn": "密克罗尼西亚"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "6.91666666",
         "longitude": "158.25000000",
         "emoji": "🇫🇲",
@@ -6843,6 +7339,9 @@
             "it": "Moldavia",
             "cn": "摩尔多瓦"
         },
+        "languages": [
+            "ro"
+        ],
         "latitude": "47.00000000",
         "longitude": "29.00000000",
         "emoji": "🇲🇩",
@@ -6885,6 +7384,9 @@
             "it": "Principato di Monaco",
             "cn": "摩纳哥"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "43.73333333",
         "longitude": "7.40000000",
         "emoji": "🇲🇨",
@@ -6941,6 +7443,9 @@
             "it": "Mongolia",
             "cn": "蒙古"
         },
+        "languages": [
+            "mn"
+        ],
         "latitude": "46.00000000",
         "longitude": "105.00000000",
         "emoji": "🇲🇳",
@@ -6983,6 +7488,12 @@
             "it": "Montenegro",
             "cn": "黑山"
         },
+        "languages": [
+            "sr",
+            "bs",
+            "sq",
+            "hr"
+        ],
         "latitude": "42.50000000",
         "longitude": "19.30000000",
         "emoji": "🇲🇪",
@@ -7025,6 +7536,9 @@
             "it": "Montserrat",
             "cn": "蒙特塞拉特"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "16.75000000",
         "longitude": "-62.20000000",
         "emoji": "🇲🇸",
@@ -7067,6 +7581,9 @@
             "it": "Marocco",
             "cn": "摩洛哥"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "32.00000000",
         "longitude": "-5.00000000",
         "emoji": "🇲🇦",
@@ -7109,6 +7626,9 @@
             "it": "Mozambico",
             "cn": "莫桑比克"
         },
+        "languages": [
+            "pt"
+        ],
         "latitude": "-18.25000000",
         "longitude": "35.00000000",
         "emoji": "🇲🇿",
@@ -7151,6 +7671,9 @@
             "it": "Birmania",
             "cn": "缅甸"
         },
+        "languages": [
+            "my"
+        ],
         "latitude": "22.00000000",
         "longitude": "98.00000000",
         "emoji": "🇲🇲",
@@ -7193,6 +7716,10 @@
             "it": "Namibia",
             "cn": "纳米比亚"
         },
+        "languages": [
+            "en",
+            "af"
+        ],
         "latitude": "-22.00000000",
         "longitude": "17.00000000",
         "emoji": "🇳🇦",
@@ -7235,6 +7762,10 @@
             "it": "Nauru",
             "cn": "瑙鲁"
         },
+        "languages": [
+            "en",
+            "na"
+        ],
         "latitude": "-0.53333333",
         "longitude": "166.91666666",
         "emoji": "🇳🇷",
@@ -7277,6 +7808,9 @@
             "it": "Nepal",
             "cn": "尼泊尔"
         },
+        "languages": [
+            "ne"
+        ],
         "latitude": "28.00000000",
         "longitude": "84.00000000",
         "emoji": "🇳🇵",
@@ -7319,6 +7853,9 @@
             "it": "Paesi Bassi",
             "cn": "荷兰"
         },
+        "languages": [
+            "nl"
+        ],
         "latitude": "52.50000000",
         "longitude": "5.75000000",
         "emoji": "🇳🇱",
@@ -7361,6 +7898,9 @@
             "it": "Nuova Caledonia",
             "cn": "新喀里多尼亚"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "-21.50000000",
         "longitude": "165.50000000",
         "emoji": "🇳🇨",
@@ -7410,6 +7950,10 @@
             "it": "Nuova Zelanda",
             "cn": "新西兰"
         },
+        "languages": [
+            "en",
+            "mi"
+        ],
         "latitude": "-41.00000000",
         "longitude": "174.00000000",
         "emoji": "🇳🇿",
@@ -7452,6 +7996,9 @@
             "it": "Nicaragua",
             "cn": "尼加拉瓜"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "13.00000000",
         "longitude": "-85.00000000",
         "emoji": "🇳🇮",
@@ -7494,6 +8041,9 @@
             "it": "Niger",
             "cn": "尼日尔"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "16.00000000",
         "longitude": "8.00000000",
         "emoji": "🇳🇪",
@@ -7536,6 +8086,9 @@
             "it": "Nigeria",
             "cn": "尼日利亚"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "10.00000000",
         "longitude": "8.00000000",
         "emoji": "🇳🇬",
@@ -7578,6 +8131,9 @@
             "it": "Niue",
             "cn": "纽埃"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-19.03333333",
         "longitude": "-169.86666666",
         "emoji": "🇳🇺",
@@ -7620,6 +8176,9 @@
             "it": "Isola Norfolk",
             "cn": "诺福克岛"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-29.03333333",
         "longitude": "167.95000000",
         "emoji": "🇳🇫",
@@ -7662,6 +8221,9 @@
             "it": "Corea del Nord",
             "cn": "朝鲜"
         },
+        "languages": [
+            "ko"
+        ],
         "latitude": "40.00000000",
         "longitude": "127.00000000",
         "emoji": "🇰🇵",
@@ -7704,6 +8266,10 @@
             "it": "Isole Marianne Settentrionali",
             "cn": "北马里亚纳群岛"
         },
+        "languages": [
+            "en",
+            "ch"
+        ],
         "latitude": "15.20000000",
         "longitude": "145.75000000",
         "emoji": "🇲🇵",
@@ -7746,6 +8312,11 @@
             "it": "Norvegia",
             "cn": "挪威"
         },
+        "languages": [
+            "no",
+            "nb",
+            "nn"
+        ],
         "latitude": "62.00000000",
         "longitude": "10.00000000",
         "emoji": "🇳🇴",
@@ -7788,6 +8359,9 @@
             "it": "oman",
             "cn": "阿曼"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "21.00000000",
         "longitude": "57.00000000",
         "emoji": "🇴🇲",
@@ -7830,6 +8404,10 @@
             "it": "Pakistan",
             "cn": "巴基斯坦"
         },
+        "languages": [
+            "en",
+            "ur"
+        ],
         "latitude": "30.00000000",
         "longitude": "70.00000000",
         "emoji": "🇵🇰",
@@ -7872,6 +8450,9 @@
             "it": "Palau",
             "cn": "帕劳"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "7.50000000",
         "longitude": "134.50000000",
         "emoji": "🇵🇼",
@@ -7921,6 +8502,9 @@
             "it": "Palestina",
             "cn": "巴勒斯坦"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "31.90000000",
         "longitude": "35.20000000",
         "emoji": "🇵🇸",
@@ -7963,6 +8547,9 @@
             "it": "Panama",
             "cn": "巴拿马"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "9.00000000",
         "longitude": "-80.00000000",
         "emoji": "🇵🇦",
@@ -8012,6 +8599,9 @@
             "it": "Papua Nuova Guinea",
             "cn": "巴布亚新几内亚"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-6.00000000",
         "longitude": "147.00000000",
         "emoji": "🇵🇬",
@@ -8054,6 +8644,10 @@
             "it": "Paraguay",
             "cn": "巴拉圭"
         },
+        "languages": [
+            "es",
+            "gn"
+        ],
         "latitude": "-23.00000000",
         "longitude": "-58.00000000",
         "emoji": "🇵🇾",
@@ -8096,6 +8690,9 @@
             "it": "Perù",
             "cn": "秘鲁"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "-10.00000000",
         "longitude": "-76.00000000",
         "emoji": "🇵🇪",
@@ -8138,6 +8735,9 @@
             "it": "Filippine",
             "cn": "菲律宾"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "13.00000000",
         "longitude": "122.00000000",
         "emoji": "🇵🇭",
@@ -8180,6 +8780,9 @@
             "it": "Isole Pitcairn",
             "cn": "皮特凯恩群岛"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-25.06666666",
         "longitude": "-130.10000000",
         "emoji": "🇵🇳",
@@ -8222,6 +8825,9 @@
             "it": "Polonia",
             "cn": "波兰"
         },
+        "languages": [
+            "pl"
+        ],
         "latitude": "52.00000000",
         "longitude": "20.00000000",
         "emoji": "🇵🇱",
@@ -8278,6 +8884,9 @@
             "it": "Portogallo",
             "cn": "葡萄牙"
         },
+        "languages": [
+            "pt"
+        ],
         "latitude": "39.50000000",
         "longitude": "-8.00000000",
         "emoji": "🇵🇹",
@@ -8320,6 +8929,10 @@
             "it": "Porto Rico",
             "cn": "波多黎各"
         },
+        "languages": [
+            "es",
+            "en"
+        ],
         "latitude": "18.25000000",
         "longitude": "-66.50000000",
         "emoji": "🇵🇷",
@@ -8362,6 +8975,9 @@
             "it": "Qatar",
             "cn": "卡塔尔"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "25.50000000",
         "longitude": "51.25000000",
         "emoji": "🇶🇦",
@@ -8404,6 +9020,9 @@
             "it": "Riunione",
             "cn": "留尼汪岛"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "-21.15000000",
         "longitude": "55.50000000",
         "emoji": "🇷🇪",
@@ -8446,6 +9065,9 @@
             "it": "Romania",
             "cn": "罗马尼亚"
         },
+        "languages": [
+            "ro"
+        ],
         "latitude": "46.00000000",
         "longitude": "25.00000000",
         "emoji": "🇷🇴",
@@ -8663,6 +9285,9 @@
             "it": "Russia",
             "cn": "俄罗斯联邦"
         },
+        "languages": [
+            "ru"
+        ],
         "latitude": "60.00000000",
         "longitude": "100.00000000",
         "emoji": "🇷🇺",
@@ -8705,6 +9330,11 @@
             "it": "Ruanda",
             "cn": "卢旺达"
         },
+        "languages": [
+            "rw",
+            "en",
+            "fr"
+        ],
         "latitude": "-2.00000000",
         "longitude": "30.00000000",
         "emoji": "🇷🇼",
@@ -8747,6 +9377,9 @@
             "it": "Sant'Elena",
             "cn": "圣赫勒拿"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-15.95000000",
         "longitude": "-5.70000000",
         "emoji": "🇸🇭",
@@ -8789,6 +9422,9 @@
             "it": "Saint Kitts e Nevis",
             "cn": "圣基茨和尼维斯"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "17.33333333",
         "longitude": "-62.75000000",
         "emoji": "🇰🇳",
@@ -8831,6 +9467,9 @@
             "it": "Santa Lucia",
             "cn": "圣卢西亚"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "13.88333333",
         "longitude": "-60.96666666",
         "emoji": "🇱🇨",
@@ -8873,6 +9512,9 @@
             "it": "Saint-Pierre e Miquelon",
             "cn": "圣皮埃尔和密克隆"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "46.83333333",
         "longitude": "-56.33333333",
         "emoji": "🇵🇲",
@@ -8915,6 +9557,9 @@
             "it": "Saint Vincent e Grenadine",
             "cn": "圣文森特和格林纳丁斯"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "13.25000000",
         "longitude": "-61.20000000",
         "emoji": "🇻🇨",
@@ -8957,6 +9602,9 @@
             "it": "Antille Francesi",
             "cn": "圣巴泰勒米"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "18.50000000",
         "longitude": "-63.41666666",
         "emoji": "🇧🇱",
@@ -8999,6 +9647,11 @@
             "it": "Saint Martin",
             "cn": "密克罗尼西亚"
         },
+        "languages": [
+            "en",
+            "fr",
+            "nl"
+        ],
         "latitude": "18.08333333",
         "longitude": "-63.95000000",
         "emoji": "🇲🇫",
@@ -9041,6 +9694,10 @@
             "it": "Samoa",
             "cn": "萨摩亚"
         },
+        "languages": [
+            "sm",
+            "en"
+        ],
         "latitude": "-13.58333333",
         "longitude": "-172.33333333",
         "emoji": "🇼🇸",
@@ -9083,6 +9740,9 @@
             "it": "San Marino",
             "cn": "圣马力诺"
         },
+        "languages": [
+            "it"
+        ],
         "latitude": "43.76666666",
         "longitude": "12.41666666",
         "emoji": "🇸🇲",
@@ -9125,6 +9785,9 @@
             "it": "São Tomé e Príncipe",
             "cn": "圣多美和普林西比"
         },
+        "languages": [
+            "pt"
+        ],
         "latitude": "1.00000000",
         "longitude": "7.00000000",
         "emoji": "🇸🇹",
@@ -9167,6 +9830,9 @@
             "it": "Arabia Saudita",
             "cn": "沙特阿拉伯"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "25.00000000",
         "longitude": "45.00000000",
         "emoji": "🇸🇦",
@@ -9209,6 +9875,9 @@
             "it": "Senegal",
             "cn": "塞内加尔"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "14.00000000",
         "longitude": "-14.00000000",
         "emoji": "🇸🇳",
@@ -9251,6 +9920,9 @@
             "it": "Serbia",
             "cn": "塞尔维亚"
         },
+        "languages": [
+            "sr"
+        ],
         "latitude": "44.00000000",
         "longitude": "21.00000000",
         "emoji": "🇷🇸",
@@ -9293,6 +9965,10 @@
             "it": "Seychelles",
             "cn": "塞舌尔"
         },
+        "languages": [
+            "fr",
+            "en"
+        ],
         "latitude": "-4.58333333",
         "longitude": "55.66666666",
         "emoji": "🇸🇨",
@@ -9335,6 +10011,9 @@
             "it": "Sierra Leone",
             "cn": "塞拉利昂"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "8.50000000",
         "longitude": "-11.50000000",
         "emoji": "🇸🇱",
@@ -9377,6 +10056,12 @@
             "it": "Singapore",
             "cn": "新加坡"
         },
+        "languages": [
+            "en",
+            "ms",
+            "ta",
+            "zh"
+        ],
         "latitude": "1.36666666",
         "longitude": "103.80000000",
         "emoji": "🇸🇬",
@@ -9416,6 +10101,10 @@
             "it": "Saint Martin (parte olandese)",
             "cn": "圣马丁岛（荷兰部分）"
         },
+        "languages": [
+            "nl",
+            "en"
+        ],
         "latitude": "18.03333300",
         "longitude": "-63.05000000",
         "emoji": "🇸🇽",
@@ -9458,6 +10147,9 @@
             "it": "Slovacchia",
             "cn": "斯洛伐克"
         },
+        "languages": [
+            "sk"
+        ],
         "latitude": "48.66666666",
         "longitude": "19.50000000",
         "emoji": "🇸🇰",
@@ -9500,6 +10192,9 @@
             "it": "Slovenia",
             "cn": "斯洛文尼亚"
         },
+        "languages": [
+            "sl"
+        ],
         "latitude": "46.11666666",
         "longitude": "14.81666666",
         "emoji": "🇸🇮",
@@ -9542,6 +10237,9 @@
             "it": "Isole Salomone",
             "cn": "所罗门群岛"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-8.00000000",
         "longitude": "159.00000000",
         "emoji": "🇸🇧",
@@ -9584,6 +10282,10 @@
             "it": "Somalia",
             "cn": "索马里"
         },
+        "languages": [
+            "so",
+            "ar"
+        ],
         "latitude": "10.00000000",
         "longitude": "49.00000000",
         "emoji": "🇸🇴",
@@ -9626,6 +10328,18 @@
             "it": "Sud Africa",
             "cn": "南非"
         },
+        "languages": [
+            "af",
+            "en",
+            "nr",
+            "st",
+            "ss",
+            "tn",
+            "ts",
+            "ve",
+            "xh",
+            "zu"
+        ],
         "latitude": "-29.00000000",
         "longitude": "24.00000000",
         "emoji": "🇿🇦",
@@ -9668,6 +10382,9 @@
             "it": "Georgia del Sud e Isole Sandwich Meridionali",
             "cn": "南乔治亚"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-54.50000000",
         "longitude": "-37.00000000",
         "emoji": "🇬🇸",
@@ -9710,6 +10427,9 @@
             "it": "Corea del Sud",
             "cn": "韩国"
         },
+        "languages": [
+            "ko"
+        ],
         "latitude": "37.00000000",
         "longitude": "127.50000000",
         "emoji": "🇰🇷",
@@ -9752,6 +10472,9 @@
             "it": "Sudan del sud",
             "cn": "南苏丹"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "7.00000000",
         "longitude": "30.00000000",
         "emoji": "🇸🇸",
@@ -9808,6 +10531,13 @@
             "it": "Spagna",
             "cn": "西班牙"
         },
+        "languages": [
+            "es",
+            "eu",
+            "ca",
+            "gl",
+            "oc"
+        ],
         "latitude": "40.00000000",
         "longitude": "-4.00000000",
         "emoji": "🇪🇸",
@@ -9850,6 +10580,10 @@
             "it": "Sri Lanka",
             "cn": "斯里兰卡"
         },
+        "languages": [
+            "si",
+            "ta"
+        ],
         "latitude": "7.00000000",
         "longitude": "81.00000000",
         "emoji": "🇱🇰",
@@ -9892,6 +10626,10 @@
             "it": "Sudan",
             "cn": "苏丹"
         },
+        "languages": [
+            "ar",
+            "en"
+        ],
         "latitude": "15.00000000",
         "longitude": "30.00000000",
         "emoji": "🇸🇩",
@@ -9934,6 +10672,9 @@
             "it": "Suriname",
             "cn": "苏里南"
         },
+        "languages": [
+            "nl"
+        ],
         "latitude": "4.00000000",
         "longitude": "-56.00000000",
         "emoji": "🇸🇷",
@@ -9976,6 +10717,9 @@
             "it": "Svalbard e Jan Mayen",
             "cn": "斯瓦尔巴和扬马延群岛"
         },
+        "languages": [
+            "no"
+        ],
         "latitude": "78.00000000",
         "longitude": "20.00000000",
         "emoji": "🇸🇯",
@@ -10018,6 +10762,10 @@
             "it": "Swaziland",
             "cn": "斯威士兰"
         },
+        "languages": [
+            "en",
+            "ss"
+        ],
         "latitude": "-26.50000000",
         "longitude": "31.50000000",
         "emoji": "🇸🇿",
@@ -10060,6 +10808,9 @@
             "it": "Svezia",
             "cn": "瑞典"
         },
+        "languages": [
+            "sv"
+        ],
         "latitude": "62.00000000",
         "longitude": "15.00000000",
         "emoji": "🇸🇪",
@@ -10102,6 +10853,11 @@
             "it": "Svizzera",
             "cn": "瑞士"
         },
+        "languages": [
+            "de",
+            "fr",
+            "it"
+        ],
         "latitude": "47.00000000",
         "longitude": "8.00000000",
         "emoji": "🇨🇭",
@@ -10144,6 +10900,9 @@
             "it": "Siria",
             "cn": "叙利亚"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "35.00000000",
         "longitude": "38.00000000",
         "emoji": "🇸🇾",
@@ -10186,6 +10945,9 @@
             "it": "Taiwan",
             "cn": "中国台湾"
         },
+        "languages": [
+            "zh"
+        ],
         "latitude": "23.50000000",
         "longitude": "121.00000000",
         "emoji": "🇹🇼",
@@ -10228,6 +10990,10 @@
             "it": "Tagikistan",
             "cn": "塔吉克斯坦"
         },
+        "languages": [
+            "tg",
+            "ru"
+        ],
         "latitude": "39.00000000",
         "longitude": "71.00000000",
         "emoji": "🇹🇯",
@@ -10270,6 +11036,10 @@
             "it": "Tanzania",
             "cn": "坦桑尼亚"
         },
+        "languages": [
+            "sw",
+            "en"
+        ],
         "latitude": "-6.00000000",
         "longitude": "35.00000000",
         "emoji": "🇹🇿",
@@ -10312,6 +11082,9 @@
             "it": "Tailandia",
             "cn": "泰国"
         },
+        "languages": [
+            "th"
+        ],
         "latitude": "15.00000000",
         "longitude": "100.00000000",
         "emoji": "🇹🇭",
@@ -10354,6 +11127,9 @@
             "it": "Togo",
             "cn": "多哥"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "8.00000000",
         "longitude": "1.16666666",
         "emoji": "🇹🇬",
@@ -10396,6 +11172,9 @@
             "it": "Isole Tokelau",
             "cn": "托克劳"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-9.00000000",
         "longitude": "-172.00000000",
         "emoji": "🇹🇰",
@@ -10438,6 +11217,10 @@
             "it": "Tonga",
             "cn": "汤加"
         },
+        "languages": [
+            "en",
+            "to"
+        ],
         "latitude": "-20.00000000",
         "longitude": "-175.00000000",
         "emoji": "🇹🇴",
@@ -10480,6 +11263,9 @@
             "it": "Trinidad e Tobago",
             "cn": "特立尼达和多巴哥"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "11.00000000",
         "longitude": "-61.00000000",
         "emoji": "🇹🇹",
@@ -10522,6 +11308,9 @@
             "it": "Tunisia",
             "cn": "突尼斯"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "34.00000000",
         "longitude": "9.00000000",
         "emoji": "🇹🇳",
@@ -10564,6 +11353,9 @@
             "it": "Turchia",
             "cn": "土耳其"
         },
+        "languages": [
+            "tr"
+        ],
         "latitude": "39.00000000",
         "longitude": "35.00000000",
         "emoji": "🇹🇷",
@@ -10606,6 +11398,10 @@
             "it": "Turkmenistan",
             "cn": "土库曼斯坦"
         },
+        "languages": [
+            "tk",
+            "ru"
+        ],
         "latitude": "40.00000000",
         "longitude": "60.00000000",
         "emoji": "🇹🇲",
@@ -10648,6 +11444,9 @@
             "it": "Isole Turks e Caicos",
             "cn": "特克斯和凯科斯群岛"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "21.75000000",
         "longitude": "-71.58333333",
         "emoji": "🇹🇨",
@@ -10690,6 +11489,9 @@
             "it": "Tuvalu",
             "cn": "图瓦卢"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-8.00000000",
         "longitude": "178.00000000",
         "emoji": "🇹🇻",
@@ -10732,6 +11534,10 @@
             "it": "Uganda",
             "cn": "乌干达"
         },
+        "languages": [
+            "en",
+            "sw"
+        ],
         "latitude": "1.00000000",
         "longitude": "32.00000000",
         "emoji": "🇺🇬",
@@ -10795,6 +11601,9 @@
             "it": "Ucraina",
             "cn": "乌克兰"
         },
+        "languages": [
+            "uk"
+        ],
         "latitude": "49.00000000",
         "longitude": "32.00000000",
         "emoji": "🇺🇦",
@@ -10837,6 +11646,9 @@
             "it": "Emirati Arabi Uniti",
             "cn": "阿拉伯联合酋长国"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "24.00000000",
         "longitude": "54.00000000",
         "emoji": "🇦🇪",
@@ -10879,6 +11691,9 @@
             "it": "Regno Unito",
             "cn": "英国"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "54.00000000",
         "longitude": "-2.00000000",
         "emoji": "🇬🇧",
@@ -11117,6 +11932,9 @@
             "it": "Stati Uniti D'America",
             "cn": "美国"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "38.00000000",
         "longitude": "-97.00000000",
         "emoji": "🇺🇸",
@@ -11166,6 +11984,9 @@
             "it": "Isole minori esterne degli Stati Uniti d'America",
             "cn": "美国本土外小岛屿"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "0.00000000",
         "longitude": "0.00000000",
         "emoji": "🇺🇲",
@@ -11208,6 +12029,9 @@
             "it": "Uruguay",
             "cn": "乌拉圭"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "-33.00000000",
         "longitude": "-56.00000000",
         "emoji": "🇺🇾",
@@ -11257,6 +12081,10 @@
             "it": "Uzbekistan",
             "cn": "乌兹别克斯坦"
         },
+        "languages": [
+            "uz",
+            "ru"
+        ],
         "latitude": "41.00000000",
         "longitude": "64.00000000",
         "emoji": "🇺🇿",
@@ -11299,6 +12127,11 @@
             "it": "Vanuatu",
             "cn": "瓦努阿图"
         },
+        "languages": [
+            "bi",
+            "en",
+            "fr"
+        ],
         "latitude": "-16.00000000",
         "longitude": "167.00000000",
         "emoji": "🇻🇺",
@@ -11341,6 +12174,10 @@
             "it": "Santa Sede",
             "cn": "梵蒂冈"
         },
+        "languages": [
+            "it",
+            "la"
+        ],
         "latitude": "41.90000000",
         "longitude": "12.45000000",
         "emoji": "🇻🇦",
@@ -11383,6 +12220,9 @@
             "it": "Venezuela",
             "cn": "委内瑞拉"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "8.00000000",
         "longitude": "-66.00000000",
         "emoji": "🇻🇪",
@@ -11425,6 +12265,9 @@
             "it": "Vietnam",
             "cn": "越南"
         },
+        "languages": [
+            "vi"
+        ],
         "latitude": "16.16666666",
         "longitude": "107.83333333",
         "emoji": "🇻🇳",
@@ -11467,6 +12310,9 @@
             "it": "Isole Vergini Britanniche",
             "cn": "圣文森特和格林纳丁斯"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "18.43138300",
         "longitude": "-64.62305000",
         "emoji": "🇻🇬",
@@ -11508,6 +12354,9 @@
             "it": "Isole Vergini americane",
             "cn": "维尔京群岛（美国）"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "18.34000000",
         "longitude": "-64.93000000",
         "emoji": "🇻🇮",
@@ -11550,6 +12399,9 @@
             "it": "Wallis e Futuna",
             "cn": "瓦利斯群岛和富图纳群岛"
         },
+        "languages": [
+            "fr"
+        ],
         "latitude": "-13.30000000",
         "longitude": "-176.20000000",
         "emoji": "🇼🇫",
@@ -11592,6 +12444,9 @@
             "it": "Sahara Occidentale",
             "cn": "西撒哈拉"
         },
+        "languages": [
+            "es"
+        ],
         "latitude": "24.50000000",
         "longitude": "-13.00000000",
         "emoji": "🇪🇭",
@@ -11634,6 +12489,9 @@
             "it": "Yemen",
             "cn": "也门"
         },
+        "languages": [
+            "ar"
+        ],
         "latitude": "15.00000000",
         "longitude": "48.00000000",
         "emoji": "🇾🇪",
@@ -11676,6 +12534,9 @@
             "it": "Zambia",
             "cn": "赞比亚"
         },
+        "languages": [
+            "en"
+        ],
         "latitude": "-15.00000000",
         "longitude": "30.00000000",
         "emoji": "🇿🇲",
@@ -11718,6 +12579,11 @@
             "it": "Zimbabwe",
             "cn": "津巴布韦"
         },
+        "languages": [
+            "en",
+            "sn",
+            "nd"
+        ],
         "latitude": "-20.00000000",
         "longitude": "30.00000000",
         "emoji": "🇿🇼",
