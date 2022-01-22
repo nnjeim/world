@@ -23,4 +23,11 @@ return [
 		'ru',
 		'zh',
 	],
+	'modules' => [
+		'states' => true,
+		'cities' => true,
+		'timezones' => true,
+		'currencies' => true,
+		'languages' => true,
+	],
 ];

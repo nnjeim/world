@@ -15,5 +15,6 @@ return [
 		'city' => '城市|城市',
 		'timezone' => '时区|时区',
 		'currency' => '货币|货币',
+		'language' => '语言|语言',
 	],
 ];

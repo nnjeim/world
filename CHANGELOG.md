@@ -2,6 +2,13 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.0 - 2022-01-22
+- Addition of the languages module.
+- Addition of the country language in the countries json source file.
+- Creation of the languages route, controller and action.
+- General code style fix.
+- New configuration file (world.php), allowing the choosing of which modules to install.
+
 ### 1.0.8 - 2021-11-19
 - @ivanshamir: Bangla Localization.
 - 

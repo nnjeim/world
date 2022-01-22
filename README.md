@@ -17,6 +17,17 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~ 5 - 10min)
 ```
 
+### Upgrade to version 1.1.0
+What's new?  
+- The addition of the languages module.  
+- The abilility to install part of the modules and not all.  
+Please delete the published `world.php` config file from `config`.  
+Re-publish the package by re-issuing.  
+  
+```
+php artisan vendor:publish --tag=world
+```
+
 ### Changelog
 
 Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently. 
@@ -161,27 +172,32 @@ The methods' return is structured as below:
 #### Countries method
 
 * fields*: comma seperated string(countries table fields in addition to states, cities, currency and timezones).
-* filters*: array of keys(countries table fields) and their correspondant values.
+* filters*: array of keys(countries table fields) and their corresponding values.
 
 #### States method
 
 * fields*: comma seperated string(states table fields in addition to country and states).
-* filters*: array of keys(states table fields) and their correspondant values.
+* filters*: array of keys(states table fields) and their corresponding values.
 
 #### Cities method
 
 * fields*: comma seperated string(cities table fields in addition to country and state).
-* filters*: array of keys(cities table fields) and their correspondant values.
+* filters*: array of keys(cities table fields) and their corresponding values.
 
 #### Timezones method
 
 * fields*: comma seperated string(timezones table fields in addition to country).
-* filters*: array of keys(timezones table fields) and their correspondant values.
+* filters*: array of keys(timezones table fields) and their corresponding values.
 
 #### Currencies method
 
 * fields*: comma seperated string(currencies table fields in addition to country).
-* filters*: array of keys(currencies table fields) and their correspondant values.
+* filters*: array of keys(currencies table fields) and their corresponding values.
+
+#### languages method
+
+* fields*: comma seperated string(currencies table fields).
+* filters*: array of keys(languages table fields) and their corresponding values.
 
 ### Available routes
 
@@ -229,13 +245,23 @@ All routes can be prefixed by any string. Ex admin, api, v1 ...
 
 ##### Currencies
 
-| | |
-| :--- | :--- |
-| Method | GET |
-| Route | /{prefix}/timezones |
+| |                                                                                       |
+| :--- |:--------------------------------------------------------------------------------------|
+| Method | GET                                                                                   |
+| Route | /{prefix}/currencies                                                                  |
 | Parameters* | comma seperated fields(states table fields in addition to the country), array filters |
-| Example | /v1/timezones?fields=country&filters[country_id]=182 |   
-| response | success, message, data |
+| Example | /v1/timezones?fields=country&filters[country_id]=182                                  |   
+| response | success, message, data                                                                |
+
+##### Languages
+
+| |                          |
+| :--- |:-------------------------|
+| Method | GET                      |
+| Route | /{prefix}/languages      |
+| Parameters* | comma seperated fields   
+| Example | /v1/languages?fields=dir |   
+| response | success, message, data   |
 
 ##### Validate Number
 
