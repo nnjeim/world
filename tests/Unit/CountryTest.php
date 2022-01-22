@@ -7,6 +7,7 @@ use Nnjeim\World\Actions\Country;
 use Nnjeim\World\Actions\Currency;
 use Nnjeim\World\Actions\State;
 use Nnjeim\World\Actions\Timezone;
+use Nnjeim\World\Actions\Language;
 use Nnjeim\World\Tests\TestCase;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -86,6 +87,16 @@ class CountryTest extends TestCase
 				'country_id' => 182,
 			],
 		]);
+
+		self::assertTrue($action->success === true);
+		self::assertNotEmpty($action->data);
+		self::assertTrue($action->statusCode === Response::HTTP_OK);
+	}
+
+	/** @test */
+	public function can_respond_with_languages()
+	{
+		$action = app(Language\IndexAction::class)->execute([]);
 
 		self::assertTrue($action->success === true);
 		self::assertNotEmpty($action->data);
