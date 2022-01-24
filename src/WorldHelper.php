@@ -27,6 +27,10 @@ class WorldHelper
 			'actionBasePath' => 'Nnjeim\\World\\Actions\\Currency',
 			'action' => 'index',
 		],
+		'languages' => [
+			'actionBasePath' => 'Nnjeim\\World\\Actions\\Language',
+			'action' => 'index',
+		],
 	];
 
 	/**

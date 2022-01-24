@@ -54,5 +54,9 @@ class WorldServiceProvider extends ServiceProvider
 		$this->publishes([
 			__DIR__ . '/Database/Seeders/WorldSeeder.php' => database_path('seeders/WorldSeeder.php'),
 		], 'world');
+
+		$this->publishes([
+			__DIR__ . '/../resources/lang' => resource_path('lang/vendor/world'),
+		], 'world');
 	}
 }
