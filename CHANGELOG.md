@@ -3,7 +3,8 @@
 All notable changes to `country` will be documented in this file
 
 ### 1.1.1 - 2022-01-24
-- Resource lang publishing.
+- Resources publishing.
+- Fixing of the states translation keys.
 
 ### 1.1.0 - 2022-01-22
 - Addition of the languages module.
