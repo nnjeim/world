@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.1 - 2022-01-24
+- Resource lang publishing.
+
 ### 1.1.0 - 2022-01-22
 - Addition of the languages module.
 - Addition of the country language in the countries json source file.

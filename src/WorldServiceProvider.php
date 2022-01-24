@@ -2,9 +2,8 @@
 
 namespace Nnjeim\World;
 
-use Nnjeim\World\WorldHelper;
-
 use Illuminate\Support\ServiceProvider;
+use Nnjeim\World\WorldHelper;
 
 class WorldServiceProvider extends ServiceProvider
 {
@@ -19,9 +18,6 @@ class WorldServiceProvider extends ServiceProvider
 		$this->app->singleton('world', fn () => new WorldHelper());
 	}
 
-	/**
-	 * @param  Router  $router
-	 */
 	public function boot()
 	{
 		// Helpers
@@ -43,7 +39,6 @@ class WorldServiceProvider extends ServiceProvider
 	{
 		$this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
 	}
-
 
 	private function publishResources()
 	{

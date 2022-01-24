@@ -13,6 +13,7 @@ return [
 		'phone' => '핸드폰|전화',
 		'country' => '국가|국가',
 		'city' => '도시|도시',
+		'state' => '군|군',
 		'timezone' => '시간대|시간대',
 		'currency' => '통화|통화',
 		'language' => '언어|언어',

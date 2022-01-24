@@ -13,6 +13,7 @@ return [
 		'phone' => 'telefon|telefony',
 		'country' => 'kraj|kraje',
 		'city' => 'miasto|miasta',
+		'polish' => 'hrabstwo|hrabstwa',
 		'timezone' => 'strefa czasowa|strefy czasowe',
 		'currency' => 'waluta|waluty',
 		'language' => 'język|języki',

@@ -12,9 +12,9 @@ class IndexAction extends BaseAction implements ActionInterface
 {
 	use IndexTransformer;
 
-	protected string $cacheTag = 'cities';
+	protected string $cacheTag = 'states';
 
-	protected string $attribute = 'city';
+	protected string $attribute = 'state';
 
 	protected array $availableFields = [
 		'id',
