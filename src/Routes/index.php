@@ -9,7 +9,6 @@ Route::group([
 	'middleware' => [
 		'throttle:60,1',
 		Localization::class,
-		'bindings',
 	],
 ], function () {
 	// countries
