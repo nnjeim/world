@@ -36,6 +36,12 @@ Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recen
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
+### Demo
+Please feel free to query https://laravel-world.com 
+  
+Example1: https://laravel-world.com/api/countries  
+Example2: https://laravel-world.com/api/states?filters[country_id]=182&fields=cities
+
 ### Usage
 
 #### World Facade

@@ -2,6 +2,10 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.2 - 2022-01-27
+- Route bindings removed.
+- Creation of the demonstration domain laravel-world.com
+
 ### 1.1.1 - 2022-01-24
 - Resources publishing.
 - Fixing of the states translation keys.
