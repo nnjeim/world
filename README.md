@@ -1,9 +1,8 @@
-<p><img src="./logo.jpg" width="100" alt="Laravel world"/></p>
+<p><img src="./logo.jpg" width="150" alt="Laravel world"/></p>
 
-A Laravel package to provide a list of the countries, states, cities, timezones, currencies and phone numbers
-formatting/validation helpers.
+A Laravel package which provides a list of the countries, states, cities, timezones, currencies and languages.
 
-The package can be consumed through Facades, Helpers and Api routes.
+The world package can be consumed with Facades, Helpers and Api routes.
 
 ### Installation
 
@@ -21,8 +20,8 @@ php artisan db:seed --class=WorldSeeder (requires ~ 5 - 10min)
 What's new?  
 - The addition of the languages module.  
 - The abilility to install part of the modules and not all.  
-Please delete the published `world.php` config file from `config`.  
-Re-publish the package by re-issuing.  
+- Please delete the published `world.php` config file from `config`.    
+- Re-publish the package by re-issuing.  
   
 ```
 php artisan vendor:publish --tag=world
