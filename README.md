@@ -2,7 +2,7 @@
 
 A Laravel package which provides a list of the countries, states, cities, timezones, currencies and languages.
 
-The world package can be consumed with Facades, Helpers and Api routes.
+The world package can be consumed with the World Facade, Helpers and Api routes.
 
 ### Installation
 
@@ -16,16 +16,10 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~ 5 - 10min)
 ```
 
-### Upgrade to version 1.1.0
-What's new?  
-- The addition of the languages module.  
-- The abilility to install part of the modules and not all.  
-- Please delete the published `world.php` config file from `config`.    
-- Re-publish the package by re-issuing.  
-  
-```
-php artisan vendor:publish --tag=world
-```
+### Upgrading to the latest version? 
+- Delete the published `world.php` config file from `config`.   
+- Delete the `WorldSeeder.php` from `database/seeders`
+- Re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world`
 
 ### Changelog
 
@@ -38,14 +32,17 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 ### Demo
 Please feel free to query https://laravel-world.com 
   
-Example1: https://laravel-world.com/api/countries  
-Example2: https://laravel-world.com/api/states?filters[country_id]=182&fields=cities
+Examples  
+https://laravel-world.com/api/countries  
+https://laravel-world.com/api/states?filters[country_id]=182&fields=cities
 
 ### Usage
 
 #### World Facade
 
 ##### List all the countries.
+
+Use the world facade  
 
 ``` 
 use Nnjeim\World\World;
@@ -77,7 +74,14 @@ response
 }
 ``` 
 
+Use the Api countries endpoint
+```
+https://myDomain.local/api/countries
+```
+
 ##### Fetch a country with its states and cities.
+
+Use the world facade  
 
 ``` 
 use Nnjeim\World\World;
@@ -131,6 +135,11 @@ response
 }
 ```
 
+Use the Api countries endpoint
+```
+https://myDomain.local/api/countries?fields=states,cities&filters[iso2]=FR
+```
+
 #### World Helper Class
 
 ##### List all the cities by country id.
@@ -157,56 +166,57 @@ if ($action->success) {
 }
 ```
 
-#### Available methods
+#### Available actions
 
-| Name | Description | Argument* |
-| :--- | :--- |:--- |
-| countries | lists all the world countries | array* containing (string) fields* and (array) filters* |
-| states | lists all the states | array* containing (string) fields* and (array) filters* |
-| cities | lists all the cities | array* containing (string) fields* and (array) filters* |
-| timezones | lists all the timezones | array* containing (string) fields* and (array) filters* |
-| currencies | lists all the currencies | array* containing (string) fields* and (array) filters* |
+| Name       | Description                   |
+|:-----------|:------------------------------|
+| countries  | lists all the world countries |
+| states     | lists all the states          |
+| cities     | lists all the cities          |
+| timezones  | lists all the timezones       |
+| currencies | lists all the currencies      |
+| languages  | lists all the languages       |
 
-The methods' return is structured as below:
+An action response is formed as below:
 
 * success (boolean)
 * message (string)
 * data (instance of Illuminate\Support\Collection)
 * errors (array)
 
-#### Countries method
+#### Countries action
 
 * fields*: comma seperated string(countries table fields in addition to states, cities, currency and timezones).
 * filters*: array of keys(countries table fields) and their corresponding values.
 
-#### States method
+#### States action
 
 * fields*: comma seperated string(states table fields in addition to country and states).
 * filters*: array of keys(states table fields) and their corresponding values.
 
-#### Cities method
+#### Cities action
 
 * fields*: comma seperated string(cities table fields in addition to country and state).
 * filters*: array of keys(cities table fields) and their corresponding values.
 
-#### Timezones method
+#### Timezones action
 
 * fields*: comma seperated string(timezones table fields in addition to country).
 * filters*: array of keys(timezones table fields) and their corresponding values.
 
-#### Currencies method
+#### Currencies action
 
 * fields*: comma seperated string(currencies table fields in addition to country).
 * filters*: array of keys(currencies table fields) and their corresponding values.
 
-#### languages method
+#### Languages action
 
 * fields*: comma seperated string(languages table fields).
 * filters*: array of keys(languages table fields) and their corresponding values.
 
 ### Available routes
 
-All routes can be prefixed by any string. Ex admin, api, v1 ...
+All routes can be prefixed by any string. Ex admin, api, api ...
 
 ##### Countries
 
@@ -215,7 +225,7 @@ All routes can be prefixed by any string. Ex admin, api, v1 ...
 | Method | GET |
 | Route | /{prefix}/countries |
 | Parameters* | comma seperated fields(countries table fields in addition to states, cities, currency and timezones), array filters |
-| Example | /v1/countries?fields=iso2,cities&filters[phone_code]=44 |   
+| Example | /api/countries?fields=iso2,cities&filters[phone_code]=44 |   
 | response | success, message, data |  
 
 ##### States
@@ -225,7 +235,7 @@ All routes can be prefixed by any string. Ex admin, api, v1 ...
 | Method | GET |
 | Route | /{prefix}/states |
 | Parameters* | comma seperated fields(states table fields in addition to country and cities), array filters |
-| Example | /v1/states?fields=country,cities&filters[country_id]=182 |   
+| Example | /api/states?fields=country,cities&filters[country_id]=182 |   
 | response | success, message, data |   
 
 ##### Cities
@@ -235,7 +245,7 @@ All routes can be prefixed by any string. Ex admin, api, v1 ...
 | Method | GET |
 | Route | /{prefix}/cities |
 | Parameters* | comma seperated fields(states table fields in addition to country and state), array filters |
-| Example | /v1/cities?fields=country,state&filters[country_id]=182 |   
+| Example | /api/cities?fields=country,state&filters[country_id]=182 |   
 | response | success, message, data | 
 
 ##### Timezones
@@ -245,7 +255,7 @@ All routes can be prefixed by any string. Ex admin, api, v1 ...
 | Method | GET |
 | Route | /{prefix}/timezones |
 | Parameters* | comma seperated fields(states table fields in addition to the country), array filters |
-| Example | /v1/timezones?fields=country&filters[country_id]=182 |   
+| Example | /api/timezones?fields=country&filters[country_id]=182 |   
 | response | success, message, data | 
 
 ##### Currencies
@@ -255,7 +265,7 @@ All routes can be prefixed by any string. Ex admin, api, v1 ...
 | Method | GET                                                                                   |
 | Route | /{prefix}/currencies                                                                  |
 | Parameters* | comma seperated fields(states table fields in addition to the country), array filters |
-| Example | /v1/timezones?fields=country&filters[country_id]=182                                  |   
+| Example | /api/timezones?fields=country&filters[country_id]=182                                  |   
 | response | success, message, data                                                                |
 
 ##### Languages
@@ -265,7 +275,7 @@ All routes can be prefixed by any string. Ex admin, api, v1 ...
 | Method | GET                      |
 | Route | /{prefix}/languages      |
 | Parameters* | comma seperated fields   
-| Example | /v1/languages?fields=dir |   
+| Example | /api/languages?fields=dir |   
 | response | success, message, data   |
 
 ##### Validate Number
@@ -275,7 +285,7 @@ All routes can be prefixed by any string. Ex admin, api, v1 ...
 | Method | POST |
 | Route | /{prefix}/phones/validate |
 | Parameters | key, value |
-| Example | /v1/phones/validate?number=060550987&phone_code=33 |
+| Example | /api/phones/validate?number=060550987&phone_code=33 |
 
 ##### Strip Number
 
@@ -284,7 +294,7 @@ All routes can be prefixed by any string. Ex admin, api, v1 ...
 | Method | POST |
 | Route | /{prefix}/phones/strip |
 | Parameters | key, value |
-| Example | /v1/phones/strip?number=060550987&phone_code=33 |
+| Example | /api/phones/strip?number=060550987&phone_code=33 |
 
 ##### Format Number
 
@@ -293,7 +303,7 @@ All routes can be prefixed by any string. Ex admin, api, v1 ...
 | Method | POST |
 | Route | /{prefix}/phones/format |
 | Parameters | key, value |
-| Example | /v1/phones/format?number=060550987&phone_code=33 |
+| Example | /api/phones/format?number=060550987&phone_code=33 |
 
 ### Helpers
 
@@ -357,6 +367,12 @@ id, name, country_id
 
 ```
 id, country_id, name, code, precision, symbol, symbol_native, symbol_first, decimal_mark, thousands_separator
+```
+
+#### Languages database table fields
+
+```
+id, code, name, native_name, dir
 ```
 
 ### Testing  
