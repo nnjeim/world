@@ -1,8 +1,8 @@
 <p><img src="./logo.jpg" width="150" alt="Laravel world"/></p>
 
-A Laravel package which provides a list of the countries, states, cities, timezones, currencies and languages.
+The World is a Laravel package which provides a list of the countries, states, cities, timezones, currencies and languages.
 
-The world package can be consumed with the World Facade, Helpers and Api routes.
+It can be consumed with the World Facade or the defined Api routes.
 
 ### Installation
 
@@ -13,12 +13,12 @@ php artisan vendor:publish --tag=world
 
 php artisan migrate
 
-php artisan db:seed --class=WorldSeeder (requires ~ 5 - 10min)
+php artisan db:seed --class=WorldSeeder (requires ~ 10 - 15min)
 ```
 
 ### Upgrading to the latest version? 
-- Delete the published `world.php` config file from `config`.   
-- Delete the `WorldSeeder.php` from `database/seeders`
+- Delete the published `world.php` file from `config`.   
+- Delete the `WorldSeeder.php` file from `database/seeders`
 - Re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world`
 
 ### Changelog
@@ -38,11 +38,9 @@ https://laravel-world.com/api/states?filters[country_id]=182&fields=cities
 
 ### Usage
 
-#### World Facade
+#### List all the countries.
 
-##### List all the countries.
-
-Use the world facade  
+Use the World facade  
 
 ``` 
 use Nnjeim\World\World;
@@ -79,9 +77,9 @@ Use the Api countries endpoint
 https://myDomain.local/api/countries
 ```
 
-##### Fetch a country with its states and cities.
+#### Fetch a country with its states and cities.
 
-Use the world facade  
+Use the World facade  
 
 ``` 
 use Nnjeim\World\World;
@@ -140,9 +138,7 @@ Use the Api countries endpoint
 https://myDomain.local/api/countries?fields=states,cities&filters[iso2]=FR
 ```
 
-#### World Helper Class
-
-##### List all the cities by country id.
+#### List all the cities by country id.
 
 ``` 
 use Nnjeim\World\WorldHelper;
@@ -166,7 +162,12 @@ if ($action->success) {
 }
 ```
 
-#### Available actions
+Use the Api cities endpoint
+```
+https://myDomain.local/api/cities?filters[country_id]=182
+```
+
+### Available actions
 
 | Name       | Description                   |
 |:-----------|:------------------------------|
@@ -214,11 +215,11 @@ An action response is formed as below:
 * fields*: comma seperated string(languages table fields).
 * filters*: array of keys(languages table fields) and their corresponding values.
 
-### Available routes
+### Available Api routes
 
 All routes can be prefixed by any string. Ex admin, api, api ...
 
-##### Countries
+#### Countries
 
 | | |
 | :--- | :--- |
@@ -228,7 +229,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Example | /api/countries?fields=iso2,cities&filters[phone_code]=44 |   
 | response | success, message, data |  
 
-##### States
+#### States
 
 | | |
 | :--- | :--- |
@@ -238,7 +239,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Example | /api/states?fields=country,cities&filters[country_id]=182 |   
 | response | success, message, data |   
 
-##### Cities
+#### Cities
 
 | | |
 | :--- | :--- |
@@ -248,7 +249,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Example | /api/cities?fields=country,state&filters[country_id]=182 |   
 | response | success, message, data | 
 
-##### Timezones
+#### Timezones
 
 | | |
 | :--- | :--- |
@@ -258,7 +259,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Example | /api/timezones?fields=country&filters[country_id]=182 |   
 | response | success, message, data | 
 
-##### Currencies
+#### Currencies
 
 | |                                                                                       |
 | :--- |:--------------------------------------------------------------------------------------|
@@ -268,7 +269,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Example | /api/timezones?fields=country&filters[country_id]=182                                  |   
 | response | success, message, data                                                                |
 
-##### Languages
+#### Languages
 
 | |                          |
 | :--- |:-------------------------|
@@ -278,7 +279,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Example | /api/languages?fields=dir |   
 | response | success, message, data   |
 
-##### Validate Number
+#### Validate Number
 
 | | |
 | :--- | :--- |
@@ -287,7 +288,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Parameters | key, value |
 | Example | /api/phones/validate?number=060550987&phone_code=33 |
 
-##### Strip Number
+#### Strip Number
 
 | | |
 | :--- | :--- |
@@ -296,7 +297,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Parameters | key, value |
 | Example | /api/phones/strip?number=060550987&phone_code=33 |
 
-##### Format Number
+#### Format Number
 
 | | |
 | :--- | :--- |
@@ -337,43 +338,7 @@ World::setLocale('zh')->countries();
 
 ### Schema
 
-<p><img src="./schema.jpg" width="600px"/></p>
-
-#### Countries database table fields
-
-```
-id, name, iso2, iso3, phone_code, dialling_pattern, region, sub_region, status
-```
-
-#### States database table fields
-
-```
-id, name, country_id
-```
-
-#### Cities database table fields
-
-```
-id, name, state_id, country_id
-```
-
-#### Timezones database table fields
-
-```
-id, name, country_id
-```
-
-#### Currencies database table fields
-
-```
-id, country_id, name, code, precision, symbol, symbol_native, symbol_first, decimal_mark, thousands_separator
-```
-
-#### Languages database table fields
-
-```
-id, code, name, native_name, dir
-```
+<p><img src="./schema.jpg" width="800px"/></p>
 
 ### Testing  
 
