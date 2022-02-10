@@ -5,10 +5,6 @@ return [
 		'server_error' => 'অভ্যন্তরীণ সার্ভার ত্রুটি',
 		'record_not_found' => ':attribute রেকর্ডটি পাওয়া যায় নি!',
 	],
-	'actions' => [
-		'format_error' => 'ফোন নম্বরটি ভুল ফর্মাটে করা হয়েছে!',
-		'format_valid' => 'ফোন নম্বরের ফর্মাটটি সঠিক.',
-	],
 	'attributes' => [
 		'phone' => 'ফোন|ফোনগুলি',
 		'country' => 'দেশ|দেশগুলি',

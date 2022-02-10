@@ -279,49 +279,6 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Example | /api/languages?fields=dir |   
 | response | success, message, data   |
 
-#### Validate Number
-
-| | |
-| :--- | :--- |
-| Method | POST |
-| Route | /{prefix}/phones/validate |
-| Parameters | key, value |
-| Example | /api/phones/validate?number=060550987&phone_code=33 |
-
-#### Strip Number
-
-| | |
-| :--- | :--- |
-| Method | POST |
-| Route | /{prefix}/phones/strip |
-| Parameters | key, value |
-| Example | /api/phones/strip?number=060550987&phone_code=33 |
-
-#### Format Number
-
-| | |
-| :--- | :--- |
-| Method | POST |
-| Route | /{prefix}/phones/format |
-| Parameters | key, value |
-| Example | /api/phones/format?number=060550987&phone_code=33 |
-
-### Helpers
-
-```
-formatNumber($number, $phone_code = null);
-
-ex. formatNumber('06 78 909 876', '33')   returns +33 67 890 9876
-
-stripNumber($number, $phone_code = null);
-
-ex. stripNumber('06 78 909 876', '33') return 33678909876
-
-if the argument $phone_code is not passed to the helpers, the used dialling code would be taken from
-
-config('world.default_phone_code') 
-```
-
 ### Localization
 
 The available locales are ar, bn, br, de, en, es, fr, ja, kr, pl, pt, ro, ru and zh.  

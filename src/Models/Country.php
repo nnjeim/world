@@ -15,7 +15,6 @@ class Country extends Model
 		'iso3',
 		'name',
 		'phone_code',
-		'dialling_pattern',
 		'region',
 		'sub_region',
 		'status',

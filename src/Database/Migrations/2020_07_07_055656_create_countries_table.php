@@ -19,7 +19,6 @@ class CreateCountriesTable extends Migration
 			$table->string('iso3', 3);
 			$table->string('name');
 			$table->string('phone_code', 30);
-			$table->string('dialling_pattern', 10)->default('2234');
 			$table->string('region');
 			$table->string('sub_region');
 			$table->tinyInteger('status')->default(1);

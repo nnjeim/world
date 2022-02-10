@@ -22,7 +22,6 @@ class IndexAction extends BaseAction implements ActionInterface
 		'iso3',
 		'name',
 		'phone_code',
-		'dialing_pattern',
 		'region',
 		'sub_region',
 		'states',

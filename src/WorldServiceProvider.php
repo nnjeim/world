@@ -20,8 +20,6 @@ class WorldServiceProvider extends ServiceProvider
 
 	public function boot()
 	{
-		// Helpers
-		require __DIR__ . '/Helpers/Helpers.php';
 		// Load routes
 		$this->loadRoutesFrom(__DIR__ . '/Routes/index.php');
 		// Load translations
