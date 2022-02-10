@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.3 - 2022-02-10
+- Obsoleted phone formatting helpers. The phone formatting will be re-introduced in a future version.
+
 ### 1.1.2 - 2022-01-27
 - Route bindings removed.
 - Creation of the demonstration domain laravel-world.com
