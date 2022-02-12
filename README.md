@@ -1,4 +1,4 @@
-<p><img src="./logo.jpg" width="150" alt="Laravel world"/></p>
+<p style="text-align: center; padding: 3rem;"><img src="./logo.jpg" width="150" alt="Laravel world"/></p>
 
 The World is a Laravel package which provides a list of the countries, states, cities, timezones, currencies and languages.
 
