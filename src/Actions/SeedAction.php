@@ -6,6 +6,7 @@ use Illuminate\Support\Arr;
 use Illuminate\Support\Facades\File;
 use Nnjeim\World\Models;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\Schema;
 
 class SeedAction extends Seeder
 {
@@ -57,44 +58,35 @@ class SeedAction extends Seeder
 	{
 		$this->command->getOutput()->block('Seeding start');
 
-		$countryFillables = (new Models\Country())->getFillable();
-
 		$this->command->getOutput()->progressStart(count($this->countries['data']));
 
-		$transform = function ($countryArray) use ($countryFillables) {
-			$return = [];
+		// country schema
+		$countryFields = Schema::getColumnListing(config('world.migrations.countries.table_name'));
 
-			foreach (array_keys($countryArray) as $key) {
-				if ($key === 'subregion') {
-					$return['sub_region'] = trim((string) $countryArray[$key]);
-					continue;
+		$this->forgetFields($countryFields, ['id']);
+
+		foreach (array_chunk($this->countries['data'], 20) as $countryChunks) {
+
+			foreach ($countryChunks as $countryArray) {
+
+				$countryArray = array_map(fn($field) => gettype($field) === 'string' ? trim($field) : $field, $countryArray);
+
+				$country = Models\Country::create(Arr::only($countryArray, $countryFields));
+				// states and cities
+				if ($this->isModuleEnabled('states')) {
+					$this->seedStates($country, $countryArray);
+				}
+				// timezones
+				if ($this->isModuleEnabled('timezones')) {
+					$this->seedTimezones($country, $countryArray);
+				}
+				// currencies
+				if ($this->isModuleEnabled('currencies')) {
+					$this->seedCurrencies($country, $countryArray);
 				}
 
-				if (in_array($key, $countryFillables)) {
-					$return[$key] = trim((string) $countryArray[$key]);
-				}
+				$this->command->getOutput()->progressAdvance();
 			}
-
-			return $return;
-		};
-
-		foreach ($this->countries['data'] as $countryArray) {
-
-			$country = Models\Country::create($transform($countryArray));
-			// states and cities
-			if ($this->isModuleEnabled('states')) {
-				$this->seedStates($country, $countryArray);
-			}
-			// timezones
-			if ($this->isModuleEnabled('timezones')) {
-				$this->seedTimezones($country, $countryArray);
-			}
-			// currencies
-			if ($this->isModuleEnabled('currencies')) {
-				$this->seedCurrencies($country, $countryArray);
-			}
-
-			$this->command->getOutput()->progressAdvance();
 		}
 
 		// languages
@@ -151,17 +143,29 @@ class SeedAction extends Seeder
 	{
 		// country states and cities
 		$countryStates = Arr::where($this->modules['states']['data'], fn ($state) => $state['country_id'] === $countryArray['id']);
+		// state schema
+		$stateFields = Schema::getColumnListing(config('world.migrations.states.table_name'));
 
-		foreach ($countryStates as $state) {
-			$stateInstance = Models\State::create([
-				'country_id' => $country->id,
-				'name' => trim((string) $state['name']),
-			]);
-			// state cities
-			if ($this->isModuleEnabled('cities')) {
-				$countryCities = Arr::where($this->modules['cities']['data'], fn ($city) => $city['country_id'] === $countryArray['id']);
-				$stateCities = Arr::where($countryCities, fn ($city) => $city['state_id'] === $state['id']);
-				$this->seedCities($country, $stateInstance, $stateCities);
+		$this->forgetFields($stateFields, ['id', 'country_id']);
+
+		foreach (array_chunk($countryStates, 20) as $stateChunks) {
+
+			foreach ($stateChunks as $stateArray) {
+
+				$stateArray = array_map(fn($field) => gettype($field) === 'string' ? trim($field) : $field, $stateArray);
+
+				$state = $country
+					->states()
+					->create(Arr::only($stateArray, $stateFields));
+				// state cities
+				if ($this->isModuleEnabled('cities')) {
+					$stateCities = Arr::where(
+						$this->modules['cities']['data'],
+						fn ($city) => $city['country_id'] === $countryArray['id'] && $city['state_id'] === $stateArray['id']
+					);
+
+					$this->seedCities($country, $state, $stateCities);
+				}
 			}
 		}
 	}
@@ -169,16 +173,30 @@ class SeedAction extends Seeder
 	/**
 	 * @param  Models\Country  $country
 	 * @param  Models\State  $state
-	 * @param  array  $stateCities
+	 * @param  array  $cities
 	 */
-	private function seedCities(Models\Country $country, Models\State $state, array $stateCities): void
+	private function seedCities(Models\Country $country, Models\State $state, array $cities): void
 	{
-		foreach ($stateCities as $city) {
-			Models\City::create([
-				'country_id' => $country->id,
-				'state_id' => $state->id,
-				'name' => trim((string) $city['name']),
-			]);
+		// state schema
+		$cityFields = Schema::getColumnListing(config('world.migrations.cities.table_name'));
+
+		$this->forgetFields($cityFields, ['id', 'country_id', 'state_id']);
+
+		foreach (array_chunk($cities, 20) as $cityChunks) {
+
+			foreach ($cityChunks as $cityArray) {
+
+				$cityArray = array_map(fn($field) => gettype($field) === 'string' ? trim($field) : $field, $cityArray);
+
+				$country
+					->cities()
+					->create(
+						array_merge(
+							Arr::only($cityArray, $cityFields),
+							['state_id' => $state->id]
+						)
+					);
+			}
 		}
 	}
 
@@ -230,6 +248,19 @@ class SeedAction extends Seeder
 		// languages
 		foreach ($this->modules['languages']['data'] as $language) {
 			Models\Language::create($language);
+		}
+	}
+
+	/**
+	 * @param  array  $array
+	 * @param  array  $values
+	 * @return void
+	 */
+	private function forgetFields(array &$array, array $values) {
+		foreach ($values as $value) {
+			if (($key = array_search($value, $array)) !== false) {
+				unset($array[$key]);
+			}
 		}
 	}
 }

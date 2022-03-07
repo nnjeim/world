@@ -13,7 +13,7 @@ class CreateTimezonesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('timezones', function (Blueprint $table) {
+		Schema::create(config('world.migrations.timezones.table_name'), function (Blueprint $table) {
 			$table->id();
 			$table->foreignId('country_id');
 			$table->string('name');
@@ -27,6 +27,6 @@ class CreateTimezonesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists('timezones');
+		Schema::dropIfExists(config('world.migrations.timezones.table_name'));
 	}
 }

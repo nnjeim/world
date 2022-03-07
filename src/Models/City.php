@@ -10,11 +10,17 @@ class City extends Model
 {
 	use CityRelations;
 
-	protected $fillable = [
-		'country_id',
-		'state_id',
-		'name',
-	];
+	protected $guarded = [];
 
 	public $timestamps = false;
+
+	/**
+	 * Get the table associated with the model.
+	 *
+	 * @return string
+	 */
+	public function getTable(): string
+	{
+		return config('world.migrations.cities.table_name', parent::getTable());
+	}
 }

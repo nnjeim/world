@@ -12,7 +12,7 @@
         "tld": ".af",
         "native": "افغانستان",
         "region": "Asia",
-        "subregion": "Southern Asia",
+        "sub_region": "Southern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Kabul",
@@ -59,7 +59,7 @@
         "tld": ".ax",
         "native": "Åland",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Mariehamn",
@@ -104,7 +104,7 @@
         "tld": ".al",
         "native": "Shqipëria",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Tirane",
@@ -149,7 +149,7 @@
         "tld": ".dz",
         "native": "الجزائر",
         "region": "Africa",
-        "subregion": "Northern Africa",
+        "sub_region": "Northern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Algiers",
@@ -194,7 +194,7 @@
         "tld": ".as",
         "native": "American Samoa",
         "region": "Oceania",
-        "subregion": "Polynesia",
+        "sub_region": "Polynesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Pago_Pago",
@@ -240,7 +240,7 @@
         "tld": ".ad",
         "native": "Andorra",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Andorra",
@@ -285,7 +285,7 @@
         "tld": ".ao",
         "native": "Angola",
         "region": "Africa",
-        "subregion": "Middle Africa",
+        "sub_region": "Middle Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Luanda",
@@ -330,7 +330,7 @@
         "tld": ".ai",
         "native": "Anguilla",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Anguilla",
@@ -375,7 +375,7 @@
         "tld": ".aq",
         "native": "Antarctica",
         "region": "Polar",
-        "subregion": "",
+        "sub_region": "",
         "timezones": [
             {
                 "zoneName": "Antarctica\/Casey",
@@ -481,7 +481,7 @@
         "tld": ".ag",
         "native": "Antigua and Barbuda",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Antigua",
@@ -526,7 +526,7 @@
         "tld": ".ar",
         "native": "Argentina",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Argentina\/Buenos_Aires",
@@ -649,7 +649,7 @@
         "tld": ".am",
         "native": "Հայաստան",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Yerevan",
@@ -695,7 +695,7 @@
         "tld": ".aw",
         "native": "Aruba",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Aruba",
@@ -741,7 +741,7 @@
         "tld": ".au",
         "native": "Australia",
         "region": "Oceania",
-        "subregion": "Australia and New Zealand",
+        "sub_region": "Australia and New Zealand",
         "timezones": [
             {
                 "zoneName": "Antarctica\/Macquarie",
@@ -870,7 +870,7 @@
         "tld": ".at",
         "native": "Österreich",
         "region": "Europe",
-        "subregion": "Western Europe",
+        "sub_region": "Western Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Vienna",
@@ -915,7 +915,7 @@
         "tld": ".az",
         "native": "Azərbaycan",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Baku",
@@ -960,7 +960,7 @@
         "tld": ".bs",
         "native": "Bahamas",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Nassau",
@@ -1005,7 +1005,7 @@
         "tld": ".bh",
         "native": "البحرين",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Bahrain",
@@ -1050,7 +1050,7 @@
         "tld": ".bd",
         "native": "Bangladesh",
         "region": "Asia",
-        "subregion": "Southern Asia",
+        "sub_region": "Southern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Dhaka",
@@ -1095,7 +1095,7 @@
         "tld": ".bb",
         "native": "Barbados",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Barbados",
@@ -1140,7 +1140,7 @@
         "tld": ".by",
         "native": "Белару́сь",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Minsk",
@@ -1186,7 +1186,7 @@
         "tld": ".be",
         "native": "België",
         "region": "Europe",
-        "subregion": "Western Europe",
+        "sub_region": "Western Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Brussels",
@@ -1233,7 +1233,7 @@
         "tld": ".bz",
         "native": "Belize",
         "region": "Americas",
-        "subregion": "Central America",
+        "sub_region": "Central America",
         "timezones": [
             {
                 "zoneName": "America\/Belize",
@@ -1279,7 +1279,7 @@
         "tld": ".bj",
         "native": "Bénin",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Porto-Novo",
@@ -1324,7 +1324,7 @@
         "tld": ".bm",
         "native": "Bermuda",
         "region": "Americas",
-        "subregion": "Northern America",
+        "sub_region": "Northern America",
         "timezones": [
             {
                 "zoneName": "Atlantic\/Bermuda",
@@ -1369,7 +1369,7 @@
         "tld": ".bt",
         "native": "ʼbrug-yul",
         "region": "Asia",
-        "subregion": "Southern Asia",
+        "sub_region": "Southern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Thimphu",
@@ -1414,7 +1414,7 @@
         "tld": ".bo",
         "native": "Bolivia",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/La_Paz",
@@ -1461,7 +1461,7 @@
         "tld": ".an",
         "native": "Caribisch Nederland",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Anguilla",
@@ -1502,7 +1502,7 @@
         "tld": ".ba",
         "native": "Bosna i Hercegovina",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Sarajevo",
@@ -1549,7 +1549,7 @@
         "tld": ".bw",
         "native": "Botswana",
         "region": "Africa",
-        "subregion": "Southern Africa",
+        "sub_region": "Southern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Gaborone",
@@ -1595,7 +1595,7 @@
         "tld": ".bv",
         "native": "Bouvetøya",
         "region": "",
-        "subregion": "",
+        "sub_region": "",
         "timezones": [
             {
                 "zoneName": "Europe\/Oslo",
@@ -1642,7 +1642,7 @@
         "tld": ".br",
         "native": "Brasil",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Araguaina",
@@ -1792,7 +1792,7 @@
         "tld": ".io",
         "native": "British Indian Ocean Territory",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Indian\/Chagos",
@@ -1837,7 +1837,7 @@
         "tld": ".bn",
         "native": "Negara Brunei Darussalam",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Brunei",
@@ -1882,7 +1882,7 @@
         "tld": ".bg",
         "native": "България",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Sofia",
@@ -1927,7 +1927,7 @@
         "tld": ".bf",
         "native": "Burkina Faso",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Ouagadougou",
@@ -1973,7 +1973,7 @@
         "tld": ".bi",
         "native": "Burundi",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Bujumbura",
@@ -2019,7 +2019,7 @@
         "tld": ".kh",
         "native": "Kâmpŭchéa",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Phnom_Penh",
@@ -2064,7 +2064,7 @@
         "tld": ".cm",
         "native": "Cameroon",
         "region": "Africa",
-        "subregion": "Middle Africa",
+        "sub_region": "Middle Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Douala",
@@ -2110,7 +2110,7 @@
         "tld": ".ca",
         "native": "Canada",
         "region": "Americas",
-        "subregion": "Northern America",
+        "sub_region": "Northern America",
         "timezones": [
             {
                 "zoneName": "America\/Atikokan",
@@ -2345,7 +2345,7 @@
         "tld": ".cv",
         "native": "Cabo Verde",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Atlantic\/Cape_Verde",
@@ -2390,7 +2390,7 @@
         "tld": ".ky",
         "native": "Cayman Islands",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Cayman",
@@ -2435,7 +2435,7 @@
         "tld": ".cf",
         "native": "Ködörösêse tî Bêafrîka",
         "region": "Africa",
-        "subregion": "Middle Africa",
+        "sub_region": "Middle Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Bangui",
@@ -2481,7 +2481,7 @@
         "tld": ".td",
         "native": "Tchad",
         "region": "Africa",
-        "subregion": "Middle Africa",
+        "sub_region": "Middle Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Ndjamena",
@@ -2527,7 +2527,7 @@
         "tld": ".cl",
         "native": "Chile",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Punta_Arenas",
@@ -2586,7 +2586,7 @@
         "tld": ".cn",
         "native": "中国",
         "region": "Asia",
-        "subregion": "Eastern Asia",
+        "sub_region": "Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Shanghai",
@@ -2638,7 +2638,7 @@
         "tld": ".cx",
         "native": "Christmas Island",
         "region": "Oceania",
-        "subregion": "Australia and New Zealand",
+        "sub_region": "Australia and New Zealand",
         "timezones": [
             {
                 "zoneName": "Indian\/Christmas",
@@ -2683,7 +2683,7 @@
         "tld": ".cc",
         "native": "Cocos (Keeling) Islands",
         "region": "Oceania",
-        "subregion": "Australia and New Zealand",
+        "sub_region": "Australia and New Zealand",
         "timezones": [
             {
                 "zoneName": "Indian\/Cocos",
@@ -2728,7 +2728,7 @@
         "tld": ".co",
         "native": "Colombia",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Bogota",
@@ -2773,7 +2773,7 @@
         "tld": ".km",
         "native": "Komori",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Indian\/Comoro",
@@ -2819,7 +2819,7 @@
         "tld": ".cg",
         "native": "République du Congo",
         "region": "Africa",
-        "subregion": "Middle Africa",
+        "sub_region": "Middle Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Brazzaville",
@@ -2868,7 +2868,7 @@
         "tld": ".ck",
         "native": "Cook Islands",
         "region": "Oceania",
-        "subregion": "Polynesia",
+        "sub_region": "Polynesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Rarotonga",
@@ -2913,7 +2913,7 @@
         "tld": ".cr",
         "native": "Costa Rica",
         "region": "Americas",
-        "subregion": "Central America",
+        "sub_region": "Central America",
         "timezones": [
             {
                 "zoneName": "America\/Costa_Rica",
@@ -2956,9 +2956,9 @@
         "currency": "XOF",
         "currency_symbol": "CFA",
         "tld": ".ci",
-        "native": null,
+        "native": "Cote D'Ivoire",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Abidjan",
@@ -3003,7 +3003,7 @@
         "tld": ".hr",
         "native": "Hrvatska",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Zagreb",
@@ -3048,7 +3048,7 @@
         "tld": ".cu",
         "native": "Cuba",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Havana",
@@ -3093,7 +3093,7 @@
         "tld": ".cw",
         "native": "Curaçao",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Curacao",
@@ -3137,7 +3137,7 @@
         "tld": ".cy",
         "native": "Κύπρος",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Asia\/Famagusta",
@@ -3191,7 +3191,7 @@
         "tld": ".cz",
         "native": "Česká republika",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Prague",
@@ -3237,7 +3237,7 @@
         "tld": ".cd",
         "native": "République démocratique du Congo",
         "region": "Africa",
-        "subregion": "Middle Africa",
+        "sub_region": "Middle Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Kinshasa",
@@ -3293,7 +3293,7 @@
         "tld": ".dk",
         "native": "Danmark",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Copenhagen",
@@ -3338,7 +3338,7 @@
         "tld": ".dj",
         "native": "Djibouti",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Djibouti",
@@ -3384,7 +3384,7 @@
         "tld": ".dm",
         "native": "Dominica",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Dominica",
@@ -3429,7 +3429,7 @@
         "tld": ".do",
         "native": "República Dominicana",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Santo_Domingo",
@@ -3474,7 +3474,7 @@
         "tld": ".tl",
         "native": "Timor-Leste",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Dili",
@@ -3519,7 +3519,7 @@
         "tld": ".ec",
         "native": "Ecuador",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Guayaquil",
@@ -3571,7 +3571,7 @@
         "tld": ".eg",
         "native": "مصر",
         "region": "Africa",
-        "subregion": "Northern Africa",
+        "sub_region": "Northern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Cairo",
@@ -3616,7 +3616,7 @@
         "tld": ".sv",
         "native": "El Salvador",
         "region": "Americas",
-        "subregion": "Central America",
+        "sub_region": "Central America",
         "timezones": [
             {
                 "zoneName": "America\/El_Salvador",
@@ -3661,7 +3661,7 @@
         "tld": ".gq",
         "native": "Guinea Ecuatorial",
         "region": "Africa",
-        "subregion": "Middle Africa",
+        "sub_region": "Middle Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Malabo",
@@ -3707,7 +3707,7 @@
         "tld": ".er",
         "native": "ኤርትራ",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Asmara",
@@ -3754,7 +3754,7 @@
         "tld": ".ee",
         "native": "Eesti",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Tallinn",
@@ -3799,7 +3799,7 @@
         "tld": ".et",
         "native": "ኢትዮጵያ",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Addis_Ababa",
@@ -3844,7 +3844,7 @@
         "tld": ".fk",
         "native": "Falkland Islands",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "Atlantic\/Stanley",
@@ -3889,7 +3889,7 @@
         "tld": ".fo",
         "native": "Føroyar",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Atlantic\/Faroe",
@@ -3934,7 +3934,7 @@
         "tld": ".fj",
         "native": "Fiji",
         "region": "Oceania",
-        "subregion": "Melanesia",
+        "sub_region": "Melanesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Fiji",
@@ -3982,7 +3982,7 @@
         "tld": ".fi",
         "native": "Suomi",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Helsinki",
@@ -4028,7 +4028,7 @@
         "tld": ".fr",
         "native": "France",
         "region": "Europe",
-        "subregion": "Western Europe",
+        "sub_region": "Western Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Paris",
@@ -4073,7 +4073,7 @@
         "tld": ".gf",
         "native": "Guyane française",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Cayenne",
@@ -4118,7 +4118,7 @@
         "tld": ".pf",
         "native": "Polynésie française",
         "region": "Oceania",
-        "subregion": "Polynesia",
+        "sub_region": "Polynesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Gambier",
@@ -4177,7 +4177,7 @@
         "tld": ".tf",
         "native": "Territoire des Terres australes et antarctiques fr",
         "region": "Africa",
-        "subregion": "Southern Africa",
+        "sub_region": "Southern Africa",
         "timezones": [
             {
                 "zoneName": "Indian\/Kerguelen",
@@ -4222,7 +4222,7 @@
         "tld": ".ga",
         "native": "Gabon",
         "region": "Africa",
-        "subregion": "Middle Africa",
+        "sub_region": "Middle Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Libreville",
@@ -4267,7 +4267,7 @@
         "tld": ".gm",
         "native": "Gambia",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Banjul",
@@ -4312,7 +4312,7 @@
         "tld": ".ge",
         "native": "საქართველო",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Tbilisi",
@@ -4357,7 +4357,7 @@
         "tld": ".de",
         "native": "Deutschland",
         "region": "Europe",
-        "subregion": "Western Europe",
+        "sub_region": "Western Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Berlin",
@@ -4409,7 +4409,7 @@
         "tld": ".gh",
         "native": "Ghana",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Accra",
@@ -4454,7 +4454,7 @@
         "tld": ".gi",
         "native": "Gibraltar",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Gibraltar",
@@ -4499,7 +4499,7 @@
         "tld": ".gr",
         "native": "Ελλάδα",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Athens",
@@ -4544,7 +4544,7 @@
         "tld": ".gl",
         "native": "Kalaallit Nunaat",
         "region": "Americas",
-        "subregion": "Northern America",
+        "sub_region": "Northern America",
         "timezones": [
             {
                 "zoneName": "America\/Danmarkshavn",
@@ -4610,7 +4610,7 @@
         "tld": ".gd",
         "native": "Grenada",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Grenada",
@@ -4655,7 +4655,7 @@
         "tld": ".gp",
         "native": "Guadeloupe",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Guadeloupe",
@@ -4700,7 +4700,7 @@
         "tld": ".gu",
         "native": "Guam",
         "region": "Oceania",
-        "subregion": "Micronesia",
+        "sub_region": "Micronesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Guam",
@@ -4747,7 +4747,7 @@
         "tld": ".gt",
         "native": "Guatemala",
         "region": "Americas",
-        "subregion": "Central America",
+        "sub_region": "Central America",
         "timezones": [
             {
                 "zoneName": "America\/Guatemala",
@@ -4792,7 +4792,7 @@
         "tld": ".gg",
         "native": "Guernsey",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Guernsey",
@@ -4838,7 +4838,7 @@
         "tld": ".gn",
         "native": "Guinée",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Conakry",
@@ -4884,7 +4884,7 @@
         "tld": ".gw",
         "native": "Guiné-Bissau",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Bissau",
@@ -4929,7 +4929,7 @@
         "tld": ".gy",
         "native": "Guyana",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Guyana",
@@ -4974,7 +4974,7 @@
         "tld": ".ht",
         "native": "Haïti",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Port-au-Prince",
@@ -5020,7 +5020,7 @@
         "tld": ".hm",
         "native": "Heard Island and McDonald Islands",
         "region": "",
-        "subregion": "",
+        "sub_region": "",
         "timezones": [
             {
                 "zoneName": "Indian\/Kerguelen",
@@ -5065,7 +5065,7 @@
         "tld": ".hn",
         "native": "Honduras",
         "region": "Americas",
-        "subregion": "Central America",
+        "sub_region": "Central America",
         "timezones": [
             {
                 "zoneName": "America\/Tegucigalpa",
@@ -5110,7 +5110,7 @@
         "tld": ".hk",
         "native": "香港",
         "region": "Asia",
-        "subregion": "Eastern Asia",
+        "sub_region": "Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Hong_Kong",
@@ -5156,7 +5156,7 @@
         "tld": ".hu",
         "native": "Magyarország",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Budapest",
@@ -5201,7 +5201,7 @@
         "tld": ".is",
         "native": "Ísland",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Atlantic\/Reykjavik",
@@ -5246,7 +5246,7 @@
         "tld": ".in",
         "native": "भारत",
         "region": "Asia",
-        "subregion": "Southern Asia",
+        "sub_region": "Southern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Kolkata",
@@ -5292,7 +5292,7 @@
         "tld": ".id",
         "native": "Indonesia",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Jakarta",
@@ -5358,7 +5358,7 @@
         "tld": ".ir",
         "native": "ایران",
         "region": "Asia",
-        "subregion": "Southern Asia",
+        "sub_region": "Southern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Tehran",
@@ -5402,7 +5402,7 @@
         "tld": ".iq",
         "native": "العراق",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Baghdad",
@@ -5448,7 +5448,7 @@
         "tld": ".ie",
         "native": "Éire",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Dublin",
@@ -5494,7 +5494,7 @@
         "tld": ".il",
         "native": "יִשְׂרָאֵל",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Jerusalem",
@@ -5540,7 +5540,7 @@
         "tld": ".it",
         "native": "Italia",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Rome",
@@ -5585,7 +5585,7 @@
         "tld": ".jm",
         "native": "Jamaica",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Jamaica",
@@ -5630,7 +5630,7 @@
         "tld": ".jp",
         "native": "日本",
         "region": "Asia",
-        "subregion": "Eastern Asia",
+        "sub_region": "Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Tokyo",
@@ -5675,7 +5675,7 @@
         "tld": ".je",
         "native": "Jersey",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Jersey",
@@ -5721,7 +5721,7 @@
         "tld": ".jo",
         "native": "الأردن",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Amman",
@@ -5766,7 +5766,7 @@
         "tld": ".kz",
         "native": "Қазақстан",
         "region": "Asia",
-        "subregion": "Central Asia",
+        "sub_region": "Central Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Almaty",
@@ -5854,7 +5854,7 @@
         "tld": ".ke",
         "native": "Kenya",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Nairobi",
@@ -5900,7 +5900,7 @@
         "tld": ".ki",
         "native": "Kiribati",
         "region": "Oceania",
-        "subregion": "Micronesia",
+        "sub_region": "Micronesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Enderbury",
@@ -5959,7 +5959,7 @@
         "tld": ".xk",
         "native": "Republika e Kosovës",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Belgrade",
@@ -5995,7 +5995,7 @@
         "tld": ".kw",
         "native": "الكويت",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Kuwait",
@@ -6040,7 +6040,7 @@
         "tld": ".kg",
         "native": "Кыргызстан",
         "region": "Asia",
-        "subregion": "Central Asia",
+        "sub_region": "Central Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Bishkek",
@@ -6086,7 +6086,7 @@
         "tld": ".la",
         "native": "ສປປລາວ",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Vientiane",
@@ -6131,7 +6131,7 @@
         "tld": ".lv",
         "native": "Latvija",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Riga",
@@ -6176,7 +6176,7 @@
         "tld": ".lb",
         "native": "لبنان",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Beirut",
@@ -6222,7 +6222,7 @@
         "tld": ".ls",
         "native": "Lesotho",
         "region": "Africa",
-        "subregion": "Southern Africa",
+        "sub_region": "Southern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Maseru",
@@ -6268,7 +6268,7 @@
         "tld": ".lr",
         "native": "Liberia",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Monrovia",
@@ -6313,7 +6313,7 @@
         "tld": ".ly",
         "native": "ليبيا",
         "region": "Africa",
-        "subregion": "Northern Africa",
+        "sub_region": "Northern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Tripoli",
@@ -6358,7 +6358,7 @@
         "tld": ".li",
         "native": "Liechtenstein",
         "region": "Europe",
-        "subregion": "Western Europe",
+        "sub_region": "Western Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Vaduz",
@@ -6403,7 +6403,7 @@
         "tld": ".lt",
         "native": "Lietuva",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Vilnius",
@@ -6448,7 +6448,7 @@
         "tld": ".lu",
         "native": "Luxembourg",
         "region": "Europe",
-        "subregion": "Western Europe",
+        "sub_region": "Western Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Luxembourg",
@@ -6495,7 +6495,7 @@
         "tld": ".mo",
         "native": "澳門",
         "region": "Asia",
-        "subregion": "Eastern Asia",
+        "sub_region": "Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Macau",
@@ -6537,7 +6537,7 @@
         "tld": ".mk",
         "native": "Северна Македонија",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Skopje",
@@ -6582,7 +6582,7 @@
         "tld": ".mg",
         "native": "Madagasikara",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Indian\/Antananarivo",
@@ -6628,7 +6628,7 @@
         "tld": ".mw",
         "native": "Malawi",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Blantyre",
@@ -6674,7 +6674,7 @@
         "tld": ".my",
         "native": "Malaysia",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Kuala_Lumpur",
@@ -6726,7 +6726,7 @@
         "tld": ".mv",
         "native": "Maldives",
         "region": "Asia",
-        "subregion": "Southern Asia",
+        "sub_region": "Southern Asia",
         "timezones": [
             {
                 "zoneName": "Indian\/Maldives",
@@ -6771,7 +6771,7 @@
         "tld": ".ml",
         "native": "Mali",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Bamako",
@@ -6816,7 +6816,7 @@
         "tld": ".mt",
         "native": "Malta",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Malta",
@@ -6862,7 +6862,7 @@
         "tld": ".im",
         "native": "Isle of Man",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Isle_of_Man",
@@ -6908,7 +6908,7 @@
         "tld": ".mh",
         "native": "M̧ajeļ",
         "region": "Oceania",
-        "subregion": "Micronesia",
+        "sub_region": "Micronesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Kwajalein",
@@ -6961,7 +6961,7 @@
         "tld": ".mq",
         "native": "Martinique",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Martinique",
@@ -7006,7 +7006,7 @@
         "tld": ".mr",
         "native": "موريتانيا",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Nouakchott",
@@ -7051,7 +7051,7 @@
         "tld": ".mu",
         "native": "Maurice",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Indian\/Mauritius",
@@ -7096,7 +7096,7 @@
         "tld": ".yt",
         "native": "Mayotte",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Indian\/Mayotte",
@@ -7141,7 +7141,7 @@
         "tld": ".mx",
         "native": "México",
         "region": "Americas",
-        "subregion": "Central America",
+        "sub_region": "Central America",
         "timezones": [
             {
                 "zoneName": "America\/Bahia_Banderas",
@@ -7256,7 +7256,7 @@
         "tld": ".fm",
         "native": "Micronesia",
         "region": "Oceania",
-        "subregion": "Micronesia",
+        "sub_region": "Micronesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Chuuk",
@@ -7315,7 +7315,7 @@
         "tld": ".md",
         "native": "Moldova",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Chisinau",
@@ -7360,7 +7360,7 @@
         "tld": ".mc",
         "native": "Monaco",
         "region": "Europe",
-        "subregion": "Western Europe",
+        "sub_region": "Western Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Monaco",
@@ -7405,7 +7405,7 @@
         "tld": ".mn",
         "native": "Монгол улс",
         "region": "Asia",
-        "subregion": "Eastern Asia",
+        "sub_region": "Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Choibalsan",
@@ -7464,7 +7464,7 @@
         "tld": ".me",
         "native": "Црна Гора",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Podgorica",
@@ -7512,7 +7512,7 @@
         "tld": ".ms",
         "native": "Montserrat",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Montserrat",
@@ -7557,7 +7557,7 @@
         "tld": ".ma",
         "native": "المغرب",
         "region": "Africa",
-        "subregion": "Northern Africa",
+        "sub_region": "Northern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Casablanca",
@@ -7602,7 +7602,7 @@
         "tld": ".mz",
         "native": "Moçambique",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Maputo",
@@ -7647,7 +7647,7 @@
         "tld": ".mm",
         "native": "မြန်မာ",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Yangon",
@@ -7692,7 +7692,7 @@
         "tld": ".na",
         "native": "Namibia",
         "region": "Africa",
-        "subregion": "Southern Africa",
+        "sub_region": "Southern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Windhoek",
@@ -7738,7 +7738,7 @@
         "tld": ".nr",
         "native": "Nauru",
         "region": "Oceania",
-        "subregion": "Micronesia",
+        "sub_region": "Micronesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Nauru",
@@ -7784,7 +7784,7 @@
         "tld": ".np",
         "native": "नपल",
         "region": "Asia",
-        "subregion": "Southern Asia",
+        "sub_region": "Southern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Kathmandu",
@@ -7829,7 +7829,7 @@
         "tld": ".nl",
         "native": "Nederland",
         "region": "Europe",
-        "subregion": "Western Europe",
+        "sub_region": "Western Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Amsterdam",
@@ -7874,7 +7874,7 @@
         "tld": ".nc",
         "native": "Nouvelle-Calédonie",
         "region": "Oceania",
-        "subregion": "Melanesia",
+        "sub_region": "Melanesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Noumea",
@@ -7919,7 +7919,7 @@
         "tld": ".nz",
         "native": "New Zealand",
         "region": "Oceania",
-        "subregion": "Australia and New Zealand",
+        "sub_region": "Australia and New Zealand",
         "timezones": [
             {
                 "zoneName": "Pacific\/Auckland",
@@ -7972,7 +7972,7 @@
         "tld": ".ni",
         "native": "Nicaragua",
         "region": "Americas",
-        "subregion": "Central America",
+        "sub_region": "Central America",
         "timezones": [
             {
                 "zoneName": "America\/Managua",
@@ -8017,7 +8017,7 @@
         "tld": ".ne",
         "native": "Niger",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Niamey",
@@ -8062,7 +8062,7 @@
         "tld": ".ng",
         "native": "Nigeria",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Lagos",
@@ -8107,7 +8107,7 @@
         "tld": ".nu",
         "native": "Niuē",
         "region": "Oceania",
-        "subregion": "Polynesia",
+        "sub_region": "Polynesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Niue",
@@ -8152,7 +8152,7 @@
         "tld": ".nf",
         "native": "Norfolk Island",
         "region": "Oceania",
-        "subregion": "Australia and New Zealand",
+        "sub_region": "Australia and New Zealand",
         "timezones": [
             {
                 "zoneName": "Pacific\/Norfolk",
@@ -8197,7 +8197,7 @@
         "tld": ".kp",
         "native": "북한",
         "region": "Asia",
-        "subregion": "Eastern Asia",
+        "sub_region": "Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Pyongyang",
@@ -8242,7 +8242,7 @@
         "tld": ".mp",
         "native": "Northern Mariana Islands",
         "region": "Oceania",
-        "subregion": "Micronesia",
+        "sub_region": "Micronesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Saipan",
@@ -8288,7 +8288,7 @@
         "tld": ".no",
         "native": "Norge",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Oslo",
@@ -8335,7 +8335,7 @@
         "tld": ".om",
         "native": "عمان",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Muscat",
@@ -8380,7 +8380,7 @@
         "tld": ".pk",
         "native": "Pakistan",
         "region": "Asia",
-        "subregion": "Southern Asia",
+        "sub_region": "Southern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Karachi",
@@ -8426,7 +8426,7 @@
         "tld": ".pw",
         "native": "Palau",
         "region": "Oceania",
-        "subregion": "Micronesia",
+        "sub_region": "Micronesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Palau",
@@ -8471,7 +8471,7 @@
         "tld": ".ps",
         "native": "فلسطين",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Gaza",
@@ -8523,7 +8523,7 @@
         "tld": ".pa",
         "native": "Panamá",
         "region": "Americas",
-        "subregion": "Central America",
+        "sub_region": "Central America",
         "timezones": [
             {
                 "zoneName": "America\/Panama",
@@ -8568,7 +8568,7 @@
         "tld": ".pg",
         "native": "Papua Niugini",
         "region": "Oceania",
-        "subregion": "Melanesia",
+        "sub_region": "Melanesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Bougainville",
@@ -8620,7 +8620,7 @@
         "tld": ".py",
         "native": "Paraguay",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Asuncion",
@@ -8666,7 +8666,7 @@
         "tld": ".pe",
         "native": "Perú",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Lima",
@@ -8711,7 +8711,7 @@
         "tld": ".ph",
         "native": "Pilipinas",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Manila",
@@ -8756,7 +8756,7 @@
         "tld": ".pn",
         "native": "Pitcairn Islands",
         "region": "Oceania",
-        "subregion": "Polynesia",
+        "sub_region": "Polynesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Pitcairn",
@@ -8801,7 +8801,7 @@
         "tld": ".pl",
         "native": "Polska",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Warsaw",
@@ -8846,7 +8846,7 @@
         "tld": ".pt",
         "native": "Portugal",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Atlantic\/Azores",
@@ -8905,7 +8905,7 @@
         "tld": ".pr",
         "native": "Puerto Rico",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Puerto_Rico",
@@ -8951,7 +8951,7 @@
         "tld": ".qa",
         "native": "قطر",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Qatar",
@@ -8996,7 +8996,7 @@
         "tld": ".re",
         "native": "La Réunion",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Indian\/Reunion",
@@ -9041,7 +9041,7 @@
         "tld": ".ro",
         "native": "România",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Bucharest",
@@ -9086,7 +9086,7 @@
         "tld": ".ru",
         "native": "Россия",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Asia\/Anadyr",
@@ -9306,7 +9306,7 @@
         "tld": ".rw",
         "native": "Rwanda",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Kigali",
@@ -9353,7 +9353,7 @@
         "tld": ".sh",
         "native": "Saint Helena",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Atlantic\/St_Helena",
@@ -9398,7 +9398,7 @@
         "tld": ".kn",
         "native": "Saint Kitts and Nevis",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/St_Kitts",
@@ -9443,7 +9443,7 @@
         "tld": ".lc",
         "native": "Saint Lucia",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/St_Lucia",
@@ -9488,7 +9488,7 @@
         "tld": ".pm",
         "native": "Saint-Pierre-et-Miquelon",
         "region": "Americas",
-        "subregion": "Northern America",
+        "sub_region": "Northern America",
         "timezones": [
             {
                 "zoneName": "America\/Miquelon",
@@ -9533,7 +9533,7 @@
         "tld": ".vc",
         "native": "Saint Vincent and the Grenadines",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/St_Vincent",
@@ -9578,7 +9578,7 @@
         "tld": ".bl",
         "native": "Saint-Barthélemy",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/St_Barthelemy",
@@ -9623,7 +9623,7 @@
         "tld": ".mf",
         "native": "Saint-Martin",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Marigot",
@@ -9670,7 +9670,7 @@
         "tld": ".ws",
         "native": "Samoa",
         "region": "Oceania",
-        "subregion": "Polynesia",
+        "sub_region": "Polynesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Apia",
@@ -9716,7 +9716,7 @@
         "tld": ".sm",
         "native": "San Marino",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/San_Marino",
@@ -9761,7 +9761,7 @@
         "tld": ".st",
         "native": "São Tomé e Príncipe",
         "region": "Africa",
-        "subregion": "Middle Africa",
+        "sub_region": "Middle Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Sao_Tome",
@@ -9806,7 +9806,7 @@
         "tld": ".sa",
         "native": "المملكة العربية السعودية",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Riyadh",
@@ -9851,7 +9851,7 @@
         "tld": ".sn",
         "native": "Sénégal",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Dakar",
@@ -9896,7 +9896,7 @@
         "tld": ".rs",
         "native": "Србија",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Belgrade",
@@ -9941,7 +9941,7 @@
         "tld": ".sc",
         "native": "Seychelles",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Indian\/Mahe",
@@ -9987,7 +9987,7 @@
         "tld": ".sl",
         "native": "Sierra Leone",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Freetown",
@@ -10032,7 +10032,7 @@
         "tld": ".sg",
         "native": "Singapore",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Singapore",
@@ -10080,7 +10080,7 @@
         "tld": ".sx",
         "native": "Sint Maarten",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Anguilla",
@@ -10123,7 +10123,7 @@
         "tld": ".sk",
         "native": "Slovensko",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Bratislava",
@@ -10168,7 +10168,7 @@
         "tld": ".si",
         "native": "Slovenija",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Ljubljana",
@@ -10213,7 +10213,7 @@
         "tld": ".sb",
         "native": "Solomon Islands",
         "region": "Oceania",
-        "subregion": "Melanesia",
+        "sub_region": "Melanesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Guadalcanal",
@@ -10258,7 +10258,7 @@
         "tld": ".so",
         "native": "Soomaaliya",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Mogadishu",
@@ -10304,7 +10304,7 @@
         "tld": ".za",
         "native": "South Africa",
         "region": "Africa",
-        "subregion": "Southern Africa",
+        "sub_region": "Southern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Johannesburg",
@@ -10358,7 +10358,7 @@
         "tld": ".gs",
         "native": "South Georgia",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "Atlantic\/South_Georgia",
@@ -10403,7 +10403,7 @@
         "tld": ".kr",
         "native": "대한민국",
         "region": "Asia",
-        "subregion": "Eastern Asia",
+        "sub_region": "Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Seoul",
@@ -10448,7 +10448,7 @@
         "tld": ".ss",
         "native": "South Sudan",
         "region": "Africa",
-        "subregion": "Middle Africa",
+        "sub_region": "Middle Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Juba",
@@ -10493,7 +10493,7 @@
         "tld": ".es",
         "native": "España",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Africa\/Ceuta",
@@ -10556,7 +10556,7 @@
         "tld": ".lk",
         "native": "śrī laṃkāva",
         "region": "Asia",
-        "subregion": "Southern Asia",
+        "sub_region": "Southern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Colombo",
@@ -10602,7 +10602,7 @@
         "tld": ".sd",
         "native": "السودان",
         "region": "Africa",
-        "subregion": "Northern Africa",
+        "sub_region": "Northern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Khartoum",
@@ -10648,7 +10648,7 @@
         "tld": ".sr",
         "native": "Suriname",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Paramaribo",
@@ -10693,7 +10693,7 @@
         "tld": ".sj",
         "native": "Svalbard og Jan Mayen",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Arctic\/Longyearbyen",
@@ -10738,7 +10738,7 @@
         "tld": ".sz",
         "native": "Swaziland",
         "region": "Africa",
-        "subregion": "Southern Africa",
+        "sub_region": "Southern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Mbabane",
@@ -10784,7 +10784,7 @@
         "tld": ".se",
         "native": "Sverige",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Stockholm",
@@ -10829,7 +10829,7 @@
         "tld": ".ch",
         "native": "Schweiz",
         "region": "Europe",
-        "subregion": "Western Europe",
+        "sub_region": "Western Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Zurich",
@@ -10876,7 +10876,7 @@
         "tld": ".sy",
         "native": "سوريا",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Damascus",
@@ -10921,7 +10921,7 @@
         "tld": ".tw",
         "native": "臺灣",
         "region": "Asia",
-        "subregion": "Eastern Asia",
+        "sub_region": "Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Taipei",
@@ -10966,7 +10966,7 @@
         "tld": ".tj",
         "native": "Тоҷикистон",
         "region": "Asia",
-        "subregion": "Central Asia",
+        "sub_region": "Central Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Dushanbe",
@@ -11012,7 +11012,7 @@
         "tld": ".tz",
         "native": "Tanzania",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Dar_es_Salaam",
@@ -11058,7 +11058,7 @@
         "tld": ".th",
         "native": "ประเทศไทย",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Bangkok",
@@ -11103,7 +11103,7 @@
         "tld": ".tg",
         "native": "Togo",
         "region": "Africa",
-        "subregion": "Western Africa",
+        "sub_region": "Western Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Lome",
@@ -11148,7 +11148,7 @@
         "tld": ".tk",
         "native": "Tokelau",
         "region": "Oceania",
-        "subregion": "Polynesia",
+        "sub_region": "Polynesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Fakaofo",
@@ -11193,7 +11193,7 @@
         "tld": ".to",
         "native": "Tonga",
         "region": "Oceania",
-        "subregion": "Polynesia",
+        "sub_region": "Polynesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Tongatapu",
@@ -11239,7 +11239,7 @@
         "tld": ".tt",
         "native": "Trinidad and Tobago",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Port_of_Spain",
@@ -11284,7 +11284,7 @@
         "tld": ".tn",
         "native": "تونس",
         "region": "Africa",
-        "subregion": "Northern Africa",
+        "sub_region": "Northern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Tunis",
@@ -11329,7 +11329,7 @@
         "tld": ".tr",
         "native": "Türkiye",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Europe\/Istanbul",
@@ -11374,7 +11374,7 @@
         "tld": ".tm",
         "native": "Türkmenistan",
         "region": "Asia",
-        "subregion": "Central Asia",
+        "sub_region": "Central Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Ashgabat",
@@ -11420,7 +11420,7 @@
         "tld": ".tc",
         "native": "Turks and Caicos Islands",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Grand_Turk",
@@ -11465,7 +11465,7 @@
         "tld": ".tv",
         "native": "Tuvalu",
         "region": "Oceania",
-        "subregion": "Polynesia",
+        "sub_region": "Polynesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Funafuti",
@@ -11510,7 +11510,7 @@
         "tld": ".ug",
         "native": "Uganda",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Kampala",
@@ -11556,7 +11556,7 @@
         "tld": ".ua",
         "native": "Україна",
         "region": "Europe",
-        "subregion": "Eastern Europe",
+        "sub_region": "Eastern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Kiev",
@@ -11622,7 +11622,7 @@
         "tld": ".ae",
         "native": "دولة الإمارات العربية المتحدة",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Dubai",
@@ -11667,7 +11667,7 @@
         "tld": ".uk",
         "native": "United Kingdom",
         "region": "Europe",
-        "subregion": "Northern Europe",
+        "sub_region": "Northern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/London",
@@ -11712,7 +11712,7 @@
         "tld": ".us",
         "native": "United States",
         "region": "Americas",
-        "subregion": "Northern America",
+        "sub_region": "Northern America",
         "timezones": [
             {
                 "zoneName": "America\/Adak",
@@ -11953,7 +11953,7 @@
         "tld": ".us",
         "native": "United States Minor Outlying Islands",
         "region": "Americas",
-        "subregion": "Northern America",
+        "sub_region": "Northern America",
         "timezones": [
             {
                 "zoneName": "Pacific\/Midway",
@@ -12005,7 +12005,7 @@
         "tld": ".uy",
         "native": "Uruguay",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Montevideo",
@@ -12050,7 +12050,7 @@
         "tld": ".uz",
         "native": "O‘zbekiston",
         "region": "Asia",
-        "subregion": "Central Asia",
+        "sub_region": "Central Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Samarkand",
@@ -12103,7 +12103,7 @@
         "tld": ".vu",
         "native": "Vanuatu",
         "region": "Oceania",
-        "subregion": "Melanesia",
+        "sub_region": "Melanesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Efate",
@@ -12150,7 +12150,7 @@
         "tld": ".va",
         "native": "Vaticano",
         "region": "Europe",
-        "subregion": "Southern Europe",
+        "sub_region": "Southern Europe",
         "timezones": [
             {
                 "zoneName": "Europe\/Vatican",
@@ -12196,7 +12196,7 @@
         "tld": ".ve",
         "native": "Venezuela",
         "region": "Americas",
-        "subregion": "South America",
+        "sub_region": "South America",
         "timezones": [
             {
                 "zoneName": "America\/Caracas",
@@ -12241,7 +12241,7 @@
         "tld": ".vn",
         "native": "Việt Nam",
         "region": "Asia",
-        "subregion": "South-Eastern Asia",
+        "sub_region": "South-Eastern Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Ho_Chi_Minh",
@@ -12286,7 +12286,7 @@
         "tld": ".vg",
         "native": "British Virgin Islands",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/Tortola",
@@ -12331,7 +12331,7 @@
         "tld": ".vi",
         "native": "United States Virgin Islands",
         "region": "Americas",
-        "subregion": "Caribbean",
+        "sub_region": "Caribbean",
         "timezones": [
             {
                 "zoneName": "America\/St_Thomas",
@@ -12375,7 +12375,7 @@
         "tld": ".wf",
         "native": "Wallis et Futuna",
         "region": "Oceania",
-        "subregion": "Polynesia",
+        "sub_region": "Polynesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Wallis",
@@ -12420,7 +12420,7 @@
         "tld": ".eh",
         "native": "الصحراء الغربية",
         "region": "Africa",
-        "subregion": "Northern Africa",
+        "sub_region": "Northern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/El_Aaiun",
@@ -12465,7 +12465,7 @@
         "tld": ".ye",
         "native": "اليَمَن",
         "region": "Asia",
-        "subregion": "Western Asia",
+        "sub_region": "Western Asia",
         "timezones": [
             {
                 "zoneName": "Asia\/Aden",
@@ -12510,7 +12510,7 @@
         "tld": ".zm",
         "native": "Zambia",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Lusaka",
@@ -12555,7 +12555,7 @@
         "tld": ".zw",
         "native": "Zimbabwe",
         "region": "Africa",
-        "subregion": "Eastern Africa",
+        "sub_region": "Eastern Africa",
         "timezones": [
             {
                 "zoneName": "Africa\/Harare",

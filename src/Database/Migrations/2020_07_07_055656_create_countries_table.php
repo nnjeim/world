@@ -13,15 +13,17 @@ class CreateCountriesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('countries', function (Blueprint $table) {
+		Schema::create(config('world.migrations.countries.table_name'), function (Blueprint $table) {
 			$table->id();
 			$table->string('iso2', 2);
-			$table->string('iso3', 3);
 			$table->string('name');
-			$table->string('phone_code', 30);
-			$table->string('region');
-			$table->string('sub_region');
 			$table->tinyInteger('status')->default(1);
+
+			foreach (config('world.migrations.countries.optional_fields') as $field => $value) {
+				if ($value['required']) {
+					$table->string($field, $value['length'] ?? null);
+				}
+			}
 		});
 	}
 
@@ -32,6 +34,6 @@ class CreateCountriesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists('countries');
+		Schema::dropIfExists(config('world.migrations.countries.table_name'));
 	}
 }

@@ -2,6 +2,11 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.4 - 2022-03-07
+- custom table names.
+- optional database fields.
+- Enhanced seeder (lower memory footprint).
+
 ### 1.1.3 - 2022-02-10
 - Obsoleted phone formatting helpers. The phone formatting will be re-introduced in a future version.
 

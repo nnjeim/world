@@ -16,10 +16,10 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~ 10 - 15min)
 ```
 
-### Upgrading to the latest version? 
-- Delete the published `world.php` file from `config`.   
-- Delete the `WorldSeeder.php` file from `database/seeders`
+### Upgrading to the v1.1.4? 
+- Delete the published `world.php` file from `config`.
 - Re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world`
+- In world.php config file, customize the table names and enable or disabled the optional database fields.
 
 ### Changelog
 

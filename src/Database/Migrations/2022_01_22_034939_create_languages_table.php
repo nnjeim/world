@@ -13,7 +13,7 @@ class CreateLanguagesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('languages', function (Blueprint $table) {
+		Schema::create(config('world.migrations.languages.table_name'), function (Blueprint $table) {
 			$table->id();
 			$table->char('code', 2);
 			$table->string('name');
@@ -29,6 +29,6 @@ class CreateLanguagesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists('languages');
+		Schema::dropIfExists(config('world.migrations.languages.table_name'));
 	}
 }

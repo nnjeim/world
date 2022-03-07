@@ -13,11 +13,17 @@ class CreateCitiesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create('cities', function (Blueprint $table) {
+		Schema::create(config('world.migrations.cities.table_name'), function (Blueprint $table) {
 			$table->id();
 			$table->foreignId('country_id');
 			$table->foreignId('state_id');
 			$table->string('name');
+
+			foreach (config('world.migrations.cities.optional_fields') as $field => $value) {
+				if ($value['required']) {
+					$table->string($field, $value['length'] ?? null);
+				}
+			}
 		});
 	}
 
@@ -28,6 +34,6 @@ class CreateCitiesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists('cities');
+		Schema::dropIfExists(config('world.migrations.cities.table_name'));
 	}
 }
