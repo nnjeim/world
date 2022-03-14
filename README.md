@@ -13,21 +13,20 @@ php artisan vendor:publish --tag=world
 
 php artisan migrate
 
-php artisan db:seed --class=WorldSeeder (requires ~ 10 - 15min)
+php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### Upgrading to the v1.1.4? 
-- Delete the published `world.php` file from `config`.
-- Re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world`
-- In world.php config file, customize the table names and enable or disabled the optional database fields.
+### Upgrading to v1.1.4?
+- Re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world --force`
+- If needed, customize the table names and enable or disabled the optional database fields in the `world.php` config file.
 
 ### Changelog
 
-Please see [CHANGELOG](CHANGELOG.md) for more information what has changed recently. 
+Please read [CHANGELOG](CHANGELOG.md) for more information what has changed recently. 
 
 ### Contributing
 
-Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
+Please read [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ### Demo
 Please feel free to query https://laravel-world.com 
