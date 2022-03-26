@@ -16,7 +16,7 @@ return [
 		'fr',
 		'ja',
 		'kr',
-        'nl',
+		'nl',
 		'pl',
 		'pt',
 		'ro',
