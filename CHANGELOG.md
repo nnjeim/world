@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.5 - 2022-03-27
+- Add Dutch localization by @gdevlugt.
+
 ### 1.1.4 - 2022-03-07
 - custom table names.
 - optional database fields.
