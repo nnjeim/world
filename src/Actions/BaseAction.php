@@ -3,9 +3,12 @@
 namespace Nnjeim\World\Actions;
 
 use Illuminate\Support\Collection;
+use Nnjeim\World\Actions\Traits\IndexFieldsTrait;
 
 class BaseAction
 {
+	use IndexFieldsTrait;
+
 	public bool $success = true;
 
 	public string $message;
@@ -18,72 +21,9 @@ class BaseAction
 
 	protected string $cacheTag;
 
-	protected string $attribute;
-
-	protected array $availableFields = ['id', 'name'];
-
-	protected array $fields = ['id', 'name'];
-
-	protected array $relations = [];
-
-	protected array $wheres = [];
-
-	protected array $with = [];
-
 	protected string $cacheKey;
 
-	protected function formCacheKey(): void
-	{
-		sort($this->fields);
-		sort($this->with);
-		$cacheKey = implode('_', array_unique(array_merge([$this->cacheTag], $this->fields, $this->with)));
-		foreach ($this->wheres as $where) {
-			$cacheKey .= '_' . implode('', $where);
-		}
-		$cacheKey .= '_' . config('app.locale');
-		$this->cacheKey = $cacheKey;
-	}
-
-	/**
-	 * @param  string|null  $fields
-	 */
-	protected function formFields(string $fields = null): void
-	{
-		if ($fields !== null) {
-			$this->fields = array_merge(
-				$this->fields,
-				array_values(
-					array_intersect(
-						$this->availableFields,
-						explode(',', strip_tags(str_replace(' ', '', $fields)))
-					)
-				)
-			);
-		}
-	}
-
-	/**
-	 * @param  array|null  $filters
-	 */
-	protected function formFilters(?array $filters = null): void
-	{
-		if ($filters !== null) {
-			foreach ($filters as $key => $value) {
-				if (in_array($key, $this->availableFields)) {
-					$this->wheres[] = [$key, '=', $value];
-				}
-			}
-		}
-	}
-
-	protected function formWith(): void
-	{
-		foreach ($this->relations as $relation) {
-			if (in_array($relation, $this->fields)) {
-				$this->with += [$relation];
-			}
-		}
-	}
+	protected string $attribute;
 
 	/**
 	 * @param Collection $data

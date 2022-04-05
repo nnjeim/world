@@ -16,22 +16,18 @@ class IndexAction extends BaseAction implements ActionInterface
 
 	protected string $attribute = 'language';
 
+	protected array $defaultFields = [
+		'id',
+		'code',
+		'name',
+	];
+
 	protected array $availableFields = [
 		'id',
 		'code',
 		'name',
 		'name_native',
 		'dir',
-	];
-
-	protected array $fields = [
-		'id',
-		'code',
-		'name',
-	];
-
-	protected array $relations = [
-
 	];
 
 	/**
@@ -48,15 +44,15 @@ class IndexAction extends BaseAction implements ActionInterface
 			'filters' => null,
 		];
 
-		$this->formFields($fields);
-		$this->formFilters($filters);
-		$this->formWith();
-		$this->formCacheKey();
+		$this->validateArguments($fields, $filters);
 
 		// cache
 		$currencies = Cache::rememberForever(
 			$this->cacheKey,
-			fn () => $this->transform((new IndexQuery($this->wheres, $this->with))(), $this->fields)
+			fn () => $this->transform(
+				(new IndexQuery($this->validatedFilters, $this->validatedRelations))(),
+				array_merge($this->validatedFields, $this->validatedRelations)
+			)
 		);
 		// response
 		return $this->formResponse($currencies);

@@ -16,19 +16,18 @@ class IndexAction extends BaseAction implements ActionInterface
 
 	protected string $attribute = 'timezone';
 
+	protected array $defaultFields = [
+		'id',
+		'name',
+	];
+
 	protected array $availableFields = [
 		'id',
 		'name',
 		'country_id',
-		'country',
 	];
 
-	protected array $fields = [
-		'id',
-		'name',
-	];
-
-	protected array $relations = [
+	protected array $availableRelations = [
 		'country',
 	];
 
@@ -46,15 +45,15 @@ class IndexAction extends BaseAction implements ActionInterface
 			'filters' => null,
 		];
 
-		$this->formFields($fields);
-		$this->formFilters($filters);
-		$this->formWith();
-		$this->formCacheKey();
+		$this->validateArguments($fields, $filters);
 
 		// cache
 		$timezones = Cache::rememberForever(
 			$this->cacheKey,
-			fn () => $this->transform((new IndexQuery($this->wheres, $this->with))(), $this->fields)
+			fn () => $this->transform(
+				(new IndexQuery($this->validatedFilters, $this->validatedRelations))(),
+				array_merge($this->validatedFields, $this->validatedRelations)
+			)
 		);
 		// response
 		return $this->formResponse($timezones);

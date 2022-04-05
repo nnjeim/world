@@ -16,6 +16,11 @@ class IndexAction extends BaseAction implements ActionInterface
 
 	protected string $attribute = 'country';
 
+	protected array $defaultFields = [
+		'id',
+		'name',
+	];
+
 	protected array $availableFields = [
 		'id',
 		'iso2',
@@ -24,18 +29,9 @@ class IndexAction extends BaseAction implements ActionInterface
 		'phone_code',
 		'region',
 		'sub_region',
-		'states',
-		'cities',
-		'timezones',
-		'currency',
 	];
 
-	protected array $fields = [
-		'id',
-		'name',
-	];
-
-	protected array $relations = [
+	protected array $availableRelations = [
 		'states',
 		'cities',
 		'timezones',
@@ -56,15 +52,15 @@ class IndexAction extends BaseAction implements ActionInterface
 			'filters' => null,
 		];
 
-		$this->formFields($fields);
-		$this->formFilters($filters);
-		$this->formWith();
-		$this->formCacheKey();
+		$this->validateArguments($fields, $filters);
 
 		// cache
 		$countries = Cache::rememberForever(
 			$this->cacheKey,
-			fn () => $this->transform((new IndexQuery($this->wheres, $this->with))(), $this->fields)
+			fn () => $this->transform(
+				(new IndexQuery($this->validatedFilters, $this->validatedRelations))(),
+				array_merge($this->validatedFields, $this->validatedRelations)
+			)
 		);
 		// response
 		return $this->formResponse($countries);
