@@ -12,27 +12,19 @@ Route::group([
 	],
 ], function () {
 
-    if (config('world.routes.countries',true)) {
+    if (config('world.routes',true)) {
+
         Route::get('/countries', [Controllers\Country\CountryController::class, 'index'])->name('countries.index');
-    }
 
-    if (config('world.routes.states',true)) {
         Route::get('/states', [Controllers\State\StateController::class, 'index'])->name('states.index');
-    }
 
-    if (config('world.routes.cities',true)) {
         Route::get('/cities', [Controllers\City\CityController::class, 'index'])->name('cities.index');
-    }
 
-    if (config('world.routes.timezones',true)) {
         Route::get('/timezones', [Controllers\Timezone\TimezoneController::class, 'index'])->name('timezones.index');
-    }
 
-    if (config('world.routes.currencies',true)) {
         Route::get('/currencies', [Controllers\Currency\CurrencyController::class, 'index'])->name('currencies.index');
-    }
 
-    if (config('world.routes.languages',true)) {
         Route::get('/languages', [Controllers\Language\LanguageController::class, 'index'])->name('languages.index');
+
     }
 });

@@ -28,14 +28,7 @@ return [
     | Routes.
     |--------------------------------------------------------------------------
     */
-    'routes' => [
-        'countries' => true,
-        'states' => true,
-        'cities' => true,
-        'timezones' => true,
-        'currencies' => true,
-        'languages' => true,
-    ],
+    'routes' => true,
 	/*
 	|--------------------------------------------------------------------------
 	| Migrations.
