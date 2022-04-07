@@ -41,7 +41,7 @@ trait ResponseBuilder
 	 * @param  ActionInterface  $action
 	 * @return $this
 	 */
-	protected function setAction(ActionInterface $action): static
+	protected function setAction(ActionInterface $action): self
 	{
 		$this->action = $action;
 
@@ -51,7 +51,7 @@ trait ResponseBuilder
 	/**
 	 * @return $this
 	 */
-	protected function setStatusCode(): static
+	protected function setStatusCode(): self
 	{
 		$this->statusCode = $this->action->statusCode ?? ($this->action->success ? 200 : 422);
 
@@ -62,7 +62,7 @@ trait ResponseBuilder
 	 * @param  array  $meta
 	 * @return $this
 	 */
-	protected function setMeta(array $meta): static
+	protected function setMeta(array $meta): self
 	{
 		$this->response += $meta;
 
@@ -72,7 +72,7 @@ trait ResponseBuilder
 	/**
 	 * @return $this
 	 */
-	protected function setErrors(): static
+	protected function setErrors(): self
 	{
 		if (isset($this->action->errors) && ! empty($this->action->errors)) {
 			$this->response = array_merge(
@@ -87,7 +87,7 @@ trait ResponseBuilder
 	/**
 	 * @return $this
 	 */
-	protected function setData(): static
+	protected function setData(): self
 	{
 		$this->response['data'] = $this->action->data;
 
@@ -97,7 +97,7 @@ trait ResponseBuilder
 	/**
 	 * @return $this
 	 */
-	protected function setMessage(): static
+	protected function setMessage(): self
 	{
 		$this->response['message'] = $this->action->message;
 
@@ -107,7 +107,7 @@ trait ResponseBuilder
 	/**
 	 * @return $this
 	 */
-	protected function setSuccess(): static
+	protected function setSuccess(): self
 	{
 		$this->response['success'] = $this->action->success;
 
