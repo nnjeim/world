@@ -26,6 +26,7 @@ class IndexAction extends BaseAction implements ActionInterface
 		'name',
 		'state_id',
 		'country_id',
+		'country_code',
 	];
 
 	protected array $availableRelations = [

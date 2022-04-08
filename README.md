@@ -16,9 +16,10 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### Upgrading to v1.1.7?
+### Upgrading to v1.1.8?
 - Due to the changes in the routes and config files, re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world --force`  
 - If needed, customize the table names and enable or disabled the optional database fields in the `world.php` config file.
+- The counties table sub_region field was renamed to subregion. It is advisable to refresh the migrations and seed the db tables.
 
 ### Changelog
 

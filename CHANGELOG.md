@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.8 - 2022-04-08
+- bug fix in the countries subregion field.  
+
 ### 1.1.7 - 2022-04-08
 - @emiliopedrollo. Conditional route generation per module and overall routes enablement/disablement.
 - @emiliopedrollo. php 7.4 compatibility fix.

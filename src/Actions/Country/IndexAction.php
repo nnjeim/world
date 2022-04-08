@@ -28,7 +28,7 @@ class IndexAction extends BaseAction implements ActionInterface
 		'name',
 		'phone_code',
 		'region',
-		'sub_region',
+		'subregion',
 	];
 
 	protected array $availableRelations = [
