@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.9 - 2022-04-08
+- renaming of the sub_region to subregion in the countries.json file.  
+
 ### 1.1.8 - 2022-04-08
 - bug fix in the countries subregion field.  
 
