@@ -12,15 +12,19 @@ Route::group([
 	],
 ], function () {
 
-	Route::get('/countries', [Controllers\Country\CountryController::class, 'index'])->name('countries.index');
+    if (config('world.routes',true)) {
 
-	Route::get('/states', [Controllers\State\StateController::class, 'index'])->name('states.index');
+        Route::get('/countries', [Controllers\Country\CountryController::class, 'index'])->name('countries.index');
 
-	Route::get('/cities', [Controllers\City\CityController::class, 'index'])->name('cities.index');
+        Route::get('/states', [Controllers\State\StateController::class, 'index'])->name('states.index');
 
-	Route::get('/timezones', [Controllers\Timezone\TimezoneController::class, 'index'])->name('timezones.index');
+        Route::get('/cities', [Controllers\City\CityController::class, 'index'])->name('cities.index');
 
-	Route::get('/currencies', [Controllers\Currency\CurrencyController::class, 'index'])->name('currencies.index');
+        Route::get('/timezones', [Controllers\Timezone\TimezoneController::class, 'index'])->name('timezones.index');
 
-	Route::get('/languages', [Controllers\Language\LanguageController::class, 'index'])->name('languages.index');
+        Route::get('/currencies', [Controllers\Currency\CurrencyController::class, 'index'])->name('currencies.index');
+
+        Route::get('/languages', [Controllers\Language\LanguageController::class, 'index'])->name('languages.index');
+
+    }
 });
