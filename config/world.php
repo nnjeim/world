@@ -69,7 +69,7 @@ return [
 					'required' => true,
 					'type' => 'string',
 				],
-				'sub_region' => [
+				'subregion' => [
 					'required' => true,
 					'type' => 'string',
 				],
@@ -95,7 +95,7 @@ return [
 			'table_name' => 'states',
 			'optional_fields' => [
 				'country_code' => [
-					'required' => false,
+					'required' => true,
 					'type' => 'string',
 					'length' => 3,
 				],
@@ -118,7 +118,7 @@ return [
 			'table_name' => 'cities',
 			'optional_fields' => [
 				'country_code' => [
-					'required' => false,
+					'required' => true,
 					'type' => 'string',
 					'length' => 3,
 				],
