@@ -2,7 +2,6 @@
 
 namespace Nnjeim\World\Models;
 
-use Illuminate\Database\Eloquent\Concerns\GuardsAttributes;
 use Nnjeim\World\Models\Traits\CountryRelations;
 
 use Illuminate\Database\Eloquent\Model;

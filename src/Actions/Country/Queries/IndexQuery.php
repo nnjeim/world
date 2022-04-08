@@ -2,6 +2,7 @@
 
 namespace Nnjeim\World\Actions\Country\Queries;
 
+use Illuminate\Database\Eloquent\Collection;
 use Nnjeim\World\Models\Country;
 
 class IndexQuery
@@ -16,7 +17,10 @@ class IndexQuery
 		$this->with = $with;
 	}
 
-	public function __invoke()
+	/**
+	 * @return Collection
+	 */
+	public function __invoke(): Collection
 	{
 		// query
 		$query = Country::query();

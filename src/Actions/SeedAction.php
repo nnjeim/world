@@ -46,7 +46,7 @@ class SeedAction extends Seeder
 		// countries
 		$this->initCountries();
 		// init modules
-		foreach (config('world.seeders') as $module => $enabled) {
+		foreach (config('world.modules') as $module => $enabled) {
 			if ($enabled) {
 				$this->modules[$module]['enabled'] = true;
 				$this->initModule($module);
