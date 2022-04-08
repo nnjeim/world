@@ -296,6 +296,26 @@ World::setLocale('zh')->countries();
 
 <p><img src="./schema.jpg" width="800px"/></p>
 
+### Configuration  
+The configuration of the world package is in the world.php config file.  
+If you are upgrading from a previous version, you should consider re-publishing the file by issuing:  
+```
+php artisan vendor:publish --tag=world --force
+```
+#### Supported Locales  
+A list of the accepted locales which relate to the localized lang files.
+
+#### Modules enablement  
+The states, cities, timezones, currencies and languages modules can be optionally disabled.    
+Please note that the cities module depends on the states module.  
+
+#### Routes  
+If you don't wish to use the packages as an api service, you can disable all the routes by assigning false to routes.  
+
+#### Migrations  
+It offers the ability to enable or disable the database fields.  
+When changing this configuration the database should be dropped and the seeder should be re-run.  
+
 ### Testing  
 
 Requirements  
