@@ -15,6 +15,11 @@ trait IndexFieldsTrait
 	 */
 	protected array $availableFields = [];
 	/**
+	 * define the optional fields.
+	 * @var array
+	 */
+	protected array $optionalFields = [];
+	/**
 	 * define the available relationships.
 	 * @var array
 	 */
@@ -26,18 +31,40 @@ trait IndexFieldsTrait
 
 	protected array $validatedRelations = [];
 
+	protected string $module = '';
+
 	/**
 	 * @param  string|null  $fields
 	 * @param  array|null  $filters
 	 * @return void
 	 */
-	protected function validateArguments(?string $fields = null, ?array $filters = null)
+	protected function validateArguments(?string $fields = null, ?array $filters = null): void
 	{
 		$this
+			->mergeOptionalFields()
 			->validateFields($fields)
 			->validateFilters($filters)
 			->validateRelations($fields)
 			->computeCacheKey();
+	}
+
+	/**
+	 * Helper to merge the optional and available fields.
+	 * @return $this
+	 */
+	protected function mergeOptionalFields(): self
+	{
+		if (! empty($this->module)) {
+			$optionalFields = [];
+			foreach(config('world.migrations.' . $this->module . '.optional_fields') as $key => $value) {
+				if ($value['required'] === true) {
+					$optionalFields[] = $key;
+				}
+			}
+			$this->optionalFields = $optionalFields;
+		}
+
+		return $this;
 	}
 
 	/**
@@ -58,7 +85,7 @@ trait IndexFieldsTrait
 			$this->defaultFields,
 			array_values(
 				array_intersect(
-					$this->availableFields,
+					array_merge($this->availableFields, $this->optionalFields),
 					explode(',', strip_tags(str_replace(' ', '', $fields)))
 				)
 			)
@@ -76,7 +103,7 @@ trait IndexFieldsTrait
 	{
 		if ($filters !== null) {
 			foreach ($filters as $key => $value) {
-				if (in_array($key, $this->availableFields)) {
+				if (in_array($key, array_merge($this->availableFields, $this->optionalFields))) {
 					$this->validatedFilters[] = [$key, '=', $value];
 				}
 			}

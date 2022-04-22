@@ -12,6 +12,8 @@ class IndexAction extends BaseAction implements ActionInterface
 {
 	use IndexTransformer;
 
+	protected string $module = 'states';
+
 	protected string $cacheTag = 'states';
 
 	protected string $attribute = 'state';

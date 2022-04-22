@@ -16,7 +16,7 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### Upgrading to v1.1.9?
+### Upgrading to v1.1.10?
 - Due to the changes in the routes and config files, re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world --force`  
 - If needed, customize the table names and enable or disabled the optional database fields in the `world.php` config file.
 - The counties table sub_region field was renamed to subregion. It is advisable to refresh the migrations and seed the db tables.
@@ -34,7 +34,7 @@ Please feel free to query https://laravel-world.com
   
 Examples  
 https://laravel-world.com/api/countries  
-https://laravel-world.com/api/states?filters[country_id]=182&fields=cities
+https://laravel-world.com/api/states?filters[country_code]=RO&fields=cities
 
 ### Usage
 
@@ -164,7 +164,7 @@ if ($action->success) {
 
 Use the Api cities endpoint
 ```
-https://myDomain.local/api/cities?filters[country_id]=182
+https://myDomain.local/api/cities?filters[country_code]=RO 
 ```
 
 ### Available actions
@@ -236,28 +236,28 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Method | GET |
 | Route | /{prefix}/states |
 | Parameters* | comma seperated fields(states table fields in addition to country and cities), array filters |
-| Example | /api/states?fields=country,cities&filters[country_id]=182 |   
+| Example | /api/states?fields=country,cities&filters[country_code]=RO  |   
 | response | success, message, data |   
 
 #### Cities
 
-| | |
-| :--- | :--- |
-| Method | GET |
-| Route | /{prefix}/cities |
+| |                                                                                             |
+| :--- |:--------------------------------------------------------------------------------------------|
+| Method | GET                                                                                         |
+| Route | /{prefix}/cities                                                                            |
 | Parameters* | comma seperated fields(states table fields in addition to country and state), array filters |
-| Example | /api/cities?fields=country,state&filters[country_id]=182 |   
-| response | success, message, data | 
+| Example | /api/cities?fields=country,state&filters[country_code]=RO                                   |   
+| response | success, message, data                                                                      | 
 
 #### Timezones
 
-| | |
-| :--- | :--- |
-| Method | GET |
-| Route | /{prefix}/timezones |
+| |                                                                                       |
+| :--- |:--------------------------------------------------------------------------------------|
+| Method | GET                                                                                   |
+| Route | /{prefix}/timezones                                                                   |
 | Parameters* | comma seperated fields(states table fields in addition to the country), array filters |
-| Example | /api/timezones?fields=country&filters[country_id]=182 |   
-| response | success, message, data | 
+| Example | /api/timezones?fields=country&filters[country_code]=RO                                |   
+| response | success, message, data                                                                | 
 
 #### Currencies
 
@@ -266,7 +266,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | Method | GET                                                                                   |
 | Route | /{prefix}/currencies                                                                  |
 | Parameters* | comma seperated fields(states table fields in addition to the country), array filters |
-| Example | /api/timezones?fields=country&filters[country_id]=182                                  |   
+| Example | /api/timezones?fields=country&filters[country_code]=RO                                   |   
 | response | success, message, data                                                                |
 
 #### Languages

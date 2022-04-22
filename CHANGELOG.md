@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.10 - 2022-04-22
+- addition of the posibility to filter with the optional fields.
+
 ### 1.1.9 - 2022-04-08
 - renaming of the sub_region to subregion in the countries.json file.  
 
