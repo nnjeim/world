@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.11 - 2022-05-18
+- addition of the search field in all the request queries.
+
 ### 1.1.10 - 2022-04-22
 - addition of the posibility to filter with the optional fields.
 

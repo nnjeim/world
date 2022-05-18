@@ -11,10 +11,13 @@ class IndexQuery
 
 	private array $with;
 
-	public function __construct(array $wheres, array $with)
+	private ?string $search;
+
+	public function __construct(array $wheres, array $with, ?string $search = null)
 	{
 		$this->wheres = $wheres;
 		$this->with = $with;
+		$this->search = $search;
 	}
 
 	public function __invoke(): Collection
@@ -30,6 +33,11 @@ class IndexQuery
 		$query->when(
 			! empty($this->wheres),
 			fn ($q) => $q->where($this->wheres)
+		);
+
+		$query->when(
+			$this->search !== null,
+			fn ($q) => $q->where('name', 'like', '%' . $this->search . '%')
 		);
 
 		return $query->get();

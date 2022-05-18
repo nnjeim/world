@@ -16,8 +16,9 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### Upgrading to v1.1.10?
-- Due to the changes in the routes and config files, re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world --force`  
+### Upgrading to v1.1.11?
+- New addition: `search` argument.
+- If you are upgrading from a version older than 1.1.10 and due to the changes in the routes and config files, re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world --force`  
 - If needed, customize the table names and enable or disabled the optional database fields in the `world.php` config file.
 - The counties table sub_region field was renamed to subregion. It is advisable to refresh the migrations and seed the db tables.
 
@@ -34,6 +35,7 @@ Please feel free to query https://laravel-world.com
   
 Examples  
 https://laravel-world.com/api/countries  
+https://laravel-world.com/api/countries?search=rom
 https://laravel-world.com/api/states?filters[country_code]=RO&fields=cities
 
 ### Usage
@@ -189,31 +191,37 @@ An action response is formed as below:
 
 * fields*: comma seperated string(countries table fields in addition to states, cities, currency and timezones).
 * filters*: array of keys(countries table fields) and their corresponding values.
+* search*: string.  
 
 #### States action
 
 * fields*: comma seperated string(states table fields in addition to country and states).
 * filters*: array of keys(states table fields) and their corresponding values.
+* search*: string.  
 
 #### Cities action
 
 * fields*: comma seperated string(cities table fields in addition to country and state).
 * filters*: array of keys(cities table fields) and their corresponding values.
+* search*: string.  
 
 #### Timezones action
 
 * fields*: comma seperated string(timezones table fields in addition to country).
 * filters*: array of keys(timezones table fields) and their corresponding values.
+* search*: string.  
 
 #### Currencies action
 
 * fields*: comma seperated string(currencies table fields in addition to country).
 * filters*: array of keys(currencies table fields) and their corresponding values.
+* search*: string.  
 
 #### Languages action
 
 * fields*: comma seperated string(languages table fields).
 * filters*: array of keys(languages table fields) and their corresponding values.
+* search*: string.  
 
 ### Available Api routes
 
@@ -221,13 +229,13 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 
 #### Countries
 
-| | |
-| :--- | :--- |
-| Method | GET |
-| Route | /{prefix}/countries |
-| Parameters* | comma seperated fields(countries table fields in addition to states, cities, currency and timezones), array filters |
-| Example | /api/countries?fields=iso2,cities&filters[phone_code]=44 |   
-| response | success, message, data |  
+| |                                                                                                                                    |
+| :--- |:-----------------------------------------------------------------------------------------------------------------------------------|
+| Method | GET                                                                                                                                |
+| Route | /{prefix}/countries                                                                                                                |
+| Parameters* | comma seperated fields(countries table fields in addition to states, cities, currency and timezones), array filters, string search |
+| Example | /api/countries?fields=iso2,cities&filters[phone_code]=44                                                                           |   
+| response | success, message, data                                                                                                             |  
 
 #### States
 
@@ -235,7 +243,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | :--- | :--- |
 | Method | GET |
 | Route | /{prefix}/states |
-| Parameters* | comma seperated fields(states table fields in addition to country and cities), array filters |
+| Parameters* | comma seperated fields(states table fields in addition to country and cities), array filters, string search |
 | Example | /api/states?fields=country,cities&filters[country_code]=RO  |   
 | response | success, message, data |   
 
@@ -245,7 +253,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | :--- |:--------------------------------------------------------------------------------------------|
 | Method | GET                                                                                         |
 | Route | /{prefix}/cities                                                                            |
-| Parameters* | comma seperated fields(states table fields in addition to country and state), array filters |
+| Parameters* | comma seperated fields(states table fields in addition to country and state), array filters, string search |
 | Example | /api/cities?fields=country,state&filters[country_code]=RO                                   |   
 | response | success, message, data                                                                      | 
 
@@ -255,7 +263,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | :--- |:--------------------------------------------------------------------------------------|
 | Method | GET                                                                                   |
 | Route | /{prefix}/timezones                                                                   |
-| Parameters* | comma seperated fields(states table fields in addition to the country), array filters |
+| Parameters* | comma seperated fields(states table fields in addition to the country), array filters, string search |
 | Example | /api/timezones?fields=country&filters[country_code]=RO                                |   
 | response | success, message, data                                                                | 
 
@@ -265,7 +273,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | :--- |:--------------------------------------------------------------------------------------|
 | Method | GET                                                                                   |
 | Route | /{prefix}/currencies                                                                  |
-| Parameters* | comma seperated fields(states table fields in addition to the country), array filters |
+| Parameters* | comma seperated fields(states table fields in addition to the country), array filters, string search |
 | Example | /api/timezones?fields=country&filters[country_code]=RO                                   |   
 | response | success, message, data                                                                |
 
@@ -275,13 +283,13 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 | :--- |:-------------------------|
 | Method | GET                      |
 | Route | /{prefix}/languages      |
-| Parameters* | comma seperated fields   
+| Parameters* | comma seperated fields, string search   
 | Example | /api/languages?fields=dir |   
 | response | success, message, data   |
 
 ### Localization
 
-The available locales are ar, bn, br, de, en, es, fr, ja, kr, pl, pt, ro, ru and zh.  
+The available locales are ar, bn, br, de, en, es, fr, ja, kr, nl, pl, pt, ro, ru and zh.  
 The default locale is en.  
 Include in the request header
 

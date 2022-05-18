@@ -2,6 +2,7 @@
 
 namespace Nnjeim\World\Actions\Country;
 
+use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Nnjeim\World\Actions\ActionInterface;
 use Nnjeim\World\Actions\BaseAction;
@@ -49,22 +50,36 @@ class IndexAction extends BaseAction implements ActionInterface
 		[
 			'fields' => $fields,
 			'filters' => $filters,
+			'search' => $search,
 		] = $args + [
 			'fields' => null,
 			'filters' => null,
+			'search' => null,
 		];
 
 		$this->validateArguments($fields, $filters);
 
 		// cache
-		$countries = Cache::rememberForever(
-			$this->cacheKey,
-			fn () => $this->transform(
-				(new IndexQuery($this->validatedFilters, $this->validatedRelations))(),
-				array_merge($this->validatedFields, $this->validatedRelations)
+		$countries = $search === null
+			? Cache::rememberForever(
+				$this->cacheKey,
+				fn () => $this->indexQuery($search)
 			)
-		);
+			: $this->indexQuery($search);
+
 		// response
 		return $this->formResponse($countries);
+	}
+
+	/**
+	 * @param  string|null  $search
+	 * @return Collection
+	 */
+	private function indexQuery(?string $search = null): Collection
+	{
+		return $this->transform(
+			(new IndexQuery($this->validatedFilters, $this->validatedRelations, $search))(),
+			array_merge($this->validatedFields, $this->validatedRelations)
+		);
 	}
 }

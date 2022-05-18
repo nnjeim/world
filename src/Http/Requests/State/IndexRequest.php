@@ -16,6 +16,7 @@ class IndexRequest extends BaseRequest
 		return [
 			'fields' => 'sometimes',
 			'filters' => 'sometimes',
+			'search' => 'sometimes',
 		];
 	}
 }
