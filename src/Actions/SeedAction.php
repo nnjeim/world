@@ -69,7 +69,7 @@ class SeedAction extends Seeder
 
 			foreach ($countryChunks as $countryArray) {
 
-				$countryArray = array_map(fn($field) => gettype($field) === 'string' ? trim($field) : $field, $countryArray);
+				$countryArray = array_map(fn ($field) => gettype($field) === 'string' ? trim($field) : $field, $countryArray);
 
 				$country = Models\Country::create(Arr::only($countryArray, $countryFields));
 				// states and cities
@@ -133,6 +133,10 @@ class SeedAction extends Seeder
 	{
 		app(Models\Country::class)->truncate();
 		$this->countries['data'] = json_decode(File::get(__DIR__ . '/../../resources/json/countries.json'), true);
+		if (!empty(config('world.loadedCountries')))
+			$this->countries['data'] = Arr::where($this->countries['data'], function ($value, $key) {
+				return in_array($value['iso2'], config('world.loadedCountries'));
+			});
 	}
 
 	/**
@@ -152,7 +156,7 @@ class SeedAction extends Seeder
 
 			foreach ($stateChunks as $stateArray) {
 
-				$stateArray = array_map(fn($field) => gettype($field) === 'string' ? trim($field) : $field, $stateArray);
+				$stateArray = array_map(fn ($field) => gettype($field) === 'string' ? trim($field) : $field, $stateArray);
 
 				$state = $country
 					->states()
@@ -186,7 +190,7 @@ class SeedAction extends Seeder
 
 			foreach ($cityChunks as $cityArray) {
 
-				$cityArray = array_map(fn($field) => gettype($field) === 'string' ? trim($field) : $field, $cityArray);
+				$cityArray = array_map(fn ($field) => gettype($field) === 'string' ? trim($field) : $field, $cityArray);
 
 				$country
 					->cities()
@@ -256,7 +260,8 @@ class SeedAction extends Seeder
 	 * @param  array  $values
 	 * @return void
 	 */
-	private function forgetFields(array &$array, array $values) {
+	private function forgetFields(array &$array, array $values)
+	{
 		foreach ($values as $value) {
 			if (($key = array_search($value, $array)) !== false) {
 				unset($array[$key]);
