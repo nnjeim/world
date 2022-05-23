@@ -133,10 +133,15 @@ class SeedAction extends Seeder
 	{
 		app(Models\Country::class)->truncate();
 		$this->countries['data'] = json_decode(File::get(__DIR__ . '/../../resources/json/countries.json'), true);
-		if (!empty(config('world.loadedCountries')))
+		if (!empty(config('world.allowed_countries')))
 			$this->countries['data'] = Arr::where($this->countries['data'], function ($value, $key) {
-				return in_array($value['iso2'], config('world.loadedCountries'));
+				return in_array($value['iso2'], config('world.allowed_countries'));
 			});
+		if (!empty(config('world.disallowed_countries')))
+			$this->countries['data'] = Arr::where($this->countries['data'], function ($value, $key) {
+				return !in_array($value['iso2'], config('world.disallowed_countries'));
+			});
+		dd($this->countries['data']);
 	}
 
 	/**

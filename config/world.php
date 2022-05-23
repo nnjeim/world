@@ -3,10 +3,19 @@
 return [
 	/*
 	|--------------------------------------------------------------------------
-	| Loaded Countries
+	| Allowed countries to be loaded
+	| Leave it empty to load all countries
 	|--------------------------------------------------------------------------
 	*/
-	'loadedCountries' => ['US', 'DZ'],
+	'allowed_countries' => ['US', 'DZ'],
+
+	/*
+	|--------------------------------------------------------------------------
+	| Disallowed countries to not be loaded
+	| Leave it empty to allow all countries to be loaded
+	|--------------------------------------------------------------------------
+	*/
+	'disallowed_countries' => ['FR'],
 
 	/*
 	|--------------------------------------------------------------------------
