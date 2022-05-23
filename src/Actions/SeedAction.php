@@ -141,7 +141,6 @@ class SeedAction extends Seeder
 			$this->countries['data'] = Arr::where($this->countries['data'], function ($value, $key) {
 				return !in_array($value['iso2'], config('world.disallowed_countries'));
 			});
-		dd($this->countries['data']);
 	}
 
 	/**
