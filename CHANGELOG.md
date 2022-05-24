@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.12 - 2022-05-24
+- addition of the allowed and disallowed country lists in the world config file.  
+
 ### 1.1.11 - 2022-05-18
 - addition of the search field in all the request queries.
 

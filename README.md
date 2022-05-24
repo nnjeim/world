@@ -16,8 +16,9 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### Upgrading to v1.1.11?
+### Upgrading to v1.1.12?
 - New addition: `search` argument.
+- New addition: The allowed countries and disallowed countries arrays in config. This new addition by @aeq-dev is to help restrict the seeding of the countries and their dependencies.
 - If you are upgrading from a version older than 1.1.10 and due to the changes in the routes and config files, re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world --force`  
 - If needed, customize the table names and enable or disabled the optional database fields in the `world.php` config file.
 - The counties table sub_region field was renamed to subregion. It is advisable to refresh the migrations and seed the db tables.
