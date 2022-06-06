@@ -107,7 +107,9 @@ class SeedAction extends Seeder
 	{
 		if (array_key_exists($module, $this->modules)) {
 			// truncate module database table.
+			Schema::disableForeignKeyConstraints();
 			app($this->modules[$module]['class'])->truncate();
+			Schema::enableForeignKeyConstraints();
 			// import json data.
 			$moduleSourcePath = __DIR__ . '/../../resources/json/' . $module . '.json';
 

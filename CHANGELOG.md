@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.13 - 2022-06-06
+- seeder action enhancement. credit to @dgironella and @Mello21century
+
 ### 1.1.12 - 2022-05-24
 - addition of the allowed and disallowed country lists in the world config file.  
 
