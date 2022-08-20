@@ -39,6 +39,7 @@ return [
 		'pt',
 		'ro',
 		'ru',
+		'tr',
 		'zh',
 	],
 	/*
