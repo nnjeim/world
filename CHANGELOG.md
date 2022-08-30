@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.14 - 2022-06-06
+- Turkisk locale support (tr)
+
 ### 1.1.13 - 2022-06-06
 - seeder action enhancement. credit to @dgironella and @Mello21century
 
