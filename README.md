@@ -16,8 +16,8 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### Upgrading to v1.1.14?
-- Support for the turkish locale (tr).
+### Upgrading to v1.1.15?
+- Support for the italian locale (it).
 - New addition: `search` query argument.
 - New addition: The allowed countries and disallowed countries arrays in config. This new addition by @aeq-dev is to help restrict the seeding of the countries and their dependencies.
 - If you are upgrading from a version older than 1.1.10 and due to the changes in the routes and config files, re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world --force`  
@@ -291,7 +291,7 @@ All routes can be prefixed by any string. Ex admin, api, api ...
 
 ### Localization
 
-The available locales are ar, bn, br, de, en, es, fr, ja, kr, nl, pl, pt, ro, ru, tr and zh.  
+The available locales are ar, bn, br, de, en, es, fr, it, ja, kr, nl, pl, pt, ro, ru, tr and zh.  
 The default locale is en.  
 Include in the request header
 
