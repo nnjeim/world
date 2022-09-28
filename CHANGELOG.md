@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.15 - 2022-06-06
+- Italian locale support (it)
+
 ### 1.1.14 - 2022-06-06
 - Turkisk locale support (tr)
 
