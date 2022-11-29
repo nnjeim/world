@@ -2,13 +2,11 @@
 
 namespace Nnjeim\World\Http\Controllers;
 
+use Nnjeim\World\Http\Controllers\Response\ResponseBuilder;
 use Illuminate\Http\JsonResponse;
-use Nnjeim\World\Http\Controllers\Traits\ResponseBuilder;
 
 class BaseController
 {
-	use ResponseBuilder;
-
 	protected string $requestBasePath = 'Nnjeim\\World\\Http\\Requests';
 
 	protected string $actionBasePath = 'Nnjeim\\World\\Actions';
@@ -20,31 +18,18 @@ class BaseController
 	 */
 	public function __call($function, $args = null): JsonResponse
 	{
-		return $this->respond($function);
-	}
-
-	/**
-	 * @param  string  $function
-	 * @return JsonResponse
-	 */
-	protected function respond(string $function): JsonResponse
-	{
-		/*
-		 * Request class
-		 */
+		// Request class
 		$requestClass = $this->composeRequestClass($function);
 
-		$actionParams = class_exists($requestClass) ? app($requestClass)->validated() : null;
+		$actionArgs = class_exists($requestClass) ? app($requestClass)->validated() : null;
 
-		/*
-		 * Action
-		 */
-		$action = app($this->composeActionClass($function))->execute($actionParams);
+		// Action
+		$responseBuilder = app($this->composeActionClass($function))
+			->execute($actionArgs)
+			->withResponse();
 
-		/*
-		 * Response
-		 */
-		return $this->formResponse($action);
+		// Response
+		return $this->respond($responseBuilder);
 	}
 
 	/**
@@ -63,5 +48,14 @@ class BaseController
 	private function composeActionClass(string $function): string
 	{
 		return implode('\\', [$this->actionBasePath, ucfirst($function)]) . 'Action';
+	}
+
+	/**
+	 * @param  ResponseBuilder  $responseBuilder
+	 * @return JsonResponse
+	 */
+	public function respond(ResponseBuilder $responseBuilder): JsonResponse
+	{
+		return $responseBuilder->toJson();
 	}
 }

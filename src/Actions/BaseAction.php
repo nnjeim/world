@@ -4,6 +4,7 @@ namespace Nnjeim\World\Actions;
 
 use Illuminate\Support\Collection;
 use Nnjeim\World\Actions\Traits\IndexFieldsTrait;
+use Nnjeim\World\Http\Controllers\Response\ResponseBuilder;
 
 class BaseAction
 {
@@ -11,13 +12,7 @@ class BaseAction
 
 	public bool $success = true;
 
-	public string $message;
-
 	public Collection $data;
-
-	public array $errors = [];
-
-	public int $statusCode = 200;
 
 	protected string $cacheTag;
 
@@ -26,45 +21,18 @@ class BaseAction
 	protected string $attribute;
 
 	/**
-	 * @param Collection $data
-	 * @return $this
+	 * @return ResponseBuilder
 	 */
-	protected function formResponse(Collection $data): self
+	public function withResponse(): ResponseBuilder
 	{
-		$this->success = count($data) > 0;
-		$this->message = $this->attributeMessage($this->attribute, true);
-		$this->data = $data;
-		$this->statusCode = $this->success ? 200 : 404;
-
-		return $this;
-	}
-
-	/**
-	 * @param string $attribute
-	 * @param bool $plural
-	 * @return string
-	 */
-	protected function attributeMessage(string $attribute, bool $plural = false): string
-	{
-		return trans_choice("world::response.attributes.$attribute", (int) $plural + 1);
-	}
-
-	/**
-	 * @param  string  $record
-	 * @return $this
-	 */
-	protected function recordNotFound(string $record = 'record'): self
-	{
-		$this->success = false;
-
-		$this->errors = [
-			'message' => trans('world::response.errors.record_not_found', [
-				'attribute' => trans('world::response.' . $record . '.singular'),
-			]),
-		];
-
-		$this->statusCode = 404;
-
-		return $this;
+		return ResponseBuilder::make()
+			->setSuccess($this->success)
+			->setAttributeMessage($this->attribute, true)
+			->setData($this->data)
+			->setStatusCode(
+				$this->success
+					? ResponseBuilder::HTTP_OK
+					: ResponseBuilder::HTTP_NOT_FOUND
+			);
 	}
 }

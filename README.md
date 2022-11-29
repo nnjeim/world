@@ -16,13 +16,9 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### Upgrading to v1.1.15?
-- Support for the italian locale (it).
-- New addition: `search` query argument.
-- New addition: The allowed countries and disallowed countries arrays in config. This new addition by @aeq-dev is to help restrict the seeding of the countries and their dependencies.
-- If you are upgrading from a version older than 1.1.10 and due to the changes in the routes and config files, re-publish the package assets by issuing the command `php artisan vendor:publish --tag=world --force`  
-- If needed, customize the table names and enable or disabled the optional database fields in the `world.php` config file.
-- The counties table sub_region field was renamed to subregion. It is advisable to refresh the migrations and seed the db tables.
+### What's new in v1.1.16?
+- Simplification of the response trait.
+- Rework of the actions reponses.
 
 ### Changelog
 
@@ -37,8 +33,8 @@ Please feel free to query https://laravel-world.com
   
 Examples  
 https://laravel-world.com/api/countries  
-https://laravel-world.com/api/countries?search=rom
-https://laravel-world.com/api/states?filters[country_code]=RO&fields=cities
+https://laravel-world.com/api/countries?search=rom  
+https://laravel-world.com/api/states?filters[country_code]=RO&fields=cities  
 
 ### Usage
 
@@ -52,27 +48,25 @@ use Nnjeim\World\World;
 $action =  World::countries();
 
 if ($action->success) {
-
-	$countries = $action->data;
+  $countries = $action->data;
 }
 
-response 
+response (object)
 {
-	"success": true,
-	"message": "countries",
-	"data": [
-		{
-			"id": 1,
-			"name": "Afghanistan"
-		},
-		{
-			"id": 2,
-			"name": "Åland Islands"
-		},
-		.
-		.
-		.
-	],
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "name": "Afghanistan"
+    },
+    {
+      "id": 2,
+      "name": "Åland Islands"
+    },
+    .
+    .
+    .
+  ],
 }
 ``` 
 
@@ -102,38 +96,37 @@ if ($action->success) {
 
 response 
 {
-	"success": true,
-	"message": "countries",
-	"data": [
-		"id": 77,
-		"name": "France",
-		"states": [
-			 {
-				"id": 1271,
-				"name": "Alo"
-			},
-			{
-				"id": 1272,
-				"name": "Alsace"
-			},
-			.
-			.
-			.
-		],
-		"cities": [
-			{
-				"id": 25148,
-				"name": "Abondance"
-			},
-			{
-				"id": 25149,
-				"name": "Abrest"
-			},
-			.
-			.
-			.
-		]
-	],
+  "success": true,
+  "data": [
+    "id": 77,
+    "name": "France",
+    "states": [
+        {
+          "id": 1271,
+          "name": "Alo"
+        },
+        {
+          "id": 1272,
+          "name": "Alsace"
+        },
+        .
+        .
+        .
+    ],
+    "cities": [
+        {
+          "id": 25148,
+          "name": "Abondance"
+        },
+        {
+          "id": 25149,
+          "name": "Abrest"
+        },
+        .
+        .
+        .
+      ]
+    ],
 }
 ```
 

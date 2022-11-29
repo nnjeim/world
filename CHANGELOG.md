@@ -2,6 +2,10 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.16 - 2022-11-29
+- Simplification of the response trait.
+- Rework of the actions responses.
+
 ### 1.1.15 - 2022-06-06
 - Italian locale support (it)
 
