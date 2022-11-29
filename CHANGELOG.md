@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.18 - 2022-11-29
+- Corrected message translation in the response.
+
 ### 1.1.17 - 2022-11-29
 - Corrected path of the response builder class.
 

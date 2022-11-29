@@ -145,19 +145,6 @@ class ResponseBuilder
 		);
 	}
 
-	public function setActionMessage(
-		string $action,
-		string $attribute,
-		bool $success,
-		bool $plural = false,
-		array $additionalAttributes = []
-	): ResponseBuilder {
-		$attributes = $additionalAttributes + [
-				'attribute' => trans_choice("core::response.attributes.$attribute", (int) $plural + 1),
-			];
-		return $this->setMessage(trans_choice("core::response.actions.$action." . ((int) $success), (int) $plural + 1, $attributes));
-	}
-
 	/**
 	 * @param  string  $attribute
 	 * @param  bool  $plural
@@ -167,7 +154,7 @@ class ResponseBuilder
 		string $attribute,
 		bool $plural = false
 	): ResponseBuilder {
-		return $this->setMessage(trans_choice("core::response.attributes.$attribute", (int) $plural + 1));
+		return $this->setMessage(trans_choice("world::response.attributes.$attribute", (int) $plural + 1));
 	}
 
 	/**
@@ -177,8 +164,6 @@ class ResponseBuilder
 	{
 		return [
 			'response_time' => 1000 * number_format((microtime(true) - LARAVEL_START), 2) . ' ms',
-			'remote_address_timezone' => request('user_timezone'),
-			'tenant_timezone' => request('tenant_timezone'),
 		];
 	}
 
