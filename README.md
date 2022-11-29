@@ -16,7 +16,7 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### What's new in v1.1.16?
+### What's new in v1.1.17?
 - Simplification of the response trait.
 - Rework of the actions reponses.
 
@@ -94,7 +94,7 @@ if ($action->success) {
 	$countries = $action->data;
 }
 
-response 
+response (object)
 {
   "success": true,
   "data": [

@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.17 - 2022-11-29
+- Corrected path of the response builder class.
+
 ### 1.1.16 - 2022-11-29
 - Simplification of the response trait.
 - Rework of the actions responses.
