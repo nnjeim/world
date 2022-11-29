@@ -4,7 +4,7 @@ namespace Nnjeim\World\Actions;
 
 use Illuminate\Support\Collection;
 use Nnjeim\World\Actions\Traits\IndexFieldsTrait;
-use Nnjeim\World\Http\Controllers\Response\ResponseBuilder;
+use Nnjeim\World\Http\Response\ResponseBuilder;
 
 class BaseAction
 {

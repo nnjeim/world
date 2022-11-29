@@ -2,7 +2,7 @@
 
 namespace Nnjeim\World\Http\Controllers;
 
-use Nnjeim\World\Http\Controllers\Response\ResponseBuilder;
+use Nnjeim\World\Http\Response\ResponseBuilder;
 use Illuminate\Http\JsonResponse;
 
 class BaseController
