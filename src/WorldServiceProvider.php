@@ -3,6 +3,7 @@
 namespace Nnjeim\World;
 
 use Illuminate\Support\ServiceProvider;
+use Nnjeim\World\Commands;
 use Nnjeim\World\WorldHelper;
 
 class WorldServiceProvider extends ServiceProvider
@@ -12,13 +13,18 @@ class WorldServiceProvider extends ServiceProvider
 	 *
 	 * @return void
 	 */
-	public function register()
+	public function register(): void
 	{
 		// Register the main class to use with the facade
 		$this->app->singleton('world', fn () => new WorldHelper());
 	}
 
-	public function boot()
+	/**
+	 * Boot services.
+	 *
+	 * @return void
+	 */
+	public function boot(): void
 	{
 		// Load routes
 		$this->loadRoutesFrom(__DIR__ . '/Routes/index.php');
@@ -30,15 +36,25 @@ class WorldServiceProvider extends ServiceProvider
 			$this->loadMigrations();
 			// Publis the resources.
 			$this->publishResources();
+			// Load commands
+			$this->loadCommands();
 		}
 	}
 
-	private function loadMigrations()
+	/**
+	 * method to load the migrations when php migrate is run in the console.
+	 * @return void
+	 */
+	private function loadMigrations(): void
 	{
 		$this->loadMigrationsFrom(__DIR__ . '/Database/Migrations');
 	}
 
-	private function publishResources()
+	/**
+	 * Method to publish the resource to the app resources folder
+	 * @return void
+	 */
+	private function publishResources(): void
 	{
 		$this->publishes([
 			__DIR__ . '/../config/world.php' => config_path('world.php'),
@@ -51,5 +67,16 @@ class WorldServiceProvider extends ServiceProvider
 		$this->publishes([
 			__DIR__ . '/../resources/lang' => resource_path('lang/vendor/world'),
 		], 'world');
+	}
+
+	/**
+	 * Method to publish the resource to the app resources folder
+	 * @return void
+	 */
+	private function loadCommands(): void
+	{
+		$this->commands([
+			Commands\RefreshWorldData::class,
+		]);
 	}
 }

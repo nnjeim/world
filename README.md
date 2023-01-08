@@ -16,10 +16,13 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### What's new in v1.1.18?
-- Simplification of the response trait.
-- Rework of the actions reponses.
-- Minor adjustments in the paths and translation files.
+### What's new in v1.1.20?  
+- Updated source data: countries, states and cities.  
+- Addition of a console command to refresh the new world data:  
+  - Run `composer update`  
+  - Run php artisan `world:refresh`  
+
+It is important to note that the world refresh command will drop the existing tables, migrate and re-seed the new data.  
 
 ### Changelog
 

@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.20 - 2023-01-08
+- Updated source data: countries, states and cities.
+
 ### 1.1.18 - 2022-11-29
 - Corrected message translation in the response.
 

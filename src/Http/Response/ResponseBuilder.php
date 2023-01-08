@@ -5,6 +5,14 @@ namespace Nnjeim\World\Http\Response;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Support\Collection;
 
+/**
+ * @property bool $success
+ * @property string $message
+ * @property $data
+ * @property array $meta
+ * @property array|array[] $errors
+ * @property int $statusCode
+ */
 class ResponseBuilder
 {
 	public const HTTP_OK = 200;
