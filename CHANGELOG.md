@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.21 - 2023-03-08
+- Removed Singapore cities and states. @pengkong
+
 ### 1.1.20 - 2023-01-08
 - Updated source data: countries, states and cities.
 
