@@ -39204,61 +39204,6 @@
         "longitude": "-80.24554440"
     },
     {
-        "id": 4651,
-        "name": "Central Singapore Community Development Council",
-        "country_id": 199,
-        "country_code": "SG",
-        "country_name": "Singapore",
-        "state_code": "01",
-        "type": null,
-        "latitude": "1.28951400",
-        "longitude": "103.81438790"
-    },
-    {
-        "id": 4649,
-        "name": "North East Community Development Council",
-        "country_id": 199,
-        "country_code": "SG",
-        "country_name": "Singapore",
-        "state_code": "02",
-        "type": null,
-        "latitude": "45.01181130",
-        "longitude": "-93.24681070"
-    },
-    {
-        "id": 4653,
-        "name": "North West Community Development Council",
-        "country_id": 199,
-        "country_code": "SG",
-        "country_name": "Singapore",
-        "state_code": "03",
-        "type": null,
-        "latitude": "39.10709300",
-        "longitude": "-94.45733600"
-    },
-    {
-        "id": 4650,
-        "name": "South East Community Development Council",
-        "country_id": 199,
-        "country_code": "SG",
-        "country_name": "Singapore",
-        "state_code": "04",
-        "type": null,
-        "latitude": "39.28630700",
-        "longitude": "-76.56912370"
-    },
-    {
-        "id": 4652,
-        "name": "South West Community Development Council",
-        "country_id": 199,
-        "country_code": "SG",
-        "country_name": "Singapore",
-        "state_code": "05",
-        "type": null,
-        "latitude": "39.92569100",
-        "longitude": "-75.23105800"
-    },
-    {
         "id": 4352,
         "name": "Banská Bystrica Region",
         "country_id": 200,
