@@ -204,13 +204,13 @@
         "dir": "ltr"
     },
     {
-        "code": "cs",
+        "code": "hr",
         "name":"Croatian",
         "name_native":"hrvatski",
         "dir": "ltr"
     },
     {
-        "code": "aa",
+        "code": "cs",
         "name":"Czech",
         "name_native":"česky, čeština",
         "dir": "ltr"
