@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.22 - 2023-03-20
+- Correction of the Croatian and Czech language codes @svenraudkivi
+
 ### 1.1.21 - 2023-03-08
 - Removed Singapore cities and states. @pengkong
 
