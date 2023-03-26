@@ -16,11 +16,11 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### What's new in v1.1.20?  
-- Updated source data: countries, states and cities.  
-- Addition of a console command to refresh the new world data:  
-  - Run `composer update`  
-  - Run php artisan `world:refresh`  
+### What's new in v1.1.23?  
+- Croatia currency changed to EUR.
+Upgrades can be done as:
+- Run `composer update` 
+- Run `php artisan world:refresh`  
 
 It is important to note that the world refresh command will drop the existing tables, migrate and re-seed the new data.  
 
