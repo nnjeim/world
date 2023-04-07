@@ -250,4 +250,5 @@ return [
 	'WF' => 'Wallis e Futuna',
 	'ZM' => 'Zâmbia',
 	'ZW' => 'Zimbábue',
+	'XK' => 'Kosovo',
 ];

@@ -250,4 +250,5 @@ return [
     'SS' => 'Zuid-Soedan',
     'SE' => 'Zweden',
     'CH' => 'Zwitserland',
+	'XK' => 'Kosovo',
 ];

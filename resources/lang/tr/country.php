@@ -250,4 +250,5 @@ return [
 	'GR' => 'Yunanistan',
 	'ZM' => 'Zambiya',
 	'ZW' => 'Zimbabve',
+	'XK' => 'Kosova',
 ];

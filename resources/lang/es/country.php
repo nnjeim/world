@@ -250,4 +250,5 @@ return [
 	'DJ' => 'Yibuti',
 	'ZM' => 'Zambia',
 	'ZW' => 'Zimbabue',
+	'XK' => 'Kosovo',
 ];

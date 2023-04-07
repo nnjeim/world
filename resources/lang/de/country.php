@@ -250,4 +250,5 @@ return [
 	'EH' => 'Westsahara',
 	'CF' => 'Zentralafrikanische Republik',
 	'CY' => 'Zypern',
+	'XK' => 'Kosovo',
 ];
