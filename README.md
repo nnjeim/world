@@ -16,8 +16,8 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### What's new in v1.1.23?  
-- Croatia currency changed to EUR.
+### What's new in v1.1.24?  
+- Added Kosovo country name localisation.
 Upgrades can be done as:
 - Run `composer update` 
 - Run `php artisan world:refresh`  

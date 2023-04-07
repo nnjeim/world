@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.24 - 2023-04-07
+- As of January 2023, the currency of Croatia changed to Euro @manuelfrans
+
 ### 1.1.23 - 2023-03-20
 - As of January 2023, the currency of Croatia changed to Euro @manuelfrans
 
