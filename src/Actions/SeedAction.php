@@ -253,13 +253,17 @@ class SeedAction extends Seeder
 	 */
 	private function seedTimezones(Models\Country $country, $countryArray): void
 	{
+	    $bulk_timezones = [];
+
 		foreach ($countryArray['timezones'] as $timezone) {
-			$country
-				->timezones()
-				->create([
-					'name' => (string) $timezone['zoneName'],
-				]);
+		    $bulk_timezones[] = [
+		        'country_id' => $country->id,
+                'name' => (string) $timezone['zoneName']
+            ];
 		}
+
+		Models\Timezone::query()
+            ->insert($bulk_timezones);
 	}
 
 	private function seedCurrencies(Models\Country $country, array $countryArray): void
