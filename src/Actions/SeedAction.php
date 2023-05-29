@@ -295,10 +295,9 @@ class SeedAction extends Seeder
 	 */
 	private function seedLanguages(): void
 	{
-		// languages
-		foreach ($this->modules['languages']['data'] as $language) {
-			Models\Language::create($language);
-		}
+        // languages
+        Models\Language::query()
+            ->insert($this->modules['languages']['data']);
 	}
 
 	/**
