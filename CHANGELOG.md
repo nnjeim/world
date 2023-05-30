@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.25 - 2023-05-30
+- Improved seeder performance @mrmmg
+
 ### 1.1.24 - 2023-04-07
 - As of January 2023, the currency of Croatia changed to Euro @manuelfrans
 
