@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.26 - 2023-06-05
+- Added missing Côte d'Ivoire native name
+
 ### 1.1.25 - 2023-05-30
 - Improved seeder performance @mrmmg
 
