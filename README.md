@@ -16,8 +16,8 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### What's new in v1.1.26?  
-- Added missing Côte d'Ivoire native name.
+### What's new in v1.1.27?  
+- Allow world refresh only in development.
 Upgrades can be done as:
 - Run `composer update` 
 - Run `php artisan world:refresh`  

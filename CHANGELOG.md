@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.27 - 2023-06-15
+- Disallow world:refresh in production.
+
 ### 1.1.26 - 2023-06-05
 - Added missing Côte d'Ivoire native name
 

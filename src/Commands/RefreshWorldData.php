@@ -41,6 +41,12 @@ class RefreshWorldData extends Command
 	 */
 	public function handle()
 	{
+		// check if we are in production mode
+		if (app()->environment() === 'production') {
+			$this->error('You are in production mode. This command is not allowed in production mode.');
+			return;
+		}
+		// drop the world tables
 		$worldTables = [
 			'world.migrations.countries.table_name',
 			'world.migrations.states.table_name',
