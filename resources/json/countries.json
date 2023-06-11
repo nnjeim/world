@@ -36,7 +36,8 @@
             "ja": "アフガニスタン",
             "it": "Afghanistan",
             "cn": "阿富汗",
-            "tr": "Afganistan"
+            "tr": "Afganistan",
+            "ar": "افغانستان"
         },
         "latitude": "33.00000000",
         "longitude": "65.00000000",
@@ -80,7 +81,8 @@
             "ja": "オーランド諸島",
             "it": "Isole Aland",
             "cn": "奥兰群岛",
-            "tr": "Åland Adalari"
+            "tr": "Åland Adalari",
+            "ar": "جزر آلاند"
         },
         "latitude": "60.11666700",
         "longitude": "19.90000000",
@@ -124,7 +126,8 @@
             "ja": "アルバニア",
             "it": "Albania",
             "cn": "阿尔巴尼亚",
-            "tr": "Arnavutluk"
+            "tr": "Arnavutluk",
+            "ar": "ألبانيا"
         },
         "latitude": "41.00000000",
         "longitude": "20.00000000",
@@ -168,7 +171,8 @@
             "ja": "アルジェリア",
             "it": "Algeria",
             "cn": "阿尔及利亚",
-            "tr": "Cezayir"
+            "tr": "Cezayir",
+            "ar": "الجزائر"
         },
         "latitude": "28.00000000",
         "longitude": "3.00000000",
@@ -212,7 +216,8 @@
             "ja": "アメリカ領サモア",
             "it": "Samoa Americane",
             "cn": "美属萨摩亚",
-            "tr": "Amerikan Samoasi"
+            "tr": "Amerikan Samoasi",
+            "ar": "ساموا الأمريكية"
         },
         "latitude": "-14.33333333",
         "longitude": "-170.00000000",
@@ -256,7 +261,8 @@
             "ja": "アンドラ",
             "it": "Andorra",
             "cn": "安道尔",
-            "tr": "Andorra"
+            "tr": "Andorra",
+            "ar": "أندورا"
         },
         "latitude": "42.50000000",
         "longitude": "1.50000000",
@@ -300,7 +306,8 @@
             "ja": "アンゴラ",
             "it": "Angola",
             "cn": "安哥拉",
-            "tr": "Angola"
+            "tr": "Angola",
+            "ar": "أنغولا"
         },
         "latitude": "-12.50000000",
         "longitude": "18.50000000",
@@ -344,7 +351,8 @@
             "ja": "アンギラ",
             "it": "Anguilla",
             "cn": "安圭拉",
-            "tr": "Anguilla"
+            "tr": "Anguilla",
+            "ar": "أنغيلا"
         },
         "latitude": "18.25000000",
         "longitude": "-63.16666666",
@@ -451,7 +459,8 @@
             "ja": "南極大陸",
             "it": "Antartide",
             "cn": "南极洲",
-            "tr": "Antartika"
+            "tr": "Antartika",
+            "ar": "القطب الجنوبي"
         },
         "latitude": "-74.65000000",
         "longitude": "4.48000000",
@@ -495,7 +504,8 @@
             "ja": "アンティグア・バーブーダ",
             "it": "Antigua e Barbuda",
             "cn": "安提瓜和巴布达",
-            "tr": "Antigua Ve Barbuda"
+            "tr": "Antigua Ve Barbuda",
+            "ar": "أنتيغوا وباربودا"
         },
         "latitude": "17.05000000",
         "longitude": "-61.80000000",
@@ -616,7 +626,8 @@
             "ja": "アルゼンチン",
             "it": "Argentina",
             "cn": "阿根廷",
-            "tr": "Arjantin"
+            "tr": "Arjantin",
+            "ar": "الأرجنتين"
         },
         "latitude": "-34.00000000",
         "longitude": "-64.00000000",
@@ -660,7 +671,8 @@
             "ja": "アルメニア",
             "it": "Armenia",
             "cn": "亚美尼亚",
-            "tr": "Ermenistan"
+            "tr": "Ermenistan",
+            "ar": "أرمينيا"
         },
         "latitude": "40.00000000",
         "longitude": "45.00000000",
@@ -704,7 +716,8 @@
             "ja": "アルバ",
             "it": "Aruba",
             "cn": "阿鲁巴",
-            "tr": "Aruba"
+            "tr": "Aruba",
+            "ar": "أروبا"
         },
         "latitude": "12.50000000",
         "longitude": "-69.96666666",
@@ -832,7 +845,8 @@
             "ja": "オーストラリア",
             "it": "Australia",
             "cn": "澳大利亚",
-            "tr": "Avustralya"
+            "tr": "Avustralya",
+            "ar": "أستراليا"
         },
         "latitude": "-27.00000000",
         "longitude": "133.00000000",
@@ -876,7 +890,8 @@
             "ja": "オーストリア",
             "it": "Austria",
             "cn": "奥地利",
-            "tr": "Avusturya"
+            "tr": "Avusturya",
+            "ar": "النمسا"
         },
         "latitude": "47.33333333",
         "longitude": "13.33333333",
@@ -920,7 +935,8 @@
             "ja": "アゼルバイジャン",
             "it": "Azerbaijan",
             "cn": "阿塞拜疆",
-            "tr": "Azerbaycan"
+            "tr": "Azerbaycan",
+            "ar": "أذربيجان"
         },
         "latitude": "40.50000000",
         "longitude": "47.50000000",
@@ -964,7 +980,8 @@
             "ja": "バーレーン",
             "it": "Bahrein",
             "cn": "巴林",
-            "tr": "Bahreyn"
+            "tr": "Bahreyn",
+            "ar": "البحرين"
         },
         "latitude": "26.00000000",
         "longitude": "50.55000000",
@@ -1008,7 +1025,8 @@
             "ja": "バングラデシュ",
             "it": "Bangladesh",
             "cn": "孟加拉",
-            "tr": "Bangladeş"
+            "tr": "Bangladeş",
+            "ar": "بنغلاديش"
         },
         "latitude": "24.00000000",
         "longitude": "90.00000000",
@@ -1052,7 +1070,8 @@
             "ja": "バルバドス",
             "it": "Barbados",
             "cn": "巴巴多斯",
-            "tr": "Barbados"
+            "tr": "Barbados",
+            "ar": "باربادوس"
         },
         "latitude": "13.16666666",
         "longitude": "-59.53333333",
@@ -1096,7 +1115,8 @@
             "ja": "ベラルーシ",
             "it": "Bielorussia",
             "cn": "白俄罗斯",
-            "tr": "Belarus"
+            "tr": "Belarus",
+            "ar": "بيلاروسيا"
         },
         "latitude": "53.00000000",
         "longitude": "28.00000000",
@@ -1140,7 +1160,8 @@
             "ja": "ベルギー",
             "it": "Belgio",
             "cn": "比利时",
-            "tr": "Belçika"
+            "tr": "Belçika",
+            "ar": "بلجيكا"
         },
         "latitude": "50.83333333",
         "longitude": "4.00000000",
@@ -1184,7 +1205,8 @@
             "ja": "ベリーズ",
             "it": "Belize",
             "cn": "伯利兹",
-            "tr": "Belize"
+            "tr": "Belize",
+            "ar": "بيليز"
         },
         "latitude": "17.25000000",
         "longitude": "-88.75000000",
@@ -1228,7 +1250,8 @@
             "ja": "ベナン",
             "it": "Benin",
             "cn": "贝宁",
-            "tr": "Benin"
+            "tr": "Benin",
+            "ar": "بنين"
         },
         "latitude": "9.50000000",
         "longitude": "2.25000000",
@@ -1272,7 +1295,8 @@
             "ja": "バミューダ",
             "it": "Bermuda",
             "cn": "百慕大",
-            "tr": "Bermuda"
+            "tr": "Bermuda",
+            "ar": "برمودا"
         },
         "latitude": "32.33333333",
         "longitude": "-64.75000000",
@@ -1316,7 +1340,8 @@
             "ja": "ブータン",
             "it": "Bhutan",
             "cn": "不丹",
-            "tr": "Butan"
+            "tr": "Butan",
+            "ar": "بوتان"
         },
         "latitude": "27.50000000",
         "longitude": "90.50000000",
@@ -1360,7 +1385,8 @@
             "ja": "ボリビア多民族国",
             "it": "Bolivia",
             "cn": "玻利维亚",
-            "tr": "Bolivya"
+            "tr": "Bolivya",
+            "ar": "بوليفيا"
         },
         "latitude": "-17.00000000",
         "longitude": "-65.00000000",
@@ -1400,7 +1426,8 @@
             "fr": "Bonaire, Saint-Eustache et Saba",
             "it": "Bonaire, Saint-Eustache e Saba",
             "cn": "博内尔岛、圣尤斯特歇斯和萨巴岛",
-            "tr": "Karayip Hollandasi"
+            "tr": "Karayip Hollandasi",
+            "ar": "الجزر الكاريبية الهولندية"
         },
         "latitude": "12.15000000",
         "longitude": "-68.26666700",
@@ -1444,7 +1471,8 @@
             "ja": "ボスニア・ヘルツェゴビナ",
             "it": "Bosnia ed Erzegovina",
             "cn": "波斯尼亚和黑塞哥维那",
-            "tr": "Bosna Hersek"
+            "tr": "Bosna Hersek",
+            "ar": "البوسنة والهرسك"
         },
         "latitude": "44.00000000",
         "longitude": "18.00000000",
@@ -1488,7 +1516,8 @@
             "ja": "ボツワナ",
             "it": "Botswana",
             "cn": "博茨瓦纳",
-            "tr": "Botsvana"
+            "tr": "Botsvana",
+            "ar": "بوتسوانا"
         },
         "latitude": "-22.00000000",
         "longitude": "24.00000000",
@@ -1532,7 +1561,8 @@
             "ja": "ブーベ島",
             "it": "Isola Bouvet",
             "cn": "布维岛",
-            "tr": "Bouvet Adasi"
+            "tr": "Bouvet Adasi",
+            "ar": "جزيرة بوفيت"
         },
         "latitude": "-54.43333333",
         "longitude": "3.40000000",
@@ -1681,7 +1711,8 @@
             "ja": "ブラジル",
             "it": "Brasile",
             "cn": "巴西",
-            "tr": "Brezilya"
+            "tr": "Brezilya",
+            "ar": "البرازيل"
         },
         "latitude": "-10.00000000",
         "longitude": "-55.00000000",
@@ -1725,7 +1756,8 @@
             "ja": "イギリス領インド洋地域",
             "it": "Territorio britannico dell'oceano indiano",
             "cn": "英属印度洋领地",
-            "tr": "Britanya Hint Okyanusu Topraklari"
+            "tr": "Britanya Hint Okyanusu Topraklari",
+            "ar": "إقليم المحيط البريطاني الهندي"
         },
         "latitude": "-6.00000000",
         "longitude": "71.50000000",
@@ -1769,7 +1801,8 @@
             "ja": "ブルネイ・ダルサラーム",
             "it": "Brunei",
             "cn": "文莱",
-            "tr": "Brunei"
+            "tr": "Brunei",
+            "ar": "بروناي"
         },
         "latitude": "4.50000000",
         "longitude": "114.66666666",
@@ -1813,7 +1846,8 @@
             "ja": "ブルガリア",
             "it": "Bulgaria",
             "cn": "保加利亚",
-            "tr": "Bulgaristan"
+            "tr": "Bulgaristan",
+            "ar": "بلغاريا"
         },
         "latitude": "43.00000000",
         "longitude": "25.00000000",
@@ -1857,7 +1891,8 @@
             "ja": "ブルキナファソ",
             "it": "Burkina Faso",
             "cn": "布基纳法索",
-            "tr": "Burkina Faso"
+            "tr": "Burkina Faso",
+            "ar": "بوركينا فاسو"
         },
         "latitude": "13.00000000",
         "longitude": "-2.00000000",
@@ -1901,7 +1936,8 @@
             "ja": "ブルンジ",
             "it": "Burundi",
             "cn": "布隆迪",
-            "tr": "Burundi"
+            "tr": "Burundi",
+            "ar": "بوروندي"
         },
         "latitude": "-3.50000000",
         "longitude": "30.00000000",
@@ -1945,7 +1981,8 @@
             "ja": "カンボジア",
             "it": "Cambogia",
             "cn": "柬埔寨",
-            "tr": "Kamboçya"
+            "tr": "Kamboçya",
+            "ar": "كمبوديا"
         },
         "latitude": "13.00000000",
         "longitude": "105.00000000",
@@ -1989,7 +2026,8 @@
             "ja": "カメルーン",
             "it": "Camerun",
             "cn": "喀麦隆",
-            "tr": "Kamerun"
+            "tr": "Kamerun",
+            "ar": "الكاميرون"
         },
         "latitude": "6.00000000",
         "longitude": "12.00000000",
@@ -2222,7 +2260,8 @@
             "ja": "カナダ",
             "it": "Canada",
             "cn": "加拿大",
-            "tr": "Kanada"
+            "tr": "Kanada",
+            "ar": "كندا"
         },
         "latitude": "60.00000000",
         "longitude": "-95.00000000",
@@ -2266,7 +2305,8 @@
             "ja": "カーボベルデ",
             "it": "Capo Verde",
             "cn": "佛得角",
-            "tr": "Cabo Verde"
+            "tr": "Cabo Verde",
+            "ar": "الرأس الأخضر"
         },
         "latitude": "16.00000000",
         "longitude": "-24.00000000",
@@ -2310,7 +2350,8 @@
             "ja": "ケイマン諸島",
             "it": "Isole Cayman",
             "cn": "开曼群岛",
-            "tr": "Cayman Adalari"
+            "tr": "Cayman Adalari",
+            "ar": "جزر كايمان"
         },
         "latitude": "19.50000000",
         "longitude": "-80.50000000",
@@ -2354,7 +2395,8 @@
             "ja": "中央アフリカ共和国",
             "it": "Repubblica Centrafricana",
             "cn": "中非",
-            "tr": "Orta Afrika Cumhuriyeti"
+            "tr": "Orta Afrika Cumhuriyeti",
+            "ar": "جمهورية افريقيا الوسطى"
         },
         "latitude": "7.00000000",
         "longitude": "21.00000000",
@@ -2398,7 +2440,8 @@
             "ja": "チャド",
             "it": "Ciad",
             "cn": "乍得",
-            "tr": "Çad"
+            "tr": "Çad",
+            "ar": "تشاد"
         },
         "latitude": "15.00000000",
         "longitude": "19.00000000",
@@ -2456,7 +2499,8 @@
             "ja": "チリ",
             "it": "Cile",
             "cn": "智利",
-            "tr": "Şili"
+            "tr": "Şili",
+            "ar": "تشيلي"
         },
         "latitude": "-30.00000000",
         "longitude": "-71.00000000",
@@ -2507,7 +2551,8 @@
             "ja": "中国",
             "it": "Cina",
             "cn": "中国",
-            "tr": "Çin"
+            "tr": "Çin",
+            "ar": "الصين"
         },
         "latitude": "35.00000000",
         "longitude": "105.00000000",
@@ -2551,7 +2596,8 @@
             "ja": "クリスマス島",
             "it": "Isola di Natale",
             "cn": "圣诞岛",
-            "tr": "Christmas Adasi"
+            "tr": "Christmas Adasi",
+            "ar": "جزيرة الكريسماس"
         },
         "latitude": "-10.50000000",
         "longitude": "105.66666666",
@@ -2595,7 +2641,8 @@
             "ja": "ココス（キーリング）諸島",
             "it": "Isole Cocos e Keeling",
             "cn": "科科斯（基林）群岛",
-            "tr": "Cocos Adalari"
+            "tr": "Cocos Adalari",
+            "ar": "إقليم جزر كوكوس ملايو"
         },
         "latitude": "-12.50000000",
         "longitude": "96.83333333",
@@ -2639,7 +2686,8 @@
             "ja": "コロンビア",
             "it": "Colombia",
             "cn": "哥伦比亚",
-            "tr": "Kolombiya"
+            "tr": "Kolombiya",
+            "ar": "كولومبيا"
         },
         "latitude": "4.00000000",
         "longitude": "-72.00000000",
@@ -2683,7 +2731,8 @@
             "ja": "コモロ",
             "it": "Comore",
             "cn": "科摩罗",
-            "tr": "Komorlar"
+            "tr": "Komorlar",
+            "ar": "جزر القمر"
         },
         "latitude": "-12.16666666",
         "longitude": "44.25000000",
@@ -2727,7 +2776,8 @@
             "ja": "コンゴ共和国",
             "it": "Congo",
             "cn": "刚果",
-            "tr": "Kongo"
+            "tr": "Kongo",
+            "ar": "الكونغو"
         },
         "latitude": "-1.00000000",
         "longitude": "15.00000000",
@@ -2771,7 +2821,8 @@
             "ja": "クック諸島",
             "it": "Isole Cook",
             "cn": "库克群岛",
-            "tr": "Cook Adalari"
+            "tr": "Cook Adalari",
+            "ar": "جزر كوك"
         },
         "latitude": "-21.23333333",
         "longitude": "-159.76666666",
@@ -2815,7 +2866,8 @@
             "ja": "コスタリカ",
             "it": "Costa Rica",
             "cn": "哥斯达黎加",
-            "tr": "Kosta Rika"
+            "tr": "Kosta Rika",
+            "ar": "كوستا ريكا"
         },
         "latitude": "10.00000000",
         "longitude": "-84.00000000",
@@ -2859,7 +2911,8 @@
             "ja": "コートジボワール",
             "it": "Costa D'Avorio",
             "cn": "科特迪瓦",
-            "tr": "Kotdivuar"
+            "tr": "Kotdivuar",
+            "ar": "ساحل العاج"
         },
         "latitude": "8.00000000",
         "longitude": "-5.00000000",
@@ -2903,7 +2956,8 @@
             "ja": "クロアチア",
             "it": "Croazia",
             "cn": "克罗地亚",
-            "tr": "Hirvatistan"
+            "tr": "Hirvatistan",
+            "ar": "كرواتيا"
         },
         "latitude": "45.16666666",
         "longitude": "15.50000000",
@@ -2947,7 +3001,8 @@
             "ja": "キューバ",
             "it": "Cuba",
             "cn": "古巴",
-            "tr": "Küba"
+            "tr": "Küba",
+            "ar": "كوبا"
         },
         "latitude": "21.50000000",
         "longitude": "-80.00000000",
@@ -2988,7 +3043,8 @@
             "fr": "Curaçao",
             "it": "Curaçao",
             "cn": "库拉索",
-            "tr": "Curaçao"
+            "tr": "Curaçao",
+            "ar": "كوراساو"
         },
         "latitude": "12.11666700",
         "longitude": "-68.93333300",
@@ -3039,7 +3095,8 @@
             "ja": "キプロス",
             "it": "Cipro",
             "cn": "塞浦路斯",
-            "tr": "Kuzey Kıbrıs Türk Cumhuriyeti"
+            "tr": "Kuzey Kıbrıs Türk Cumhuriyeti",
+            "ar": "قبرص"
         },
         "latitude": "35.00000000",
         "longitude": "33.00000000",
@@ -3083,7 +3140,8 @@
             "ja": "チェコ",
             "it": "Repubblica Ceca",
             "cn": "捷克",
-            "tr": "Çekya"
+            "tr": "Çekya",
+            "ar": "الجمهورية التشيكية"
         },
         "latitude": "49.75000000",
         "longitude": "15.50000000",
@@ -3134,7 +3192,8 @@
             "ja": "コンゴ民主共和国",
             "it": "Congo (Rep. Dem.)",
             "cn": "刚果（金）",
-            "tr": "Kongo Demokratik Cumhuriyeti"
+            "tr": "Kongo Demokratik Cumhuriyeti",
+            "ar": "جمهورية الكونغو الديموقراطية"
         },
         "latitude": "0.00000000",
         "longitude": "25.00000000",
@@ -3178,7 +3237,8 @@
             "ja": "デンマーク",
             "it": "Danimarca",
             "cn": "丹麦",
-            "tr": "Danimarka"
+            "tr": "Danimarka",
+            "ar": "الدنمارك"
         },
         "latitude": "56.00000000",
         "longitude": "10.00000000",
@@ -3222,7 +3282,8 @@
             "ja": "ジブチ",
             "it": "Gibuti",
             "cn": "吉布提",
-            "tr": "Cibuti"
+            "tr": "Cibuti",
+            "ar": "جيبوتي"
         },
         "latitude": "11.50000000",
         "longitude": "43.00000000",
@@ -3266,7 +3327,8 @@
             "ja": "ドミニカ国",
             "it": "Dominica",
             "cn": "多米尼加",
-            "tr": "Dominika"
+            "tr": "Dominika",
+            "ar": "دومينيكا"
         },
         "latitude": "15.41666666",
         "longitude": "-61.33333333",
@@ -3310,7 +3372,8 @@
             "ja": "ドミニカ共和国",
             "it": "Repubblica Dominicana",
             "cn": "多明尼加共和国",
-            "tr": "Dominik Cumhuriyeti"
+            "tr": "Dominik Cumhuriyeti",
+            "ar": "جمهورية الدومينيكان"
         },
         "latitude": "19.00000000",
         "longitude": "-70.66666666",
@@ -3354,7 +3417,8 @@
             "ja": "東ティモール",
             "it": "Timor Est",
             "cn": "东帝汶",
-            "tr": "Doğu Timor"
+            "tr": "Doğu Timor",
+            "ar": "تيمور الشرقية"
         },
         "latitude": "-8.83333333",
         "longitude": "125.91666666",
@@ -3405,7 +3469,8 @@
             "ja": "エクアドル",
             "it": "Ecuador",
             "cn": "厄瓜多尔",
-            "tr": "Ekvator"
+            "tr": "Ekvator",
+            "ar": "الاكوادور"
         },
         "latitude": "-2.00000000",
         "longitude": "-77.50000000",
@@ -3449,7 +3514,8 @@
             "ja": "エジプト",
             "it": "Egitto",
             "cn": "埃及",
-            "tr": "Mısır"
+            "tr": "Mısır",
+            "ar": "مصر"
         },
         "latitude": "27.00000000",
         "longitude": "30.00000000",
@@ -3493,7 +3559,8 @@
             "ja": "エルサルバドル",
             "it": "El Salvador",
             "cn": "萨尔瓦多",
-            "tr": "El Salvador"
+            "tr": "El Salvador",
+            "ar": "السلفادور"
         },
         "latitude": "13.83333333",
         "longitude": "-88.91666666",
@@ -3537,7 +3604,8 @@
             "ja": "赤道ギニア",
             "it": "Guinea Equatoriale",
             "cn": "赤道几内亚",
-            "tr": "Ekvator Ginesi"
+            "tr": "Ekvator Ginesi",
+            "ar": "غينيا الإستوائية"
         },
         "latitude": "2.00000000",
         "longitude": "10.00000000",
@@ -3581,7 +3649,8 @@
             "ja": "エリトリア",
             "it": "Eritrea",
             "cn": "厄立特里亚",
-            "tr": "Eritre"
+            "tr": "Eritre",
+            "ar": "إريتريا"
         },
         "latitude": "15.00000000",
         "longitude": "39.00000000",
@@ -3625,7 +3694,8 @@
             "ja": "エストニア",
             "it": "Estonia",
             "cn": "爱沙尼亚",
-            "tr": "Estonya"
+            "tr": "Estonya",
+            "ar": "إستونيا"
         },
         "latitude": "59.00000000",
         "longitude": "26.00000000",
@@ -3669,7 +3739,8 @@
             "ja": "エチオピア",
             "it": "Etiopia",
             "cn": "埃塞俄比亚",
-            "tr": "Etiyopya"
+            "tr": "Etiyopya",
+            "ar": "أثيوبيا"
         },
         "latitude": "8.00000000",
         "longitude": "38.00000000",
@@ -3713,7 +3784,8 @@
             "ja": "フォークランド（マルビナス）諸島",
             "it": "Isole Falkland o Isole Malvine",
             "cn": "福克兰群岛",
-            "tr": "Falkland Adalari"
+            "tr": "Falkland Adalari",
+            "ar": "جزر فوكلاند"
         },
         "latitude": "-51.75000000",
         "longitude": "-59.00000000",
@@ -3757,7 +3829,8 @@
             "ja": "フェロー諸島",
             "it": "Isole Far Oer",
             "cn": "法罗群岛",
-            "tr": "Faroe Adalari"
+            "tr": "Faroe Adalari",
+            "ar": "جزر فارو"
         },
         "latitude": "62.00000000",
         "longitude": "-7.00000000",
@@ -3801,7 +3874,8 @@
             "ja": "フィジー",
             "it": "Figi",
             "cn": "斐济",
-            "tr": "Fiji"
+            "tr": "Fiji",
+            "ar": "فيجي"
         },
         "latitude": "-18.00000000",
         "longitude": "175.00000000",
@@ -3845,7 +3919,8 @@
             "ja": "フィンランド",
             "it": "Finlandia",
             "cn": "芬兰",
-            "tr": "Finlandiya"
+            "tr": "Finlandiya",
+            "ar": "فنلندا"
         },
         "latitude": "64.00000000",
         "longitude": "26.00000000",
@@ -3889,7 +3964,8 @@
             "ja": "フランス",
             "it": "Francia",
             "cn": "法国",
-            "tr": "Fransa"
+            "tr": "Fransa",
+            "ar": "فرنسا"
         },
         "latitude": "46.00000000",
         "longitude": "2.00000000",
@@ -3933,7 +4009,8 @@
             "ja": "フランス領ギアナ",
             "it": "Guyana francese",
             "cn": "法属圭亚那",
-            "tr": "Fransiz Guyanasi"
+            "tr": "Fransiz Guyanasi",
+            "ar": "غيانا الفرنسية"
         },
         "latitude": "4.00000000",
         "longitude": "-53.00000000",
@@ -3991,7 +4068,8 @@
             "ja": "フランス領ポリネシア",
             "it": "Polinesia Francese",
             "cn": "法属波利尼西亚",
-            "tr": "Fransiz Polinezyasi"
+            "tr": "Fransiz Polinezyasi",
+            "ar": "بولينيزيا الفرنسية"
         },
         "latitude": "-15.00000000",
         "longitude": "-140.00000000",
@@ -4035,7 +4113,8 @@
             "ja": "フランス領南方・南極地域",
             "it": "Territori Francesi del Sud",
             "cn": "法属南部领地",
-            "tr": "Fransiz Güney Topraklari"
+            "tr": "Fransiz Güney Topraklari",
+            "ar": "المناطق الجنوبية لفرنسا"
         },
         "latitude": "-49.25000000",
         "longitude": "69.16700000",
@@ -4079,7 +4158,8 @@
             "ja": "ガボン",
             "it": "Gabon",
             "cn": "加蓬",
-            "tr": "Gabon"
+            "tr": "Gabon",
+            "ar": "الغابون"
         },
         "latitude": "-1.00000000",
         "longitude": "11.75000000",
@@ -4123,7 +4203,8 @@
             "ja": "ガンビア",
             "it": "Gambia",
             "cn": "冈比亚",
-            "tr": "Gambiya"
+            "tr": "Gambiya",
+            "ar": "غامبيا"
         },
         "latitude": "13.46666666",
         "longitude": "-16.56666666",
@@ -4167,7 +4248,8 @@
             "ja": "グルジア",
             "it": "Georgia",
             "cn": "格鲁吉亚",
-            "tr": "Gürcistan"
+            "tr": "Gürcistan",
+            "ar": "جورجيا"
         },
         "latitude": "42.00000000",
         "longitude": "43.50000000",
@@ -4218,7 +4300,8 @@
             "ja": "ドイツ",
             "it": "Germania",
             "cn": "德国",
-            "tr": "Almanya"
+            "tr": "Almanya",
+            "ar": "ألمانيا"
         },
         "latitude": "51.00000000",
         "longitude": "9.00000000",
@@ -4262,7 +4345,8 @@
             "ja": "ガーナ",
             "it": "Ghana",
             "cn": "加纳",
-            "tr": "Gana"
+            "tr": "Gana",
+            "ar": "غانا"
         },
         "latitude": "8.00000000",
         "longitude": "-2.00000000",
@@ -4306,7 +4390,8 @@
             "ja": "ジブラルタル",
             "it": "Gibilterra",
             "cn": "直布罗陀",
-            "tr": "Cebelitarik"
+            "tr": "Cebelitarik",
+            "ar": "جبل طارق"
         },
         "latitude": "36.13333333",
         "longitude": "-5.35000000",
@@ -4350,7 +4435,8 @@
             "ja": "ギリシャ",
             "it": "Grecia",
             "cn": "希腊",
-            "tr": "Yunanistan"
+            "tr": "Yunanistan",
+            "ar": "اليونان"
         },
         "latitude": "39.00000000",
         "longitude": "22.00000000",
@@ -4415,7 +4501,8 @@
             "ja": "グリーンランド",
             "it": "Groenlandia",
             "cn": "格陵兰岛",
-            "tr": "Grönland"
+            "tr": "Grönland",
+            "ar": "جرينلاند"
         },
         "latitude": "72.00000000",
         "longitude": "-40.00000000",
@@ -4459,7 +4546,8 @@
             "ja": "グレナダ",
             "it": "Grenada",
             "cn": "格林纳达",
-            "tr": "Grenada"
+            "tr": "Grenada",
+            "ar": "غرينادا"
         },
         "latitude": "12.11666666",
         "longitude": "-61.66666666",
@@ -4503,7 +4591,8 @@
             "ja": "グアドループ",
             "it": "Guadeloupa",
             "cn": "瓜德罗普岛",
-            "tr": "Guadeloupe"
+            "tr": "Guadeloupe",
+            "ar": "جزر وادي اللب"
         },
         "latitude": "16.25000000",
         "longitude": "-61.58333300",
@@ -4547,7 +4636,8 @@
             "ja": "グアム",
             "it": "Guam",
             "cn": "关岛",
-            "tr": "Guam"
+            "tr": "Guam",
+            "ar": "غوام"
         },
         "latitude": "13.46666666",
         "longitude": "144.78333333",
@@ -4591,7 +4681,8 @@
             "ja": "グアテマラ",
             "it": "Guatemala",
             "cn": "危地马拉",
-            "tr": "Guatemala"
+            "tr": "Guatemala",
+            "ar": "غواتيمالا"
         },
         "latitude": "15.50000000",
         "longitude": "-90.25000000",
@@ -4635,7 +4726,8 @@
             "ja": "ガーンジー",
             "it": "Guernsey",
             "cn": "根西岛",
-            "tr": "Alderney"
+            "tr": "Alderney",
+            "ar": "غيرنزي وألدرني"
         },
         "latitude": "49.46666666",
         "longitude": "-2.58333333",
@@ -4679,7 +4771,8 @@
             "ja": "ギニア",
             "it": "Guinea",
             "cn": "几内亚",
-            "tr": "Gine"
+            "tr": "Gine",
+            "ar": "غينيا"
         },
         "latitude": "11.00000000",
         "longitude": "-10.00000000",
@@ -4723,7 +4816,8 @@
             "ja": "ギニアビサウ",
             "it": "Guinea-Bissau",
             "cn": "几内亚比绍",
-            "tr": "Gine-bissau"
+            "tr": "Gine-bissau",
+            "ar": "غينيا بيساو"
         },
         "latitude": "12.00000000",
         "longitude": "-15.00000000",
@@ -4767,7 +4861,8 @@
             "ja": "ガイアナ",
             "it": "Guyana",
             "cn": "圭亚那",
-            "tr": "Guyana"
+            "tr": "Guyana",
+            "ar": "غيانا"
         },
         "latitude": "5.00000000",
         "longitude": "-59.00000000",
@@ -4811,7 +4906,8 @@
             "ja": "ハイチ",
             "it": "Haiti",
             "cn": "海地",
-            "tr": "Haiti"
+            "tr": "Haiti",
+            "ar": "هايتي"
         },
         "latitude": "19.00000000",
         "longitude": "-72.41666666",
@@ -4855,7 +4951,8 @@
             "ja": "ハード島とマクドナルド諸島",
             "it": "Isole Heard e McDonald",
             "cn": "赫德·唐纳岛及麦唐纳岛",
-            "tr": "Heard Adasi Ve Mcdonald Adalari"
+            "tr": "Heard Adasi Ve Mcdonald Adalari",
+            "ar": "جزيرة هيرد وجزر ماكدونالد"
         },
         "latitude": "-53.10000000",
         "longitude": "72.51666666",
@@ -4899,7 +4996,8 @@
             "ja": "ホンジュラス",
             "it": "Honduras",
             "cn": "洪都拉斯",
-            "tr": "Honduras"
+            "tr": "Honduras",
+            "ar": "هندوراس"
         },
         "latitude": "15.00000000",
         "longitude": "-86.50000000",
@@ -4943,7 +5041,8 @@
             "ja": "香港",
             "it": "Hong Kong",
             "cn": "中国香港",
-            "tr": "Hong Kong"
+            "tr": "Hong Kong",
+            "ar": "هونغ كونغ"
         },
         "latitude": "22.25000000",
         "longitude": "114.16666666",
@@ -4987,7 +5086,8 @@
             "ja": "ハンガリー",
             "it": "Ungheria",
             "cn": "匈牙利",
-            "tr": "Macaristan"
+            "tr": "Macaristan",
+            "ar": "المجر"
         },
         "latitude": "47.00000000",
         "longitude": "20.00000000",
@@ -5031,7 +5131,8 @@
             "ja": "アイスランド",
             "it": "Islanda",
             "cn": "冰岛",
-            "tr": "İzlanda"
+            "tr": "İzlanda",
+            "ar": "أيسلندا"
         },
         "latitude": "65.00000000",
         "longitude": "-18.00000000",
@@ -5075,7 +5176,8 @@
             "ja": "インド",
             "it": "India",
             "cn": "印度",
-            "tr": "Hindistan"
+            "tr": "Hindistan",
+            "ar": "الهند"
         },
         "latitude": "20.00000000",
         "longitude": "77.00000000",
@@ -5140,7 +5242,8 @@
             "ja": "インドネシア",
             "it": "Indonesia",
             "cn": "印度尼西亚",
-            "tr": "Endonezya"
+            "tr": "Endonezya",
+            "ar": "إندونيسيا"
         },
         "latitude": "-5.00000000",
         "longitude": "120.00000000",
@@ -5183,7 +5286,8 @@
             "fr": "Iran",
             "ja": "イラン・イスラム共和国",
             "cn": "伊朗",
-            "tr": "İran"
+            "tr": "İran",
+            "ar": "إيران"
         },
         "latitude": "32.00000000",
         "longitude": "53.00000000",
@@ -5227,7 +5331,8 @@
             "ja": "イラク",
             "it": "Iraq",
             "cn": "伊拉克",
-            "tr": "Irak"
+            "tr": "Irak",
+            "ar": "العراق"
         },
         "latitude": "33.00000000",
         "longitude": "44.00000000",
@@ -5271,7 +5376,8 @@
             "ja": "アイルランド",
             "it": "Irlanda",
             "cn": "爱尔兰",
-            "tr": "İrlanda"
+            "tr": "İrlanda",
+            "ar": "أيرلندا"
         },
         "latitude": "53.00000000",
         "longitude": "-8.00000000",
@@ -5315,7 +5421,8 @@
             "ja": "イスラエル",
             "it": "Israele",
             "cn": "以色列",
-            "tr": "İsrail"
+            "tr": "İsrail",
+            "ar": "إسرائيل"
         },
         "latitude": "31.50000000",
         "longitude": "34.75000000",
@@ -5359,7 +5466,8 @@
             "ja": "イタリア",
             "it": "Italia",
             "cn": "意大利",
-            "tr": "İtalya"
+            "tr": "İtalya",
+            "ar": "إيطاليا"
         },
         "latitude": "42.83333333",
         "longitude": "12.83333333",
@@ -5403,7 +5511,8 @@
             "ja": "ジャマイカ",
             "it": "Giamaica",
             "cn": "牙买加",
-            "tr": "Jamaika"
+            "tr": "Jamaika",
+            "ar": "جامايكا"
         },
         "latitude": "18.25000000",
         "longitude": "-77.50000000",
@@ -5447,7 +5556,8 @@
             "ja": "日本",
             "it": "Giappone",
             "cn": "日本",
-            "tr": "Japonya"
+            "tr": "Japonya",
+            "ar": "اليابان"
         },
         "latitude": "36.00000000",
         "longitude": "138.00000000",
@@ -5491,7 +5601,8 @@
             "ja": "ジャージー",
             "it": "Isola di Jersey",
             "cn": "泽西岛",
-            "tr": "Jersey"
+            "tr": "Jersey",
+            "ar": "جيرزي"
         },
         "latitude": "49.25000000",
         "longitude": "-2.16666666",
@@ -5535,7 +5646,8 @@
             "ja": "ヨルダン",
             "it": "Giordania",
             "cn": "约旦",
-            "tr": "Ürdün"
+            "tr": "Ürdün",
+            "ar": "الأردن"
         },
         "latitude": "31.00000000",
         "longitude": "36.00000000",
@@ -5621,7 +5733,8 @@
             "ja": "カザフスタン",
             "it": "Kazakistan",
             "cn": "哈萨克斯坦",
-            "tr": "Kazakistan"
+            "tr": "Kazakistan",
+            "ar": "كازاخستان"
         },
         "latitude": "48.00000000",
         "longitude": "68.00000000",
@@ -5665,7 +5778,8 @@
             "ja": "ケニア",
             "it": "Kenya",
             "cn": "肯尼亚",
-            "tr": "Kenya"
+            "tr": "Kenya",
+            "ar": "كينيا"
         },
         "latitude": "1.00000000",
         "longitude": "38.00000000",
@@ -5723,7 +5837,8 @@
             "ja": "キリバス",
             "it": "Kiribati",
             "cn": "基里巴斯",
-            "tr": "Kiribati"
+            "tr": "Kiribati",
+            "ar": "كيريباس"
         },
         "latitude": "1.41666666",
         "longitude": "173.00000000",
@@ -5757,7 +5872,8 @@
         "translations": {
             "kr": "코소보",
             "cn": "科索沃",
-            "tr": "Kosova"
+            "tr": "Kosova",
+            "ar": "كوسوفو"
         },
         "latitude": "42.56129090",
         "longitude": "20.34030350",
@@ -5801,7 +5917,8 @@
             "ja": "クウェート",
             "it": "Kuwait",
             "cn": "科威特",
-            "tr": "Kuveyt"
+            "tr": "Kuveyt",
+            "ar": "الكويت"
         },
         "latitude": "29.50000000",
         "longitude": "45.75000000",
@@ -5845,7 +5962,8 @@
             "ja": "キルギス",
             "it": "Kirghizistan",
             "cn": "吉尔吉斯斯坦",
-            "tr": "Kirgizistan"
+            "tr": "Kirgizistan",
+            "ar": "قيرغيزستان"
         },
         "latitude": "41.00000000",
         "longitude": "75.00000000",
@@ -5889,7 +6007,8 @@
             "ja": "ラオス人民民主共和国",
             "it": "Laos",
             "cn": "寮人民民主共和国",
-            "tr": "Laos"
+            "tr": "Laos",
+            "ar": "لاوس"
         },
         "latitude": "18.00000000",
         "longitude": "105.00000000",
@@ -5933,7 +6052,8 @@
             "ja": "ラトビア",
             "it": "Lettonia",
             "cn": "拉脱维亚",
-            "tr": "Letonya"
+            "tr": "Letonya",
+            "ar": "لاتفيا"
         },
         "latitude": "57.00000000",
         "longitude": "25.00000000",
@@ -5977,7 +6097,8 @@
             "ja": "レバノン",
             "it": "Libano",
             "cn": "黎巴嫩",
-            "tr": "Lübnan"
+            "tr": "Lübnan",
+            "ar": "لبنان"
         },
         "latitude": "33.83333333",
         "longitude": "35.83333333",
@@ -6021,7 +6142,8 @@
             "ja": "レソト",
             "it": "Lesotho",
             "cn": "莱索托",
-            "tr": "Lesotho"
+            "tr": "Lesotho",
+            "ar": "ليسوتو"
         },
         "latitude": "-29.50000000",
         "longitude": "28.50000000",
@@ -6065,7 +6187,8 @@
             "ja": "リベリア",
             "it": "Liberia",
             "cn": "利比里亚",
-            "tr": "Liberya"
+            "tr": "Liberya",
+            "ar": "ليبيريا"
         },
         "latitude": "6.50000000",
         "longitude": "-9.50000000",
@@ -6109,7 +6232,8 @@
             "ja": "リビア",
             "it": "Libia",
             "cn": "利比亚",
-            "tr": "Libya"
+            "tr": "Libya",
+            "ar": "ليبيا"
         },
         "latitude": "25.00000000",
         "longitude": "17.00000000",
@@ -6153,7 +6277,8 @@
             "ja": "リヒテンシュタイン",
             "it": "Liechtenstein",
             "cn": "列支敦士登",
-            "tr": "Lihtenştayn"
+            "tr": "Lihtenştayn",
+            "ar": "ليختنشتاين"
         },
         "latitude": "47.26666666",
         "longitude": "9.53333333",
@@ -6197,7 +6322,8 @@
             "ja": "リトアニア",
             "it": "Lituania",
             "cn": "立陶宛",
-            "tr": "Litvanya"
+            "tr": "Litvanya",
+            "ar": "ليتوانيا"
         },
         "latitude": "56.00000000",
         "longitude": "24.00000000",
@@ -6241,7 +6367,8 @@
             "ja": "ルクセンブルク",
             "it": "Lussemburgo",
             "cn": "卢森堡",
-            "tr": "Lüksemburg"
+            "tr": "Lüksemburg",
+            "ar": "لوكسمبورغ"
         },
         "latitude": "49.75000000",
         "longitude": "6.16666666",
@@ -6285,7 +6412,8 @@
             "ja": "マカオ",
             "it": "Macao",
             "cn": "中国澳门",
-            "tr": "Makao"
+            "tr": "Makao",
+            "ar": "ماكاو"
         },
         "latitude": "22.16666666",
         "longitude": "113.55000000",
@@ -6329,7 +6457,8 @@
             "ja": "マケドニア旧ユーゴスラビア共和国",
             "it": "Macedonia",
             "cn": "马其顿",
-            "tr": "Kuzey Makedonya"
+            "tr": "Kuzey Makedonya",
+            "ar": "مقدونيا"
         },
         "latitude": "41.83333333",
         "longitude": "22.00000000",
@@ -6373,7 +6502,8 @@
             "ja": "マダガスカル",
             "it": "Madagascar",
             "cn": "马达加斯加",
-            "tr": "Madagaskar"
+            "tr": "Madagaskar",
+            "ar": "مدغشقر"
         },
         "latitude": "-20.00000000",
         "longitude": "47.00000000",
@@ -6417,7 +6547,8 @@
             "ja": "マラウイ",
             "it": "Malawi",
             "cn": "马拉维",
-            "tr": "Malavi"
+            "tr": "Malavi",
+            "ar": "مالاوي"
         },
         "latitude": "-13.50000000",
         "longitude": "34.00000000",
@@ -6468,7 +6599,8 @@
             "ja": "マレーシア",
             "it": "Malesia",
             "cn": "马来西亚",
-            "tr": "Malezya"
+            "tr": "Malezya",
+            "ar": "ماليزيا"
         },
         "latitude": "2.50000000",
         "longitude": "112.50000000",
@@ -6512,7 +6644,8 @@
             "ja": "モルディブ",
             "it": "Maldive",
             "cn": "马尔代夫",
-            "tr": "Maldivler"
+            "tr": "Maldivler",
+            "ar": "جزر المالديف"
         },
         "latitude": "3.25000000",
         "longitude": "73.00000000",
@@ -6556,7 +6689,8 @@
             "ja": "マリ",
             "it": "Mali",
             "cn": "马里",
-            "tr": "Mali"
+            "tr": "Mali",
+            "ar": "مالي"
         },
         "latitude": "17.00000000",
         "longitude": "-4.00000000",
@@ -6600,7 +6734,8 @@
             "ja": "マルタ",
             "it": "Malta",
             "cn": "马耳他",
-            "tr": "Malta"
+            "tr": "Malta",
+            "ar": "مالطا"
         },
         "latitude": "35.83333333",
         "longitude": "14.58333333",
@@ -6644,7 +6779,8 @@
             "ja": "マン島",
             "it": "Isola di Man",
             "cn": "马恩岛",
-            "tr": "Man Adasi"
+            "tr": "Man Adasi",
+            "ar": "جزيرة آيل أوف مان"
         },
         "latitude": "54.25000000",
         "longitude": "-4.50000000",
@@ -6695,7 +6831,8 @@
             "ja": "マーシャル諸島",
             "it": "Isole Marshall",
             "cn": "马绍尔群岛",
-            "tr": "Marşal Adalari"
+            "tr": "Marşal Adalari",
+            "ar": "جزر مارشال"
         },
         "latitude": "9.00000000",
         "longitude": "168.00000000",
@@ -6739,7 +6876,8 @@
             "ja": "マルティニーク",
             "it": "Martinica",
             "cn": "马提尼克岛",
-            "tr": "Martinik"
+            "tr": "Martinik",
+            "ar": "مارتينيك"
         },
         "latitude": "14.66666700",
         "longitude": "-61.00000000",
@@ -6783,7 +6921,8 @@
             "ja": "モーリタニア",
             "it": "Mauritania",
             "cn": "毛里塔尼亚",
-            "tr": "Moritanya"
+            "tr": "Moritanya",
+            "ar": "موريتانيا"
         },
         "latitude": "20.00000000",
         "longitude": "-12.00000000",
@@ -6827,7 +6966,8 @@
             "ja": "モーリシャス",
             "it": "Mauritius",
             "cn": "毛里求斯",
-            "tr": "Morityus"
+            "tr": "Morityus",
+            "ar": "موريشيوس"
         },
         "latitude": "-20.28333333",
         "longitude": "57.55000000",
@@ -6871,7 +7011,8 @@
             "ja": "マヨット",
             "it": "Mayotte",
             "cn": "马约特",
-            "tr": "Mayotte"
+            "tr": "Mayotte",
+            "ar": "مايوت"
         },
         "latitude": "-12.83333333",
         "longitude": "45.16666666",
@@ -6985,7 +7126,8 @@
             "ja": "メキシコ",
             "it": "Messico",
             "cn": "墨西哥",
-            "tr": "Meksika"
+            "tr": "Meksika",
+            "ar": "المكسيك"
         },
         "latitude": "23.00000000",
         "longitude": "-102.00000000",
@@ -7043,7 +7185,8 @@
             "ja": "ミクロネシア連邦",
             "it": "Micronesia",
             "cn": "密克罗尼西亚",
-            "tr": "Mikronezya"
+            "tr": "Mikronezya",
+            "ar": "ولايات ميكرونيسيا المتحدة"
         },
         "latitude": "6.91666666",
         "longitude": "158.25000000",
@@ -7087,7 +7230,8 @@
             "ja": "モルドバ共和国",
             "it": "Moldavia",
             "cn": "摩尔多瓦",
-            "tr": "Moldova"
+            "tr": "Moldova",
+            "ar": "مولدوفا"
         },
         "latitude": "47.00000000",
         "longitude": "29.00000000",
@@ -7131,7 +7275,8 @@
             "ja": "モナコ",
             "it": "Principato di Monaco",
             "cn": "摩纳哥",
-            "tr": "Monako"
+            "tr": "Monako",
+            "ar": "موناكو"
         },
         "latitude": "43.73333333",
         "longitude": "7.40000000",
@@ -7189,7 +7334,8 @@
             "ja": "モンゴル",
             "it": "Mongolia",
             "cn": "蒙古",
-            "tr": "Moğolistan"
+            "tr": "Moğolistan",
+            "ar": "منغوليا"
         },
         "latitude": "46.00000000",
         "longitude": "105.00000000",
@@ -7233,7 +7379,8 @@
             "ja": "モンテネグロ",
             "it": "Montenegro",
             "cn": "黑山",
-            "tr": "Karadağ"
+            "tr": "Karadağ",
+            "ar": "الجبل الأسود"
         },
         "latitude": "42.50000000",
         "longitude": "19.30000000",
@@ -7277,7 +7424,8 @@
             "ja": "モントセラト",
             "it": "Montserrat",
             "cn": "蒙特塞拉特",
-            "tr": "Montserrat"
+            "tr": "Montserrat",
+            "ar": "جزيرة مونتسرات"
         },
         "latitude": "16.75000000",
         "longitude": "-62.20000000",
@@ -7321,7 +7469,8 @@
             "ja": "モロッコ",
             "it": "Marocco",
             "cn": "摩洛哥",
-            "tr": "Fas"
+            "tr": "Fas",
+            "ar": "المغرب"
         },
         "latitude": "32.00000000",
         "longitude": "-5.00000000",
@@ -7365,7 +7514,8 @@
             "ja": "モザンビーク",
             "it": "Mozambico",
             "cn": "莫桑比克",
-            "tr": "Mozambik"
+            "tr": "Mozambik",
+            "ar": "موزمبيق"
         },
         "latitude": "-18.25000000",
         "longitude": "35.00000000",
@@ -7409,7 +7559,8 @@
             "ja": "ミャンマー",
             "it": "Birmania",
             "cn": "缅甸",
-            "tr": "Myanmar"
+            "tr": "Myanmar",
+            "ar": "منيمار (بورما)"
         },
         "latitude": "22.00000000",
         "longitude": "98.00000000",
@@ -7453,7 +7604,8 @@
             "ja": "ナミビア",
             "it": "Namibia",
             "cn": "纳米比亚",
-            "tr": "Namibya"
+            "tr": "Namibya",
+            "ar": "ناميبيا"
         },
         "latitude": "-22.00000000",
         "longitude": "17.00000000",
@@ -7497,7 +7649,8 @@
             "ja": "ナウル",
             "it": "Nauru",
             "cn": "瑙鲁",
-            "tr": "Nauru"
+            "tr": "Nauru",
+            "ar": "ناورو"
         },
         "latitude": "-0.53333333",
         "longitude": "166.91666666",
@@ -7541,7 +7694,8 @@
             "ja": "ネパール",
             "it": "Nepal",
             "cn": "尼泊尔",
-            "tr": "Nepal"
+            "tr": "Nepal",
+            "ar": "نيبال"
         },
         "latitude": "28.00000000",
         "longitude": "84.00000000",
@@ -7585,7 +7739,8 @@
             "ja": "オランダ",
             "it": "Paesi Bassi",
             "cn": "荷兰",
-            "tr": "Hollanda"
+            "tr": "Hollanda",
+            "ar": "هولندا"
         },
         "latitude": "52.50000000",
         "longitude": "5.75000000",
@@ -7629,7 +7784,8 @@
             "ja": "ニューカレドニア",
             "it": "Nuova Caledonia",
             "cn": "新喀里多尼亚",
-            "tr": "Yeni Kaledonya"
+            "tr": "Yeni Kaledonya",
+            "ar": "كاليدونيا الجديدة"
         },
         "latitude": "-21.50000000",
         "longitude": "165.50000000",
@@ -7680,7 +7836,8 @@
             "ja": "ニュージーランド",
             "it": "Nuova Zelanda",
             "cn": "新西兰",
-            "tr": "Yeni Zelanda"
+            "tr": "Yeni Zelanda",
+            "ar": "نيوزيلندا"
         },
         "latitude": "-41.00000000",
         "longitude": "174.00000000",
@@ -7724,7 +7881,8 @@
             "ja": "ニカラグア",
             "it": "Nicaragua",
             "cn": "尼加拉瓜",
-            "tr": "Nikaragua"
+            "tr": "Nikaragua",
+            "ar": "نيكاراغوا"
         },
         "latitude": "13.00000000",
         "longitude": "-85.00000000",
@@ -7768,7 +7926,8 @@
             "ja": "ニジェール",
             "it": "Niger",
             "cn": "尼日尔",
-            "tr": "Nijer"
+            "tr": "Nijer",
+            "ar": "النيجر"
         },
         "latitude": "16.00000000",
         "longitude": "8.00000000",
@@ -7812,7 +7971,8 @@
             "ja": "ナイジェリア",
             "it": "Nigeria",
             "cn": "尼日利亚",
-            "tr": "Nijerya"
+            "tr": "Nijerya",
+            "ar": "نيجيريا"
         },
         "latitude": "10.00000000",
         "longitude": "8.00000000",
@@ -7856,7 +8016,8 @@
             "ja": "ニウエ",
             "it": "Niue",
             "cn": "纽埃",
-            "tr": "Niue"
+            "tr": "Niue",
+            "ar": "نييوي"
         },
         "latitude": "-19.03333333",
         "longitude": "-169.86666666",
@@ -7900,7 +8061,8 @@
             "ja": "ノーフォーク島",
             "it": "Isola Norfolk",
             "cn": "诺福克岛",
-            "tr": "Norfolk Adasi"
+            "tr": "Norfolk Adasi",
+            "ar": "جزيرة نورفولك"
         },
         "latitude": "-29.03333333",
         "longitude": "167.95000000",
@@ -7944,7 +8106,8 @@
             "ja": "朝鮮民主主義人民共和国",
             "it": "Corea del Nord",
             "cn": "朝鲜",
-            "tr": "Kuzey Kore"
+            "tr": "Kuzey Kore",
+            "ar": "كوريا الشمالية"
         },
         "latitude": "40.00000000",
         "longitude": "127.00000000",
@@ -7988,7 +8151,8 @@
             "ja": "北マリアナ諸島",
             "it": "Isole Marianne Settentrionali",
             "cn": "北马里亚纳群岛",
-            "tr": "Kuzey Mariana Adalari"
+            "tr": "Kuzey Mariana Adalari",
+            "ar": "جزر مريانا الشمالية"
         },
         "latitude": "15.20000000",
         "longitude": "145.75000000",
@@ -8032,7 +8196,8 @@
             "ja": "ノルウェー",
             "it": "Norvegia",
             "cn": "挪威",
-            "tr": "Norveç"
+            "tr": "Norveç",
+            "ar": "النرويج"
         },
         "latitude": "62.00000000",
         "longitude": "10.00000000",
@@ -8076,7 +8241,8 @@
             "ja": "オマーン",
             "it": "oman",
             "cn": "阿曼",
-            "tr": "Umman"
+            "tr": "Umman",
+            "ar": "سلطنة عمان"
         },
         "latitude": "21.00000000",
         "longitude": "57.00000000",
@@ -8120,7 +8286,8 @@
             "ja": "パキスタン",
             "it": "Pakistan",
             "cn": "巴基斯坦",
-            "tr": "Pakistan"
+            "tr": "Pakistan",
+            "ar": "باكستان"
         },
         "latitude": "30.00000000",
         "longitude": "70.00000000",
@@ -8164,7 +8331,8 @@
             "ja": "パラオ",
             "it": "Palau",
             "cn": "帕劳",
-            "tr": "Palau"
+            "tr": "Palau",
+            "ar": "بالاو"
         },
         "latitude": "7.50000000",
         "longitude": "134.50000000",
@@ -8215,7 +8383,8 @@
             "ja": "パレスチナ",
             "it": "Palestina",
             "cn": "巴勒斯坦",
-            "tr": "Filistin"
+            "tr": "Filistin",
+            "ar": "فلسطين"
         },
         "latitude": "31.90000000",
         "longitude": "35.20000000",
@@ -8259,7 +8428,8 @@
             "ja": "パナマ",
             "it": "Panama",
             "cn": "巴拿马",
-            "tr": "Panama"
+            "tr": "Panama",
+            "ar": "بنما"
         },
         "latitude": "9.00000000",
         "longitude": "-80.00000000",
@@ -8310,7 +8480,8 @@
             "ja": "パプアニューギニア",
             "it": "Papua Nuova Guinea",
             "cn": "巴布亚新几内亚",
-            "tr": "Papua Yeni Gine"
+            "tr": "Papua Yeni Gine",
+            "ar": "بابوا غينيا الجديدة"
         },
         "latitude": "-6.00000000",
         "longitude": "147.00000000",
@@ -8354,7 +8525,8 @@
             "ja": "パラグアイ",
             "it": "Paraguay",
             "cn": "巴拉圭",
-            "tr": "Paraguay"
+            "tr": "Paraguay",
+            "ar": "باراغواي"
         },
         "latitude": "-23.00000000",
         "longitude": "-58.00000000",
@@ -8398,7 +8570,8 @@
             "ja": "ペルー",
             "it": "Perù",
             "cn": "秘鲁",
-            "tr": "Peru"
+            "tr": "Peru",
+            "ar": "البيرو"
         },
         "latitude": "-10.00000000",
         "longitude": "-76.00000000",
@@ -8442,7 +8615,8 @@
             "ja": "フィリピン",
             "it": "Filippine",
             "cn": "菲律宾",
-            "tr": "Filipinler"
+            "tr": "Filipinler",
+            "ar": "الفلبين"
         },
         "latitude": "13.00000000",
         "longitude": "122.00000000",
@@ -8486,7 +8660,8 @@
             "ja": "ピトケアン",
             "it": "Isole Pitcairn",
             "cn": "皮特凯恩群岛",
-            "tr": "Pitcairn Adalari"
+            "tr": "Pitcairn Adalari",
+            "ar": "جزيرة بيتكيرن"
         },
         "latitude": "-25.06666666",
         "longitude": "-130.10000000",
@@ -8530,7 +8705,8 @@
             "ja": "ポーランド",
             "it": "Polonia",
             "cn": "波兰",
-            "tr": "Polonya"
+            "tr": "Polonya",
+            "ar": "بولندا"
         },
         "latitude": "52.00000000",
         "longitude": "20.00000000",
@@ -8588,7 +8764,8 @@
             "ja": "ポルトガル",
             "it": "Portogallo",
             "cn": "葡萄牙",
-            "tr": "Portekiz"
+            "tr": "Portekiz",
+            "ar": "البرتغال"
         },
         "latitude": "39.50000000",
         "longitude": "-8.00000000",
@@ -8632,7 +8809,8 @@
             "ja": "プエルトリコ",
             "it": "Porto Rico",
             "cn": "波多黎各",
-            "tr": "Porto Riko"
+            "tr": "Porto Riko",
+            "ar": "بورتوريكو"
         },
         "latitude": "18.25000000",
         "longitude": "-66.50000000",
@@ -8676,7 +8854,8 @@
             "ja": "カタール",
             "it": "Qatar",
             "cn": "卡塔尔",
-            "tr": "Katar"
+            "tr": "Katar",
+            "ar": "قطر"
         },
         "latitude": "25.50000000",
         "longitude": "51.25000000",
@@ -8720,7 +8899,8 @@
             "ja": "レユニオン",
             "it": "Riunione",
             "cn": "留尼汪岛",
-            "tr": "Réunion"
+            "tr": "Réunion",
+            "ar": "جزيرة ريونيون"
         },
         "latitude": "-21.15000000",
         "longitude": "55.50000000",
@@ -8764,7 +8944,8 @@
             "ja": "ルーマニア",
             "it": "Romania",
             "cn": "罗马尼亚",
-            "tr": "Romanya"
+            "tr": "Romanya",
+            "ar": "رومانيا"
         },
         "latitude": "46.00000000",
         "longitude": "25.00000000",
@@ -8983,7 +9164,8 @@
             "ja": "ロシア連邦",
             "it": "Russia",
             "cn": "俄罗斯联邦",
-            "tr": "Rusya"
+            "tr": "Rusya",
+            "ar": "روسيا"
         },
         "latitude": "60.00000000",
         "longitude": "100.00000000",
@@ -9027,7 +9209,8 @@
             "ja": "ルワンダ",
             "it": "Ruanda",
             "cn": "卢旺达",
-            "tr": "Ruanda"
+            "tr": "Ruanda",
+            "ar": "رواندا"
         },
         "latitude": "-2.00000000",
         "longitude": "30.00000000",
@@ -9071,7 +9254,8 @@
             "ja": "セントヘレナ・アセンションおよびトリスタンダクーニャ",
             "it": "Sant'Elena",
             "cn": "圣赫勒拿",
-            "tr": "Saint Helena"
+            "tr": "Saint Helena",
+            "ar": "سانت هيلانة"
         },
         "latitude": "-15.95000000",
         "longitude": "-5.70000000",
@@ -9115,7 +9299,8 @@
             "ja": "セントクリストファー・ネイビス",
             "it": "Saint Kitts e Nevis",
             "cn": "圣基茨和尼维斯",
-            "tr": "Saint Kitts Ve Nevis"
+            "tr": "Saint Kitts Ve Nevis",
+            "ar": "سانت كيتس ونيفس"
         },
         "latitude": "17.33333333",
         "longitude": "-62.75000000",
@@ -9159,7 +9344,8 @@
             "ja": "セントルシア",
             "it": "Santa Lucia",
             "cn": "圣卢西亚",
-            "tr": "Saint Lucia"
+            "tr": "Saint Lucia",
+            "ar": "سانت لويسا"
         },
         "latitude": "13.88333333",
         "longitude": "-60.96666666",
@@ -9203,7 +9389,8 @@
             "ja": "サンピエール島・ミクロン島",
             "it": "Saint-Pierre e Miquelon",
             "cn": "圣皮埃尔和密克隆",
-            "tr": "Saint Pierre Ve Miquelon"
+            "tr": "Saint Pierre Ve Miquelon",
+            "ar": "سانت بيير وميكلون"
         },
         "latitude": "46.83333333",
         "longitude": "-56.33333333",
@@ -9247,7 +9434,8 @@
             "ja": "セントビンセントおよびグレナディーン諸島",
             "it": "Saint Vincent e Grenadine",
             "cn": "圣文森特和格林纳丁斯",
-            "tr": "Saint Vincent Ve Grenadinler"
+            "tr": "Saint Vincent Ve Grenadinler",
+            "ar": "سانت فنسنت وجزر غرينادين"
         },
         "latitude": "13.25000000",
         "longitude": "-61.20000000",
@@ -9291,7 +9479,8 @@
             "ja": "サン・バルテルミー",
             "it": "Antille Francesi",
             "cn": "圣巴泰勒米",
-            "tr": "Saint Barthélemy"
+            "tr": "Saint Barthélemy",
+            "ar": "سانت بارتيليمي"
         },
         "latitude": "18.50000000",
         "longitude": "-63.41666666",
@@ -9335,7 +9524,8 @@
             "ja": "サン・マルタン（フランス領）",
             "it": "Saint Martin",
             "cn": "密克罗尼西亚",
-            "tr": "Saint Martin"
+            "tr": "Saint Martin",
+            "ar": "سان مارتن (الجزء الفرنسي)"
         },
         "latitude": "18.08333333",
         "longitude": "-63.95000000",
@@ -9379,7 +9569,8 @@
             "ja": "サモア",
             "it": "Samoa",
             "cn": "萨摩亚",
-            "tr": "Samoa"
+            "tr": "Samoa",
+            "ar": "ساموا"
         },
         "latitude": "-13.58333333",
         "longitude": "-172.33333333",
@@ -9423,7 +9614,8 @@
             "ja": "サンマリノ",
             "it": "San Marino",
             "cn": "圣马力诺",
-            "tr": "San Marino"
+            "tr": "San Marino",
+            "ar": "سان مارينو"
         },
         "latitude": "43.76666666",
         "longitude": "12.41666666",
@@ -9467,7 +9659,8 @@
             "ja": "サントメ・プリンシペ",
             "it": "São Tomé e Príncipe",
             "cn": "圣多美和普林西比",
-            "tr": "Sao Tome Ve Prinsipe"
+            "tr": "Sao Tome Ve Prinsipe",
+            "ar": "ساو تومي وبرينسيبي"
         },
         "latitude": "1.00000000",
         "longitude": "7.00000000",
@@ -9511,7 +9704,8 @@
             "ja": "サウジアラビア",
             "it": "Arabia Saudita",
             "cn": "沙特阿拉伯",
-            "tr": "Suudi Arabistan"
+            "tr": "Suudi Arabistan",
+            "ar": "المملكة العربية السعودية"
         },
         "latitude": "25.00000000",
         "longitude": "45.00000000",
@@ -9555,7 +9749,8 @@
             "ja": "セネガル",
             "it": "Senegal",
             "cn": "塞内加尔",
-            "tr": "Senegal"
+            "tr": "Senegal",
+            "ar": "السنغال"
         },
         "latitude": "14.00000000",
         "longitude": "-14.00000000",
@@ -9599,7 +9794,8 @@
             "ja": "セルビア",
             "it": "Serbia",
             "cn": "塞尔维亚",
-            "tr": "Sirbistan"
+            "tr": "Sirbistan",
+            "ar": "صربيا"
         },
         "latitude": "44.00000000",
         "longitude": "21.00000000",
@@ -9643,7 +9839,8 @@
             "ja": "セーシェル",
             "it": "Seychelles",
             "cn": "塞舌尔",
-            "tr": "Seyşeller"
+            "tr": "Seyşeller",
+            "ar": "سيشل"
         },
         "latitude": "-4.58333333",
         "longitude": "55.66666666",
@@ -9687,7 +9884,8 @@
             "ja": "シエラレオネ",
             "it": "Sierra Leone",
             "cn": "塞拉利昂",
-            "tr": "Sierra Leone"
+            "tr": "Sierra Leone",
+            "ar": "سيراليون"
         },
         "latitude": "8.50000000",
         "longitude": "-11.50000000",
@@ -9731,7 +9929,8 @@
             "ja": "シンガポール",
             "it": "Singapore",
             "cn": "新加坡",
-            "tr": "Singapur"
+            "tr": "Singapur",
+            "ar": "سنغافورا"
         },
         "latitude": "1.36666666",
         "longitude": "103.80000000",
@@ -9772,7 +9971,8 @@
             "fr": "Saint Martin (partie néerlandaise)",
             "it": "Saint Martin (parte olandese)",
             "cn": "圣马丁岛（荷兰部分）",
-            "tr": "Sint Maarten"
+            "tr": "Sint Maarten",
+            "ar": "سينت مارتن (الجزء الهولندي)"
         },
         "latitude": "18.03333300",
         "longitude": "-63.05000000",
@@ -9816,7 +10016,8 @@
             "ja": "スロバキア",
             "it": "Slovacchia",
             "cn": "斯洛伐克",
-            "tr": "Slovakya"
+            "tr": "Slovakya",
+            "ar": "سلوفاكيا"
         },
         "latitude": "48.66666666",
         "longitude": "19.50000000",
@@ -9860,7 +10061,8 @@
             "ja": "スロベニア",
             "it": "Slovenia",
             "cn": "斯洛文尼亚",
-            "tr": "Slovenya"
+            "tr": "Slovenya",
+            "ar": "سلوفينيا"
         },
         "latitude": "46.11666666",
         "longitude": "14.81666666",
@@ -9904,7 +10106,8 @@
             "ja": "ソロモン諸島",
             "it": "Isole Salomone",
             "cn": "所罗门群岛",
-            "tr": "Solomon Adalari"
+            "tr": "Solomon Adalari",
+            "ar": "جزر سليمان"
         },
         "latitude": "-8.00000000",
         "longitude": "159.00000000",
@@ -9948,7 +10151,8 @@
             "ja": "ソマリア",
             "it": "Somalia",
             "cn": "索马里",
-            "tr": "Somali"
+            "tr": "Somali",
+            "ar": "الصومال"
         },
         "latitude": "10.00000000",
         "longitude": "49.00000000",
@@ -9992,7 +10196,8 @@
             "ja": "南アフリカ",
             "it": "Sud Africa",
             "cn": "南非",
-            "tr": "Güney Afrika Cumhuriyeti"
+            "tr": "Güney Afrika Cumhuriyeti",
+            "ar": "جنوب أفريقيا"
         },
         "latitude": "-29.00000000",
         "longitude": "24.00000000",
@@ -10036,7 +10241,8 @@
             "ja": "サウスジョージア・サウスサンドウィッチ諸島",
             "it": "Georgia del Sud e Isole Sandwich Meridionali",
             "cn": "南乔治亚",
-            "tr": "Güney Georgia"
+            "tr": "Güney Georgia",
+            "ar": "جورجيا الجنوبية"
         },
         "latitude": "-54.50000000",
         "longitude": "-37.00000000",
@@ -10080,7 +10286,8 @@
             "ja": "大韓民国",
             "it": "Corea del Sud",
             "cn": "韩国",
-            "tr": "Güney Kore"
+            "tr": "Güney Kore",
+            "ar": "كوريا الجنوبية"
         },
         "latitude": "37.00000000",
         "longitude": "127.50000000",
@@ -10124,7 +10331,8 @@
             "ja": "南スーダン",
             "it": "Sudan del sud",
             "cn": "南苏丹",
-            "tr": "Güney Sudan"
+            "tr": "Güney Sudan",
+            "ar": "جنوب السودان"
         },
         "latitude": "7.00000000",
         "longitude": "30.00000000",
@@ -10182,7 +10390,8 @@
             "ja": "スペイン",
             "it": "Spagna",
             "cn": "西班牙",
-            "tr": "İspanya"
+            "tr": "İspanya",
+            "ar": "إسبانيا"
         },
         "latitude": "40.00000000",
         "longitude": "-4.00000000",
@@ -10226,7 +10435,8 @@
             "ja": "スリランカ",
             "it": "Sri Lanka",
             "cn": "斯里兰卡",
-            "tr": "Sri Lanka"
+            "tr": "Sri Lanka",
+            "ar": "سيريلانكا"
         },
         "latitude": "7.00000000",
         "longitude": "81.00000000",
@@ -10270,7 +10480,8 @@
             "ja": "スーダン",
             "it": "Sudan",
             "cn": "苏丹",
-            "tr": "Sudan"
+            "tr": "Sudan",
+            "ar": "السودان"
         },
         "latitude": "15.00000000",
         "longitude": "30.00000000",
@@ -10314,7 +10525,8 @@
             "ja": "スリナム",
             "it": "Suriname",
             "cn": "苏里南",
-            "tr": "Surinam"
+            "tr": "Surinam",
+            "ar": "سورينام"
         },
         "latitude": "4.00000000",
         "longitude": "-56.00000000",
@@ -10358,7 +10570,8 @@
             "ja": "スヴァールバル諸島およびヤンマイエン島",
             "it": "Svalbard e Jan Mayen",
             "cn": "斯瓦尔巴和扬马延群岛",
-            "tr": "Svalbard Ve Jan Mayen"
+            "tr": "Svalbard Ve Jan Mayen",
+            "ar": "جزر سفالبارد وجان ماين"
         },
         "latitude": "78.00000000",
         "longitude": "20.00000000",
@@ -10402,7 +10615,8 @@
             "ja": "スワジランド",
             "it": "Swaziland",
             "cn": "斯威士兰",
-            "tr": "Esvatini"
+            "tr": "Esvatini",
+            "ar": "إسواتيني"
         },
         "latitude": "-26.50000000",
         "longitude": "31.50000000",
@@ -10446,7 +10660,8 @@
             "ja": "スウェーデン",
             "it": "Svezia",
             "cn": "瑞典",
-            "tr": "İsveç"
+            "tr": "İsveç",
+            "ar": "السويد"
         },
         "latitude": "62.00000000",
         "longitude": "15.00000000",
@@ -10490,7 +10705,8 @@
             "ja": "スイス",
             "it": "Svizzera",
             "cn": "瑞士",
-            "tr": "İsviçre"
+            "tr": "İsviçre",
+            "ar": "سويسرا"
         },
         "latitude": "47.00000000",
         "longitude": "8.00000000",
@@ -10534,7 +10750,8 @@
             "ja": "シリア・アラブ共和国",
             "it": "Siria",
             "cn": "叙利亚",
-            "tr": "Suriye"
+            "tr": "Suriye",
+            "ar": "سوريا"
         },
         "latitude": "35.00000000",
         "longitude": "38.00000000",
@@ -10578,7 +10795,8 @@
             "ja": "台湾（中華民国）",
             "it": "Taiwan",
             "cn": "中国台湾",
-            "tr": "Tayvan"
+            "tr": "Tayvan",
+            "ar": "تايوان"
         },
         "latitude": "23.50000000",
         "longitude": "121.00000000",
@@ -10622,7 +10840,8 @@
             "ja": "タジキスタン",
             "it": "Tagikistan",
             "cn": "塔吉克斯坦",
-            "tr": "Tacikistan"
+            "tr": "Tacikistan",
+            "ar": "طاجيكستان"
         },
         "latitude": "39.00000000",
         "longitude": "71.00000000",
@@ -10666,7 +10885,8 @@
             "ja": "タンザニア",
             "it": "Tanzania",
             "cn": "坦桑尼亚",
-            "tr": "Tanzanya"
+            "tr": "Tanzanya",
+            "ar": "تنزانيا"
         },
         "latitude": "-6.00000000",
         "longitude": "35.00000000",
@@ -10710,7 +10930,8 @@
             "ja": "タイ",
             "it": "Tailandia",
             "cn": "泰国",
-            "tr": "Tayland"
+            "tr": "Tayland",
+            "ar": "تايلاند"
         },
         "latitude": "15.00000000",
         "longitude": "100.00000000",
@@ -10754,7 +10975,8 @@
             "ja": "バハマ",
             "it": "Bahamas",
             "cn": "巴哈马",
-            "tr": "Bahamalar"
+            "tr": "Bahamalar",
+            "ar": "جزر البهاما"
         },
         "latitude": "24.25000000",
         "longitude": "-76.00000000",
@@ -10798,7 +11020,8 @@
             "ja": "トーゴ",
             "it": "Togo",
             "cn": "多哥",
-            "tr": "Togo"
+            "tr": "Togo",
+            "ar": "توغو"
         },
         "latitude": "8.00000000",
         "longitude": "1.16666666",
@@ -10842,7 +11065,8 @@
             "ja": "トケラウ",
             "it": "Isole Tokelau",
             "cn": "托克劳",
-            "tr": "Tokelau"
+            "tr": "Tokelau",
+            "ar": "توكيلاو"
         },
         "latitude": "-9.00000000",
         "longitude": "-172.00000000",
@@ -10886,7 +11110,8 @@
             "ja": "トンガ",
             "it": "Tonga",
             "cn": "汤加",
-            "tr": "Tonga"
+            "tr": "Tonga",
+            "ar": "تونغا"
         },
         "latitude": "-20.00000000",
         "longitude": "-175.00000000",
@@ -10930,7 +11155,8 @@
             "ja": "トリニダード・トバゴ",
             "it": "Trinidad e Tobago",
             "cn": "特立尼达和多巴哥",
-            "tr": "Trinidad Ve Tobago"
+            "tr": "Trinidad Ve Tobago",
+            "ar": "ترينيداد وتوباغو"
         },
         "latitude": "11.00000000",
         "longitude": "-61.00000000",
@@ -10974,7 +11200,8 @@
             "ja": "チュニジア",
             "it": "Tunisia",
             "cn": "突尼斯",
-            "tr": "Tunus"
+            "tr": "Tunus",
+            "ar": "تونس"
         },
         "latitude": "34.00000000",
         "longitude": "9.00000000",
@@ -11018,7 +11245,8 @@
             "ja": "トルコ",
             "it": "Turchia",
             "cn": "土耳其",
-            "tr": "Türkiye"
+            "tr": "Türkiye",
+            "ar": "تركيا"
         },
         "latitude": "39.00000000",
         "longitude": "35.00000000",
@@ -11062,7 +11290,8 @@
             "ja": "トルクメニスタン",
             "it": "Turkmenistan",
             "cn": "土库曼斯坦",
-            "tr": "Türkmenistan"
+            "tr": "Türkmenistan",
+            "ar": "تركمانستان"
         },
         "latitude": "40.00000000",
         "longitude": "60.00000000",
@@ -11106,7 +11335,8 @@
             "ja": "タークス・カイコス諸島",
             "it": "Isole Turks e Caicos",
             "cn": "特克斯和凯科斯群岛",
-            "tr": "Turks Ve Caicos Adalari"
+            "tr": "Turks Ve Caicos Adalari",
+            "ar": "جزر تركس وكايكوس"
         },
         "latitude": "21.75000000",
         "longitude": "-71.58333333",
@@ -11150,7 +11380,8 @@
             "ja": "ツバル",
             "it": "Tuvalu",
             "cn": "图瓦卢",
-            "tr": "Tuvalu"
+            "tr": "Tuvalu",
+            "ar": "توفالو"
         },
         "latitude": "-8.00000000",
         "longitude": "178.00000000",
@@ -11194,7 +11425,8 @@
             "ja": "ウガンダ",
             "it": "Uganda",
             "cn": "乌干达",
-            "tr": "Uganda"
+            "tr": "Uganda",
+            "ar": "أوغندا"
         },
         "latitude": "1.00000000",
         "longitude": "32.00000000",
@@ -11259,7 +11491,8 @@
             "ja": "ウクライナ",
             "it": "Ucraina",
             "cn": "乌克兰",
-            "tr": "Ukrayna"
+            "tr": "Ukrayna",
+            "ar": "أوكرانيا"
         },
         "latitude": "49.00000000",
         "longitude": "32.00000000",
@@ -11303,7 +11536,8 @@
             "ja": "アラブ首長国連邦",
             "it": "Emirati Arabi Uniti",
             "cn": "阿拉伯联合酋长国",
-            "tr": "Birleşik Arap Emirlikleri"
+            "tr": "Birleşik Arap Emirlikleri",
+            "ar": "الإمارات العربية المتحدة"
         },
         "latitude": "24.00000000",
         "longitude": "54.00000000",
@@ -11347,7 +11581,8 @@
             "ja": "イギリス",
             "it": "Regno Unito",
             "cn": "英国",
-            "tr": "Birleşik Krallik"
+            "tr": "Birleşik Krallik",
+            "ar": "بريطانيا العظمى وأيرلندا الشمالية"
         },
         "latitude": "54.00000000",
         "longitude": "-2.00000000",
@@ -11587,7 +11822,8 @@
             "ja": "アメリカ合衆国",
             "it": "Stati Uniti D'America",
             "cn": "美国",
-            "tr": "Amerika"
+            "tr": "Amerika",
+            "ar": "الولايات المتحدة الامريكية"
         },
         "latitude": "38.00000000",
         "longitude": "-97.00000000",
@@ -11638,7 +11874,8 @@
             "ja": "合衆国領有小離島",
             "it": "Isole minori esterne degli Stati Uniti d'America",
             "cn": "美国本土外小岛屿",
-            "tr": "Abd Küçük Harici Adalari"
+            "tr": "Abd Küçük Harici Adalari",
+            "ar": "جزر الولايات المتحدة النائية"
         },
         "latitude": "0.00000000",
         "longitude": "0.00000000",
@@ -11682,7 +11919,8 @@
             "ja": "ウルグアイ",
             "it": "Uruguay",
             "cn": "乌拉圭",
-            "tr": "Uruguay"
+            "tr": "Uruguay",
+            "ar": "أوروغواي"
         },
         "latitude": "-33.00000000",
         "longitude": "-56.00000000",
@@ -11733,7 +11971,8 @@
             "ja": "ウズベキスタン",
             "it": "Uzbekistan",
             "cn": "乌兹别克斯坦",
-            "tr": "Özbekistan"
+            "tr": "Özbekistan",
+            "ar": "أوزبكستان"
         },
         "latitude": "41.00000000",
         "longitude": "64.00000000",
@@ -11777,7 +12016,8 @@
             "ja": "バヌアツ",
             "it": "Vanuatu",
             "cn": "瓦努阿图",
-            "tr": "Vanuatu"
+            "tr": "Vanuatu",
+            "ar": "فانواتو"
         },
         "latitude": "-16.00000000",
         "longitude": "167.00000000",
@@ -11821,7 +12061,8 @@
             "ja": "聖座",
             "it": "Santa Sede",
             "cn": "梵蒂冈",
-            "tr": "Vatikan"
+            "tr": "Vatikan",
+            "ar": "الفاتيكان"
         },
         "latitude": "41.90000000",
         "longitude": "12.45000000",
@@ -11865,7 +12106,8 @@
             "ja": "ベネズエラ・ボリバル共和国",
             "it": "Venezuela",
             "cn": "委内瑞拉",
-            "tr": "Venezuela"
+            "tr": "Venezuela",
+            "ar": "فنزويلا"
         },
         "latitude": "8.00000000",
         "longitude": "-66.00000000",
@@ -11909,7 +12151,8 @@
             "ja": "ベトナム",
             "it": "Vietnam",
             "cn": "越南",
-            "tr": "Vietnam"
+            "tr": "Vietnam",
+            "ar": "فيتنام"
         },
         "latitude": "16.16666666",
         "longitude": "107.83333333",
@@ -11953,7 +12196,8 @@
             "ja": "イギリス領ヴァージン諸島",
             "it": "Isole Vergini Britanniche",
             "cn": "圣文森特和格林纳丁斯",
-            "tr": "Britanya Virjin Adalari"
+            "tr": "Britanya Virjin Adalari",
+            "ar": "جزر فيرجن البريطانية"
         },
         "latitude": "18.43138300",
         "longitude": "-64.62305000",
@@ -11996,7 +12240,8 @@
             "ja": "アメリカ領ヴァージン諸島",
             "it": "Isole Vergini americane",
             "cn": "维尔京群岛（美国）",
-            "tr": "Abd Virjin Adalari"
+            "tr": "Abd Virjin Adalari",
+            "ar": "جزر فيرجن الأمريكية"
         },
         "latitude": "18.34000000",
         "longitude": "-64.93000000",
@@ -12040,7 +12285,8 @@
             "ja": "ウォリス・フツナ",
             "it": "Wallis e Futuna",
             "cn": "瓦利斯群岛和富图纳群岛",
-            "tr": "Wallis Ve Futuna"
+            "tr": "Wallis Ve Futuna",
+            "ar": "واليس وفوتونا"
         },
         "latitude": "-13.30000000",
         "longitude": "-176.20000000",
@@ -12084,7 +12330,8 @@
             "ja": "西サハラ",
             "it": "Sahara Occidentale",
             "cn": "西撒哈拉",
-            "tr": "Bati Sahra"
+            "tr": "Bati Sahra",
+            "ar": "الصحراء الغربية"
         },
         "latitude": "24.50000000",
         "longitude": "-13.00000000",
@@ -12128,7 +12375,8 @@
             "ja": "イエメン",
             "it": "Yemen",
             "cn": "也门",
-            "tr": "Yemen"
+            "tr": "Yemen",
+            "ar": "اليمن"
         },
         "latitude": "15.00000000",
         "longitude": "48.00000000",
@@ -12172,7 +12420,8 @@
             "ja": "ザンビア",
             "it": "Zambia",
             "cn": "赞比亚",
-            "tr": "Zambiya"
+            "tr": "Zambiya",
+            "ar": "زامبيا"
         },
         "latitude": "-15.00000000",
         "longitude": "30.00000000",
@@ -12216,7 +12465,8 @@
             "ja": "ジンバブエ",
             "it": "Zimbabwe",
             "cn": "津巴布韦",
-            "tr": "Zimbabve"
+            "tr": "Zimbabve",
+            "ar": "زيمبابوي"
         },
         "latitude": "-20.00000000",
         "longitude": "30.00000000",
