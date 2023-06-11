@@ -17,7 +17,8 @@ php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
 ### What's new in v1.1.27?  
-- Allow world refresh only in development.
+- Disallow world:refresh in production.
+- Addition of the arabic locale (ar) in countries.json translations. @waadmawlood
 Upgrades can be done as:
 - Run `composer update` 
 - Run `php artisan world:refresh`  
