@@ -13,13 +13,16 @@ class CreateLanguagesTable extends Migration
 	 */
 	public function up()
 	{
-		Schema::create(config('world.migrations.languages.table_name'), function (Blueprint $table) {
-			$table->id();
-			$table->char('code', 2);
-			$table->string('name');
-			$table->string('name_native');
-			$table->char('dir', 3);
-		});
+        if(config('world.modules.languages')){
+            Schema::create(config('world.migrations.languages.table_name'), function (Blueprint $table) {
+                $table->id();
+                $table->char('code', 2);
+                $table->string('name');
+                $table->string('name_native');
+                $table->char('dir', 3);
+            });
+        }
+
 	}
 
 	/**
@@ -29,6 +32,8 @@ class CreateLanguagesTable extends Migration
 	 */
 	public function down()
 	{
-		Schema::dropIfExists(config('world.migrations.languages.table_name'));
+        if(config('world.modules.languages')) {
+            Schema::dropIfExists(config('world.migrations.languages.table_name'));
+        }
 	}
 }
