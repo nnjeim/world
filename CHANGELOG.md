@@ -2,6 +2,9 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.28 - 2023-10-22
+- Increase of the state_code column length in the world config file. @mefenlon
+
 ### 1.1.27 - 2023-06-15
 - Disallow world:refresh in production.
 - Addition of the arabic locale (ar) in countries.json translations. @waadmawlood

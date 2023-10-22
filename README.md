@@ -16,14 +16,8 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### What's new in v1.1.27?  
-- Disallow world:refresh in production.
-- Addition of the arabic locale (ar) in countries.json translations. @waadmawlood
-Upgrades can be done as:
-- Run `composer update` 
-- Run `php artisan world:refresh`  
-
-It is important to note that the world refresh command will drop the existing tables, migrate and re-seed the new data.  
+### What's new in v1.1.28?  
+- Increase of the state_code table name length to 5 characters to avoid a potential bug when seeding a new database.  
 
 ### Changelog
 
