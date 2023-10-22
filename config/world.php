@@ -122,7 +122,7 @@ return [
 				'state_code' => [
 					'required' => false,
 					'type' => 'string',
-					'length' => 3,
+					'length' => 5,
 				],
 				'latitude' => [
 					'required' => false,
@@ -145,7 +145,7 @@ return [
 				'state_code' => [
 					'required' => false,
 					'type' => 'string',
-					'length' => 3,
+					'length' => 5,
 				],
 				'latitude' => [
 					'required' => false,
