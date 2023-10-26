@@ -49,13 +49,29 @@ class RefreshWorldData extends Command
 		// drop the world tables
 		$worldTables = [
 			'world.migrations.countries.table_name',
-			'world.migrations.states.table_name',
-			'world.migrations.cities.table_name',
-			'world.migrations.timezones.table_name',
-			'world.migrations.currencies.table_name',
-			'world.migrations.languages.table_name',
 		];
-		// drop a table if it exists
+
+        if (config('world.modules.states', true)) {
+            $worldTables[] = 'world.migrations.states.table_name';
+        }
+
+        if (config('world.modules.cities', true)) {
+            $worldTables[] = 'world.migrations.cities.table_name';
+        }
+
+        if (config('world.modules.timezones', true)) {
+            $worldTables[] = 'world.migrations.timezones.table_name';
+        }
+
+        if (config('world.modules.currencies', true)) {
+            $worldTables[] = 'world.migrations.currencies.table_name';
+        }
+
+        if (config('world.modules.languages', true)) {
+            $worldTables[] = 'world.migrations.languages.table_name';
+        }
+
+        // drop a table if it exists
 		foreach ($worldTables as $worldTable) {
 			Schema::dropIfExists(config($worldTable));
 		}
