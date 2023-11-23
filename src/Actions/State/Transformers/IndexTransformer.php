@@ -18,6 +18,18 @@ trait IndexTransformer
 				function ($state) use ($fields) {
 					$return = $state->only($fields);
 
+                    $translationKey = 'world::state.' . $state->name;
+                    $translatedName = trans($translationKey);
+
+                    $nameToUse = !empty($translatedName) && $translatedName !== $translationKey
+                        ? $translatedName
+                        : $state->name;
+
+                    $return = array_merge(
+                        $return,
+                        ['name' => $nameToUse]
+                    );
+
 					if (in_array('country', $fields)) {
 						$return = array_merge(
 							$return,
