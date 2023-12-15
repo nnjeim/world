@@ -20,7 +20,7 @@ class CreateStatesTable extends Migration
 
 			foreach (config('world.migrations.states.optional_fields') as $field => $value) {
 				if ($value['required']) {
-					$table->string($field, $value['length'] ?? null);
+					$table->string($field, $value['length'] ?? null)->nullable();
 				}
 			}
 		});
