@@ -32,6 +32,7 @@ return [
 		'en',
 		'es',
 		'fr',
+        'hr',
 		'it',
 		'ja',
 		'kr',
