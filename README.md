@@ -16,8 +16,8 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder (requires ~15min)
 ```
 
-### What's new in v1.1.28?  
-- Increase of the state_code table name length to 5 characters to avoid a potential bug when seeding a new database.  
+### What's new in v1.1.29?  
+- Addition of the croatian localisation by @mbanusic
 
 ### Changelog
 
