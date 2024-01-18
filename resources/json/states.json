@@ -20350,17 +20350,6 @@
         "longitude": "16.60436360"
     },
     {
-        "id": 1761,
-        "name": "Medio Campidano",
-        "country_id": 107,
-        "country_code": "IT",
-        "country_name": "Italy",
-        "state_code": "VS",
-        "type": "province",
-        "latitude": "39.53173890",
-        "longitude": "8.70407500"
-    },
-    {
         "id": 1757,
         "name": "Modena",
         "country_id": 107,
@@ -54822,5 +54811,192 @@
         "type": null,
         "latitude": "-19.05520090",
         "longitude": "29.60354950"
+    },
+    {
+        "id": 5134,
+        "name": "Torino",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "TO",
+        "type": "province",
+        "latitude": "45.116177",
+        "longitude": "7.742615"
+    },
+    {
+        "id": 5135,
+        "name": "Aosta",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "AO",
+        "type": "province",
+        "latitude": "45.734955",
+        "longitude": "7.313076"
+    },
+    {
+        "id": 5136,
+        "name": "Genova",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "GE",
+        "type": "province",
+        "latitude": "44.414165",
+        "longitude": "8.942184"
+    },
+    {
+        "id": 5137,
+        "name": "Milano",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "MI",
+        "type": "province",
+        "latitude": "45.46427",
+        "longitude": "9.18951"
+    },
+    {
+        "id": 5138,
+        "name": "Bolzano",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "BZ",
+        "type": "province",
+        "latitude": "46.49067",
+        "longitude": "11.33982"
+    },
+    {
+        "id": 5139,
+        "name": "Trento",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "TN",
+        "type": "province",
+        "latitude": "46.066666",
+        "longitude": "11.116667"
+    },
+    {
+        "id": 5140,
+        "name": "Venezia",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "VE",
+        "type": "province",
+        "latitude": "45.438759",
+        "longitude": "12.327145"
+    },
+    {
+        "id": 5141,
+        "name": "Bologna",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "BO",
+        "type": "province",
+        "latitude": "44.49381",
+        "longitude": "11.33875"
+    },
+    {
+        "id": 5142,
+        "name": "Firenze",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "FI",
+        "type": "province",
+        "latitude": "43.7695604",
+        "longitude": "11.2558136"
+    },
+    {
+        "id": 5143,
+        "name": "Arezzo",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "AR",
+        "type": "province",
+        "latitude": "43.44708",
+        "longitude": "11.86867"
+    },
+    {
+        "id": 5144,
+        "name": "Roma",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "RM",
+        "type": "province",
+        "latitude": "41.9027835",
+        "longitude": "12.4963655"
+    },
+    {
+        "id": 5145,
+        "name": "Napoli",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "NA",
+        "type": "province",
+        "latitude": "40.85631",
+        "longitude": "14.24641"
+    },
+    {
+        "id": 5146,
+        "name": "Bari",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "BA",
+        "type": "province",
+        "latitude": "41.11148",
+        "longitude": "16.8554"
+    },
+    {
+        "id": 5147,
+        "name": "Reggio Calabria",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "RC",
+        "type": "province",
+        "latitude": "38.11047",
+        "longitude": "15.66129"
+    },
+    {
+        "id": 5148,
+        "name": "Messina",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "ME",
+        "type": "province",
+        "latitude": "38.19394",
+        "longitude": "15.55256"
+    },
+    {
+        "id": 5149,
+        "name": "Catania",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "CT",
+        "type": "province",
+        "latitude": "37.500000",
+        "longitude": "15.090278"
+    },
+    {
+        "id": 5150,
+        "name": "Cagliari",
+        "country_id": 107,
+        "country_code": "IT",
+        "country_name": "Italy",
+        "state_code": "CA",
+        "type": "province",
+        "latitude": "39.227779",
+        "longitude": "9.111111"
     }
 ]

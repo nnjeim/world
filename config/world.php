@@ -125,6 +125,10 @@ return [
 					'type' => 'string',
 					'length' => 5,
 				],
+				'type' => [
+					'required' => false,
+					'type' => 'string',
+				],
 				'latitude' => [
 					'required' => false,
 					'type' => 'string',
