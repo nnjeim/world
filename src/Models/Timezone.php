@@ -2,6 +2,7 @@
 
 namespace Nnjeim\World\Models;
 
+use Nnjeim\World\Models\Traits\WorldConnection;
 use Nnjeim\World\Models\Traits\TimezoneRelations;
 
 use Illuminate\Database\Eloquent\Model;
@@ -9,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class Timezone extends Model
 {
 	use TimezoneRelations;
+    use WorldConnection;
 
 	protected $fillable = [
 		'country_id',

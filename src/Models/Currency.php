@@ -2,6 +2,7 @@
 
 namespace Nnjeim\World\Models;
 
+use Nnjeim\World\Models\Traits\WorldConnection;
 use Nnjeim\World\Models\Traits\CurrencyRelations;
 
 use Illuminate\Database\Eloquent\Model;
@@ -9,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 class Currency extends Model
 {
 	use CurrencyRelations;
+    use WorldConnection;
 
 	protected $fillable = [
 		'country_id',

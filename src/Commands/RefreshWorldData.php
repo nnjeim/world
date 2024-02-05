@@ -74,9 +74,12 @@ class RefreshWorldData extends Command
 				->where('migration', $migration)
 				->delete();
 		}
+        
+        $connection = config('world.connection');
+        
 		// migrate new tables
 		Artisan::call('migrate');
 		// re-seed the world data
-		Artisan::call('db:seed --class=WorldSeeder', array(), $this->getOutput());
+		Artisan::call('db:seed --class=WorldSeeder --database=' . $connection, [], $this->getOutput());
 	}
 }
