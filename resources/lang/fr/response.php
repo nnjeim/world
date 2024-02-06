@@ -3,7 +3,7 @@
 return [
 	'errors' => [
 		'server_error' => 'Erreur Interne du Serveur',
-		'record_not_found' => 'Non :attribute a été trouvé !',
+		'record_not_found' => 'Non :attribute a été trouvé!',
 	],
 	'attributes' => [
 		'phone' => 'téléphone|téléphones',
