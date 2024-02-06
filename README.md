@@ -316,6 +316,11 @@ If you are upgrading from a previous version, you should consider re-publishing 
 php artisan vendor:publish --tag=world --force
 ```
 
+#### Customizing database connection
+
+By default, this package uses the default database connection, but it's possible to customize it
+using the `WORLD_DB_CONNECTION` variable in your `.env` file.
+
 ### Countries restrictions
 Countries can be restricted while seeding the database either by adding the ISO2 country codes in the `allowed_countries` or `disallowed_countries` array lists.  
 
