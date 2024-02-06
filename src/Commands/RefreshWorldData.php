@@ -73,8 +73,7 @@ class RefreshWorldData extends Command
 			}
 			$migrationFileName = $migrationsFile->getFilename();
 			$migration = Str::before($migrationFileName, '.php');
-			DB::connection($connection)
-                ->table('migrations')
+			DB::table('migrations')
 				->where('migration', $migration)
 				->delete();
 		}
