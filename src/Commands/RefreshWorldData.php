@@ -8,7 +8,6 @@ use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Str;
-use Nnjeim\World\Actions\SeedAction;
 
 class RefreshWorldData extends Command
 {
@@ -46,6 +45,9 @@ class RefreshWorldData extends Command
 			$this->error('You are in production mode. This command is not allowed in production mode.');
 			return;
 		}
+        
+        $connection = config('world.connection');
+        
 		// drop the world tables
 		$worldTables = [
 			'world.migrations.countries.table_name',
@@ -57,7 +59,8 @@ class RefreshWorldData extends Command
 		];
 		// drop a table if it exists
 		foreach ($worldTables as $worldTable) {
-			Schema::dropIfExists(config($worldTable));
+			Schema::connection($connection)
+                ->dropIfExists(config($worldTable));
 		}
 		// delete the world entries in the migrations table
 		// get a list of the world migration files
@@ -70,12 +73,11 @@ class RefreshWorldData extends Command
 			}
 			$migrationFileName = $migrationsFile->getFilename();
 			$migration = Str::before($migrationFileName, '.php');
-			DB::table('migrations')
+			DB::connection($connection)
+                ->table('migrations')
 				->where('migration', $migration)
 				->delete();
 		}
-        
-        $connection = config('world.connection');
         
 		// migrate new tables
 		Artisan::call('migrate');
