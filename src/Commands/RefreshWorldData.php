@@ -46,7 +46,8 @@ class RefreshWorldData extends Command
 			return;
 		}
         
-        $connection = config('world.connection');
+        $connectionName = config('world.connection');
+        $connection = Schema::connection($connectionName);
         
 		// drop the world tables
 		$worldTables = [
@@ -59,8 +60,7 @@ class RefreshWorldData extends Command
 		];
 		// drop a table if it exists
 		foreach ($worldTables as $worldTable) {
-			Schema::connection($connection)
-                ->dropIfExists(config($worldTable));
+            $connection->dropIfExists(config($worldTable));
 		}
 		// delete the world entries in the migrations table
 		// get a list of the world migration files
@@ -81,6 +81,6 @@ class RefreshWorldData extends Command
 		// migrate new tables
 		Artisan::call('migrate');
 		// re-seed the world data
-		Artisan::call('db:seed --class=WorldSeeder --database=' . $connection, [], $this->getOutput());
+		Artisan::call('db:seed --class=WorldSeeder --database=' . $connectionName, [], $this->getOutput());
 	}
 }
