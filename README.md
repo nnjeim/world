@@ -9,6 +9,12 @@ It can be consumed with the World Facade or the defined API routes.
 ```bash
 composer require nnjeim/world
 
+php artisan world:install
+```
+
+The `world:install` command is an alias for the given installation process and is automatically contextualized with the right connection:
+
+```bash
 php artisan vendor:publish --tag=world
 
 php artisan migrate
