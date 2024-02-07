@@ -3,7 +3,7 @@
 return [
 	'errors' => [
 		'server_error' => 'Interna pogreška poslužitelja',
-		'record_not_found' => ':atribut nije pronađeno!',
+		'record_not_found' => ':attribute nije pronađeno!',
 	],
 	'attributes' => [
 		'phone' => 'telefon|telefoni',

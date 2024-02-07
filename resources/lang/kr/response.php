@@ -3,7 +3,7 @@
 return [
 	'errors' => [
 		'server_error' => '인터넷 서버 오류',
-		'record_not_found' => '아니오 attribute: 을(를) 찾았습니다!',
+		'record_not_found' => '아니오 :attribute 을(를) 찾았습니다!',
 	],
 	'attributes' => [
 		'phone' => '핸드폰|전화',
