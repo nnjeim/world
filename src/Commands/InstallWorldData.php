@@ -1,5 +1,5 @@
 <?php
-    
+
 namespace Nnjeim\World\Commands;
 
 use Illuminate\Console\Command;
@@ -13,23 +13,23 @@ class InstallWorldData extends Command
      * @var string
      */
     protected $signature = 'world:install';
-    
+
     /**
      * The console command description.
      *
      * @var string
      */
     protected $description = 'Install the world data';
-    
+
     /**
      * Execute the console command.
      */
     public function handle()
     {
         $this->info('Installing nnjeim/world...');
-        
+
         // publish migrations
-        Artisan::call('vendor:publish --tag=world');
+        Artisan::call('vendor:publish --tag=world --force');
         // migrate new tables
         Artisan::call('migrate');
         // re-seed the world data

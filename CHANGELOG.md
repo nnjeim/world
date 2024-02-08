@@ -2,6 +2,11 @@
 
 All notable changes to `country` will be documented in this file
 
+### 1.1.30 - 2024-02-08
+- Addition of the  br, fr, hr, kr, pt locales @rinodrummer
+- Addition of the install helper @rinodrummer
+- Ability to define a custom database connection @rinodrummer
+
 ### 1.1.29 - 2023-12-18
 - Addition of the croatian localisation by @mbanusic
 

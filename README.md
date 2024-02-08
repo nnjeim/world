@@ -7,13 +7,19 @@ It can be consumed with the World Facade or the defined API routes.
 ### Installation
 
 ```bash
+set APP_ENV=local
 composer require nnjeim/world
+```
 
+set the ENV variable WORLD_DB_CONNECTION to the desired database connection (optional)  
+
+The `world:install` command is a helper to automate the installation process
+
+```
 php artisan world:install
 ```
 
-The `world:install` command is an alias for the given installation process and is automatically contextualized with the right connection:
-
+Optionally you can manually install the package by following the below steps:
 ```bash
 php artisan vendor:publish --tag=world
 
@@ -22,8 +28,10 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder # (requires ~15min)
 ```
 
-### What's new in v1.1.29?  
-- Addition of the croatian localisation by @mbanusic
+### What's new in v1.1.30?  
+- Addition of the  br, fr, hr, kr, pt locales @rinodrummer
+- Addition of the install helper @rinodrummer
+- Ability to define a custom database connection @rinodrummer
 
 ### Changelog
 
