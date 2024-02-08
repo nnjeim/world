@@ -9,9 +9,12 @@ use Illuminate\Support\Facades\File;
 use Nnjeim\World\Models;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Builder as SchemaBuilder;
 
 class SeedAction extends Seeder
 {
+    protected SchemaBuilder $schema;
+    
 	private array $countries = [
 		'data' => [],
 	];
@@ -45,6 +48,8 @@ class SeedAction extends Seeder
 
 	public function __construct()
 	{
+        $this->schema = Schema::connection(config('world.connection'));
+        
 		// countries
 		$this->initCountries();
 		// init modules
@@ -63,7 +68,8 @@ class SeedAction extends Seeder
 		$this->command->getOutput()->progressStart(count($this->countries['data']));
 
 		// country schema
-		$countryFields = Schema::getColumnListing(config('world.migrations.countries.table_name'));
+		$countryFields = $this->schema
+            ->getColumnListing(config('world.migrations.countries.table_name'));
 
 		$this->forgetFields($countryFields, ['id']);
 
@@ -109,9 +115,9 @@ class SeedAction extends Seeder
 	{
 		if (array_key_exists($module, $this->modules)) {
 			// truncate module database table.
-			Schema::disableForeignKeyConstraints();
+			$this->schema->disableForeignKeyConstraints();
 			app($this->modules[$module]['class'])->truncate();
-			Schema::enableForeignKeyConstraints();
+			$this->schema->enableForeignKeyConstraints();
 			// import json data.
 			$moduleSourcePath = __DIR__ . '/../../resources/json/' . $module . '.json';
 
@@ -149,17 +155,19 @@ class SeedAction extends Seeder
 				return !in_array($value['iso2'], config('world.disallowed_countries'));
 			});
 	}
-
-	/**
-	 * @param  Models\Country  $country
-	 * @param array $countryArray
-	 */
+    
+    /**
+     * @param Models\Country $country
+     * @param array $countryArray
+     *
+     * @throws Exception
+     */
 	private function seedStates(Models\Country $country, array $countryArray): void
 	{
 		// country states and cities
 		$countryStates = Arr::where($this->modules['states']['data'], fn ($state) => $state['country_id'] === $countryArray['id']);
 		// state schema
-		$stateFields = Schema::getColumnListing(config('world.migrations.states.table_name'));
+		$stateFields = $this->schema->getColumnListing(config('world.migrations.states.table_name'));
 
 		$this->forgetFields($stateFields, ['id', 'country_id']);
 
@@ -212,7 +220,7 @@ class SeedAction extends Seeder
 	private function seedCities(Models\Country $country, array $states, array $cities): void
 	{
 		// city schema
-		$cityFields = Schema::getColumnListing(config('world.migrations.cities.table_name'));
+		$cityFields = $this->schema->getColumnListing(config('world.migrations.cities.table_name'));
 
 		$this->forgetFields($cityFields, ['id', 'country_id', 'state_id']);
 

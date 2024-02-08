@@ -3,8 +3,6 @@
 namespace Nnjeim\World;
 
 use Illuminate\Support\ServiceProvider;
-use Nnjeim\World\Commands;
-use Nnjeim\World\WorldHelper;
 
 class WorldServiceProvider extends ServiceProvider
 {
@@ -34,7 +32,7 @@ class WorldServiceProvider extends ServiceProvider
 		if ($this->app->runningInConsole()) {
 			// Load the database migrations.
 			$this->loadMigrations();
-			// Publis the resources.
+			// Publish the resources.
 			$this->publishResources();
 			// Load commands
 			$this->loadCommands();
@@ -76,6 +74,7 @@ class WorldServiceProvider extends ServiceProvider
 	private function loadCommands(): void
 	{
 		$this->commands([
+            Commands\InstallWorldData::class,
 			Commands\RefreshWorldData::class,
 		]);
 	}

@@ -1,10 +1,10 @@
 <?php
 
-use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-
-class CreateCountriesTable extends Migration
+use Nnjeim\World\Database\Migrations\BaseMigration;
+    
+    class CreateCountriesTable extends BaseMigration
 {
 	/**
 	 * Run the migrations.
