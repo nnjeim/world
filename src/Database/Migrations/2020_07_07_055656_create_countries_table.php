@@ -14,7 +14,7 @@ use Nnjeim\World\Database\Migrations\BaseMigration;
 	public function up()
 	{
 		Schema::create(config('world.migrations.countries.table_name'), function (Blueprint $table) {
-			$table->id();
+			$table->id()->index();
 			$table->string('iso2', 2);
 			$table->string('name');
 			$table->tinyInteger('status')->default(1);
