@@ -14,8 +14,8 @@ class CreateStatesTable extends BaseMigration
 	public function up()
 	{
 		Schema::create(config('world.migrations.states.table_name'), function (Blueprint $table) {
-			$table->id();
-			$table->foreignId('country_id');
+			$table->id()->index();
+			$table->foreignId('country_id')->index();
 			$table->string('name');
 
 			foreach (config('world.migrations.states.optional_fields') as $field => $value) {
