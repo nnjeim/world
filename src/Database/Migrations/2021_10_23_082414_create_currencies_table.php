@@ -14,8 +14,8 @@ class CreateCurrenciesTable extends BaseMigration
 	public function up()
 	{
 		Schema::create(config('world.migrations.currencies.table_name'), function (Blueprint $table) {
-			$table->id();
-			$table->foreignId('country_id');
+			$table->id()->index();
+			$table->foreignId('country_id')->index();
 			$table->string('name');
 			$table->string('code');
 			$table->tinyInteger('precision')->default(2);
