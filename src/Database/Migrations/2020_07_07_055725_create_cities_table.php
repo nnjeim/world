@@ -14,11 +14,13 @@ class CreateCitiesTable extends BaseMigration
 	public function up()
 	{
 		Schema::create(config('world.migrations.cities.table_name'), function (Blueprint $table) {
-			$table->id();
-			$table->foreignId('country_id');
-			$table->foreignId('state_id');
+			$table->id()->index();
+			$table->foreignId('country_id')->index();
+			$table->foreignId('state_id')->index();
 			$table->string('name');
 
+			$table->index(['country_id', 'state_id']);
+			
 			foreach (config('world.migrations.cities.optional_fields') as $field => $value) {
 				if ($value['required']) {
 					$table->string($field, $value['length'] ?? null);
