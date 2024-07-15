@@ -31,6 +31,7 @@ return [
 		'de',
 		'en',
 		'es',
+		'fa',
 		'fr',
 		'hr',
 		'it',

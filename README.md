@@ -28,10 +28,9 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder # (requires ~15min)
 ```
 
-### What's new in v1.1.30?  
-- Addition of the  br, fr, hr, kr, pt locales @rinodrummer
-- Addition of the install helper @rinodrummer
-- Ability to define a custom database connection @rinodrummer
+### What's new in v1.1.31?  
+- Addition of the  fa locale @DevNull-IR
+- Addition of cities from Malaysia @hirenkeraliya
 
 ### Changelog
 

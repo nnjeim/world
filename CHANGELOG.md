@@ -2,6 +2,10 @@
 
 All notable changes to `country` will be documented in this file
 
+## 1.1.31 - 2024-07-15
+- Addition of the  fa locale @DevNull-IR
+- Addition of cities from Malaysia @hirenkeraliya
+
 ### 1.1.30 - 2024-02-08
 - Addition of the  br, fr, hr, kr, pt locales @rinodrummer
 - Addition of the install helper @rinodrummer
