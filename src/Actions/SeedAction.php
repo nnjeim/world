@@ -13,8 +13,8 @@ use Illuminate\Database\Schema\Builder as SchemaBuilder;
 
 class SeedAction extends Seeder
 {
-    protected SchemaBuilder $schema;
-    
+	protected SchemaBuilder $schema;
+
 	private array $countries = [
 		'data' => [],
 	];
@@ -48,8 +48,8 @@ class SeedAction extends Seeder
 
 	public function __construct()
 	{
-        $this->schema = Schema::connection(config('world.connection'));
-        
+		$this->schema = Schema::connection(config('world.connection'));
+
 		// countries
 		$this->initCountries();
 		// init modules
@@ -69,7 +69,7 @@ class SeedAction extends Seeder
 
 		// country schema
 		$countryFields = $this->schema
-            ->getColumnListing(config('world.migrations.countries.table_name'));
+			->getColumnListing(config('world.migrations.countries.table_name'));
 
 		$this->forgetFields($countryFields, ['id']);
 
@@ -77,7 +77,7 @@ class SeedAction extends Seeder
 
 			foreach ($countryChunks as $countryArray) {
 
-				$countryArray = array_map(fn ($field) => gettype($field) === 'string' ? trim($field) : $field, $countryArray);
+				$countryArray = array_map(fn($field) => gettype($field) === 'string' ? trim($field) : $field, $countryArray);
 
 				$country = Models\Country::create(Arr::only($countryArray, $countryFields));
 				// states and cities
@@ -108,7 +108,7 @@ class SeedAction extends Seeder
 	}
 
 	/**
-	 * @param  string  $module
+	 * @param string $module
 	 * @return void
 	 */
 	private function initModule(string $module)
@@ -128,7 +128,7 @@ class SeedAction extends Seeder
 	}
 
 	/**
-	 * @param  string  $module
+	 * @param string $module
 	 * @return bool
 	 */
 	private function isModuleEnabled(string $module): bool
@@ -147,27 +147,27 @@ class SeedAction extends Seeder
 
 		$this->countries['data'] = json_decode(File::get(__DIR__ . '/../../resources/json/countries.json'), true);
 
-		if (! empty(config('world.allowed_countries')))
+		if (!empty(config('world.allowed_countries')))
 			$this->countries['data'] = Arr::where($this->countries['data'], function ($value, $key) {
 				return in_array($value['iso2'], config('world.allowed_countries'));
 			});
 
-		if (! empty(config('world.disallowed_countries')))
+		if (!empty(config('world.disallowed_countries')))
 			$this->countries['data'] = Arr::where($this->countries['data'], function ($value, $key) {
 				return !in_array($value['iso2'], config('world.disallowed_countries'));
 			});
 	}
-    
-    /**
-     * @param Models\Country $country
-     * @param array $countryArray
-     *
-     * @throws Exception
-     */
+
+	/**
+	 * @param Models\Country $country
+	 * @param array $countryArray
+	 *
+	 * @throws Exception
+	 */
 	private function seedStates(Models\Country $country, array $countryArray): void
 	{
 		// country states and cities
-		$countryStates = Arr::where($this->modules['states']['data'], fn ($state) => $state['country_id'] === $countryArray['id']);
+		$countryStates = Arr::where($this->modules['states']['data'], fn($state) => $state['country_id'] === $countryArray['id']);
 		// state schema
 		$stateFields = $this->schema->getColumnListing(config('world.migrations.states.table_name'));
 
@@ -175,49 +175,49 @@ class SeedAction extends Seeder
 
 		$bulk_states = [];
 
-        foreach ($countryStates as $stateArray) {
+		foreach ($countryStates as $stateArray) {
 
-            $stateArray = array_map(fn ($field) => gettype($field) === 'string' ? trim($field) : $field, $stateArray);
+			$stateArray = array_map(fn($field) => gettype($field) === 'string' ? trim($field) : $field, $stateArray);
 
-            $bulk_states[] = Arr::add(
-                Arr::only($stateArray, $stateFields),
-                'country_id',
-                $country->id
-            );
-        }
+			$bulk_states[] = Arr::add(
+				Arr::only($stateArray, $stateFields),
+				'country_id',
+				$country->id
+			);
+		}
 
-        DB::beginTransaction();
+		DB::beginTransaction();
 
-        try {
-            $last_state_id_before_insert = $this->findLastStateIdBeforeInsert();
+		try {
+			$last_state_id_before_insert = $this->findLastStateIdBeforeInsert();
 
-            Models\State::query()
-                ->insert($bulk_states);
+			Models\State::query()
+				->insert($bulk_states);
 
-            $bulk_states = $this->addStateIdAfterInsert($bulk_states, $last_state_id_before_insert);
+			$bulk_states = $this->addStateIdAfterInsert($bulk_states, $last_state_id_before_insert);
 
-            //state cities
-            if ($this->isModuleEnabled('cities')) {
-                $stateNames = array_column($bulk_states, 'name');
+			//state cities
+			if ($this->isModuleEnabled('cities')) {
+				$stateNames = array_column($bulk_states, 'name');
 
-                $stateCities = Arr::where(
-                    $this->modules['cities']['data'],
-                    fn ($city) => $city['country_id'] === $countryArray['id'] && in_array($city['state_name'], $stateNames, true)
-                );
+				$stateCities = Arr::where(
+					$this->modules['cities']['data'],
+					fn($city) => $city['country_id'] === $countryArray['id'] && in_array($city['state_name'], $stateNames, true)
+				);
 
-                $this->seedCities($country, $bulk_states, $stateCities);
-            }
-        } catch (Exception $exception){
-            throw $exception;
-        } finally {
-            DB::commit();
-        }
+				$this->seedCities($country, $bulk_states, $stateCities);
+			}
+		} catch (Exception $exception) {
+			throw $exception;
+		} finally {
+			DB::commit();
+		}
 	}
 
 	/**
-	 * @param  Models\Country  $country
-	 * @param  array  $states
-	 * @param  array  $cities
+	 * @param Models\Country $country
+	 * @param array $states
+	 * @param array $cities
 	 */
 	private function seedCities(Models\Country $country, array $states, array $cities): void
 	{
@@ -227,53 +227,53 @@ class SeedAction extends Seeder
 		$this->forgetFields($cityFields, ['id', 'country_id', 'state_id']);
 
 		//using array_chunk to prevent mySQL too many placeholders error
-        foreach (array_chunk($cities, 500) as $cityChunks) {
-            $cities_bulk = [];
-            foreach ($cityChunks as $cityArray) {
-                $cityArray = array_map(fn ($field) => gettype($field) === 'string' ? trim($field) : $field, $cityArray);
+		foreach (array_chunk($cities, 500) as $cityChunks) {
+			$cities_bulk = [];
+			foreach ($cityChunks as $cityArray) {
+				$cityArray = array_map(fn($field) => gettype($field) === 'string' ? trim($field) : $field, $cityArray);
 
-                $city = Arr::only($cityArray, $cityFields);
+				$city = Arr::only($cityArray, $cityFields);
 
-                $state = Arr::first($states, fn($state) => $state['name'] === $cityArray['state_name']);
+				$state = Arr::first($states, fn($state) => $state['name'] === $cityArray['state_name']);
 
-                $city = Arr::add(
-                    $city,
-                    'state_id',
-                    $state['id']
-                );
+				$city = Arr::add(
+					$city,
+					'state_id',
+					$state['id']
+				);
 
-                $city = Arr::add(
-                    $city,
-                    'country_id',
-                    $country->id
-                );
+				$city = Arr::add(
+					$city,
+					'country_id',
+					$country->id
+				);
 
-                $cities_bulk[] = $city;
-            }
+				$cities_bulk[] = $city;
+			}
 
-            Models\City::query()
-                ->insert($cities_bulk);
-        }
+			Models\City::query()
+				->insert($cities_bulk);
+		}
 	}
 
 	/**
-	 * @param  Models\Country  $country
+	 * @param Models\Country $country
 	 * @param $countryArray
 	 * @return void
 	 */
 	private function seedTimezones(Models\Country $country, $countryArray): void
 	{
-	    $bulk_timezones = [];
+		$bulk_timezones = [];
 
 		foreach ($countryArray['timezones'] as $timezone) {
-		    $bulk_timezones[] = [
-		        'country_id' => $country->id,
-                'name' => (string) $timezone['zoneName']
-            ];
+			$bulk_timezones[] = [
+				'country_id' => $country->id,
+				'name' => (string)$timezone['zoneName']
+			];
 		}
 
 		Models\Timezone::query()
-            ->insert($bulk_timezones);
+			->insert($bulk_timezones);
 	}
 
 	private function seedCurrencies(Models\Country $country, array $countryArray): void
@@ -283,20 +283,20 @@ class SeedAction extends Seeder
 		$currency = $exists
 			? $this->modules['currencies']['data'][$countryArray['currency']]
 			: [
-				'name' => (string) $countryArray['currency'],
-				'code' => (string) $countryArray['currency'],
-				'symbol' => (string) $countryArray['currency_symbol'],
-				'symbol_native' => (string) $countryArray['currency_symbol'],
+				'name' => (string)$countryArray['currency'],
+				'code' => (string)$countryArray['currency'],
+				'symbol' => (string)$countryArray['currency_symbol'],
+				'symbol_native' => (string)$countryArray['currency_symbol'],
 				'decimal_digits' => 2,
 			];
 		$country
 			->currency()
 			->create([
-				'name' => (string) $currency['name'],
-				'code' => (string) $currency['code'],
-				'symbol' => (string) $currency['symbol'],
-				'symbol_native' => (string) $currency['symbol_native'],
-				'precision' => (int) $currency['decimal_digits'],
+				'name' => (string)$currency['name'],
+				'code' => (string)$currency['code'],
+				'symbol' => (string)$currency['symbol'],
+				'symbol_native' => (string)$currency['symbol_native'],
+				'precision' => (int)$currency['decimal_digits'],
 			]);
 	}
 
@@ -305,14 +305,14 @@ class SeedAction extends Seeder
 	 */
 	private function seedLanguages(): void
 	{
-        // languages
-        Models\Language::query()
-            ->insert($this->modules['languages']['data']);
+		// languages
+		Models\Language::query()
+			->insert($this->modules['languages']['data']);
 	}
 
 	/**
-	 * @param  array  $array
-	 * @param  array  $values
+	 * @param array $array
+	 * @param array $values
 	 * @return void
 	 */
 	private function forgetFields(array &$array, array $values)
@@ -324,26 +324,26 @@ class SeedAction extends Seeder
 		}
 	}
 
-    private function findLastStateIdBeforeInsert()
-    {
-        $state = Models\State::query()->orderByDesc('id')->first();
+	private function findLastStateIdBeforeInsert()
+	{
+		$state = Models\State::query()->orderByDesc('id')->first();
 
-        $last_state_id_before_insert = 0;
+		$last_state_id_before_insert = 0;
 
-        if (!is_null($state)) {
-            $last_state_id_before_insert = $state->id;
-        }
+		if (!is_null($state)) {
+			$last_state_id_before_insert = $state->id;
+		}
 
-        return $last_state_id_before_insert;
-    }
+		return $last_state_id_before_insert;
+	}
 
-    private function addStateIdAfterInsert(array $bulk_states, $last_state_id_before_insert)
-    {
-        $count = count($bulk_states);
+	private function addStateIdAfterInsert(array $bulk_states, $last_state_id_before_insert)
+	{
+		$count = count($bulk_states);
 
-        for ($i = 1; $i <= $count; $i++) {
-            $bulk_states[$i - 1]['id'] = $last_state_id_before_insert + $i;
-        }
-        return $bulk_states;
-    }
+		for ($i = 1; $i <= $count; $i++) {
+			$bulk_states[$i - 1]['id'] = $last_state_id_before_insert + $i;
+		}
+		return $bulk_states;
+	}
 }

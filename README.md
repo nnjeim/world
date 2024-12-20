@@ -28,9 +28,9 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder # (requires ~15min)
 ```
 
-### What's new in v1.1.31?  
-- Addition of the  fa locale @DevNull-IR
-- Addition of cities from Malaysia @hirenkeraliya
+### What's new in v1.1.32?  
+- Tested with Laravel 11 and php 8.4
+- Minor code improvements
 
 ### Changelog
 
@@ -39,9 +39,6 @@ Please read [CHANGELOG](CHANGELOG.md) for more information of what was changed r
 ### Contributing
 
 Please read [CONTRIBUTING](CONTRIBUTING.md) for more details.
-
-### Demo
-Please feel free to query https://laravel-world.com 
   
 Examples  
 https://laravel-world.com/api/countries  

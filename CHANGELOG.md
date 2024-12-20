@@ -2,6 +2,11 @@
 
 All notable changes to `country` will be documented in this file
 
+## 1.1.32 - 2024-12-20
+- Tested with Laravel 11.x
+- Tested with PHP 8.4
+- Minor code rewrite for better performance
+
 ## 1.1.31 - 2024-07-15
 - Addition of the  fa locale @DevNull-IR
 - Addition of cities from Malaysia @hirenkeraliya
