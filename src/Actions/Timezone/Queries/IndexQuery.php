@@ -3,7 +3,6 @@
 namespace Nnjeim\World\Actions\Timezone\Queries;
 
 use Illuminate\Database\Eloquent\Collection;
-use Nnjeim\World\Models\Timezone;
 
 class IndexQuery
 {
@@ -23,7 +22,8 @@ class IndexQuery
 	public function __invoke(): Collection
 	{
 		// query
-		$query = Timezone::query();
+		$timezoneClass = config('world.models.timezones');
+		$query = $timezoneClass::query();
 
 		$query->when(
 			! empty($this->with),

@@ -21,26 +21,21 @@ class SeedAction extends Seeder
 
 	private array $modules = [
 		'states' => [
-			'class' => Models\State::class,
 			'data' => [],
 			'enabled' => false,
 		],
 		'cities' => [
-			'class' => Models\City::class,
 			'data' => [],
 			'enabled' => false,
 		],
 		'timezones' => [
-			'class' => Models\Timezone::class,
 			'enabled' => false,
 		],
 		'currencies' => [
-			'class' => Models\Currency::class,
 			'data' => [],
 			'enabled' => false,
 		],
 		'languages' => [
-			'class' => Models\Language::class,
 			'data' => [],
 			'enabled' => false,
 		],
@@ -48,6 +43,10 @@ class SeedAction extends Seeder
 
 	public function __construct()
 	{
+		foreach ($this->modules as $name => $data) {
+			$this->modules[$name]['class'] = config('world.models.'.$name);
+		}
+
 		$this->schema = Schema::connection(config('world.connection'));
 
 		// countries
@@ -79,7 +78,8 @@ class SeedAction extends Seeder
 
 				$countryArray = array_map(fn($field) => gettype($field) === 'string' ? trim($field) : $field, $countryArray);
 
-				$country = Models\Country::create(Arr::only($countryArray, $countryFields));
+				$countryClass = config('world.models.countries');
+				$country = $countryClass::create(Arr::only($countryArray, $countryFields));
 				// states and cities
 				if ($this->isModuleEnabled('states')) {
 					$this->seedStates($country, $countryArray);
@@ -142,7 +142,8 @@ class SeedAction extends Seeder
 	private function initCountries(): void
 	{
 		$this->schema->disableForeignKeyConstraints();
-		app(Models\Country::class)->truncate();
+		$countryClass = config('world.models.countries');
+		app($countryClass)->truncate();
 		$this->schema->enableForeignKeyConstraints();
 
 		$this->countries['data'] = json_decode(File::get(__DIR__ . '/../../resources/json/countries.json'), true);
@@ -191,7 +192,8 @@ class SeedAction extends Seeder
 		try {
 			$last_state_id_before_insert = $this->findLastStateIdBeforeInsert();
 
-			Models\State::query()
+			$stateClass = config('world.models.states');
+			$stateClass::query()
 				->insert($bulk_states);
 
 			$bulk_states = $this->addStateIdAfterInsert($bulk_states, $last_state_id_before_insert);
@@ -251,7 +253,8 @@ class SeedAction extends Seeder
 				$cities_bulk[] = $city;
 			}
 
-			Models\City::query()
+			$cityClass = config('world.models.cities');
+			$cityClass::query()
 				->insert($cities_bulk);
 		}
 	}
@@ -272,7 +275,8 @@ class SeedAction extends Seeder
 			];
 		}
 
-		Models\Timezone::query()
+		$timezoneClass = config('world.models.timezones');
+		$timezoneClass::query()
 			->insert($bulk_timezones);
 	}
 
@@ -306,7 +310,8 @@ class SeedAction extends Seeder
 	private function seedLanguages(): void
 	{
 		// languages
-		Models\Language::query()
+		$languageClass = config('world.models.languages');
+		$languageClass::query()
 			->insert($this->modules['languages']['data']);
 	}
 
@@ -326,7 +331,8 @@ class SeedAction extends Seeder
 
 	private function findLastStateIdBeforeInsert()
 	{
-		$state = Models\State::query()->orderByDesc('id')->first();
+		$stateClass = config('world.models.states');
+		$state = $stateClass::query()->orderByDesc('id')->first();
 
 		$last_state_id_before_insert = 0;
 
