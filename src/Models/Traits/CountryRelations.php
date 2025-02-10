@@ -2,7 +2,6 @@
 
 namespace Nnjeim\World\Models\Traits;
 
-use Nnjeim\World\Models;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 
@@ -13,7 +12,9 @@ trait CountryRelations
 	 */
 	public function states(): HasMany
 	{
-		return $this->hasMany(Models\State::class, 'country_id', 'id');
+		$stateClass = config('world.models.states');
+
+		return $this->hasMany($stateClass, 'country_id', 'id');
 	}
 
 	/**
@@ -21,7 +22,9 @@ trait CountryRelations
 	 */
 	public function cities(): HasMany
 	{
-		return $this->hasMany(Models\City::class, 'country_id', 'id');
+		$cityClass = config('world.models.cities');
+
+		return $this->hasMany($cityClass, 'country_id', 'id');
 	}
 
 	/**
@@ -29,7 +32,9 @@ trait CountryRelations
 	 */
 	public function timezones(): HasMany
 	{
-		return $this->hasMany(Models\Timezone::class, 'country_id', 'id');
+		$timezoneClass = config('world.models.timezones');
+
+		return $this->hasMany($timezoneClass, 'country_id', 'id');
 	}
 
 	/**
@@ -37,6 +42,8 @@ trait CountryRelations
 	 */
 	public function currency(): HasOne
 	{
-		return $this->hasOne(Models\Currency::class, 'country_id', 'id');
+		$currencyClass = config('world.models.currencies');
+
+		return $this->hasOne($currencyClass, 'country_id', 'id');
 	}
 }

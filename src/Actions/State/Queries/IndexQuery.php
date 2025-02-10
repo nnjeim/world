@@ -3,7 +3,6 @@
 namespace Nnjeim\World\Actions\State\Queries;
 
 use Illuminate\Database\Eloquent\Collection;
-use Nnjeim\World\Models\State;
 
 class IndexQuery
 {
@@ -23,7 +22,8 @@ class IndexQuery
 	public function __invoke(): Collection
 	{
 		// query
-		$query = State::query();
+		$stateClass = config('world.models.states');
+		$query = $stateClass::query();
 
 		$query->when(
 			! empty($this->with),

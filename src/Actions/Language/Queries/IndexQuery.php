@@ -3,7 +3,6 @@
 namespace Nnjeim\World\Actions\Language\Queries;
 
 use Illuminate\Database\Eloquent\Collection;
-use Nnjeim\World\Models\Language;
 
 class IndexQuery
 {
@@ -23,7 +22,8 @@ class IndexQuery
 	public function __invoke(): Collection
 	{
 		// query
-		$query = Language::query();
+		$languageClass = config('world.models.languages');
+		$query = $languageClass::query();
 
 		$query->when(
 			! empty($this->with),

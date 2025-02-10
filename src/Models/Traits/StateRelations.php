@@ -4,7 +4,6 @@ namespace Nnjeim\World\Models\Traits;
 
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Illuminate\Database\Eloquent\Relations\HasMany;
-use Nnjeim\World\Models;
 
 trait StateRelations
 {
@@ -13,11 +12,15 @@ trait StateRelations
 	 */
 	public function country(): BelongsTo
 	{
-		return $this->belongsTo(Models\Country::class);
+		$countryClass = config('world.models.countries');
+
+		return $this->belongsTo($countryClass);
 	}
 
 	public function cities(): HasMany
 	{
-		return $this->hasMany(Models\City::class);
+		$cityClass = config('world.models.cities');
+
+		return $this->hasMany($cityClass);
 	}
 }

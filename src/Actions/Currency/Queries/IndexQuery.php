@@ -3,7 +3,6 @@
 namespace Nnjeim\World\Actions\Currency\Queries;
 
 use Illuminate\Database\Eloquent\Collection;
-use Nnjeim\World\Models\Currency;
 
 class IndexQuery
 {
@@ -23,7 +22,8 @@ class IndexQuery
 	public function __invoke(): Collection
 	{
 		// query
-		$query = Currency::query();
+		$currencyModel = config('world.models.currencies');
+		$query = $currencyModel::query();
 
 		$query->when(
 			! empty($this->with),
