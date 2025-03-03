@@ -25,11 +25,11 @@ php artisan vendor:publish --tag=world
 
 php artisan migrate
 
-php artisan db:seed --class=WorldSeeder # (requires ~15min)
+php artisan db:seed --class=WorldSeeder # (requires ~5min)
 ```
 
-### What's new in v1.1.32?  
-- Tested with Laravel 11 and php 8.4
+### What's new in v1.1.34?  
+- Tested with Laravel 11 and php 8.3/8.4
 - Minor code improvements
 
 ### Changelog

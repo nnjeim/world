@@ -2,6 +2,10 @@
 
 All notable changes to `country` will be documented in this file
 
+## 1.1.34 - 2025-03-03
+- Tested with Laravel 11.x && php 8.3/8.4
+- Fix to the world install console command
+
 ## 1.1.32 - 2024-12-20
 - Tested with Laravel 11.x
 - Tested with PHP 8.4

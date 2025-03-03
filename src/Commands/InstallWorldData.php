@@ -30,6 +30,13 @@ class InstallWorldData extends Command
 
         // publish migrations
         Artisan::call('vendor:publish --tag=world --force');
+		// Clear config cache so the published config is loaded
+		Artisan::call('config:clear');
+		// Optionally re-register the config if needed
+		if (config('world.migrations.countries.optional_fields') === null) {
+			$worldConfig = include config_path('world.php');
+			config()->set('world', $worldConfig);
+		}
         // migrate new tables
         Artisan::call('migrate');
         // re-seed the world data
