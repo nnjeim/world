@@ -44,7 +44,7 @@ class SeedAction extends Seeder
 	public function __construct()
 	{
 		foreach ($this->modules as $name => $data) {
-			$this->modules[$name]['class'] = config('world.models.'.$name);
+			$this->modules[$name]['class'] = config('world.models.' . $name);
 		}
 
 		$this->schema = Schema::connection(config('world.connection'));
@@ -143,7 +143,13 @@ class SeedAction extends Seeder
 	{
 		$this->schema->disableForeignKeyConstraints();
 		$countryClass = config('world.models.countries');
-		app($countryClass)->truncate();
+		
+		## Original code
+		// app($countryClass)->truncate();
+
+		## My custom code to truncate data
+		$countryClass::truncate();
+
 		$this->schema->enableForeignKeyConstraints();
 
 		$this->countries['data'] = json_decode(File::get(__DIR__ . '/../../resources/json/countries.json'), true);
