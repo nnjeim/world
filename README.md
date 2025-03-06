@@ -1,32 +1,74 @@
 <p style="text-align: center; padding: 3rem;"><img src="./logo.jpg" width="150" alt="Laravel world"/></p>
 
-The World is a Laravel package which provides a list of the countries, states, cities, timezones, currencies and languages.
+The World is a Laravel package that provides a comprehensive list of countries, states, cities, timezones, currencies, and languages. You can access the data using the **World Facade** or through defined API routes.
 
-It can be consumed with the World Facade or the defined API routes.
+## Table of Contents
 
+- [Installation](#installation)
+  - [Automated Installation](#automated-installation)
+  - [Manual Installation](#manual-installation)
+- [What's New in v1.1.34](#whats-new-in-v1134)
+- [Changelog](#changelog)
+- [Contributing](#contributing)
+- [Examples](#examples)
+- [Usage](#usage)
+  - [List All Countries](#list-all-countries)
+  - [Fetch Country with States & Cities](#fetch-country-with-states--cities)
+  - [List All Cities by Country ID](#list-all-cities-by-country-id)
+- [Available Actions](#available-actions)
+- [Available API Routes](#available-api-routes)
+  - [Countries](#countries)
+  - [States](#states)
+  - [Cities](#cities)
+  - [Timezones](#timezones)
+  - [Currencies](#currencies)
+  - [Languages](#languages)
+- [Localization](#localization)
+- [Schema](#schema)
+- [Configuration](#configuration)
+- [Testing](#testing)
+- 
 ### Installation
+
+First, set your application environment to local:
 
 ```bash
 set APP_ENV=local
+```
+
+Then, install the package via composer:
+
+```
 composer require nnjeim/world
 ```
 
-set the ENV variable WORLD_DB_CONNECTION to the desired database connection (optional)  
+Optionally, set the WORLD_DB_CONNECTION environment variable to your desired database connection.
 
-The `world:install` command is a helper to automate the installation process
+#### Automated Installation
+
+Run the following Artisan command to automate the installation process:
 
 ```
 php artisan world:install
 ```
+#### Manual Installation
+If you prefer to install the package manually, follow these steps:
 
-Optionally you can manually install the package by following the below steps:
+1. Publish the package configuration file:
+
 ```bash
-php artisan vendor:publish --tag=world
-
-php artisan migrate
-
-php artisan db:seed --class=WorldSeeder # (requires ~5min)
+php artisan vendor:publish --tag=world --force
 ```
+2. Run the migrations:
+
+```bash
+php artisan migrate 
+```
+3. Seed the database:
+
+```bash
+php artisan db:seed --class=WorldSeeder
+````
 
 ### What's new in v1.1.34?  
 - Tested with Laravel 11 and php 8.3/8.4
@@ -35,15 +77,21 @@ php artisan db:seed --class=WorldSeeder # (requires ~5min)
 
 ### Changelog
 
-Please read [CHANGELOG](CHANGELOG.md) for more information of what was changed recently. 
+For detailed information on recent changes, please see the [CHANGELOG](CHANGELOG.md).
 
 ### Contributing
 
-Please read [CONTRIBUTING](CONTRIBUTING.md) for more details.
+We welcome contributions! For details on how to get started, please review our [CONTRIBUTING](CONTRIBUTING.md) guidlines.
   
 Examples  
+--------
+Explore the API examples on our live site:
+
+List all countries:  
 https://laravel-world.com/api/countries  
+Search for a country:   
 https://laravel-world.com/api/countries?search=rom  
+Get states by country code:  
 https://laravel-world.com/api/states?filters[country_code]=RO&fields=cities  
 
 ### Usage
@@ -300,10 +348,13 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 
 ### Localization
 
-The available locales are ar, bn, br, de, en, es, fr, it, ja, kr, nl, pl, pt, ro, ru, tr and zh.  
+The available locales are 
+```
+ar, bn, br, de, en, es, fr, it, ja, kr, nl, pl, pt, ro, ru, tr and zh.  
+```
 The default locale is en.
 
-Include in the request header:
+Header option
 
 ```
 accept-language=locale
@@ -320,8 +371,8 @@ World::setLocale('zh')->countries();
 <p><img src="./schema.jpg" width="800px" /></p>
 
 ### Configuration  
-The configuration of the world package is in the [`world.php` config file](/config/world.php).  
-If you are upgrading from a previous version, you should consider re-publishing the file by issuing:
+The configuration for the World package is located in the world.php file.  
+If you're upgrading from a previous version, you may want to re-publish the config file:
 
 ```bash
 php artisan vendor:publish --tag=world --force
