@@ -350,7 +350,7 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 
 The available locales are 
 ```
-ar, bn, br, de, en, es, fr, it, ja, kr, nl, pl, pt, ro, ru, tr and zh.  
+ar, az, bn, br, de, en, es, fr, it, ja, kr, nl, pl, pt, ro, ru, tr and zh.  
 ```
 The default locale is en.
 
