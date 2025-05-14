@@ -2,6 +2,10 @@
 
 All notable changes to `country` will be documented in this file
 
+## 1.1.35 - 2025-05-15
+- added Azerbaijani locale @elnurvl
+- update documentation
+
 ## 1.1.34 - 2025-03-03
 - Tested with Laravel 11.x && php 8.3/8.4
 - Tested with Laravel 12.x && php 8.3/8.4

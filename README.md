@@ -70,6 +70,12 @@ php artisan migrate
 php artisan db:seed --class=WorldSeeder
 ````
 
+### Upgrading
+If you're upgrading from a previous version, you may want to re-publish the config file:
+```bash
+php artisan vendor:publish --tag=world --force
+```
+
 ### What's new in v1.1.34?  
 - Tested with Laravel 11 and php 8.3/8.4
 - Tested with Laravel 12 and php 8.3/8.4
