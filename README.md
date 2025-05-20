@@ -1,5 +1,11 @@
 <p style="text-align: center; padding: 3rem;"><img src="./logo.jpg" width="150" alt="Laravel world"/></p>
 
+<p align="center">
+<a href="https://packagist.org/packages/nnjeim/world"><img src="https://poser.pugx.org/nnjeim/world/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/nnjeim/world"><img src="https://poser.pugx.org/nnjeim/world/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/nnjeim/world"><img src="https://poser.pugx.org/nnjeim/world/license.svg" alt="License"></a>
+</p>
+
 The World is a Laravel package that provides a comprehensive list of countries, states, cities, timezones, currencies, and languages. You can access the data using the **World Facade** or through defined API routes.
 
 ## Table of Contents
@@ -7,7 +13,7 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 - [Installation](#installation)
   - [Automated Installation](#automated-installation)
   - [Manual Installation](#manual-installation)
-- [What's New in v1.1.34](#whats-new-in-v1134)
+- [What's New in v1.1.35](#whats-new-in-v1135)
 - [Changelog](#changelog)
 - [Contributing](#contributing)
 - [Examples](#examples)
@@ -92,11 +98,11 @@ Examples
 Explore the API examples on our live site:
 
 List all countries:  
-https://laravel-world.com/api/countries  
+https://world.bmbc.cloud/api/countries  
 Search for a country:   
-https://laravel-world.com/api/countries?search=rom  
+https://world.bmbc.cloud/api/countries?search=rom  
 Get states by country code:  
-https://laravel-world.com/api/states?filters[country_code]=RO&fields=cities  
+https://world.bmbc.cloud/api/states?filters[country_code]=RO&fields=cities  
 
 ### Usage
 
