@@ -7,9 +7,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 trait CountryRelations
 {
-	/**
-	 * @return HasMany
-	 */
 	public function states(): HasMany
 	{
 		$stateClass = config('world.models.states');
@@ -17,9 +14,6 @@ trait CountryRelations
 		return $this->hasMany($stateClass, 'country_id', 'id');
 	}
 
-	/**
-	 * @return HasMany
-	 */
 	public function cities(): HasMany
 	{
 		$cityClass = config('world.models.cities');
@@ -27,9 +21,6 @@ trait CountryRelations
 		return $this->hasMany($cityClass, 'country_id', 'id');
 	}
 
-	/**
-	 * @return HasMany
-	 */
 	public function timezones(): HasMany
 	{
 		$timezoneClass = config('world.models.timezones');
@@ -37,9 +28,6 @@ trait CountryRelations
 		return $this->hasMany($timezoneClass, 'country_id', 'id');
 	}
 
-	/**
-	 * @return HasOne
-	 */
 	public function currency(): HasOne
 	{
 		$currencyClass = config('world.models.currencies');

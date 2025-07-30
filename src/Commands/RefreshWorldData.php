@@ -26,22 +26,12 @@ class RefreshWorldData extends Command
 	protected $description = 'Refresh the world data';
 
 	/**
-	 * Create a new command instance.
-	 *
-	 * @return void
-	 */
-	public function __construct()
-	{
-		parent::__construct();
-	}
-
-	/**
 	 * Execute the console command.
 	 */
 	public function handle()
 	{
 		// check if we are in production mode
-		if (app()->environment() === 'production') {
+		if (app()->isProduction()) {
 			$this->error('You are in production mode. This command is not allowed in production mode.');
 			return;
 		}

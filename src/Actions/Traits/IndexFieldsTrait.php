@@ -9,16 +9,19 @@ trait IndexFieldsTrait
 	 * @var array
 	 */
 	protected array $defaultFields = [];
+
 	/**
 	 * define the available fields.
 	 * @var array
 	 */
 	protected array $availableFields = [];
+
 	/**
 	 * define the optional fields.
 	 * @var array
 	 */
 	protected array $optionalFields = [];
+
 	/**
 	 * define the available relationships.
 	 * @var array

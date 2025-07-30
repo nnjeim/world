@@ -6,9 +6,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 trait TimezoneRelations
 {
-	/**
-	 * @return BelongsTo
-	 */
 	public function country(): BelongsTo
 	{
 		$countryClass = config('world.models.countries');
