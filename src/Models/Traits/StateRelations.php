@@ -17,6 +17,9 @@ trait StateRelations
 		return $this->belongsTo($countryClass);
 	}
 
+    /**
+     * @return HasMany
+     */
 	public function cities(): HasMany
 	{
 		$cityClass = config('world.models.cities');

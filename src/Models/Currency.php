@@ -7,6 +7,22 @@ use Nnjeim\World\Models\Traits\CurrencyRelations;
 
 use Illuminate\Database\Eloquent\Model;
 
+/**
+ * Class Currency
+ *
+ * @property int $id
+ * @property int $country_id
+ * @property string $name
+ * @property string $code
+ * @property int $precision
+ * @property string $symbol
+ * @property string $symbol_native
+ * @property bool $symbol_first
+ * @property string $decimal_mark
+ * @property string $thousands_separator
+ *
+ * @property-read Model|Country|null $country
+ */
 class Currency extends Model
 {
 	use CurrencyRelations;
@@ -25,6 +41,15 @@ class Currency extends Model
 	];
 
 	public $timestamps = false;
+
+    protected function casts(): array
+    {
+        return [
+            'country_id' => 'int',
+            'precision' => 'int',
+            'symbol_first' => 'bool',
+        ];
+    }
 
 	/**
 	 * Get the table associated with the model.
