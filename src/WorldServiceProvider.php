@@ -8,8 +8,6 @@ class WorldServiceProvider extends ServiceProvider
 {
 	/**
 	 * Register services.
-	 *
-	 * @return void
 	 */
 	public function register(): void
 	{
@@ -19,8 +17,6 @@ class WorldServiceProvider extends ServiceProvider
 
 	/**
 	 * Boot services.
-	 *
-	 * @return void
 	 */
 	public function boot(): void
 	{
@@ -41,7 +37,6 @@ class WorldServiceProvider extends ServiceProvider
 
 	/**
 	 * method to load the migrations when php migrate is run in the console.
-	 * @return void
 	 */
 	private function loadMigrations(): void
 	{
@@ -50,7 +45,6 @@ class WorldServiceProvider extends ServiceProvider
 
 	/**
 	 * Method to publish the resource to the app resources folder
-	 * @return void
 	 */
 	private function publishResources(): void
 	{
@@ -69,7 +63,6 @@ class WorldServiceProvider extends ServiceProvider
 
 	/**
 	 * Method to publish the resource to the app resources folder
-	 * @return void
 	 */
 	private function loadCommands(): void
 	{

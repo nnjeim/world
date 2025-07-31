@@ -7,9 +7,6 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 trait StateRelations
 {
-	/**
-	 * @return BelongsTo
-	 */
 	public function country(): BelongsTo
 	{
 		$countryClass = config('world.models.countries');

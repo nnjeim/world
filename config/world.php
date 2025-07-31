@@ -39,6 +39,7 @@ return [
 		'fa',
 		'fr',
 		'hr',
+		'hy',
 		'it',
 		'ja',
 		'kr',

@@ -1,17 +1,15 @@
 <?php
 
-use \Nnjeim\World\Database\Migrations\BaseMigration;
+use Nnjeim\World\Database\Migrations\BaseMigration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCurrenciesTable extends BaseMigration
+return new class extends BaseMigration
 {
 	/**
 	 * Run the migrations.
-	 *
-	 * @return void
 	 */
-	public function up()
+	public function up(): void
 	{
 		Schema::create(config('world.migrations.currencies.table_name'), function (Blueprint $table) {
 			$table->id();
@@ -29,11 +27,9 @@ class CreateCurrenciesTable extends BaseMigration
 
 	/**
 	 * Reverse the migrations.
-	 *
-	 * @return void
 	 */
-	public function down()
+	public function down(): void
 	{
 		Schema::dropIfExists(config('world.migrations.currencies.table_name'));
 	}
-}
+};
