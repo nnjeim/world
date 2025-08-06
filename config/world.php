@@ -43,6 +43,7 @@ return [
 		'it',
 		'ja',
 		'kr',
+		'ne',
 		'nl',
 		'pl',
 		'pt',
