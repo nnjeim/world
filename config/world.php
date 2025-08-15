@@ -30,7 +30,7 @@ return [
 
 	'accepted_locales' => [
 		'ar',
-        'az',
+		'az',
 		'bn',
 		'br',
 		'de',
@@ -49,6 +49,7 @@ return [
 		'pt',
 		'ro',
 		'ru',
+		'sw',
 		'tr',
 		'zh',
 	],
