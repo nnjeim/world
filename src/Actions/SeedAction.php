@@ -44,19 +44,116 @@ class SeedAction extends Seeder
 	public function __construct()
 	{
 		foreach ($this->modules as $name => $data) {
-			$this->modules[$name]['class'] = config('world.models.'.$name);
+			$this->modules[$name]['class'] = config('world.models.' . $name);
 		}
 
 		$this->schema = Schema::connection(config('world.connection'));
 
+		//check memory limit
+		$this->checkMemoryLimit();
+
 		// countries
 		$this->initCountries();
+
 		// init modules
 		foreach (config('world.modules') as $module => $enabled) {
 			if ($enabled) {
 				$this->modules[$module]['enabled'] = true;
 				$this->initModule($module);
 			}
+		}
+	}
+
+	/**
+	 * Check if the current memory limit is sufficient for seeding large datasets
+	 */
+	private function checkMemoryLimit(): void
+	{
+		$currentLimit = ini_get('memory_limit');
+		$recommendedLimit = '512M';
+		$currentBytes = $this->convertToBytes($currentLimit);
+		$recommendedBytes = $this->convertToBytes($recommendedLimit);
+
+		if ($currentBytes < $recommendedBytes && $currentLimit !== '-1') {
+			$commandName = $this->getRunningCommand();
+			$message = "Insufficient memory limit detected! Current: {$currentLimit}, Recommended: {$recommendedLimit}\n";
+
+			if ($commandName === 'world:install') {
+				$message .= "To fix this, run the command with increased memory:\n" .
+					"php -d memory_limit={$recommendedLimit} artisan world:install";
+			} elseif ($commandName === 'db:seed') {
+				$message .= "To fix this, run the command with increased memory:\n" .
+					"php -d memory_limit={$recommendedLimit} artisan db:seed --class=WorldSeeder";
+			} else {
+				// If we can't determine the command, show both options
+				$message .= "To fix this, run either command with increased memory:\n" .
+					"php -d memory_limit={$recommendedLimit} artisan world:install\n" .
+					"php -d memory_limit={$recommendedLimit} artisan db:seed --class=WorldSeeder";
+			}
+
+			if ($this->command && method_exists($this->command, 'getOutput')) {
+				$this->command->getOutput()->error($message);
+			} else {
+				fwrite(STDERR, $message . "\n");
+			}
+			exit(1);
+		}
+	}
+
+	/**
+	 * Determine which command is currently running
+	 */
+	private function getRunningCommand(): ?string
+	{
+		// First try to get the command from the $this->command object
+		if ($this->command && method_exists($this->command, 'getName')) {
+			return $this->command->getName();
+		}
+
+		// Fallback to checking the command line arguments
+		if (isset($_SERVER['argv']) && is_array($_SERVER['argv']) && count($_SERVER['argv']) >= 2) {
+			$command = $_SERVER['argv'][1];
+
+			// Check if it's the db:seed command with the WorldSeeder class
+			if ($command === 'db:seed' && isset($_SERVER['argv'][2]) && $_SERVER['argv'][2] === '--class=WorldSeeder') {
+				return 'db:seed';
+			}
+
+			// Check if it's the world:install command
+			if ($command === 'world:install') {
+				return 'world:install';
+			}
+
+			// Return the command name if it's one of the expected ones
+			if (in_array($command, ['db:seed', 'world:install'])) {
+				return $command;
+			}
+		}
+
+		return null;
+	}
+
+	/**
+	 * Convert memory limit string to bytes
+	 */
+	private function convertToBytes(string $memoryLimit): int
+	{
+		if ($memoryLimit === '-1') {
+			return PHP_INT_MAX;
+		}
+
+		$unit = strtolower(substr($memoryLimit, -1));
+		$value = (int) substr($memoryLimit, 0, -1);
+
+		switch ($unit) {
+			case 'g':
+				return $value * 1024 * 1024 * 1024;
+			case 'm':
+				return $value * 1024 * 1024;
+			case 'k':
+				return $value * 1024;
+			default:
+				return (int) $memoryLimit;
 		}
 	}
 
