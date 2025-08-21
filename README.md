@@ -13,7 +13,7 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 - [Installation](#installation)
   - [Automated Installation](#automated-installation)
   - [Manual Installation](#manual-installation)
-- [What's New in v1.1.35](#whats-new-in-v1136-)
+- [What's New in v1.1.36](#whats-new-in-v1136-)
 - [Changelog](#changelog)
 - [Contributing](#contributing)
 - [Examples](#examples)
