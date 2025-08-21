@@ -13,7 +13,7 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 - [Installation](#installation)
   - [Automated Installation](#automated-installation)
   - [Manual Installation](#manual-installation)
-- [What's New in v1.1.35](#whats-new-in-v1135)
+- [What's New in v1.1.35](#whats-new-in-v1136-)
 - [Changelog](#changelog)
 - [Contributing](#contributing)
 - [Examples](#examples)
@@ -82,8 +82,11 @@ If you're upgrading from a previous version, you may want to re-publish the conf
 php artisan vendor:publish --tag=world --force
 ```
 
-### What's new in v1.1.35?  
-- Addition of the azerbaijani localization by @elnurvl.
+### What's new in v1.1.36?  
+- added Armenian locale support by @vahan
+- added Nepali locale support by @sagautam5
+- added Sawahili locale support by @ludanadeodatus
+- Available php memory check by @sorrowflufloyd
 
 ### Changelog
 

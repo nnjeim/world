@@ -185,7 +185,7 @@
         "iso3": "ASM",
         "iso2": "AS",
         "numeric_code": "016",
-        "phone_code": "1",
+        "phone_code": "1684",
         "capital": "Pago Pago",
         "currency": "USD",
         "currency_name": "US Dollar",
@@ -1404,7 +1404,7 @@
         "currency": "USD",
         "currency_name": "United States dollar",
         "currency_symbol": "$",
-        "tld": ".an",
+        "tld": ".bq",
         "native": "Caribisch Nederland",
         "region": "Americas",
         "subregion": "Caribbean",
@@ -1530,7 +1530,7 @@
         "iso3": "BVT",
         "iso2": "BV",
         "numeric_code": "074",
-        "phone_code": "0055",
+        "phone_code": "47",
         "capital": "",
         "currency": "NOK",
         "currency_name": "Norwegian Krone",
@@ -1611,14 +1611,14 @@
                 "gmtOffset": -14400,
                 "gmtOffsetName": "UTC-04:00",
                 "abbreviation": "AMT",
-                "tzName": "Amazon Time (Brazil)[3"
+                "tzName": "Amazon Time (Brazil)"
             },
             {
                 "zoneName": "America\/Campo_Grande",
                 "gmtOffset": -14400,
                 "gmtOffsetName": "UTC-04:00",
                 "abbreviation": "AMT",
-                "tzName": "Amazon Time (Brazil)[3"
+                "tzName": "Amazon Time (Brazil)"
             },
             {
                 "zoneName": "America\/Cuiaba",
@@ -1667,7 +1667,7 @@
                 "gmtOffset": -14400,
                 "gmtOffsetName": "UTC-04:00",
                 "abbreviation": "AMT",
-                "tzName": "Amazon Time (Brazil)[3"
+                "tzName": "Amazon Time (Brazil)"
             },
             {
                 "zoneName": "America\/Recife",
@@ -1996,7 +1996,7 @@
         "iso2": "CM",
         "numeric_code": "120",
         "phone_code": "237",
-        "capital": "Yaounde",
+        "capital": "Yaoundé",
         "currency": "XAF",
         "currency_name": "Central African CFA franc",
         "currency_symbol": "FCFA",
