@@ -372,7 +372,7 @@
         "currency_symbol": "$",
         "tld": ".aq",
         "native": "Antarctica",
-        "region": "Polar",
+        "region": "Antarctic",
         "subregion": "",
         "timezones": [
             {
@@ -1537,8 +1537,8 @@
         "currency_symbol": "kr",
         "tld": ".bv",
         "native": "Bouvetøya",
-        "region": "",
-        "subregion": "",
+        "region": "Antarctic",
+        "subregion": "South Atlantic",
         "timezones": [
             {
                 "zoneName": "Europe\/Oslo",
@@ -4927,8 +4927,8 @@
         "currency_symbol": "$",
         "tld": ".hm",
         "native": "Heard Island and McDonald Islands",
-        "region": "",
-        "subregion": "",
+        "region": "Antarctic",
+        "subregion": "Indian Ocean",
         "timezones": [
             {
                 "zoneName": "Indian\/Kerguelen",
@@ -6892,7 +6892,7 @@
         "numeric_code": "478",
         "phone_code": "222",
         "capital": "Nouakchott",
-        "currency": "MRO",
+        "currency": "MRU",
         "currency_name": "Mauritanian ouguiya",
         "currency_symbol": "MRU",
         "tld": ".mr",
@@ -9630,7 +9630,7 @@
         "numeric_code": "678",
         "phone_code": "239",
         "capital": "Sao Tome",
-        "currency": "STD",
+        "currency": "STN",
         "currency_name": "Dobra",
         "currency_symbol": "Db",
         "tld": ".st",
@@ -11035,7 +11035,7 @@
         "iso2": "TK",
         "numeric_code": "772",
         "phone_code": "690",
-        "capital": "",
+        "capital": "Atafu",
         "currency": "NZD",
         "currency_name": "New Zealand dollar",
         "currency_symbol": "$",
@@ -11843,8 +11843,8 @@
         "currency_symbol": "$",
         "tld": ".us",
         "native": "United States Minor Outlying Islands",
-        "region": "Americas",
-        "subregion": "Northern America",
+        "region": "Oceania",
+        "subregion": "Micronesia",
         "timezones": [
             {
                 "zoneName": "Pacific\/Midway",
@@ -12077,8 +12077,8 @@
         "numeric_code": "862",
         "phone_code": "58",
         "capital": "Caracas",
-        "currency": "VEF",
-        "currency_name": "Bolívar",
+        "currency": "VES",
+        "currency_name": "Bolívar Soberano",
         "currency_symbol": "Bs",
         "tld": ".ve",
         "native": "Venezuela",
