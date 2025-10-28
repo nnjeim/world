@@ -42,6 +42,8 @@ class Country extends Model
     {
         return [
             'status' => 'int',
+			'timezones' => 'array',
+            'translations' => 'array',
         ];
     }
 
