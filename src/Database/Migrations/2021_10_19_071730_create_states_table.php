@@ -13,7 +13,7 @@ return new class extends BaseMigration
     {
         Schema::create(config('world.migrations.states.table_name'), function (Blueprint $table) {
             $table->id();
-            $table->foreignId('country_id');
+            $table->foreignId('country_id')->constrained('countries')->cascadeOnDelete()->cascadeOnUpdate();
             $table->string('name');
 
             foreach (config('world.migrations.states.optional_fields') as $field => $value) {
