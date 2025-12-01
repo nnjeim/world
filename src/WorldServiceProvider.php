@@ -57,7 +57,7 @@ class WorldServiceProvider extends ServiceProvider
 		], 'world');
 
 		$this->publishes([
-			__DIR__ . '/../resources/lang' => resource_path('lang/vendor/world'),
+			__DIR__ . '/../resources/lang' => base_path('lang/vendor/world'),
 		], 'world');
 	}
 
