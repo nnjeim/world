@@ -25,6 +25,17 @@ trait IndexTransformer
 						);
 					}
 
+					if (in_array('exchangeRates', $fields)) {
+						$latestExchangeRate = $currency->exchangeRates
+							->sortByDesc('created_at')
+							->first();
+						
+						$return = array_merge(
+							$return,
+							['exchangeRates' => $latestExchangeRate ? $latestExchangeRate->only('id', 'exchange_rate', 'base_currency', 'created_at') : null]
+						);
+					}
+
 					return $return;
 				}
 			);

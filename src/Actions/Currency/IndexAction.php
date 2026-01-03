@@ -37,6 +37,7 @@ class IndexAction extends BaseAction implements ActionInterface
 
 	protected array $availableRelations = [
 		'country',
+		'exchangeRates',
 	];
 
 	/**
