@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $thousands_separator
  *
  * @property-read Model|Country|null $country
+ * @property-read Model[]|ExchangeRate[] $exchangeRates
  */
 class Currency extends Model
 {

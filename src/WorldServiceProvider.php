@@ -69,6 +69,7 @@ class WorldServiceProvider extends ServiceProvider
 		$this->commands([
             Commands\InstallWorldData::class,
 			Commands\RefreshWorldData::class,
+			Commands\UpdateExchangeRates::class,
 		]);
 	}
 }

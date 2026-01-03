@@ -191,6 +191,9 @@ return [
 		'currencies' => [
 			'table_name' => 'currencies',
 		],
+		'exchange_rates' => [
+			'table_name' => 'exchange_rates',
+		],
 		'languages' => [
 			'table_name' => 'languages',
 		],
@@ -207,9 +210,26 @@ return [
 		'cities' => \Nnjeim\World\Models\City::class,
 		'countries' => \Nnjeim\World\Models\Country::class,
 		'currencies' => \Nnjeim\World\Models\Currency::class,
+		'exchange_rates' => \Nnjeim\World\Models\ExchangeRate::class,
 		'languages' => \Nnjeim\World\Models\Language::class,
 		'states' => \Nnjeim\World\Models\State::class,
 		'timezones' => \Nnjeim\World\Models\Timezone::class,
+	],
+
+	/*
+	|--------------------------------------------------------------------------
+	| Exchange Rate API Configuration.
+	| Configure your exchange rate API provider settings here.
+	| Supported providers: 'exchangerate-api', 'fixer', 'currencylayer', 'custom'
+	|--------------------------------------------------------------------------
+	*/
+
+	'exchange_rates' => [
+		'provider' => env('WORLD_EXCHANGE_RATE_PROVIDER', 'exchangerate-api'),
+		'base_currency' => env('WORLD_EXCHANGE_RATE_BASE', 'USD'),
+		'api_key' => env('WORLD_EXCHANGE_RATE_API_KEY'),
+		'api_url' => env('WORLD_EXCHANGE_RATE_API_URL'),
+		'enabled' => env('WORLD_EXCHANGE_RATES_ENABLED', false),
 	],
 
 ];
