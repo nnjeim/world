@@ -139,30 +139,8 @@ class IndexAction extends BaseAction implements ActionInterface
         try {
             return $this->transform($geoData);
         } catch (Exception $e) {
-            // If transform fails (database issues), return raw geo data without model links
-            return collect([
-                'ip' => $geoData['ip'],
-                'country' => $geoData['country_code'] ? [
-                    'iso2' => $geoData['country_code'],
-                    'name' => $geoData['country_name'],
-                ] : null,
-                'state' => [
-                    'name' => $geoData['state_name'] ?? null,
-                    'state_code' => $geoData['state_code'] ?? null,
-                ],
-                'city' => [
-                    'name' => $geoData['city_name'] ?? null,
-                ],
-                'coordinates' => [
-                    'latitude' => $geoData['latitude'] ?? null,
-                    'longitude' => $geoData['longitude'] ?? null,
-                    'accuracy_radius' => $geoData['accuracy_radius'] ?? null,
-                ],
-                'timezone' => [
-                    'name' => $geoData['timezone'] ?? null,
-                ],
-                'postal_code' => $geoData['postal_code'] ?? null,
-            ]);
+            // Re-throw with context so we can debug transform failures
+            throw new GeolocateException("Transform failed: {$e->getMessage()}");
         }
     }
 }
