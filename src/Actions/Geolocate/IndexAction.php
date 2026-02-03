@@ -88,7 +88,10 @@ class IndexAction extends BaseAction implements ActionInterface
         } catch (Exception $e) {
             $this->success = false;
             $this->data = collect([]);
-            $this->errorMessage = 'An error occurred while geolocating the IP address.';
+            // Show detailed message in debug mode, generic message in production
+            $this->errorMessage = config('app.debug', false)
+                ? $e->getMessage()
+                : 'An error occurred while geolocating the IP address.';
         }
 
         return $this;
@@ -133,6 +136,33 @@ class IndexAction extends BaseAction implements ActionInterface
     {
         $geoData = $this->geolocateService->geolocate($ip);
 
-        return $this->transform($geoData);
+        try {
+            return $this->transform($geoData);
+        } catch (Exception $e) {
+            // If transform fails (database issues), return raw geo data without model links
+            return collect([
+                'ip' => $geoData['ip'],
+                'country' => $geoData['country_code'] ? [
+                    'iso2' => $geoData['country_code'],
+                    'name' => $geoData['country_name'],
+                ] : null,
+                'state' => [
+                    'name' => $geoData['state_name'] ?? null,
+                    'state_code' => $geoData['state_code'] ?? null,
+                ],
+                'city' => [
+                    'name' => $geoData['city_name'] ?? null,
+                ],
+                'coordinates' => [
+                    'latitude' => $geoData['latitude'] ?? null,
+                    'longitude' => $geoData['longitude'] ?? null,
+                    'accuracy_radius' => $geoData['accuracy_radius'] ?? null,
+                ],
+                'timezone' => [
+                    'name' => $geoData['timezone'] ?? null,
+                ],
+                'postal_code' => $geoData['postal_code'] ?? null,
+            ]);
+        }
     }
 }

@@ -176,18 +176,19 @@ class GeolocateService
     protected function geolocateWithApi(string $ip): array
     {
         try {
-            $response = Http::timeout(5)->get("http://ip-api.com/json/{$ip}", [
+            $response = Http::timeout(10)->get("http://ip-api.com/json/{$ip}", [
                 'fields' => 'status,message,country,countryCode,region,regionName,city,zip,lat,lon,timezone',
             ]);
 
             if (!$response->successful()) {
-                throw GeolocateException::addressNotFound($ip);
+                throw new GeolocateException("ip-api.com returned HTTP status {$response->status()} for IP '{$ip}'.");
             }
 
             $data = $response->json();
 
             if (($data['status'] ?? '') !== 'success') {
-                throw GeolocateException::addressNotFound($ip);
+                $message = $data['message'] ?? 'Unknown error';
+                throw new GeolocateException("ip-api.com failed for IP '{$ip}': {$message}");
             }
 
             return [
@@ -206,7 +207,7 @@ class GeolocateService
         } catch (GeolocateException $e) {
             throw $e;
         } catch (\Exception $e) {
-            throw new GeolocateException("Failed to geolocate IP using external API: {$e->getMessage()}");
+            throw new GeolocateException("Failed to connect to ip-api.com: {$e->getMessage()}");
         }
     }
 
