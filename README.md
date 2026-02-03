@@ -8,6 +8,21 @@
 
 The World is a Laravel package that provides a comprehensive list of countries, states, cities, timezones, currencies, languages and IP geolocation. You can access the data using the **World Facade** or through defined API routes.
 
+---
+
+<p align="center">
+  <img src="./geolocate-badge.svg" alt="New: IP Geolocation"/>
+</p>
+
+<p align="center">
+  <strong>🌍 New in v1.1.37: IP Geolocation Module</strong><br/>
+  Detect user location from IP address with automatic fallback to free API.<br/>
+  <code>World::geolocate()</code> · <code>GET /api/geolocate</code><br/>
+  <a href="#geolocate-action">Learn more →</a>
+</p>
+
+---
+
 ## Table of Contents
 
 - [Installation](#installation)
