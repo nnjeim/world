@@ -62,9 +62,6 @@ class IndexAction extends BaseAction implements ActionInterface
         $this->cacheKey = "geolocate_{$ip}_" . app()->getLocale();
 
         try {
-            // DEBUG: Bypass cache temporarily
-            Cache::forget($this->cacheKey);
-
             // Cache the results
             $cacheTtl = config('world.geolocate.cache_ttl', 86400);
 
@@ -139,23 +136,6 @@ class IndexAction extends BaseAction implements ActionInterface
     {
         $geoData = $this->geolocateService->geolocate($ip);
 
-        // DEBUG: Log what we're getting from geolocate
-        \Log::info('Geolocate debug', [
-            'ip' => $ip,
-            'geoData' => $geoData,
-            'countryModel' => config('world.models.countries'),
-        ]);
-
-        try {
-            $result = $this->transform($geoData);
-
-            // DEBUG: Log transformed result
-            \Log::info('Transform result', ['result' => $result->toArray()]);
-
-            return $result;
-        } catch (Exception $e) {
-            // Re-throw with context so we can debug transform failures
-            throw new GeolocateException("Transform failed: {$e->getMessage()}");
-        }
+        return $this->transform($geoData);
     }
 }

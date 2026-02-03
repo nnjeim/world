@@ -78,10 +78,14 @@ php artisan db:seed --class=WorldSeeder
 ````
 
 ### Upgrading
-If you're upgrading from a previous version, you may want to re-publish the config file:
+
+> **⚠️ Important:** When upgrading to a new version, you **must** re-publish the configuration file to ensure all new features work correctly:
+
 ```bash
 php artisan vendor:publish --tag=world --force
 ```
+
+This command updates the `config/world.php` file with new configuration options. Failing to run this command may result in missing features or errors.
 
 ### What's new in v1.1.37?
 - **New Geolocate Module**: IP-based geolocation using MaxMind GeoLite2 database
@@ -91,6 +95,8 @@ php artisan vendor:publish --tag=world --force
 - Automatic IP detection from proxy headers (Cloudflare, X-Forwarded-For, etc.)
 - Returns linked Country, State, City models with database IDs
 - New artisan command: `php artisan world:geoip` to download GeoLite2 database
+
+> **⚠️ Required:** After upgrading, run `php artisan vendor:publish --tag=world --force` to update your configuration file.
 
 ### Changelog
 
@@ -351,7 +357,7 @@ The client IP is automatically detected from request headers in this order:
 4. `CLIENT-IP` (Generic)
 5. Laravel's `request()->ip()` fallback
 
-**Response:**
+**Response Format:**
 
 ```json
 {
@@ -360,29 +366,39 @@ The client IP is automatically detected from request headers in this order:
   "data": {
     "ip": "8.8.8.8",
     "country": {
-      "id": 233,
+      "id": 236,
       "iso2": "US",
-      "name": "United States"
+      "iso3": "USA",
+      "name": "United States",
+      "phone_code": "1",
+      "region": "Americas",
+      "subregion": "Northern America"
     },
     "state": {
-      "id": 3925,
-      "name": "California",
-      "state_code": "CA"
+      "id": 4808,
+      "name": "Virginia",
+      "state_code": "VA"
     },
     "city": {
-      "id": 144371,
-      "name": "Mountain View"
+      "id": 147562,
+      "name": "Ashburn"
     },
     "coordinates": {
-      "latitude": 37.386,
-      "longitude": -122.084
+      "latitude": 39.03,
+      "longitude": -77.5,
+      "accuracy_radius": null
     },
     "timezone": {
-      "name": "America/Los_Angeles"
-    }
-  }
+      "id": 404,
+      "name": "America/New_York"
+    },
+    "postal_code": "20149"
+  },
+  "response_time": "690 ms"
 }
 ```
+
+> **Note:** The `id` fields link to existing records in the World database tables. If a matching record is not found, the `id` field will be omitted and only the raw geolocation data will be returned.
 
 ### Available API routes
 
