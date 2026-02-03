@@ -35,5 +35,9 @@ Route::group([
 		if (config('world.modules.languages', true)) {
 			Route::get('/languages', [Controllers\Language\LanguageController::class, 'index'])->name('languages.index');
 		}
+
+		if (config('world.modules.geolocate', true)) {
+			Route::get('/geolocate', [Controllers\Geolocate\GeolocateController::class, 'index'])->name('geolocate.index');
+		}
 	}
 });

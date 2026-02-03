@@ -21,7 +21,8 @@
         }
     ],
     "require": {
-        "php": ">=7.4"
+        "php": ">=7.4",
+        "geoip2/geoip2": "^2.13"
     },
     "require-dev": {
         "orchestra/testbench": ">=v4.0.0",
