@@ -27,13 +27,24 @@ trait IndexTransformer
 
         // Find matching state
         $state = null;
-        if (!empty($geoData['state_code']) && $country) {
-            $state = $stateModel::where('country_id', $country->id)
-                ->where(function ($query) use ($geoData) {
-                    $query->where('state_code', $geoData['state_code'])
+        if ($country && (!empty($geoData['state_code']) || !empty($geoData['state_name']))) {
+            $query = $stateModel::where('country_id', $country->id);
+
+            // Check if state_code column exists (it's optional in World migrations)
+            $hasStateCode = config('world.migrations.states.optional_fields.state_code.required', false)
+                || \Schema::hasColumn(config('world.migrations.states.table_name', 'states'), 'state_code');
+
+            if ($hasStateCode && !empty($geoData['state_code'])) {
+                $query->where(function ($q) use ($geoData) {
+                    $q->where('state_code', $geoData['state_code'])
                         ->orWhere('name', $geoData['state_name']);
-                })
-                ->first();
+                });
+            } else {
+                // Fallback to name-only matching
+                $query->where('name', $geoData['state_name']);
+            }
+
+            $state = $query->first();
         }
 
         // Find matching city
@@ -70,11 +81,11 @@ trait IndexTransformer
                 'region' => $country->region ?? null,
                 'subregion' => $country->subregion ?? null,
             ] : null,
-            'state' => $state ? [
+            'state' => $state ? array_filter([
                 'id' => $state->id,
                 'name' => $state->name,
-                'state_code' => $state->state_code ?? null,
-            ] : [
+                'state_code' => $state->state_code ?? $geoData['state_code'] ?? null,
+            ], fn ($v) => $v !== null) : [
                 'name' => $geoData['state_name'] ?? null,
                 'state_code' => $geoData['state_code'] ?? null,
             ],
