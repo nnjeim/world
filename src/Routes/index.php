@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Nnjeim\World\Http\Controllers;
+use Nnjeim\World\Http\Middleware\Geolocate;
 use Nnjeim\World\Http\Middleware\Localization;
 
 Route::group([
@@ -37,7 +38,9 @@ Route::group([
 		}
 
 		if (config('world.modules.geolocate', true)) {
-			Route::get('/geolocate', [Controllers\Geolocate\GeolocateController::class, 'index'])->name('geolocate.index');
+			Route::get('/geolocate', [Controllers\Geolocate\GeolocateController::class, 'index'])
+				->middleware(Geolocate::class)
+				->name('geolocate.index');
 		}
 	}
 });
