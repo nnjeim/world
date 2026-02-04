@@ -55,9 +55,9 @@ class SeedAction extends Seeder
 		// countries
 		$this->initCountries();
 
-		// init modules
+		// init modules (only seedable modules - skip geolocate, phone, etc.)
 		foreach (config('world.modules') as $module => $enabled) {
-			if ($enabled) {
+			if ($enabled && array_key_exists($module, $this->modules)) {
 				$this->modules[$module]['enabled'] = true;
 				$this->initModule($module);
 			}
