@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="28">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="200" height="28" rx="6" fill="url(#grad)"/>
+  <text x="12" y="19" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">📍 NEW: IP Geolocation</text>
+</svg>

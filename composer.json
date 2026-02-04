@@ -1,6 +1,6 @@
 {
     "name": "nnjeim/world",
-    "description": "Laravel countries, states, cities and currencies",
+    "description": "Laravel countries, states, cities, currencies, languages and IP geolocation",
     "keywords": [
         "laravel",
         "lumen",
@@ -8,7 +8,12 @@
         "cities",
         "states",
         "timezones",
-        "currencies"
+        "currencies",
+        "languages",
+        "geolocation",
+        "geoip",
+        "ip-location",
+        "maxmind"
     ],
     "homepage": "https://github.com/nnjeim/world.git",
     "license": "MIT",
@@ -21,7 +26,8 @@
         }
     ],
     "require": {
-        "php": ">=7.4"
+        "php": ">=7.4",
+        "geoip2/geoip2": "^2.13"
     },
     "require-dev": {
         "orchestra/testbench": ">=v4.0.0",

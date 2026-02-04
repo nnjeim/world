@@ -3,7 +3,11 @@
 namespace Nnjeim\World;
 
 use Illuminate\Foundation\Application;
+use Illuminate\Contracts\Http\Kernel;
+use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
+use Nnjeim\World\Geolocate\GeolocateService;
+use Nnjeim\World\Http\Middleware\Geolocate;
 
 class WorldServiceProvider extends ServiceProvider
 {
@@ -14,6 +18,9 @@ class WorldServiceProvider extends ServiceProvider
 	{
 		// Register the main class to use with the facade
 		$this->app->singleton('world', fn () => new WorldHelper());
+
+		// Register the GeolocateService
+		$this->app->singleton(GeolocateService::class, fn () => new GeolocateService());
 	}
 
 	/**
@@ -26,6 +33,11 @@ class WorldServiceProvider extends ServiceProvider
 		// Load translations
 		$this->loadTranslationsFrom(__DIR__ . '/../resources/lang', 'world');
 
+		// Register geolocate middleware alias if module is enabled
+		if (config('world.modules.geolocate', true)) {
+			$this->registerGeolocateMiddleware();
+		}
+
 		if ($this->app->runningInConsole()) {
 			// Load the database migrations.
 			$this->loadMigrations();
@@ -34,6 +46,15 @@ class WorldServiceProvider extends ServiceProvider
 			// Load commands
 			$this->loadCommands();
 		}
+	}
+
+	/**
+	 * Register the geolocate middleware alias.
+	 */
+	private function registerGeolocateMiddleware(): void
+	{
+		$router = $this->app->make(Router::class);
+		$router->aliasMiddleware('geolocate', Geolocate::class);
 	}
 
 	/**
@@ -70,6 +91,7 @@ class WorldServiceProvider extends ServiceProvider
 		$this->commands([
             Commands\InstallWorldData::class,
 			Commands\RefreshWorldData::class,
+			Commands\UpdateGeoipDatabase::class,
 		]);
 	}
 
