@@ -2,6 +2,7 @@
 
 namespace Nnjeim\World;
 
+use Illuminate\Foundation\Application;
 use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
@@ -78,7 +79,7 @@ class WorldServiceProvider extends ServiceProvider
 		], 'world');
 
 		$this->publishes([
-			__DIR__ . '/../resources/lang' => resource_path('lang/vendor/world'),
+			__DIR__ . '/../resources/lang' => $this->getDestinationPath(),
 		], 'world');
 	}
 
@@ -93,4 +94,21 @@ class WorldServiceProvider extends ServiceProvider
 			Commands\UpdateGeoipDatabase::class,
 		]);
 	}
+
+	 /**
+     * Method to get the correct Destination Path to publish the lang resource
+     */
+    private function getDestinationPath(): string
+    {
+        $laravelVersion = Application::VERSION;
+
+        $destinationPath = resource_path('lang/vendor/world');
+
+        if (version_compare($laravelVersion, '9.0.0', '>=')) {
+            $destinationPath = base_path('lang/vendor/world');
+        }
+
+        return $destinationPath;
+    }
+	
 }
