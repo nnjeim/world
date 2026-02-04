@@ -15,7 +15,7 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 </p>
 
 <p align="center">
-  <strong>🌍 New in v1.1.37: IP Geolocation Module</strong><br/>
+  <strong>🌍 New in v1.1.38: IP Geolocation Module</strong><br/>
   Detect user location from IP address with automatic fallback to free API.<br/>
   <code>World::geolocate()</code> · <code>GET /api/geolocate</code><br/>
   <a href="#geolocate-action">Learn more →</a>
@@ -28,7 +28,7 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 - [Installation](#installation)
   - [Automated Installation](#automated-installation)
   - [Manual Installation](#manual-installation)
-- [What's New in v1.1.37](#whats-new-in-v1137-)
+- [What's New in v1.1.38](#whats-new-in-v1138-)
 - [Changelog](#changelog)
 - [Contributing](#contributing)
 - [Examples](#examples)
@@ -102,7 +102,7 @@ php artisan vendor:publish --tag=world --force
 
 This command updates the `config/world.php` file with new configuration options. Failing to run this command may result in missing features or errors.
 
-### What's new in v1.1.37?
+### What's new in v1.1.38?
 - **New Geolocate Module**: IP-based geolocation using MaxMind GeoLite2 database
 - Facade support: `World::geolocate()` to detect location from client IP
 - API endpoint: `GET /api/geolocate` with automatic IP detection from headers
@@ -110,6 +110,7 @@ This command updates the `config/world.php` file with new configuration options.
 - Automatic IP detection from proxy headers (Cloudflare, X-Forwarded-For, etc.)
 - Returns linked Country, State, City models with database IDs
 - New artisan command: `php artisan world:geoip` to download GeoLite2 database
+- Fixed seeder compatibility with non-seedable modules
 
 > **⚠️ Required:** After upgrading, run `php artisan vendor:publish --tag=world --force` to update your configuration file.
 

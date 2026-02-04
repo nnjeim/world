@@ -2,6 +2,12 @@
 
 All notable changes to `country` will be documented in this file
 
+## 1.1.38 - 2026-02-04
+- Fixed `Undefined array key "class"` error when running `php artisan world:install` with geolocate module enabled
+- SeedAction now properly skips non-seedable modules (geolocate, phone, etc.)
+- Improved transformer handling for optional `state_code` column
+- Enhanced error messages for geolocation debugging
+
 ## 1.1.37 - 2026-02-03
 - **New Geolocate Module**: IP-based geolocation feature
 - Added `World::geolocate()` facade method for IP geolocation
