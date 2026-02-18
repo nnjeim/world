@@ -13,5 +13,6 @@ return [
 		'timezone' => 'timezone|timezones',
 		'currency' => 'currency|currencies',
 		'language' => 'language|languages',
+		'geolocate' => 'geolocation|geolocations',
 	],
 ];

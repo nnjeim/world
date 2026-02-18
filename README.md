@@ -6,14 +6,29 @@
 <a href="https://packagist.org/packages/nnjeim/world"><img src="https://poser.pugx.org/nnjeim/world/license.svg" alt="License"></a>
 </p>
 
-The World is a Laravel package that provides a comprehensive list of countries, states, cities, timezones, currencies, and languages. You can access the data using the **World Facade** or through defined API routes.
+The World is a Laravel package that provides a comprehensive list of countries, states, cities, timezones, currencies, languages and IP geolocation. You can access the data using the **World Facade** or through defined API routes.
+
+---
+
+<p align="center">
+  <img src="./geolocate-badge.svg" alt="New: IP Geolocation"/>
+</p>
+
+<p align="center">
+  <strong>🌍 New in v1.1.38: IP Geolocation Module</strong><br/>
+  Detect user location from IP address with automatic fallback to free API.<br/>
+  <code>World::geolocate()</code> · <code>GET /api/geolocate</code><br/>
+  <a href="#geolocate-action">Learn more →</a>
+</p>
+
+---
 
 ## Table of Contents
 
 - [Installation](#installation)
   - [Automated Installation](#automated-installation)
   - [Manual Installation](#manual-installation)
-- [What's New in v1.1.36](#whats-new-in-v1136-)
+- [What's New in v1.1.38](#whats-new-in-v1138-)
 - [Changelog](#changelog)
 - [Contributing](#contributing)
 - [Examples](#examples)
@@ -29,6 +44,7 @@ The World is a Laravel package that provides a comprehensive list of countries, 
   - [Timezones](#timezones)
   - [Currencies](#currencies)
   - [Languages](#languages)
+  - [Geolocate](#geolocate)
 - [Localization](#localization)
 - [Schema](#schema)
 - [Configuration](#configuration)
@@ -77,16 +93,26 @@ php artisan db:seed --class=WorldSeeder
 ````
 
 ### Upgrading
-If you're upgrading from a previous version, you may want to re-publish the config file:
+
+> **⚠️ Important:** When upgrading to a new version, you **must** re-publish the configuration file to ensure all new features work correctly:
+
 ```bash
 php artisan vendor:publish --tag=world --force
 ```
 
-### What's new in v1.1.36?  
-- added Armenian locale support by @vahan
-- added Nepali locale support by @sagautam5
-- added Sawahili locale support by @ludanadeodatus
-- Available php memory check by @sorrowflufloyd
+This command updates the `config/world.php` file with new configuration options. Failing to run this command may result in missing features or errors.
+
+### What's new in v1.1.38?
+- **New Geolocate Module**: IP-based geolocation using MaxMind GeoLite2 database
+- Facade support: `World::geolocate()` to detect location from client IP
+- API endpoint: `GET /api/geolocate` with automatic IP detection from headers
+- Fallback to ip-api.com when GeoLite2 database is not installed (no setup required)
+- Automatic IP detection from proxy headers (Cloudflare, X-Forwarded-For, etc.)
+- Returns linked Country, State, City models with database IDs
+- New artisan command: `php artisan world:geoip` to download GeoLite2 database
+- Fixed seeder compatibility with non-seedable modules
+
+> **⚠️ Required:** After upgrading, run `php artisan vendor:publish --tag=world --force` to update your configuration file.
 
 ### Changelog
 
@@ -251,6 +277,7 @@ https://myDomain.local/api/cities?filters[country_code]=RO
 | timezones  | lists all the timezones       |
 | currencies | lists all the currencies      |
 | languages  | lists all the languages       |
+| geolocate  | geolocates an IP address      |
 
 An action response is formed as below:
 
@@ -294,6 +321,100 @@ An action response is formed as below:
 * `fields`*: comma seperated string (languages table fields).
 * `filters`*: array of keys (languages table fields) and their corresponding values.
 * `search`*: string.
+
+#### Geolocate action
+
+Geolocate an IP address. Returns country, state, city, coordinates, and timezone information linked to existing World data.
+
+* `ip`*: string (optional - auto-detects from request if not provided).
+
+**Data Sources:**
+
+1. **MaxMind GeoLite2** (local database, recommended for production)
+2. **ip-api.com** (free fallback, no setup required, 45 req/min limit)
+
+The package automatically falls back to ip-api.com if the GeoLite2 database is not installed. For production use, we recommend downloading the GeoLite2 database:
+
+```bash
+# Get a free license key at: https://www.maxmind.com/en/geolite2/signup
+php artisan world:geoip --license=YOUR_LICENSE_KEY
+```
+
+Or set the `MAXMIND_LICENSE_KEY` environment variable and run:
+```bash
+php artisan world:geoip
+```
+
+To disable the fallback API, set `WORLD_GEOLOCATE_FALLBACK_API=false` in your `.env` file.
+
+**Usage:**
+
+```php
+use Nnjeim\World\World;
+
+// Auto-detect IP from request
+$action = World::geolocate();
+
+// Geolocate specific IP
+$action = World::geolocate(['ip' => '8.8.8.8']);
+
+if ($action->success) {
+    $location = $action->data;
+    // $location['country'], $location['state'], $location['city'], etc.
+}
+```
+
+**How IP Detection Works:**
+
+The client IP is automatically detected from request headers in this order:
+1. `CF-Connecting-IP` (Cloudflare)
+2. `X-Forwarded-For` (Standard proxy header)
+3. `X-Real-IP` (Nginx proxy)
+4. `CLIENT-IP` (Generic)
+5. Laravel's `request()->ip()` fallback
+
+**Response Format:**
+
+```json
+{
+  "success": true,
+  "message": "geolocations",
+  "data": {
+    "ip": "8.8.8.8",
+    "country": {
+      "id": 236,
+      "iso2": "US",
+      "iso3": "USA",
+      "name": "United States",
+      "phone_code": "1",
+      "region": "Americas",
+      "subregion": "Northern America"
+    },
+    "state": {
+      "id": 4808,
+      "name": "Virginia",
+      "state_code": "VA"
+    },
+    "city": {
+      "id": 147562,
+      "name": "Ashburn"
+    },
+    "coordinates": {
+      "latitude": 39.03,
+      "longitude": -77.5,
+      "accuracy_radius": null
+    },
+    "timezone": {
+      "id": 404,
+      "name": "America/New_York"
+    },
+    "postal_code": "20149"
+  },
+  "response_time": "690 ms"
+}
+```
+
+> **Note:** The `id` fields link to existing records in the World database tables. If a matching record is not found, the `id` field will be omitted and only the raw geolocation data will be returned.
 
 ### Available API routes
 
@@ -356,8 +477,18 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 | Method      | GET                                   |
 | Route       | `/{prefix}/languages`                 |
 | Parameters* | comma seperated fields, string search |
-| Example     | `/api/languages?fields=dir`           |   
+| Example     | `/api/languages?fields=dir`           |
 | response    | success, message, data                |
+
+#### Geolocate
+
+|             |                                                                                      |
+|:------------|:-------------------------------------------------------------------------------------|
+| Method      | GET                                                                                  |
+| Route       | `/{prefix}/geolocate`                                                                |
+| Parameters* | ip (optional - auto-detects from request)                                            |
+| Example     | `/api/geolocate` or `/api/geolocate?ip=8.8.8.8`                                      |
+| response    | success, message, data (ip, country, state, city, coordinates, timezone, postal_code)|
 
 ### Localization
 

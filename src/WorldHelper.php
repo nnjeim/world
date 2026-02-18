@@ -31,6 +31,10 @@ class WorldHelper
 			'actionBasePath' => 'Nnjeim\\World\\Actions\\Language',
 			'action' => 'index',
 		],
+		'geolocate' => [
+			'actionBasePath' => 'Nnjeim\\World\\Actions\\Geolocate',
+			'action' => 'index',
+		],
 	];
 
 	/**

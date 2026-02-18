@@ -2,6 +2,24 @@
 
 All notable changes to `country` will be documented in this file
 
+## 1.1.38 - 2026-02-04
+- Fixed `Undefined array key "class"` error when running `php artisan world:install` with geolocate module enabled
+- SeedAction now properly skips non-seedable modules (geolocate, phone, etc.)
+- Improved transformer handling for optional `state_code` column
+- Enhanced error messages for geolocation debugging
+
+## 1.1.37 - 2026-02-03
+- **New Geolocate Module**: IP-based geolocation feature
+- Added `World::geolocate()` facade method for IP geolocation
+- Added `GET /api/geolocate` endpoint with automatic IP detection
+- Added MaxMind GeoLite2 database support via `geoip2/geoip2` package
+- Added fallback to ip-api.com when database not installed
+- Added `php artisan world:geoip` command to download GeoLite2 database
+- Added `Geolocate` middleware for automatic IP resolution from headers
+- IP detection supports: CF-Connecting-IP, X-Forwarded-For, X-Real-IP, CLIENT-IP
+- Returns linked Country, State, City models with database IDs when available
+- Configurable via `world.modules.geolocate` and `world.geolocate` settings
+
 ## 1.1.36 - 2025-08-21
 - added Armenian locale support by @vahan
 - added Nepali locale support by @sagautam5
