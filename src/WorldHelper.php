@@ -6,6 +6,7 @@ use Exception;
 
 class WorldHelper
 {
+    private bool $isCacheEnabled;
 	private array $availableActions = [
 		'countries' => [
 			'actionBasePath' => 'Nnjeim\\World\\Actions\\Country',
@@ -37,7 +38,11 @@ class WorldHelper
 		],
 	];
 
-	/**
+    public function __construct() {
+        $this->isCacheEnabled = config('world.cache.enabled', true);
+    }
+
+    /**
 	 * @param $function
 	 * @param  array  $args
 	 * @return mixed
@@ -47,7 +52,10 @@ class WorldHelper
 	{
 		list($actionBasePath, $action) = $this->fetchAction($function);
 
-		return app($this->formActionClass($actionBasePath, $action))->execute(! empty($args) ? $args[0] : []);
+        $isCacheEnabled = $this->isCacheEnabled;
+        $this->isCacheEnabled = config('world.cache.defaults.enabled', true); // Reset to default
+
+		return app($this->formActionClass($actionBasePath, $action))->execute(! empty($args) ? $args[0] : [], $isCacheEnabled);
 	}
 
 	/**
@@ -90,4 +98,16 @@ class WorldHelper
 
 		return $this;
 	}
+
+    public function withCaching(): self
+    {
+        $this->isCacheEnabled = true;
+        return $this;
+    }
+
+    public function withoutCaching(): self
+    {
+        $this->isCacheEnabled = false;
+        return $this;
+    }
 }
