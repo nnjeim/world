@@ -15,6 +15,7 @@ class IndexRequest extends BaseRequest
     {
         return [
             'ip' => 'sometimes|ip',
+            'cache' => 'sometimes|boolean'
         ];
     }
 
