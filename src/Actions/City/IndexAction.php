@@ -57,10 +57,10 @@ class IndexAction extends BaseAction implements ActionInterface
 
 		// cache
 		$this->data = ($search === null && $isCacheEnabled)
-			? Cache::rememberForever(
+			? collect(Cache::rememberForever(
 				$this->cacheKey,
-				fn () => $this->indexQuery($search)
-			)
+				fn () => $this->indexQuery($search)->toArray()
+			))
 			: $this->indexQuery($search);
 
 		$this->success = ! empty($this->data);
