@@ -51,7 +51,8 @@ return [
 		'ru',
 		'sw',
 		'tr',
-		'zh',
+        'zh',
+        'hu',
 	],
 
 	/*
