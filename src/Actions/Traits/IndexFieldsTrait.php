@@ -145,7 +145,7 @@ trait IndexFieldsTrait
 		foreach ($this->validatedFilters as $where) {
 			$cacheKey .= '_' . implode('', $where);
 		}
-		$cacheKey .= '_' . config('app.locale');
+		$cacheKey .= '_' . app()->getLocale();
 		$this->cacheKey = $cacheKey;
 
 		return $this;
