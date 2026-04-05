@@ -35,7 +35,7 @@ class IndexAction extends BaseAction implements ActionInterface
 	 * @param  array  $args
 	 * @return $this
 	 */
-	public function execute(array $args = []): self
+	public function execute(array $args = [], bool $isCacheEnabled = true): self
 	{
 		[
 			'fields' => $fields,
@@ -50,11 +50,11 @@ class IndexAction extends BaseAction implements ActionInterface
 		$this->validateArguments($fields, $filters);
 
 		// cache
-		$this->data = $search === null
-			? Cache::rememberForever(
+		$this->data = ($search === null && $isCacheEnabled)
+			? collect(Cache::rememberForever(
 				$this->cacheKey,
-				fn () => $this->indexQuery($search)
-			)
+				fn () => $this->indexQuery($search)->toArray()
+			))
 			: $this->indexQuery($search);
 
 		$this->success = ! empty($this->data);

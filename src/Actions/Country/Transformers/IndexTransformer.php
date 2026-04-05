@@ -20,7 +20,7 @@ trait IndexTransformer
 
 					$return = array_merge(
 						$return,
-						['name' => trans('world::country.' . $country->iso2)]
+						['name' => trans('world::country.' . $country->iso2, [], session('nnjeim-world-locale'))]
 					);
 
 					if (in_array('states', $fields)) {
