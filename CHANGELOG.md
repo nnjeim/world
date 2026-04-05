@@ -4,7 +4,7 @@ All notable changes to `country` will be documented in this file
 
 ## [Unreleased]
 - Added Hungarian localization
-- Added option to fetch without caching
+- Added option to fetch without caching to WorldHelper and API
 - Changed cacheKey generation to use `app()->getLocale()`
 - Decoupled `World` locale from app locale 
 - Added methods PHPDoc to `WorldHelper`
