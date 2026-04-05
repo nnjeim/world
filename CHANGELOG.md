@@ -2,6 +2,14 @@
 
 All notable changes to `country` will be documented in this file
 
+## [Unreleased]
+- Added Hungarian localization
+- Added option to fetch without caching
+- Changed cacheKey generation to use `app()->getLocale()`
+- Decoupled `World` locale from app locale 
+- Added methods PHPDoc to `WorldHelper`
+- Fixed Laravel 13 compatibility issues by updating caching from saving collections to arrays
+
 ## 1.1.38 - 2026-02-04
 - Fixed `Undefined array key "class"` error when running `php artisan world:install` with geolocate module enabled
 - SeedAction now properly skips non-seedable modules (geolocate, phone, etc.)
