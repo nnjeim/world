@@ -94,7 +94,7 @@ class WorldHelper
 			? $requestLocale
 			: config('app.fallback_locale');
 
-		app()->setLocale($setLocale);
+        session()->put('nnjeim-world-locale', $setLocale);
 
 		return $this;
 	}
