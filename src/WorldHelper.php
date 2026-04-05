@@ -4,6 +4,15 @@ namespace Nnjeim\World;
 
 use Exception;
 
+/**
+ * @method static \Nnjeim\World\Actions\BaseAction countries(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction states(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction cities(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction timezones(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction currencies(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction languages(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction geolocate(array $args)
+ */
 class WorldHelper
 {
     private bool $isCacheEnabled;
