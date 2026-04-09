@@ -25,7 +25,7 @@ class BaseController
 
 		// Action
 		$responseBuilder = app($this->composeActionClass($function))
-			->execute($actionArgs)
+			->execute(\Illuminate\Support\Arr::except($actionArgs, ['cache']), (bool) ($actionArgs['cache'] ?? config('world.cache.defaults.enabled')))
 			->withResponse();
 
 		// Response
