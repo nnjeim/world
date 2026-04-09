@@ -65,11 +65,11 @@ class IndexAction extends BaseAction implements ActionInterface
             // Cache the results
             $cacheTtl = config('world.geolocate.cache_ttl', 86400);
 
-            $this->data = $isCacheEnabled ? collect(Cache::remember(
+            $this->data = $isCacheEnabled ? Cache::remember(
                 $this->cacheKey,
                 $cacheTtl,
-                fn () => $this->performGeolocation($ip)->toArray()
-            )) : $this->performGeolocation($ip);
+                fn () => $this->performGeolocation($ip)
+            ) : $this->performGeolocation($ip);
 
             $this->success = ! empty($this->data) && $this->data->isNotEmpty();
 
