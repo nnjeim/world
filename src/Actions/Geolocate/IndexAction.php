@@ -36,7 +36,7 @@ class IndexAction extends BaseAction implements ActionInterface
      * @param array $args
      * @return $this
      */
-    public function execute(array $args = []): self
+    public function execute(array $args = [], bool $isCacheEnabled = true): self
     {
         [
             'ip' => $ip,
@@ -65,11 +65,11 @@ class IndexAction extends BaseAction implements ActionInterface
             // Cache the results
             $cacheTtl = config('world.geolocate.cache_ttl', 86400);
 
-            $this->data = Cache::remember(
+            $this->data = $isCacheEnabled ? collect(Cache::remember(
                 $this->cacheKey,
                 $cacheTtl,
-                fn () => $this->performGeolocation($ip)
-            );
+                fn () => $this->performGeolocation($ip)->toArray()
+            )) : $this->performGeolocation($ip);
 
             $this->success = ! empty($this->data) && $this->data->isNotEmpty();
 
