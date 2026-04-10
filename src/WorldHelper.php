@@ -4,8 +4,18 @@ namespace Nnjeim\World;
 
 use Exception;
 
+/**
+ * @method static \Nnjeim\World\Actions\BaseAction countries(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction states(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction cities(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction timezones(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction currencies(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction languages(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction geolocate(array $args)
+ */
 class WorldHelper
 {
+    private bool $isCacheEnabled;
 	private array $availableActions = [
 		'countries' => [
 			'actionBasePath' => 'Nnjeim\\World\\Actions\\Country',
@@ -37,7 +47,11 @@ class WorldHelper
 		],
 	];
 
-	/**
+    public function __construct() {
+        $this->isCacheEnabled = config('world.cache.enabled', true);
+    }
+
+    /**
 	 * @param $function
 	 * @param  array  $args
 	 * @return mixed
@@ -47,7 +61,10 @@ class WorldHelper
 	{
 		list($actionBasePath, $action) = $this->fetchAction($function);
 
-		return app($this->formActionClass($actionBasePath, $action))->execute(! empty($args) ? $args[0] : []);
+        $isCacheEnabled = $this->isCacheEnabled;
+        $this->isCacheEnabled = config('world.cache.defaults.enabled', true); // Reset to default
+
+		return app($this->formActionClass($actionBasePath, $action))->execute(! empty($args) ? $args[0] : [], $isCacheEnabled);
 	}
 
 	/**
@@ -86,8 +103,20 @@ class WorldHelper
 			? $requestLocale
 			: config('app.fallback_locale');
 
-		app()->setLocale($setLocale);
+        session()->put('nnjeim-world-locale', $setLocale);
 
 		return $this;
 	}
+
+    public function withCaching(): self
+    {
+        $this->isCacheEnabled = true;
+        return $this;
+    }
+
+    public function withoutCaching(): self
+    {
+        $this->isCacheEnabled = false;
+        return $this;
+    }
 }
