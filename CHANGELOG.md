@@ -7,6 +7,7 @@ All notable changes to `country` will be documented in this file
 - Changed cacheKey generation to use `app()->getLocale()`
 - Added methods PHPDoc to `WorldHelper`
 - Fixed Laravel 13 compatibility issues by updating caching from saving collections to arrays
+- Added option to fetch without caching to WorldHelper and API
 
 ## 1.1.38 - 2026-02-04
 - Fixed `Undefined array key "class"` error when running `php artisan world:install` with geolocate module enabled

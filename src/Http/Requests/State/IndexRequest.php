@@ -17,6 +17,7 @@ class IndexRequest extends BaseRequest
 			'fields' => 'sometimes',
 			'filters' => 'sometimes',
 			'search' => 'sometimes',
+            'cache' => 'sometimes|boolean'
 		];
 	}
 }
