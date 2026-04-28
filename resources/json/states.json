@@ -54998,5 +54998,126 @@
         "type": "province",
         "latitude": "39.227779",
         "longitude": "9.111111"
+    },
+    {
+        "id": 5151,
+        "name": "Aflou",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "59",
+        "type": null,
+        "latitude": "34.10890000",
+        "longitude": "2.10190000"
+    },
+    {
+        "id": 5152,
+        "name": "A\u00efn Oussera",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "68",
+        "type": null,
+        "latitude": "35.45430000",
+        "longitude": "2.90760000"
+    },
+    {
+        "id": 5153,
+        "name": "Barika",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "63",
+        "type": null,
+        "latitude": "35.38460000",
+        "longitude": "5.28930000"
+    },
+    {
+        "id": 5154,
+        "name": "Bir El Ater",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "65",
+        "type": null,
+        "latitude": "34.74490000",
+        "longitude": "8.06020000"
+    },
+    {
+        "id": 5155,
+        "name": "Bou Saada",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "64",
+        "type": null,
+        "latitude": "35.21420000",
+        "longitude": "4.18250000"
+    },
+    {
+        "id": 5156,
+        "name": "El Abiodh Sidi Cheikh",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "60",
+        "type": null,
+        "latitude": "32.89310000",
+        "longitude": "0.54860000"
+    },
+    {
+        "id": 5157,
+        "name": "El Aricha",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "61",
+        "type": null,
+        "latitude": "34.22280000",
+        "longitude": "-1.25580000"
+    },
+    {
+        "id": 5158,
+        "name": "El Kantara",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "62",
+        "type": null,
+        "latitude": "35.19240000",
+        "longitude": "5.66680000"
+    },
+    {
+        "id": 5159,
+        "name": "Ksar Chellala",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "67",
+        "type": null,
+        "latitude": "35.21700000",
+        "longitude": "2.31700000"
+    },
+    {
+        "id": 5160,
+        "name": "Ksar El Boukhari",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "66",
+        "type": null,
+        "latitude": "35.88890000",
+        "longitude": "2.74910000"
+    },
+    {
+        "id": 5161,
+        "name": "Messaad",
+        "country_id": 4,
+        "country_code": "DZ",
+        "country_name": "Algeria",
+        "state_code": "69",
+        "type": null,
+        "latitude": "34.15430000",
+        "longitude": "3.50310000"
     }
 ]
