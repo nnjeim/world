@@ -3,6 +3,7 @@
 All notable changes to `country` will be documented in this file
 
 ## [Unreleased]
+- Added the 11 new Algerian wilayas from the November 2025 territorial reform (codes 59-69) and reassigned their cities from the parent provinces
 - Added Hungarian localization
 - Changed cacheKey generation to use `app()->getLocale()`
 - Added methods PHPDoc to `WorldHelper`
