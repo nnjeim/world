@@ -288,37 +288,37 @@ An action response is formed as below:
 
 #### Countries action
 
-* `fields`*: comma seperated string (countries table fields in addition to states, cities, currency and timezones).
+* `fields`*: comma separated string (countries table fields in addition to states, cities, currency and timezones).
 * `filters`*: array of keys (countries table fields) and their corresponding values.
 * `search`*: string.
 
 #### States action
 
-* `fields`*: comma seperated string (states table fields in addition to country and states).
+* `fields`*: comma separated string (states table fields in addition to country and states).
 * `filters`*: array of keys (states table fields) and their corresponding values.
 * `search`*: string.
 
 #### Cities action
 
-* `fields`*: comma seperated string (cities table fields in addition to country and state).
+* `fields`*: comma separated string (cities table fields in addition to country and state).
 * `filters`*: array of keys (cities table fields) and their corresponding values.
 * `search`*: string.
 
 #### Timezones action
 
-* `fields`*: comma seperated string (timezones table fields in addition to country).
+* `fields`*: comma separated string (timezones table fields in addition to country).
 * `filters`*: array of keys (timezones table fields) and their corresponding values.
 * `search`*: string.
 
 #### Currencies action
 
-* `fields`*: comma seperated string (currencies table fields in addition to country).
+* `fields`*: comma separated string (currencies table fields in addition to country).
 * `filters`*: array of keys (currencies table fields) and their corresponding values.
 * `search`*: string.
 
 #### Languages action
 
-* `fields`*: comma seperated string (languages table fields).
+* `fields`*: comma separated string (languages table fields).
 * `filters`*: array of keys (languages table fields) and their corresponding values.
 * `search`*: string.
 
@@ -426,7 +426,7 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 |:------------|:------------------------------------------------------------------------------------------------------------------------------------|
 | Method      | GET                                                                                                                                 |
 | Route       | `/{prefix}/countries`                                                                                                               |
-| Parameters* | comma seperated fields (countries table fields in addition to states, cities, currency and timezones), array filters, string search |
+| Parameters* | comma separated fields (countries table fields in addition to states, cities, currency and timezones), array filters, string search |
 | Example     | `/api/countries?fields=iso2,cities&filters[phone_code]=44  `                                                                        |   
 | response    | success, message, data                                                                                                              |  
 
@@ -436,7 +436,7 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 |:------------|:-------------------------------------------------------------------------------------------------------------|
 | Method      | GET                                                                                                          |
 | Route       | `/{prefix}/states`                                                                                           |
-| Parameters* | comma seperated fields (states table fields in addition to country and cities), array filters, string search |
+| Parameters* | comma separated fields (states table fields in addition to country and cities), array filters, string search |
 | Example     | `/api/states?fields=country,cities&filters[country_code]=RO`                                                 |   
 | response    | success, message, data                                                                                       |   
 
@@ -446,7 +446,7 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 |:------------|:------------------------------------------------------------------------------------------------------------|
 | Method      | GET                                                                                                         |
 | Route       | `/{prefix}/cities`                                                                                          |
-| Parameters* | comma seperated fields (cities table fields in addition to country and state), array filters, string search |
+| Parameters* | comma separated fields (cities table fields in addition to country and state), array filters, string search |
 | Example     | `/api/cities?fields=country,state&filters[country_code]=RO`                                                 |   
 | response    | success, message, data                                                                                      | 
 
@@ -456,7 +456,7 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 |:------------|:---------------------------------------------------------------------------------------------------------|
 | Method      | GET                                                                                                      |
 | Route       | `/{prefix}/timezones`                                                                                    |
-| Parameters* | comma seperated fields (timezones table fields in addition to the country), array filters, string search |
+| Parameters* | comma separated fields (timezones table fields in addition to the country), array filters, string search |
 | Example     | `/api/timezones?fields=country&filters[country_code]=RO`                                                 |   
 | response    | success, message, data                                                                                   | 
 
@@ -466,7 +466,7 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 |:------------|:----------------------------------------------------------------------------------------------------------|
 | Method      | GET                                                                                                       |
 | Route       | `/{prefix}/currencies`                                                                                    |
-| Parameters* | comma seperated fields (currencies table fields in addition to the country), array filters, string search |
+| Parameters* | comma separated fields (currencies table fields in addition to the country), array filters, string search |
 | Example     | `/api/currencies?fields=code&filters[country_code]=RO`                                                    |   
 | response    | success, message, data                                                                                    |
 
@@ -476,7 +476,7 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 |:------------|:--------------------------------------|
 | Method      | GET                                   |
 | Route       | `/{prefix}/languages`                 |
-| Parameters* | comma seperated fields, string search |
+| Parameters* | comma separated fields, string search |
 | Example     | `/api/languages?fields=dir`           |
 | response    | success, message, data                |
 
