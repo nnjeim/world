@@ -1,0 +1,84 @@
+name: Tests
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: PHP ${{ matrix.php }} / Laravel ${{ matrix.laravel }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - php: '8.1'
+            laravel: '10'
+            testbench: '^8.0'
+            phpunit: '^10.0'
+          - php: '8.2'
+            laravel: '11'
+            testbench: '^9.0'
+            phpunit: '^10.0 || ^11.0'
+          - php: '8.2'
+            laravel: '12'
+            testbench: '^10.0'
+            phpunit: '^11.0'
+          - php: '8.3'
+            laravel: '13'
+            testbench: '^11.0'
+            phpunit: '^12.0'
+          - php: '8.4'
+            laravel: '13'
+            testbench: '^11.0'
+            phpunit: '^12.0'
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php }}
+          extensions: mbstring, sqlite3
+          coverage: none
+
+      - name: Validate package metadata
+        run: composer validate --strict --no-check-lock
+
+      - name: Check whitespace
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: git diff --check "$BASE_SHA" HEAD
+
+      - name: Select framework test stack
+        run: >-
+          composer require --dev
+          "orchestra/testbench:${{ matrix.testbench }}"
+          "phpunit/phpunit:${{ matrix.phpunit }}"
+          --no-update
+          --no-interaction
+
+      - name: Install dependencies
+        run: composer update --prefer-dist --no-interaction --no-progress
+
+      - name: Audit production dependencies
+        run: composer audit --no-dev
+
+      - name: Audit complete Laravel 13 test stack
+        if: matrix.php == '8.3' && matrix.laravel == '13'
+        run: composer audit
+
+      - name: Lint PHP files
+        run: find src config resources/lang tests -type f -name '*.php' -print0 | xargs -0 -n1 php -l
+
+      - name: Run test suite
+        run: composer test

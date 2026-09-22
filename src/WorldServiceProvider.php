@@ -2,8 +2,6 @@
 
 namespace Nnjeim\World;
 
-use Illuminate\Foundation\Application;
-use Illuminate\Contracts\Http\Kernel;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use Nnjeim\World\Geolocate\GeolocateService;
@@ -16,11 +14,13 @@ class WorldServiceProvider extends ServiceProvider
 	 */
 	public function register(): void
 	{
+		$this->mergeConfigFrom(__DIR__ . '/../config/world.php', 'world');
+
 		// Register the main class to use with the facade
-		$this->app->singleton('world', fn () => new WorldHelper());
+		$this->app->scoped('world', fn () => new WorldHelper());
 
 		// Register the GeolocateService
-		$this->app->singleton(GeolocateService::class, fn () => new GeolocateService());
+		$this->app->scoped(GeolocateService::class, fn () => new GeolocateService());
 	}
 
 	/**
@@ -89,26 +89,25 @@ class WorldServiceProvider extends ServiceProvider
 	private function loadCommands(): void
 	{
 		$this->commands([
-            Commands\InstallWorldData::class,
+			Commands\InstallWorldData::class,
 			Commands\RefreshWorldData::class,
 			Commands\UpdateGeoipDatabase::class,
 		]);
 	}
 
-	 /**
-     * Method to get the correct Destination Path to publish the lang resource
-     */
-    private function getDestinationPath(): string
-    {
-        $laravelVersion = Application::VERSION;
+	/**
+	 * Method to get the correct destination path to publish the lang resource.
+	 */
+	private function getDestinationPath(): string
+	{
+		$laravelVersion = $this->app->version();
 
-        $destinationPath = resource_path('lang/vendor/world');
+		$destinationPath = resource_path('lang/vendor/world');
 
-        if (version_compare($laravelVersion, '9.0.0', '>=')) {
-            $destinationPath = base_path('lang/vendor/world');
-        }
+		if (version_compare($laravelVersion, '9.0.0', '>=')) {
+			$destinationPath = base_path('lang/vendor/world');
+		}
 
-        return $destinationPath;
-    }
-	
+		return $destinationPath;
+	}
 }

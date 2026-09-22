@@ -15,10 +15,9 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 </p>
 
 <p align="center">
-  <strong>🌍 New in v1.1.38: IP Geolocation Module</strong><br/>
-  Detect user location from IP address with automatic fallback to free API.<br/>
-  <code>World::geolocate()</code> · <code>GET /api/geolocate</code><br/>
-  <a href="#geolocate-action">Learn more →</a>
+  <strong>🌍 New in v1.1.39: Laravel 13, Hungarian, and refreshed world data</strong><br/>
+  Laravel 10–13 compatibility, GeoIP2 v3, cache controls, 11 new Algerian wilayas, and Bulgaria's Euro adoption.<br/>
+  <a href="#whats-new-in-v1139">Learn more →</a>
 </p>
 
 ---
@@ -28,7 +27,7 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 - [Installation](#installation)
   - [Automated Installation](#automated-installation)
   - [Manual Installation](#manual-installation)
-- [What's New in v1.1.38](#whats-new-in-v1138-)
+- [What's New in v1.1.39](#whats-new-in-v1139)
 - [Changelog](#changelog)
 - [Contributing](#contributing)
 - [Examples](#examples)
@@ -102,15 +101,16 @@ php artisan vendor:publish --tag=world --force
 
 This command updates the `config/world.php` file with new configuration options. Failing to run this command may result in missing features or errors.
 
-### What's new in v1.1.38?
-- **New Geolocate Module**: IP-based geolocation using MaxMind GeoLite2 database
-- Facade support: `World::geolocate()` to detect location from client IP
-- API endpoint: `GET /api/geolocate` with automatic IP detection from headers
-- Fallback to ip-api.com when GeoLite2 database is not installed (no setup required)
-- Automatic IP detection from proxy headers (Cloudflare, X-Forwarded-For, etc.)
-- Returns linked Country, State, City models with database IDs
-- New artisan command: `php artisan world:geoip` to download GeoLite2 database
-- Fixed seeder compatibility with non-seedable modules
+### What's new in v1.1.39?
+
+- Added Laravel 13 support while retaining Laravel 10–12 compatibility.
+- Upgraded the MaxMind client to GeoIP2 v3 and raised the minimum PHP version to 8.1.
+- Added Hungarian localization and corrected the Bengali name for Kosovo.
+- Added the 11 Algerian wilayas created by the 2025–2026 territorial reform and reassigned their cities.
+- Updated Bulgaria's currency to the Euro.
+- Added configurable and per-action cache controls.
+- Fixed runtime locale switching through `World::setLocale()`.
+- Added a standalone test suite and a PHP/Laravel CI compatibility matrix.
 
 > **⚠️ Required:** After upgrading, run `php artisan vendor:publish --tag=world --force` to update your configuration file.
 
@@ -494,7 +494,7 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 
 The available locales are 
 ```
-ar, az, bn, br, de, en, es, fr, hy, it, ja, kr, ne, nl, pl, pt, ro, ru, sw, tr and zh.
+ar, az, bn, br, de, en, es, fa, fr, hr, hu, hy, it, ja, kr, ne, nl, pl, pt, ro, ru, sw, tr and zh.
 ```
 The default locale is en.
 
@@ -527,6 +527,23 @@ php artisan vendor:publish --tag=world --force
 By default, this package uses the default database connection, but it's possible to customize it
 using the `WORLD_DB_CONNECTION` variable in your `.env` file.
 
+#### Cache control
+
+Action results are cached by default. To disable caching globally, set:
+
+```dotenv
+WORLD_CACHE_ENABLED=false
+```
+
+You can override the configured default for one action call:
+
+```php
+World::withoutCaching()->countries();
+World::withCaching()->countries();
+```
+
+The override is reset after that action. Cache keys include Laravel's active locale, so localized results are stored separately.
+
 ### Countries restrictions
 Countries can be restricted while seeding the database either by adding the ISO2 country codes in the `allowed_countries` or `disallowed_countries` array lists.  
 
@@ -544,17 +561,16 @@ If you don't wish to use the packages as an API service, you can disable all the
 It offers the ability to enable or disable the database fields.  
 When changing this configuration the database should be dropped and the seeder should be re-run.  
 
-### Testing  
+### Requirements
 
-Requirements  
-- The database is seeded.
-- The database connection is defined in the .env file. 
+- PHP 8.1 or newer
+- Laravel 10, 11, 12, or 13
 
-Browse to the package root folder and run:
+### Testing
+
+The test suite is self-contained and uses an in-memory SQLite database:
 
 ```bash
 composer install # installs the package dev dependencies
 composer test
 ```
-
-`* optional`

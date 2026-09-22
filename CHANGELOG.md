@@ -2,12 +2,21 @@
 
 All notable changes to `country` will be documented in this file
 
-## [Unreleased]
+## 1.1.39 - 2026-09-22
 - Added the 11 new Algerian wilayas from the November 2025 territorial reform (codes 59-69) and reassigned their cities from the parent provinces
 - Added Hungarian localization
+- Updated the Bengali translation for Kosovo
+- Updated Bulgaria's currency to the Euro
+- Fixed translation publishing paths for modern Laravel applications
 - Changed cacheKey generation to use `app()->getLocale()`
 - Added methods PHPDoc to `WorldHelper`
 - Fixed Laravel 13 compatibility issues by updating caching from saving collections to arrays
+- Fixed `World::setLocale()` so it changes Laravel's active runtime locale
+- Added global and per-action cache controls with predictable one-action overrides
+- Upgraded `geoip2/geoip2` to v3 and raised the minimum PHP version to 8.1
+- Added Guzzle as an explicit dependency for the geolocation API fallback
+- Added standalone SQLite tests and CI coverage for Laravel 10–13 on PHP 8.1–8.4
+- Added automated world-data and localization integrity checks
 
 ## 1.1.38 - 2026-02-04
 - Fixed `Undefined array key "class"` error when running `php artisan world:install` with geolocate module enabled

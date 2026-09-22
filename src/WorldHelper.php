@@ -5,17 +5,18 @@ namespace Nnjeim\World;
 use Exception;
 
 /**
- * @method static \Nnjeim\World\Actions\BaseAction countries(array $args)
- * @method static \Nnjeim\World\Actions\BaseAction states(array $args)
- * @method static \Nnjeim\World\Actions\BaseAction cities(array $args)
- * @method static \Nnjeim\World\Actions\BaseAction timezones(array $args)
- * @method static \Nnjeim\World\Actions\BaseAction currencies(array $args)
- * @method static \Nnjeim\World\Actions\BaseAction languages(array $args)
- * @method static \Nnjeim\World\Actions\BaseAction geolocate(array $args)
+ * @method static \Nnjeim\World\Actions\BaseAction countries(array $args = [])
+ * @method static \Nnjeim\World\Actions\BaseAction states(array $args = [])
+ * @method static \Nnjeim\World\Actions\BaseAction cities(array $args = [])
+ * @method static \Nnjeim\World\Actions\BaseAction timezones(array $args = [])
+ * @method static \Nnjeim\World\Actions\BaseAction currencies(array $args = [])
+ * @method static \Nnjeim\World\Actions\BaseAction languages(array $args = [])
+ * @method static \Nnjeim\World\Actions\BaseAction geolocate(array $args = [])
  */
 class WorldHelper
 {
-    private bool $isCacheEnabled;
+	private ?bool $cacheOverride = null;
+
 	private array $availableActions = [
 		'countries' => [
 			'actionBasePath' => 'Nnjeim\\World\\Actions\\Country',
@@ -47,11 +48,7 @@ class WorldHelper
 		],
 	];
 
-    public function __construct() {
-        $this->isCacheEnabled = config('world.cache.enabled', true);
-    }
-
-    /**
+	/**
 	 * @param $function
 	 * @param  array  $args
 	 * @return mixed
@@ -61,8 +58,8 @@ class WorldHelper
 	{
 		list($actionBasePath, $action) = $this->fetchAction($function);
 
-        $isCacheEnabled = $this->isCacheEnabled;
-        $this->isCacheEnabled = config('world.cache.defaults.enabled', true); // Reset to default
+		$isCacheEnabled = $this->cacheOverride ?? config('world.cache.enabled', true);
+		$this->cacheOverride = null;
 
 		return app($this->formActionClass($actionBasePath, $action))->execute(! empty($args) ? $args[0] : [], $isCacheEnabled);
 	}
@@ -103,20 +100,28 @@ class WorldHelper
 			? $requestLocale
 			: config('app.fallback_locale');
 
-        session()->put('nnjeim-world-locale', $setLocale);
+		app()->setLocale($setLocale);
 
 		return $this;
 	}
 
-    public function withCaching(): self
-    {
-        $this->isCacheEnabled = true;
-        return $this;
-    }
+	/**
+	 * Enable caching for the next action call.
+	 */
+	public function withCaching(): self
+	{
+		$this->cacheOverride = true;
 
-    public function withoutCaching(): self
-    {
-        $this->isCacheEnabled = false;
-        return $this;
-    }
+		return $this;
+	}
+
+	/**
+	 * Disable caching for the next action call.
+	 */
+	public function withoutCaching(): self
+	{
+		$this->cacheOverride = false;
+
+		return $this;
+	}
 }
