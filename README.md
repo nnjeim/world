@@ -10,6 +10,26 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 
 ---
 
+## Interactive documentation and UI examples
+
+<p align="center">
+  <a href="https://world.bmbc.cloud">
+    <img src="https://world.bmbc.cloud/og/world-ui.png" width="760" alt="World interactive documentation and component examples"/>
+  </a>
+</p>
+
+Explore the package at **[world.bmbc.cloud](https://world.bmbc.cloud)**. The companion documentation site provides live API-backed previews and copy-ready selector examples for **Blade, React, Angular, and Vue**.
+
+- [Country selector](https://world.bmbc.cloud/components/country-selector)
+- [Dependent country, state, and city selector](https://world.bmbc.cloud/components/location-selector)
+- [Currency selector](https://world.bmbc.cloud/components/currency-selector)
+- [Language selector](https://world.bmbc.cloud/components/language-selector)
+- [Timezone selector](https://world.bmbc.cloud/components/timezone-selector)
+
+The examples consume the Laravel API routes exposed by this package; no additional frontend package is required.
+
+---
+
 <p align="center">
   <img src="./geolocate-badge.svg" alt="New: IP Geolocation"/>
 </p>
@@ -24,6 +44,7 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 
 ## Table of Contents
 
+- [Interactive documentation and UI examples](#interactive-documentation-and-ui-examples)
 - [Installation](#installation)
   - [Automated Installation](#automated-installation)
   - [Manual Installation](#manual-installation)
@@ -122,16 +143,17 @@ For detailed information on recent changes, please see the [CHANGELOG](CHANGELOG
 
 We welcome contributions! For details on how to get started, please review our [CONTRIBUTING](CONTRIBUTING.md) guidlines.
   
-Examples  
---------
-Explore the API examples on our live site:
+## Examples
 
-List all countries:  
-https://world.bmbc.cloud/api/countries  
-Search for a country:   
-https://world.bmbc.cloud/api/countries?search=rom  
-Get states by country code:  
-https://world.bmbc.cloud/api/states?filters[country_code]=RO&fields=cities  
+Use the [interactive documentation](https://world.bmbc.cloud) to try the selectors, switch between Blade, React, Angular, and Vue implementations, and copy the corresponding source code.
+
+You can also inspect the live API directly:
+
+| Example | Live endpoint |
+|:--------|:--------------|
+| List all countries | [`GET /api/countries`](https://world.bmbc.cloud/api/countries) |
+| Search for Romania | [`GET /api/countries?search=rom`](https://world.bmbc.cloud/api/countries?search=rom) |
+| Get Romanian states and their cities | [`GET /api/states?filters[country_code]=RO&fields=cities`](https://world.bmbc.cloud/api/states?filters%5Bcountry_code%5D=RO&fields=cities) |
 
 ### Usage
 
