@@ -1,4 +1,8 @@
-<p style="text-align: center; padding: 3rem;"><img src="./logo.jpg" width="150" alt="Laravel world"/></p>
+<p align="center">
+  <a href="https://world.bmbc.cloud">
+    <img src="./world-ui-banner.png" width="100%" alt="World for Laravel — geographic data, ready for your UI"/>
+  </a>
+</p>
 
 <p align="center">
 <a href="https://packagist.org/packages/nnjeim/world"><img src="https://poser.pugx.org/nnjeim/world/d/total.svg" alt="Total Downloads"></a>
@@ -11,12 +15,6 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 ---
 
 ## Interactive documentation and UI examples
-
-<p align="center">
-  <a href="https://world.bmbc.cloud">
-    <img src="https://world.bmbc.cloud/og/world-ui.png" width="760" alt="World interactive documentation and component examples"/>
-  </a>
-</p>
 
 Explore the package at **[world.bmbc.cloud](https://world.bmbc.cloud)**. The companion documentation site provides live API-backed previews and copy-ready selector examples for **Blade, React, Angular, and Vue**.
 
