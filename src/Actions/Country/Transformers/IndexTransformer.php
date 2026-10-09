@@ -3,6 +3,7 @@
 namespace Nnjeim\World\Actions\Country\Transformers;
 
 use Illuminate\Database\Eloquent\Collection;
+use Nnjeim\World\CountryFlag;
 
 trait IndexTransformer
 {
@@ -17,6 +18,10 @@ trait IndexTransformer
 			->map(
 				function ($country) use ($fields) {
 					$return = $country->only($fields);
+
+					if (in_array('flag', $fields, true)) {
+						$return['flag'] = CountryFlag::emoji($country->iso2);
+					}
 
 					$return = array_merge(
 						$return,

@@ -5,6 +5,7 @@ namespace Nnjeim\World;
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
 use Nnjeim\World\Geolocate\GeolocateService;
+use Nnjeim\World\Data\WorldDataset;
 use Nnjeim\World\Http\Middleware\Geolocate;
 
 class WorldServiceProvider extends ServiceProvider
@@ -15,6 +16,8 @@ class WorldServiceProvider extends ServiceProvider
 	public function register(): void
 	{
 		$this->mergeConfigFrom(__DIR__ . '/../config/world.php', 'world');
+
+		$this->app->bind(WorldDataset::class, fn () => new WorldDataset(null, (bool) config('world.modules.cities')));
 
 		// Register the main class to use with the facade
 		$this->app->scoped('world', fn () => new WorldHelper());

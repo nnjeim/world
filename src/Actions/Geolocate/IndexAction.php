@@ -59,7 +59,7 @@ class IndexAction extends BaseAction implements ActionInterface
             return $this;
         }
 
-        $this->cacheKey = "geolocate_{$ip}_" . app()->getLocale();
+        $this->cacheKey = \Nnjeim\World\Data\WorldDataCache::prefix() . "geolocate_{$ip}_" . app()->getLocale();
 
         try {
             // Cache the results

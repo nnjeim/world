@@ -1,0 +1,22 @@
+[
+    {
+        "id": 701,
+        "name": "Paris",
+        "state_id": 501,
+        "state_name": "Île-de-France",
+        "state_code": "IDF",
+        "country_id": 77,
+        "country_name": "France",
+        "country_code": "FR"
+    },
+    {
+        "id": 702,
+        "name": "Bucharest",
+        "state_id": 502,
+        "state_name": "Bucharest",
+        "state_code": "B",
+        "country_id": 181,
+        "country_name": "Romania",
+        "country_code": "RO"
+    }
+]

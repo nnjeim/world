@@ -70,13 +70,7 @@ The examples consume the Laravel API routes exposed by this package; no addition
 - 
 ### Installation
 
-First, set your application environment to local:
-
-```bash
-set APP_ENV=local
-```
-
-Then, install the package via composer:
+Install the package via Composer:
 
 ```
 composer require nnjeim/world
@@ -97,7 +91,7 @@ If you prefer to install the package manually, follow these steps:
 1. Publish the package configuration file:
 
 ```bash
-php artisan vendor:publish --tag=world --force
+php artisan vendor:publish --tag=world
 ```
 2. Run the migrations:
 
@@ -108,17 +102,52 @@ php artisan migrate
 
 ```bash
 php artisan db:seed --class=WorldSeeder
-````
+```
 
 ### Upgrading
 
-> **⚠️ Important:** When upgrading to a new version, you **must** re-publish the configuration file to ensure all new features work correctly:
+Update the package, preview the data changes, and apply them:
 
 ```bash
-php artisan vendor:publish --tag=world --force
+composer update nnjeim/world
+php artisan world:refresh --dry-run
+php artisan world:refresh
+# In production:
+php artisan world:refresh --force
 ```
 
-This command updates the `config/world.php` file with new configuration options. Failing to run this command may result in missing features or errors.
+Installation and refresh preserve existing database IDs and application records. The installer
+publishes missing files without overwriting customized configuration. See
+[installation and data updates](docs/DATA_UPDATES.md) for legacy adoption, local edits,
+custom connections, cache invalidation and schema changes. These preserving commands are
+introduced after v1.1.39; see [UPGRADE.md](UPGRADE.md) when upgrading an older installation.
+
+### Country flags
+
+Request a computed Unicode flag alongside the country ISO2 code:
+
+```php
+$action = World::countries([
+    'fields' => 'iso2,flag',
+    'filters' => ['iso2' => 'FR'],
+]);
+// data: [{"id": ..., "name": "France", "iso2": "FR", "flag": "🇫🇷"}]
+```
+
+The equivalent API query is `GET /api/countries?fields=iso2,flag&filters[iso2]=FR`.
+The field is optional and needs no database column or configuration change. To derive a flag
+in application code, use `Nnjeim\World\CountryFlag::emoji('FR')`. Rendering depends on the
+platform's emoji fonts; for SVG or PNG flags, use the returned `iso2` with your chosen flag
+assets. The package performs no external image requests.
+
+### Data quality and sources
+
+The bundled data is checked for unique source IDs, consistent country and state references,
+copied codes, coordinate ranges and localization keys. The reviewed
+[data manifest](resources/data-manifest.json) records counts, checksums and country coverage.
+Sources, attribution and the review policy are documented in
+[DATA_SOURCES.md](docs/DATA_SOURCES.md). Cayman coverage includes six districts and 15
+populated places with verified district associations.
 
 ### What's new in v1.1.39?
 
@@ -131,7 +160,7 @@ This command updates the `config/world.php` file with new configuration options.
 - Fixed runtime locale switching through `World::setLocale()`.
 - Added a standalone test suite and a PHP/Laravel CI compatibility matrix.
 
-> **⚠️ Required:** After upgrading, run `php artisan vendor:publish --tag=world --force` to update your configuration file.
+For the historical v1.1.39 upgrade, review [UPGRADE.md](UPGRADE.md). Merge new settings into customized configuration.
 
 ### Changelog
 
@@ -539,7 +568,7 @@ The configuration for the World package is located in the world.php file.
 If you're upgrading from a previous version, you may want to re-publish the config file:
 
 ```bash
-php artisan vendor:publish --tag=world --force
+php artisan vendor:publish --tag=world
 ```
 
 #### Customizing database connection
@@ -579,7 +608,7 @@ If you don't wish to use the packages as an API service, you can disable all the
 
 #### Migrations  
 It offers the ability to enable or disable the database fields.  
-When changing this configuration the database should be dropped and the seeder should be re-run.  
+When changing optional fields on an existing installation, add the columns through an application migration, then update the configuration. See [schema changes](docs/DATA_UPDATES.md#schema-and-configuration-changes).
 
 ### Requirements
 

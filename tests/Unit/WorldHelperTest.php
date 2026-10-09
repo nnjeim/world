@@ -6,6 +6,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\DB;
 use Nnjeim\World\Tests\TestCase;
+use Nnjeim\World\Data\WorldDataCache;
 use Nnjeim\World\WorldHelper;
 
 class WorldHelperTest extends TestCase
@@ -20,8 +21,8 @@ class WorldHelperTest extends TestCase
 
 		self::assertSame('hu', app()->getLocale());
 		self::assertSame(trans('world::country.FR'), $action->data->firstWhere('id', 182)['name']);
-		self::assertTrue(Cache::has('countries_id_name_hu'));
-		self::assertFalse(Cache::has('countries_id_name_en'));
+		self::assertTrue(Cache::has(WorldDataCache::prefix() . 'countries_id_name_hu'));
+		self::assertFalse(Cache::has(WorldDataCache::prefix() . 'countries_id_name_en'));
 	}
 
 	public function test_set_locale_uses_the_fallback_for_an_unsupported_locale(): void
@@ -40,7 +41,7 @@ class WorldHelperTest extends TestCase
 		$action = $this->world()->countries();
 
 		self::assertInstanceOf(Collection::class, $action->data);
-		self::assertIsArray(Cache::get('countries_id_name_en'));
+		self::assertIsArray(Cache::get(WorldDataCache::prefix() . 'countries_id_name_en'));
 	}
 
 	public function test_without_caching_only_overrides_the_next_action(): void
@@ -64,7 +65,7 @@ class WorldHelperTest extends TestCase
 		$this->insertCountry(184, 'DE', 'DEU', 'Germany');
 
 		self::assertCount(3, $this->world()->countries()->data);
-		self::assertFalse(Cache::has('countries_id_name_en'));
+		self::assertFalse(Cache::has(WorldDataCache::prefix() . 'countries_id_name_en'));
 	}
 
 	public function test_with_caching_only_overrides_the_next_action(): void
@@ -73,7 +74,7 @@ class WorldHelperTest extends TestCase
 		Cache::flush();
 
 		self::assertCount(2, $this->world()->withCaching()->countries()->data);
-		self::assertTrue(Cache::has('countries_id_name_en'));
+		self::assertTrue(Cache::has(WorldDataCache::prefix() . 'countries_id_name_en'));
 
 		$this->insertCountry(184, 'DE', 'DEU', 'Germany');
 

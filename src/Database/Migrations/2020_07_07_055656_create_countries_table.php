@@ -11,6 +11,10 @@ return new class extends BaseMigration
      */
     public function up(): void
     {
+        if (Schema::hasTable(config('world.migrations.countries.table_name'))) {
+            return;
+        }
+
         Schema::create(config('world.migrations.countries.table_name'), function (Blueprint $table) {
             $table->id();
             $table->string('iso2', 2);

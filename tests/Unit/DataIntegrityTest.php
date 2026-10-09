@@ -3,6 +3,8 @@
 namespace Nnjeim\World\Tests\Unit;
 
 use Nnjeim\World\Tests\TestCase;
+use Nnjeim\World\Data\WorldDataset;
+use Nnjeim\World\CountryFlag;
 
 class DataIntegrityTest extends TestCase
 {
@@ -19,6 +21,29 @@ class DataIntegrityTest extends TestCase
 		$this->assertBulgarianEuroData($countries);
 		$this->assertLocaleParity();
 	}
+
+    public function test_all_data_references_flags_checksums_and_coverage_match_the_reviewed_manifest(): void
+    {
+        $dataset = new WorldDataset();
+        $root = dirname(__DIR__, 2);
+        $manifest = json_decode(file_get_contents($root . '/resources/data-manifest.json'), true, 512, JSON_THROW_ON_ERROR);
+        foreach ($manifest['files'] as $file => $expected) {
+            self::assertSame($expected['sha256'], hash_file('sha256', $root . '/resources/json/' . $file));
+            self::assertCount($expected['records'], $this->loadJson($file));
+        }
+        $stateCounts = array_count_values(array_column($dataset->states, 'country_code'));
+        $cityCounts = array_count_values(array_column($dataset->cities, 'country_code'));
+        $codes = [];
+        foreach ($dataset->countries as $country) {
+            $code = $country['iso2'];
+            $codes[] = $code;
+            self::assertSame(['states' => $stateCounts[$code] ?? 0, 'cities' => $cityCounts[$code] ?? 0], $manifest['coverage'][$code]);
+            self::assertSame($country['emoji'], CountryFlag::emoji($code));
+        }
+        sort($codes);
+        self::assertSame($codes, array_keys($manifest['coverage']));
+        self::assertSame(['states' => 6, 'cities' => 15], $manifest['coverage']['KY']);
+    }
 
 	private function assertCityStateReferences(array $states, array $cities): void
 	{

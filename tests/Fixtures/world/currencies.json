@@ -1,0 +1,16 @@
+{
+    "EUR": {
+        "code": "EUR",
+        "name": "Euro",
+        "symbol": "€",
+        "symbol_native": "€",
+        "decimal_digits": 2
+    },
+    "RON": {
+        "code": "RON",
+        "name": "Romanian Leu",
+        "symbol": "lei",
+        "symbol_native": "lei",
+        "decimal_digits": 2
+    }
+}

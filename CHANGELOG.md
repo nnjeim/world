@@ -2,6 +2,16 @@
 
 All notable changes to `country` will be documented in this file
 
+## Unreleased
+- Made installation, refresh and seeding synchronize data without dropping tables, truncating rows or changing existing application IDs
+- Added tracked source IDs, transactional updates, dry runs and production refresh with `--force`
+- Preserved existing configuration and custom columns; retained local edits after the first tracked import
+- Scoped package migrations to the configured World connection and invalidated only World caches after updates
+- Added an optional computed country `flag` field and ISO2 flag helper without a schema change (issue #120)
+- Added six Cayman Islands districts and 15 GeoNames populated places with source attribution (issue #153)
+- Corrected Tai Po District's copied country code and 193 copied city state codes
+- Added dataset provenance, reproducible Cayman import, coverage and checksum manifest, and generic integrity checks
+
 ## 1.1.39 - 2026-09-22
 - Added the 11 new Algerian wilayas from the November 2025 territorial reform (codes 59-69) and reassigned their cities from the parent provinces
 - Added Hungarian localization

@@ -1,0 +1,36 @@
+[
+    {
+        "id": 77,
+        "name": "France",
+        "iso2": "FR",
+        "iso3": "FRA",
+        "phone_code": "33",
+        "region": "Europe",
+        "subregion": "Western Europe",
+        "currency": "EUR",
+        "currency_name": "Euro",
+        "currency_symbol": "€",
+        "timezones": [
+            {
+                "zoneName": "Europe/Paris"
+            }
+        ]
+    },
+    {
+        "id": 181,
+        "name": "Romania",
+        "iso2": "RO",
+        "iso3": "ROU",
+        "phone_code": "40",
+        "region": "Europe",
+        "subregion": "Eastern Europe",
+        "currency": "RON",
+        "currency_name": "Romanian Leu",
+        "currency_symbol": "lei",
+        "timezones": [
+            {
+                "zoneName": "Europe/Bucharest"
+            }
+        ]
+    }
+]

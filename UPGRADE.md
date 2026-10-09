@@ -1,5 +1,32 @@
 # Upgrade
 
+## From 1.1.39 to the next release
+
+Back up the database and retain customized configuration. Update the package, then run:
+
+```bash
+php artisan world:refresh --dry-run
+php artisan world:refresh
+# Production deployments:
+php artisan world:refresh --force
+```
+
+The command runs the new tracking migration and synchronizes reference data while retaining
+existing application IDs, custom columns and local records. Do not force-publish configuration
+or drop existing World tables. The first tracked import adopts legacy records by natural keys
+and updates package supplied fields; later imports preserve local edits to tracked fields.
+Review [DATA_UPDATES.md](docs/DATA_UPDATES.md) before the first import, particularly if legacy
+names were customized or renamed source records are unmatched. Removed source records remain
+available for application review.
+
+The optional `flag` response field is computed from ISO2 and requires no migration. The
+tracking table defaults to `world_data_records`; keep it in backups. World cache generations
+are invalidated after a successful data update without clearing application cache entries.
+
+The historical instructions below apply to those older releases, whose refresh command
+rebuilds tables and cannot run in production. Use the preserving commands above after
+installing the next release.
+
 ## 1.1.38 to 1.1.39
 
 Version 1.1.39 requires PHP 8.1 or newer and supports Laravel 10 through Laravel 13. The MaxMind client has been upgraded to `geoip2/geoip2` v3.

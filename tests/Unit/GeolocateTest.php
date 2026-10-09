@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Http;
 use Nnjeim\World\Actions\Geolocate\IndexAction;
 use Nnjeim\World\Geolocate\GeolocateService;
 use Nnjeim\World\Tests\TestCase;
+use Nnjeim\World\Data\WorldDataCache;
 
 class GeolocateTest extends TestCase
 {
@@ -37,7 +38,7 @@ class GeolocateTest extends TestCase
 		$action->execute(['ip' => '8.8.8.8']);
 
 		self::assertInstanceOf(Collection::class, $action->data);
-		self::assertIsArray(Cache::get('geolocate_8.8.8.8_en'));
+		self::assertIsArray(Cache::get(WorldDataCache::prefix() . 'geolocate_8.8.8.8_en'));
 
 		(new IndexAction(new GeolocateService()))->execute(['ip' => '8.8.8.8']);
 
