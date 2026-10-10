@@ -1,7 +1,6 @@
 # Upgrading from World 1.x to 2.0.0
 
-**2.0.0 is planned and has not been published.** Follow this guide when the release is
-available, or when deliberately testing the 2.0 branch. Published 1.1 tags retain their
+This guide covers upgrading to **World 2.0.0**. Published 1.1 tags retain their
 original code and requirements. Staying on `^1.1` or `^1.1.39` excludes 2.0; exact pins
 and lock files continue to identify the installed 1.x release.
 
@@ -43,7 +42,7 @@ Prepare application migrations for a database cache store before running World c
 1. Back up the World database and customized configuration. Keep the installed package
    version and lock file so the original code can be restored.
 2. Review the runtime and maintenance changes above. Test the upgrade on a database copy.
-3. After 2.0 is published, explicitly change the Composer constraint:
+3. Explicitly change the Composer constraint:
 
    ```bash
    composer require nnjeim/world:^2.0

@@ -1,8 +1,8 @@
 # Changelog
 
-All notable changes to `country` will be documented in this file
+All notable changes to `nnjeim/world` will be documented in this file
 
-## 2.0.0 — Unreleased
+## 2.0.0 - 2026-10-10
 
 ### Changes to maintenance behavior
 

@@ -1,7 +1,6 @@
 # World 2.0.0 documentation
 
-**Status: planned release; 2.0.0 has not been published.** These instructions apply to
-the 2.0 code in PR #159. For currently published packages, use the
+This guide applies to **World 2.0.0**. For installed 1.x packages, use the
 [World 1.x documentation](../1.x/README.md). Existing 1.1 tags retain their original code.
 
 Read the [upgrade guide](UPGRADE.md) before moving an existing installation to 2.0.
@@ -41,7 +40,7 @@ The examples consume the Laravel API routes exposed by this package; no addition
 </p>
 
 <p align="center">
-  <strong>🌍 Planned for v2.0.0: preserving data updates and country flags</strong><br/>
+  <strong>🌍 New in v2.0.0: preserving data updates and country flags</strong><br/>
   Stable existing IDs, tracked local edits, dry runs, World cache invalidation, and Cayman data additions.<br/>
   <a href="#whats-new-in-v200">Learn more →</a>
 </p>
@@ -90,28 +89,37 @@ Optionally, set the WORLD_DB_CONNECTION environment variable to your desired dat
 
 #### Automated Installation
 
-Run the following Artisan command to automate the installation process:
+Prepare your configured cache store first. For the default database cache, run
+`php artisan migrate` to create its cache and lock tables. World installation runs only
+the package migrations. Then install the bundled data with enough memory:
 
 ```
-php artisan world:install
+php -d memory_limit=1G artisan world:install
 ```
 #### Manual Installation
 If you prefer to install the package manually, follow these steps:
 
-1. Publish the package configuration file:
-
-```bash
-php artisan vendor:publish --tag=world
-```
-2. Run the migrations:
+1. Prepare your application cache store. For the default database cache, run application
+migrations first so the cache and lock tables exist.
 
 ```bash
 php artisan migrate
 ```
-3. Seed the database:
+
+2. Publish the package configuration file:
 
 ```bash
-php artisan db:seed --class=WorldSeeder
+php artisan vendor:publish --tag=world
+```
+3. Run the migrations:
+
+```bash
+php artisan migrate
+```
+4. Seed the database:
+
+```bash
+php -d memory_limit=1G artisan db:seed --class=WorldSeeder
 ```
 
 ### Upgrading
@@ -120,10 +128,10 @@ Update the package, preview the data changes, and apply them:
 
 ```bash
 composer require nnjeim/world:^2.0
-php artisan world:refresh --dry-run
-php artisan world:refresh
+php -d memory_limit=1G artisan world:refresh --dry-run
+php -d memory_limit=1G artisan world:refresh
 # In production:
-php artisan world:refresh --force
+php -d memory_limit=1G artisan world:refresh --force
 ```
 
 Installation and refresh preserve existing database IDs and application records. The installer

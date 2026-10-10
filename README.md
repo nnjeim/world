@@ -13,15 +13,24 @@ Laravel facades and API routes.
 
 | Version | Status | Documentation |
 | --- | --- | --- |
-| **1.1.39** | Current published release; PHP 8.1+, Laravel 10–13 | [World 1.x guide](docs/1.x/README.md) |
+| **1.1.39** | Previous stable release; PHP 8.1+, Laravel 10–13 | [World 1.x guide](docs/1.x/README.md) |
 | **1.1.38** | Published legacy release; PHP >=7.4 requirement, GeoIP2 v2 | [Original 1.1.38 guide](https://github.com/nnjeim/world/blob/1.1.38/README.md) |
-| **2.0.0** | Planned release with changes to data maintenance | [World 2.0 guide](docs/2.0/README.md) · [Upgrade from 1.x](docs/2.0/UPGRADE.md) |
+| **2.0.0** | Release documentation; changes to data maintenance | [World 2.0 guide](docs/2.0/README.md) · [Upgrade from 1.x](docs/2.0/UPGRADE.md) |
 
 Published versions with retained Git tags keep their original code. Removing an old
 GitHub release page does not remove its Git tag. Use the documentation at your installed
 tag for its exact behavior; retain published tags to keep those versions available.
 
-## Install the published 1.x package
+## Install World 2.0
+
+```bash
+composer require nnjeim/world:^2.0
+```
+
+For an existing installation, review [the upgrade guide](docs/2.0/UPGRADE.md) and run
+the preserving refresh command with a 1G memory limit.
+
+## Stay on World 1.x
 
 ```bash
 composer require nnjeim/world:^1.1.39
@@ -38,14 +47,12 @@ when running `composer install`. Constraints such as `*`, `>=1.1` and `dev-maste
 select a different major version; review your constraint before updating.
 See [Composer version constraints](https://getcomposer.org/doc/articles/versions.md).
 
-## Planned 2.0 release
+## World 2.0
 
 World 2.0 adds preserving data synchronization, source tracking, dry runs, optional country
 flags and reviewed Cayman data. Refresh and seeding no longer rebuild tables or remove rows.
 Schema changes require application migrations, and imports bypass model observers. Review
 [the complete upgrade guide](docs/2.0/UPGRADE.md) before adopting it.
-
-**2.0.0 has not been published.** The current documentation describes the proposed release.
 
 ## Links
 
