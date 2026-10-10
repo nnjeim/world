@@ -1,8 +1,24 @@
-# Upgrading from World 1.x to 2.0.0
+# Upgrading to World 2.0
 
-This guide covers upgrading to **World 2.0.0**. Published 1.1 tags retain their
+This guide covers upgrading to **World 2.0.x**. Published 1.1 tags retain their
 original code and requirements. Staying on `^1.1` or `^1.1.39` excludes 2.0; exact pins
 and lock files continue to identify the installed 1.x release.
+
+## Updating from 2.0.0 to 2.0.1
+
+With an existing `^2.0` Composer constraint, update the package and deploy the updated
+lock file:
+
+```bash
+composer update nnjeim/world
+```
+
+If the package is pinned to exactly `2.0.0`, change that pin to `2.0.1` or `^2.0` first.
+This patch requires no database migration or data refresh. Country, currency and language
+searches now respect every supplied filter, including when the search string is empty.
+Requests that previously returned records outside their filters will return fewer records.
+
+The sections below describe the major-version transition from 1.x.
 
 ## Compatibility
 

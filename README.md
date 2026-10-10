@@ -15,7 +15,7 @@ Laravel facades and API routes.
 | --- | --- | --- |
 | **1.1.39** | Previous stable release; PHP 8.1+, Laravel 10–13 | [World 1.x guide](docs/1.x/README.md) |
 | **1.1.38** | Published legacy release; PHP >=7.4 requirement, GeoIP2 v2 | [Original 1.1.38 guide](https://github.com/nnjeim/world/blob/1.1.38/README.md) |
-| **2.0.0** | Release documentation; changes to data maintenance | [World 2.0 guide](docs/2.0/README.md) · [Upgrade from 1.x](docs/2.0/UPGRADE.md) |
+| **2.0.1** | Current stable release; changes to data maintenance from 1.x | [World 2.0 guide](docs/2.0/README.md) · [Upgrade from 1.x](docs/2.0/UPGRADE.md) |
 
 Published versions with retained Git tags keep their original code. Removing an old
 GitHub release page does not remove its Git tag. Use the documentation at your installed
