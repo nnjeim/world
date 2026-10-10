@@ -28,12 +28,4 @@ return new class extends BaseMigration
             }
         });
     }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists(config('world.migrations.countries.table_name'));
-    }
 };

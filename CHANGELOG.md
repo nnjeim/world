@@ -2,11 +2,26 @@
 
 All notable changes to `country` will be documented in this file
 
-## Unreleased
+## 2.0.0 — Unreleased
+
+### Changes to maintenance behavior
+
+- Installation runs only World migrations and no longer overwrites resources or clears configuration caches
+- Refresh and seeding synchronize data instead of rebuilding schemas or removing existing rows; exclusions select imports only
+- Optional field schema changes require application migrations
+- Imports bypass model events, observers and mutators
+- World migration rollback retains reference tables and source tracking, including on fresh installations
+- Complete city imports require a 1G or unlimited PHP memory limit
+- See the [2.0 upgrade guide](docs/2.0/UPGRADE.md); published 1.x code and tags remain available with [separate documentation](docs/1.x/README.md)
+
+### Additions and fixes
+
 - Made installation, refresh and seeding synchronize data without dropping tables, truncating rows or changing existing application IDs
 - Added tracked source IDs, transactional updates, dry runs and production refresh with `--force`
 - Preserved existing configuration and custom columns; retained local edits after the first tracked import
 - Scoped package migrations to the configured World connection and invalidated only World caches after updates
+- Fixed legacy adoption rollback so reference tables and local-edit tracking survive
+- Avoided all cache access for uncached and search queries, including geolocation when caching is disabled
 - Added an optional computed country `flag` field and ISO2 flag helper without a schema change (issue #120)
 - Added six Cayman Islands districts and 15 GeoNames populated places with source attribution (issue #153)
 - Corrected Tai Po District's copied country code and 193 copied city state codes

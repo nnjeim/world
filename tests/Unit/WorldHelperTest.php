@@ -81,6 +81,34 @@ class WorldHelperTest extends TestCase
 		self::assertCount(3, $this->world()->countries()->data);
 	}
 
+	public function test_without_caching_never_accesses_the_cache_store(): void
+	{
+		Cache::shouldReceive('get')->never();
+		Cache::shouldReceive('remember')->never();
+
+		foreach (['countries', 'states', 'cities', 'timezones', 'currencies', 'languages'] as $module) {
+			self::assertNotEmpty($this->world()->withoutCaching()->{$module}()->data);
+		}
+	}
+
+	public function test_global_cache_disable_never_accesses_the_cache_store(): void
+	{
+		config(['world.cache.enabled' => false]);
+		Cache::shouldReceive('get')->never();
+		Cache::shouldReceive('remember')->never();
+
+		foreach (['countries', 'states', 'cities', 'timezones', 'currencies', 'languages'] as $module) {
+			self::assertNotEmpty($this->world()->{$module}()->data);
+		}
+	}
+
+	public function test_search_never_accesses_the_cache_store(): void
+	{
+		Cache::shouldReceive('get')->never();
+		Cache::shouldReceive('remember')->never();
+		self::assertCount(1, $this->world()->countries(['search' => 'France'])->data);
+	}
+
 	private function world(): WorldHelper
 	{
 		return app('world');

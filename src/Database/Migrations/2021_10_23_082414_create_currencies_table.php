@@ -28,12 +28,4 @@ return new class extends BaseMigration
 			$table->string('thousands_separator', 1)->default(',');
 		});
 	}
-
-	/**
-	 * Reverse the migrations.
-	 */
-	public function down(): void
-	{
-		Schema::dropIfExists(config('world.migrations.currencies.table_name'));
-	}
 };

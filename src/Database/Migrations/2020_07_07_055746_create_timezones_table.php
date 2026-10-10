@@ -21,12 +21,4 @@ return new class extends BaseMigration
             $table->string('name');
         });
     }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists(config('world.migrations.timezones.table_name'));
-    }
 };

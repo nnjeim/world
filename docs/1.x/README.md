@@ -1,0 +1,602 @@
+# World 1.x documentation
+
+This guide describes the published **1.1.39** package. It is retained separately from
+[World 2.0](../2.0/README.md), which changes installation and data maintenance.
+
+- PHP 8.1+ / Laravel 10–13: `composer require nnjeim/world:^1.1.39`.
+- For an exact installation: `composer require nnjeim/world:1.1.39`.
+- **1.1.38** retains its published PHP >=7.4 requirement and GeoIP2 v2 dependency.
+  Use `composer require nnjeim/world:1.1.38` and its
+  [original documentation](https://github.com/nnjeim/world/blob/1.1.38/README.md).
+- Other published 1.1 versions remain available while their original Git tags and
+  Packagist records are retained. For their exact behavior, consult the README at
+  the installed tag. Keep published tags when simplifying GitHub release pages.
+
+The `^1.1.39` and `^1.1` constraints exclude 2.0. Exact version pins remain exact;
+`composer install` uses the versions in your lock file. Upgrading to 2.0 is deliberate.
+Unbounded constraints such as `*`, `>=1.1` and `dev-master` do not provide that boundary.
+See [Composer version constraints](https://getcomposer.org/doc/articles/versions.md).
+
+In **1.x**, installation force-publishes resources, and refresh/seeding rebuilds or
+truncates reference data. `world:refresh` is unavailable in production and has no
+`--dry-run` or `--force` option. Back up data and customized configuration before using
+these commands. World 2.0 instructions do not apply to an installed 1.x package.
+
+---
+
+<p style="text-align: center; padding: 3rem;"><img src="https://raw.githubusercontent.com/nnjeim/world/1.1.39/logo.jpg" width="150" alt="Laravel world"/></p>
+
+<p align="center">
+<a href="https://packagist.org/packages/nnjeim/world"><img src="https://poser.pugx.org/nnjeim/world/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/nnjeim/world"><img src="https://poser.pugx.org/nnjeim/world/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/nnjeim/world"><img src="https://poser.pugx.org/nnjeim/world/license.svg" alt="License"></a>
+</p>
+
+The World is a Laravel package that provides a comprehensive list of countries, states, cities, timezones, currencies, languages and IP geolocation. You can access the data using the **World Facade** or through defined API routes.
+
+---
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nnjeim/world/1.1.39/geolocate-badge.svg" alt="New: IP Geolocation"/>
+</p>
+
+<p align="center">
+  <strong>🌍 New in v1.1.39: Laravel 13, Hungarian, and refreshed world data</strong><br/>
+  Laravel 10–13 compatibility, GeoIP2 v3, cache controls, 11 new Algerian wilayas, and Bulgaria's Euro adoption.<br/>
+  <a href="#whats-new-in-v1139">Learn more →</a>
+</p>
+
+---
+
+## Table of Contents
+
+- [Installation](#installation)
+  - [Automated Installation](#automated-installation)
+  - [Manual Installation](#manual-installation)
+- [What's New in v1.1.39](#whats-new-in-v1139)
+- [Changelog](#changelog)
+- [Contributing](#contributing)
+- [Examples](#examples)
+- [Usage](#usage)
+  - [List All Countries](#list-all-countries)
+  - [Fetch Country with States & Cities](#fetch-country-with-states--cities)
+  - [List All Cities by Country ID](#list-all-cities-by-country-id)
+- [Available Actions](#available-actions)
+- [Available API Routes](#available-api-routes)
+  - [Countries](#countries)
+  - [States](#states)
+  - [Cities](#cities)
+  - [Timezones](#timezones)
+  - [Currencies](#currencies)
+  - [Languages](#languages)
+  - [Geolocate](#geolocate)
+- [Localization](#localization)
+- [Schema](#schema)
+- [Configuration](#configuration)
+- [Testing](#testing)
+- 
+### Installation
+
+First, set your application environment to local:
+
+```bash
+set APP_ENV=local
+```
+
+Then, install the package via composer:
+
+```
+composer require nnjeim/world:^1.1.39
+```
+
+Optionally, set the WORLD_DB_CONNECTION environment variable to your desired database connection.
+
+#### Automated Installation
+
+Run the following Artisan command to automate the installation process:
+
+```
+php artisan world:install
+```
+#### Manual Installation
+If you prefer to install the package manually, follow these steps:
+
+1. Publish the package configuration file:
+
+```bash
+php artisan vendor:publish --tag=world --force
+```
+2. Run the migrations:
+
+```bash
+php artisan migrate 
+```
+3. Seed the database:
+
+```bash
+php artisan db:seed --class=WorldSeeder
+````
+
+### Upgrading
+
+> **⚠️ Important:** When upgrading to a new version, you **must** re-publish the configuration file to ensure all new features work correctly:
+
+```bash
+php artisan vendor:publish --tag=world --force
+```
+
+This command updates the `config/world.php` file with new configuration options. Failing to run this command may result in missing features or errors.
+
+### What's new in v1.1.39?
+
+- Added Laravel 13 support while retaining Laravel 10–12 compatibility.
+- Upgraded the MaxMind client to GeoIP2 v3 and raised the minimum PHP version to 8.1.
+- Added Hungarian localization and corrected the Bengali name for Kosovo.
+- Added the 11 Algerian wilayas created by the 2025–2026 territorial reform and reassigned their cities.
+- Updated Bulgaria's currency to the Euro.
+- Added configurable and per-action cache controls.
+- Fixed runtime locale switching through `World::setLocale()`.
+- Added a standalone test suite and a PHP/Laravel CI compatibility matrix.
+
+> **⚠️ Required:** After upgrading, run `php artisan vendor:publish --tag=world --force` to update your configuration file.
+
+### Changelog
+
+For detailed information on recent changes, please see the [CHANGELOG](https://github.com/nnjeim/world/blob/1.1.39/CHANGELOG.md).
+
+### Contributing
+
+We welcome contributions! For details on how to get started, please review our [CONTRIBUTING](https://github.com/nnjeim/world/blob/1.1.39/CONTRIBUTING.md) guidlines.
+  
+Examples  
+--------
+Explore the API examples on our live site:
+
+List all countries:  
+https://world.bmbc.cloud/api/countries  
+Search for a country:   
+https://world.bmbc.cloud/api/countries?search=rom  
+Get states by country code:  
+https://world.bmbc.cloud/api/states?filters[country_code]=RO&fields=cities  
+
+### Usage
+
+#### List all the countries
+
+Use the `World` facade:
+
+```php
+use Nnjeim\World\World;
+
+$action =  World::countries();
+
+if ($action->success) {
+  $countries = $action->data;
+}
+
+response (object)
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1,
+      "name": "Afghanistan"
+    },
+    {
+      "id": 2,
+      "name": "Åland Islands"
+    },
+    .
+    .
+    .
+  ],
+}
+``` 
+
+Use the API countries endpoint:
+
+```
+https://myDomain.local/api/countries
+```
+
+#### Fetch a country with its states and cities.
+
+Use the `World` facade:
+
+```php
+use Nnjeim\World\World;
+
+$action =  World::countries([
+	'fields' => 'states,cities',
+	'filters' => [
+		'iso2' => 'FR',
+	]
+]);
+
+if ($action->success) {
+
+	$countries = $action->data;
+}
+```
+
+Response: 
+```
+(object)
+{
+  "success": true,
+  "data": [
+    "id": 77,
+    "name": "France",
+    "states": [
+        {
+          "id": 1271,
+          "name": "Alo"
+        },
+        {
+          "id": 1272,
+          "name": "Alsace"
+        },
+        .
+        .
+        .
+    ],
+    "cities": [
+        {
+          "id": 25148,
+          "name": "Abondance"
+        },
+        {
+          "id": 25149,
+          "name": "Abrest"
+        },
+        .
+        .
+        .
+      ]
+    ],
+}
+```
+
+Use the API countries endpoint:
+
+```
+https://myDomain.local/api/countries?fields=states,cities&filters[iso2]=FR
+```
+
+#### List all the cities by country id
+
+```php
+use Nnjeim\World\WorldHelper;
+
+new class {
+    protected $world;
+    
+    public function __construct(WorldHelper $world) {
+        $this->world = $world;
+    }
+    
+    $action = $this->world->cities([
+        'filters' => [
+            'country_id' => 182,
+        ],
+    ]);
+    
+    if ($action->success) {
+        $cities = $action->data;
+    }
+}
+```
+
+Use the API cities endpoint:
+
+```
+https://myDomain.local/api/cities?filters[country_code]=RO 
+```
+
+### Available actions
+
+| Name       | Description                   |
+|:-----------|:------------------------------|
+| countries  | lists all the world countries |
+| states     | lists all the states          |
+| cities     | lists all the cities          |
+| timezones  | lists all the timezones       |
+| currencies | lists all the currencies      |
+| languages  | lists all the languages       |
+| geolocate  | geolocates an IP address      |
+
+An action response is formed as below:
+
+* `success` (boolean)
+* `message` (string)
+* `data` (instance of `Illuminate\Support\Collection`)
+* `errors` (array)
+
+#### Countries action
+
+* `fields`*: comma separated string (countries table fields in addition to states, cities, currency and timezones).
+* `filters`*: array of keys (countries table fields) and their corresponding values.
+* `search`*: string.
+
+#### States action
+
+* `fields`*: comma separated string (states table fields in addition to country and states).
+* `filters`*: array of keys (states table fields) and their corresponding values.
+* `search`*: string.
+
+#### Cities action
+
+* `fields`*: comma separated string (cities table fields in addition to country and state).
+* `filters`*: array of keys (cities table fields) and their corresponding values.
+* `search`*: string.
+
+#### Timezones action
+
+* `fields`*: comma separated string (timezones table fields in addition to country).
+* `filters`*: array of keys (timezones table fields) and their corresponding values.
+* `search`*: string.
+
+#### Currencies action
+
+* `fields`*: comma separated string (currencies table fields in addition to country).
+* `filters`*: array of keys (currencies table fields) and their corresponding values.
+* `search`*: string.
+
+#### Languages action
+
+* `fields`*: comma separated string (languages table fields).
+* `filters`*: array of keys (languages table fields) and their corresponding values.
+* `search`*: string.
+
+#### Geolocate action
+
+Geolocate an IP address. Returns country, state, city, coordinates, and timezone information linked to existing World data.
+
+* `ip`*: string (optional - auto-detects from request if not provided).
+
+**Data Sources:**
+
+1. **MaxMind GeoLite2** (local database, recommended for production)
+2. **ip-api.com** (free fallback, no setup required, 45 req/min limit)
+
+The package automatically falls back to ip-api.com if the GeoLite2 database is not installed. For production use, we recommend downloading the GeoLite2 database:
+
+```bash
+# Get a free license key at: https://www.maxmind.com/en/geolite2/signup
+php artisan world:geoip --license=YOUR_LICENSE_KEY
+```
+
+Or set the `MAXMIND_LICENSE_KEY` environment variable and run:
+```bash
+php artisan world:geoip
+```
+
+To disable the fallback API, set `WORLD_GEOLOCATE_FALLBACK_API=false` in your `.env` file.
+
+**Usage:**
+
+```php
+use Nnjeim\World\World;
+
+// Auto-detect IP from request
+$action = World::geolocate();
+
+// Geolocate specific IP
+$action = World::geolocate(['ip' => '8.8.8.8']);
+
+if ($action->success) {
+    $location = $action->data;
+    // $location['country'], $location['state'], $location['city'], etc.
+}
+```
+
+**How IP Detection Works:**
+
+The client IP is automatically detected from request headers in this order:
+1. `CF-Connecting-IP` (Cloudflare)
+2. `X-Forwarded-For` (Standard proxy header)
+3. `X-Real-IP` (Nginx proxy)
+4. `CLIENT-IP` (Generic)
+5. Laravel's `request()->ip()` fallback
+
+**Response Format:**
+
+```json
+{
+  "success": true,
+  "message": "geolocations",
+  "data": {
+    "ip": "8.8.8.8",
+    "country": {
+      "id": 236,
+      "iso2": "US",
+      "iso3": "USA",
+      "name": "United States",
+      "phone_code": "1",
+      "region": "Americas",
+      "subregion": "Northern America"
+    },
+    "state": {
+      "id": 4808,
+      "name": "Virginia",
+      "state_code": "VA"
+    },
+    "city": {
+      "id": 147562,
+      "name": "Ashburn"
+    },
+    "coordinates": {
+      "latitude": 39.03,
+      "longitude": -77.5,
+      "accuracy_radius": null
+    },
+    "timezone": {
+      "id": 404,
+      "name": "America/New_York"
+    },
+    "postal_code": "20149"
+  },
+  "response_time": "690 ms"
+}
+```
+
+> **Note:** The `id` fields link to existing records in the World database tables. If a matching record is not found, the `id` field will be omitted and only the raw geolocation data will be returned.
+
+### Available API routes
+
+All routes can be prefixed by any string. Ex.: `admin`, `api`...
+
+#### Countries
+
+|             |                                                                                                                                     |
+|:------------|:------------------------------------------------------------------------------------------------------------------------------------|
+| Method      | GET                                                                                                                                 |
+| Route       | `/{prefix}/countries`                                                                                                               |
+| Parameters* | comma separated fields (countries table fields in addition to states, cities, currency and timezones), array filters, string search |
+| Example     | `/api/countries?fields=iso2,cities&filters[phone_code]=44  `                                                                        |   
+| response    | success, message, data                                                                                                              |  
+
+#### States
+
+|             |                                                                                                              |
+|:------------|:-------------------------------------------------------------------------------------------------------------|
+| Method      | GET                                                                                                          |
+| Route       | `/{prefix}/states`                                                                                           |
+| Parameters* | comma separated fields (states table fields in addition to country and cities), array filters, string search |
+| Example     | `/api/states?fields=country,cities&filters[country_code]=RO`                                                 |   
+| response    | success, message, data                                                                                       |   
+
+#### Cities
+
+|             |                                                                                                             |
+|:------------|:------------------------------------------------------------------------------------------------------------|
+| Method      | GET                                                                                                         |
+| Route       | `/{prefix}/cities`                                                                                          |
+| Parameters* | comma separated fields (cities table fields in addition to country and state), array filters, string search |
+| Example     | `/api/cities?fields=country,state&filters[country_code]=RO`                                                 |   
+| response    | success, message, data                                                                                      | 
+
+#### Timezones
+
+|             |                                                                                                          |
+|:------------|:---------------------------------------------------------------------------------------------------------|
+| Method      | GET                                                                                                      |
+| Route       | `/{prefix}/timezones`                                                                                    |
+| Parameters* | comma separated fields (timezones table fields in addition to the country), array filters, string search |
+| Example     | `/api/timezones?fields=country&filters[country_code]=RO`                                                 |   
+| response    | success, message, data                                                                                   | 
+
+#### Currencies
+
+|             |                                                                                                           |
+|:------------|:----------------------------------------------------------------------------------------------------------|
+| Method      | GET                                                                                                       |
+| Route       | `/{prefix}/currencies`                                                                                    |
+| Parameters* | comma separated fields (currencies table fields in addition to the country), array filters, string search |
+| Example     | `/api/currencies?fields=code&filters[country_code]=RO`                                                    |   
+| response    | success, message, data                                                                                    |
+
+#### Languages
+
+|             |                                       |
+|:------------|:--------------------------------------|
+| Method      | GET                                   |
+| Route       | `/{prefix}/languages`                 |
+| Parameters* | comma separated fields, string search |
+| Example     | `/api/languages?fields=dir`           |
+| response    | success, message, data                |
+
+#### Geolocate
+
+|             |                                                                                      |
+|:------------|:-------------------------------------------------------------------------------------|
+| Method      | GET                                                                                  |
+| Route       | `/{prefix}/geolocate`                                                                |
+| Parameters* | ip (optional - auto-detects from request)                                            |
+| Example     | `/api/geolocate` or `/api/geolocate?ip=8.8.8.8`                                      |
+| response    | success, message, data (ip, country, state, city, coordinates, timezone, postal_code)|
+
+### Localization
+
+The available locales are 
+```
+ar, az, bn, br, de, en, es, fa, fr, hr, hu, hy, it, ja, kr, ne, nl, pl, pt, ro, ru, sw, tr and zh.
+```
+The default locale is en.
+
+Header option
+
+```
+accept-language=locale
+```
+
+Alternatively, you can use specific locale with the `World` Facade `setLocale('locale')` helper method. Example: 
+
+```php
+World::setLocale('zh')->countries();
+```
+
+### Schema
+
+<p><img src="https://raw.githubusercontent.com/nnjeim/world/1.1.39/schema.jpg" width="800px" /></p>
+
+### Configuration  
+The configuration for the World package is located in the world.php file.  
+If you're upgrading from a previous version, you may want to re-publish the config file:
+
+```bash
+php artisan vendor:publish --tag=world --force
+```
+
+#### Customizing database connection
+
+By default, this package uses the default database connection, but it's possible to customize it
+using the `WORLD_DB_CONNECTION` variable in your `.env` file.
+
+#### Cache control
+
+Action results are cached by default. To disable caching globally, set:
+
+```dotenv
+WORLD_CACHE_ENABLED=false
+```
+
+You can override the configured default for one action call:
+
+```php
+World::withoutCaching()->countries();
+World::withCaching()->countries();
+```
+
+The override is reset after that action. Cache keys include Laravel's active locale, so localized results are stored separately.
+
+### Countries restrictions
+Countries can be restricted while seeding the database either by adding the ISO2 country codes in the `allowed_countries` or `disallowed_countries` array lists.  
+
+#### Supported Locales  
+A list of the accepted locales which relate to the localized [`lang/` files](https://github.com/nnjeim/world/tree/1.1.39/resources/lang).
+
+#### Modules enablement  
+The states, cities, timezones, currencies and languages modules can be optionally disabled.    
+Please note that the cities module depends on the states module.  
+
+#### Routes  
+If you don't wish to use the packages as an API service, you can disable all the routes by assigning `false` to `routes`.  
+
+#### Migrations  
+It offers the ability to enable or disable the database fields.  
+When changing this configuration the database should be dropped and the seeder should be re-run.  
+
+### Requirements
+
+- PHP 8.1 or newer
+- Laravel 10, 11, 12, or 13
+
+### Testing
+
+The test suite is self-contained and uses an in-memory SQLite database:
+
+```bash
+composer install # installs the package dev dependencies
+composer test
+```

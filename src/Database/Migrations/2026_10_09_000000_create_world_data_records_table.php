@@ -24,9 +24,4 @@ return new class extends BaseMigration
             $table->index(['module', 'scope']);
         });
     }
-
-    public function down(): void
-    {
-        Schema::dropIfExists(config('world.migrations.data_records.table_name', 'world_data_records'));
-    }
 };

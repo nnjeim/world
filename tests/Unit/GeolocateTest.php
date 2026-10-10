@@ -65,4 +65,27 @@ class GeolocateTest extends TestCase
 			], 200),
 		]);
 	}
+
+	public function test_uncached_geolocation_never_accesses_the_cache_store(): void
+	{
+		$this->fakeGeolocationApi();
+		Cache::shouldReceive('get')->never();
+		Cache::shouldReceive('remember')->never();
+		$action = app('world')->withoutCaching()->geolocate(['ip' => '8.8.8.8']);
+		self::assertTrue($action->success);
+		self::assertSame('8.8.8.8', $action->data['ip']);
+		Http::assertSentCount(1);
+	}
+
+	public function test_globally_disabled_geolocation_never_accesses_the_cache_store(): void
+	{
+		$this->fakeGeolocationApi();
+		config(['world.cache.enabled' => false]);
+		Cache::shouldReceive('get')->never();
+		Cache::shouldReceive('remember')->never();
+		$action = app('world')->geolocate(['ip' => '8.8.8.8']);
+		self::assertTrue($action->success);
+		self::assertSame('8.8.8.8', $action->data['ip']);
+		Http::assertSentCount(1);
+	}
 }

@@ -59,6 +59,15 @@ class WorldDataCommandTest extends TestCase
         self::assertSame(182, DB::connection('sqlite')->table('countries')->where('iso2', 'FR')->value('id'));
         self::assertSame(2, DB::connection('sqlite')->table('cities')->count());
         self::assertTrue(DB::connection('sqlite')->getSchemaBuilder()->hasTable('world_data_records'));
+
+        $tracking = DB::connection('sqlite')->table('world_data_records')->orderBy('id')->get()->toArray();
+        $this->artisan('migrate:rollback', ['--database' => 'sqlite', '--force' => true])->assertExitCode(0);
+        $this->assertWorldTablesRetained('sqlite');
+        self::assertSame(182, DB::connection('sqlite')->table('countries')->where('iso2', 'FR')->value('id'));
+        self::assertSame(1, DB::connection('sqlite')->table('cities')->where('name', 'Paris')->value('id'));
+        self::assertEquals($tracking, DB::connection('sqlite')->table('world_data_records')->orderBy('id')->get()->toArray());
+        $this->artisan('world:refresh')->assertExitCode(0);
+        self::assertSame(2, DB::connection('sqlite')->table('cities')->count());
     }
 
     public function test_command_dry_run_works_before_tracking_migration_and_does_not_publish_files(): void
@@ -68,5 +77,29 @@ class WorldDataCommandTest extends TestCase
         $this->artisan('world:install', ['--dry-run' => true])->assertExitCode(0);
         self::assertFalse(DB::getSchemaBuilder()->hasTable('world_data_records'));
         self::assertSame(1, DB::table('cities')->count());
+    }
+
+    public function test_fresh_world_migration_rollback_retains_data_and_local_edit_tracking(): void
+    {
+        app()->instance(WorldDataset::class, new WorldDataset(dirname(__DIR__) . '/Fixtures/world'));
+        $this->artisan('world:refresh')->assertExitCode(0);
+        DB::table('cities')->where('id', 1)->update(['name' => 'My Paris']);
+        $tracking = DB::table('world_data_records')->orderBy('id')->get()->toArray();
+
+        $this->artisan('migrate:rollback', ['--database' => 'sqlite', '--force' => true])->assertExitCode(0);
+        $this->assertWorldTablesRetained('sqlite');
+        self::assertEquals($tracking, DB::table('world_data_records')->orderBy('id')->get()->toArray());
+        self::assertSame('My Paris', DB::table('cities')->where('id', 1)->value('name'));
+
+        $this->artisan('world:refresh')->assertExitCode(0);
+        self::assertSame('My Paris', DB::table('cities')->where('id', 1)->value('name'));
+        self::assertSame(2, DB::table('cities')->count());
+    }
+
+    private function assertWorldTablesRetained(string $connection): void
+    {
+        foreach (['countries', 'states', 'cities', 'timezones', 'currencies', 'languages', 'world_data_records'] as $table) {
+            self::assertTrue(DB::connection($connection)->getSchemaBuilder()->hasTable($table), $table . ' must survive rollback');
+        }
     }
 }

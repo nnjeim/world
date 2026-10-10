@@ -53,7 +53,7 @@ class IndexAction extends BaseAction implements ActionInterface
 		// cache
 		$this->data = ($search === null && $isCacheEnabled)
 			? collect(Cache::remember(
-				$this->cacheKey,
+				\Nnjeim\World\Data\WorldDataCache::prefix() . $this->cacheKey,
 				config('world.cache.ttl', 86400),
 				fn () => $this->indexQuery($search)->toArray()
 			))

@@ -148,7 +148,7 @@ trait IndexFieldsTrait
 			$cacheKey .= '_' . implode('', $where);
 		}
 		$cacheKey .= '_' . app()->getLocale();
-		$this->cacheKey = \Nnjeim\World\Data\WorldDataCache::prefix() . $cacheKey;
+		$this->cacheKey = $cacheKey;
 
 		return $this;
 	}

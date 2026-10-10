@@ -23,12 +23,4 @@ return new class extends BaseMigration
 			$table->char('dir', 3);
 		});
 	}
-
-	/**
-	 * Reverse the migrations.
-	 */
-	public function down(): void
-	{
-		Schema::dropIfExists(config('world.migrations.languages.table_name'));
-	}
 };
