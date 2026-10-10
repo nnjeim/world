@@ -95,6 +95,7 @@ return [
 
 	'cache' => [
 		'enabled' => env('WORLD_CACHE_ENABLED', true),
+		'ttl' => env('WORLD_CACHE_TTL', 86400),
 	],
 
 	/*
@@ -104,6 +105,9 @@ return [
 	*/
 
 	'migrations' => [
+		'data_records' => [
+			'table_name' => 'world_data_records',
+		],
 		'countries' => [
 			'table_name' => 'countries',
 			'optional_fields' => [

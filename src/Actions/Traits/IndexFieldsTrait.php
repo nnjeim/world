@@ -16,6 +16,8 @@ trait IndexFieldsTrait
 	 */
 	protected array $availableFields = [];
 
+	protected array $computedFields = [];
+
 	/**
 	 * define the optional fields.
 	 * @var array
@@ -88,7 +90,7 @@ trait IndexFieldsTrait
 			$this->defaultFields,
 			array_values(
 				array_intersect(
-					array_merge($this->availableFields, $this->optionalFields),
+					array_merge($this->availableFields, $this->optionalFields, $this->computedFields),
 					explode(',', strip_tags(str_replace(' ', '', $fields)))
 				)
 			)

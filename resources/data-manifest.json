@@ -1,0 +1,1028 @@
+{
+  "schema_version": 1,
+  "sources": "../docs/DATA_SOURCES.md",
+  "files": {
+    "cities.json": {
+      "records": 150734,
+      "sha256": "31aea209a9ee376a395d17ea9dba88868f9f7d9227a363f2c54e8fe1ac331255"
+    },
+    "countries.json": {
+      "records": 250,
+      "sha256": "328ae043c66a5fc908817039956d74026da38756ef73a9ec1f68c445181bd7a2"
+    },
+    "currencies.json": {
+      "records": 119,
+      "sha256": "3ee625d462c8990e7bba0d0dd62fcdb9095c058747357e94ed3c13d3c3b44e2a"
+    },
+    "languages.json": {
+      "records": 183,
+      "sha256": "c50c018549227c881e51e44f11209b53e9fd75b4f429460305a6ab8b4076b05b"
+    },
+    "states.json": {
+      "records": 5017,
+      "sha256": "f25146b5df90a071a670e83501badfb8799d57e6013e0387bfbc33b6b63381c3"
+    }
+  },
+  "coverage": {
+    "AD": {
+      "states": 7,
+      "cities": 10
+    },
+    "AE": {
+      "states": 7,
+      "cities": 39
+    },
+    "AF": {
+      "states": 33,
+      "cities": 92
+    },
+    "AG": {
+      "states": 8,
+      "cities": 9
+    },
+    "AI": {
+      "states": 0,
+      "cities": 0
+    },
+    "AL": {
+      "states": 47,
+      "cities": 130
+    },
+    "AM": {
+      "states": 11,
+      "cities": 308
+    },
+    "AO": {
+      "states": 17,
+      "cities": 48
+    },
+    "AQ": {
+      "states": 0,
+      "cities": 0
+    },
+    "AR": {
+      "states": 24,
+      "cities": 963
+    },
+    "AS": {
+      "states": 0,
+      "cities": 0
+    },
+    "AT": {
+      "states": 9,
+      "cities": 2361
+    },
+    "AU": {
+      "states": 8,
+      "cities": 4152
+    },
+    "AW": {
+      "states": 0,
+      "cities": 0
+    },
+    "AX": {
+      "states": 0,
+      "cities": 0
+    },
+    "AZ": {
+      "states": 75,
+      "cities": 178
+    },
+    "BA": {
+      "states": 13,
+      "cities": 232
+    },
+    "BB": {
+      "states": 11,
+      "cities": 7
+    },
+    "BD": {
+      "states": 70,
+      "cities": 141
+    },
+    "BE": {
+      "states": 13,
+      "cities": 550
+    },
+    "BF": {
+      "states": 57,
+      "cities": 92
+    },
+    "BG": {
+      "states": 28,
+      "cities": 504
+    },
+    "BH": {
+      "states": 5,
+      "cities": 9
+    },
+    "BI": {
+      "states": 18,
+      "cities": 17
+    },
+    "BJ": {
+      "states": 12,
+      "cities": 36
+    },
+    "BL": {
+      "states": 0,
+      "cities": 0
+    },
+    "BM": {
+      "states": 9,
+      "cities": 0
+    },
+    "BN": {
+      "states": 4,
+      "cities": 9
+    },
+    "BO": {
+      "states": 9,
+      "cities": 228
+    },
+    "BQ": {
+      "states": 3,
+      "cities": 8
+    },
+    "BR": {
+      "states": 27,
+      "cities": 5640
+    },
+    "BS": {
+      "states": 42,
+      "cities": 21
+    },
+    "BT": {
+      "states": 19,
+      "cities": 24
+    },
+    "BV": {
+      "states": 0,
+      "cities": 0
+    },
+    "BW": {
+      "states": 10,
+      "cities": 75
+    },
+    "BY": {
+      "states": 7,
+      "cities": 329
+    },
+    "BZ": {
+      "states": 6,
+      "cities": 13
+    },
+    "CA": {
+      "states": 13,
+      "cities": 1080
+    },
+    "CC": {
+      "states": 0,
+      "cities": 0
+    },
+    "CD": {
+      "states": 26,
+      "cities": 69
+    },
+    "CF": {
+      "states": 17,
+      "cities": 43
+    },
+    "CG": {
+      "states": 12,
+      "cities": 17
+    },
+    "CH": {
+      "states": 26,
+      "cities": 1506
+    },
+    "CI": {
+      "states": 31,
+      "cities": 85
+    },
+    "CK": {
+      "states": 0,
+      "cities": 0
+    },
+    "CL": {
+      "states": 16,
+      "cities": 346
+    },
+    "CM": {
+      "states": 10,
+      "cities": 139
+    },
+    "CN": {
+      "states": 34,
+      "cities": 1296
+    },
+    "CO": {
+      "states": 33,
+      "cities": 1123
+    },
+    "CR": {
+      "states": 7,
+      "cities": 159
+    },
+    "CU": {
+      "states": 16,
+      "cities": 187
+    },
+    "CV": {
+      "states": 23,
+      "cities": 24
+    },
+    "CW": {
+      "states": 0,
+      "cities": 0
+    },
+    "CX": {
+      "states": 0,
+      "cities": 0
+    },
+    "CY": {
+      "states": 6,
+      "cities": 95
+    },
+    "CZ": {
+      "states": 90,
+      "cities": 1355
+    },
+    "DE": {
+      "states": 16,
+      "cities": 7097
+    },
+    "DJ": {
+      "states": 6,
+      "cities": 12
+    },
+    "DK": {
+      "states": 5,
+      "cities": 429
+    },
+    "DM": {
+      "states": 10,
+      "cities": 17
+    },
+    "DO": {
+      "states": 31,
+      "cities": 207
+    },
+    "DZ": {
+      "states": 69,
+      "cities": 296
+    },
+    "EC": {
+      "states": 24,
+      "cities": 115
+    },
+    "EE": {
+      "states": 15,
+      "cities": 162
+    },
+    "EG": {
+      "states": 27,
+      "cities": 157
+    },
+    "EH": {
+      "states": 0,
+      "cities": 0
+    },
+    "ER": {
+      "states": 6,
+      "cities": 11
+    },
+    "ES": {
+      "states": 50,
+      "cities": 8433
+    },
+    "ET": {
+      "states": 11,
+      "cities": 144
+    },
+    "FI": {
+      "states": 19,
+      "cities": 437
+    },
+    "FJ": {
+      "states": 19,
+      "cities": 20
+    },
+    "FK": {
+      "states": 0,
+      "cities": 0
+    },
+    "FM": {
+      "states": 4,
+      "cities": 81
+    },
+    "FO": {
+      "states": 0,
+      "cities": 0
+    },
+    "FR": {
+      "states": 123,
+      "cities": 8894
+    },
+    "GA": {
+      "states": 9,
+      "cities": 28
+    },
+    "GB": {
+      "states": 247,
+      "cities": 3871
+    },
+    "GD": {
+      "states": 7,
+      "cities": 7
+    },
+    "GE": {
+      "states": 14,
+      "cities": 112
+    },
+    "GF": {
+      "states": 0,
+      "cities": 0
+    },
+    "GG": {
+      "states": 0,
+      "cities": 0
+    },
+    "GH": {
+      "states": 16,
+      "cities": 121
+    },
+    "GI": {
+      "states": 0,
+      "cities": 0
+    },
+    "GL": {
+      "states": 0,
+      "cities": 0
+    },
+    "GM": {
+      "states": 6,
+      "cities": 104
+    },
+    "GN": {
+      "states": 40,
+      "cities": 54
+    },
+    "GP": {
+      "states": 0,
+      "cities": 0
+    },
+    "GQ": {
+      "states": 9,
+      "cities": 24
+    },
+    "GR": {
+      "states": 38,
+      "cities": 1025
+    },
+    "GS": {
+      "states": 0,
+      "cities": 0
+    },
+    "GT": {
+      "states": 21,
+      "cities": 382
+    },
+    "GU": {
+      "states": 0,
+      "cities": 0
+    },
+    "GW": {
+      "states": 11,
+      "cities": 14
+    },
+    "GY": {
+      "states": 10,
+      "cities": 14
+    },
+    "HK": {
+      "states": 18,
+      "cities": 0
+    },
+    "HM": {
+      "states": 0,
+      "cities": 0
+    },
+    "HN": {
+      "states": 18,
+      "cities": 545
+    },
+    "HR": {
+      "states": 21,
+      "cities": 664
+    },
+    "HT": {
+      "states": 10,
+      "cities": 124
+    },
+    "HU": {
+      "states": 43,
+      "cities": 1074
+    },
+    "ID": {
+      "states": 34,
+      "cities": 905
+    },
+    "IE": {
+      "states": 29,
+      "cities": 372
+    },
+    "IL": {
+      "states": 6,
+      "cities": 150
+    },
+    "IM": {
+      "states": 0,
+      "cities": 0
+    },
+    "IN": {
+      "states": 36,
+      "cities": 4243
+    },
+    "IO": {
+      "states": 0,
+      "cities": 0
+    },
+    "IQ": {
+      "states": 18,
+      "cities": 135
+    },
+    "IR": {
+      "states": 31,
+      "cities": 1854
+    },
+    "IS": {
+      "states": 8,
+      "cities": 74
+    },
+    "IT": {
+      "states": 127,
+      "cities": 9948
+    },
+    "JE": {
+      "states": 0,
+      "cities": 0
+    },
+    "JM": {
+      "states": 14,
+      "cities": 840
+    },
+    "JO": {
+      "states": 12,
+      "cities": 82
+    },
+    "JP": {
+      "states": 47,
+      "cities": 1671
+    },
+    "KE": {
+      "states": 47,
+      "cities": 110
+    },
+    "KG": {
+      "states": 9,
+      "cities": 53
+    },
+    "KH": {
+      "states": 24,
+      "cities": 106
+    },
+    "KI": {
+      "states": 3,
+      "cities": 38
+    },
+    "KM": {
+      "states": 3,
+      "cities": 88
+    },
+    "KN": {
+      "states": 15,
+      "cities": 13
+    },
+    "KP": {
+      "states": 11,
+      "cities": 80
+    },
+    "KR": {
+      "states": 17,
+      "cities": 309
+    },
+    "KW": {
+      "states": 6,
+      "cities": 25
+    },
+    "KY": {
+      "states": 6,
+      "cities": 15
+    },
+    "KZ": {
+      "states": 17,
+      "cities": 260
+    },
+    "LA": {
+      "states": 19,
+      "cities": 76
+    },
+    "LB": {
+      "states": 8,
+      "cities": 26
+    },
+    "LC": {
+      "states": 12,
+      "cities": 481
+    },
+    "LI": {
+      "states": 11,
+      "cities": 11
+    },
+    "LK": {
+      "states": 33,
+      "cities": 147
+    },
+    "LR": {
+      "states": 15,
+      "cities": 18
+    },
+    "LS": {
+      "states": 10,
+      "cities": 12
+    },
+    "LT": {
+      "states": 69,
+      "cities": 129
+    },
+    "LU": {
+      "states": 15,
+      "cities": 144
+    },
+    "LV": {
+      "states": 118,
+      "cities": 125
+    },
+    "LY": {
+      "states": 21,
+      "cities": 51
+    },
+    "MA": {
+      "states": 87,
+      "cities": 224
+    },
+    "MC": {
+      "states": 3,
+      "cities": 0
+    },
+    "MD": {
+      "states": 36,
+      "cities": 72
+    },
+    "ME": {
+      "states": 22,
+      "cities": 34
+    },
+    "MF": {
+      "states": 0,
+      "cities": 0
+    },
+    "MG": {
+      "states": 6,
+      "cities": 9
+    },
+    "MH": {
+      "states": 2,
+      "cities": 0
+    },
+    "MK": {
+      "states": 84,
+      "cities": 197
+    },
+    "ML": {
+      "states": 11,
+      "cities": 47
+    },
+    "MM": {
+      "states": 15,
+      "cities": 74
+    },
+    "MN": {
+      "states": 21,
+      "cities": 38
+    },
+    "MO": {
+      "states": 0,
+      "cities": 0
+    },
+    "MP": {
+      "states": 0,
+      "cities": 0
+    },
+    "MQ": {
+      "states": 0,
+      "cities": 0
+    },
+    "MR": {
+      "states": 15,
+      "cities": 39
+    },
+    "MS": {
+      "states": 0,
+      "cities": 0
+    },
+    "MT": {
+      "states": 67,
+      "cities": 68
+    },
+    "MU": {
+      "states": 12,
+      "cities": 97
+    },
+    "MV": {
+      "states": 26,
+      "cities": 21
+    },
+    "MW": {
+      "states": 30,
+      "cities": 61
+    },
+    "MX": {
+      "states": 32,
+      "cities": 9330
+    },
+    "MY": {
+      "states": 16,
+      "cities": 189
+    },
+    "MZ": {
+      "states": 11,
+      "cities": 38
+    },
+    "NA": {
+      "states": 14,
+      "cities": 48
+    },
+    "NC": {
+      "states": 0,
+      "cities": 0
+    },
+    "NE": {
+      "states": 7,
+      "cities": 70
+    },
+    "NF": {
+      "states": 0,
+      "cities": 0
+    },
+    "NG": {
+      "states": 37,
+      "cities": 424
+    },
+    "NI": {
+      "states": 17,
+      "cities": 155
+    },
+    "NL": {
+      "states": 15,
+      "cities": 1655
+    },
+    "NO": {
+      "states": 13,
+      "cities": 668
+    },
+    "NP": {
+      "states": 19,
+      "cities": 55
+    },
+    "NR": {
+      "states": 14,
+      "cities": 7
+    },
+    "NU": {
+      "states": 0,
+      "cities": 0
+    },
+    "NZ": {
+      "states": 17,
+      "cities": 158
+    },
+    "OM": {
+      "states": 13,
+      "cities": 28
+    },
+    "PA": {
+      "states": 13,
+      "cities": 600
+    },
+    "PE": {
+      "states": 25,
+      "cities": 483
+    },
+    "PF": {
+      "states": 0,
+      "cities": 0
+    },
+    "PG": {
+      "states": 21,
+      "cities": 101
+    },
+    "PH": {
+      "states": 98,
+      "cities": 6520
+    },
+    "PK": {
+      "states": 8,
+      "cities": 458
+    },
+    "PL": {
+      "states": 16,
+      "cities": 3125
+    },
+    "PM": {
+      "states": 0,
+      "cities": 0
+    },
+    "PN": {
+      "states": 0,
+      "cities": 0
+    },
+    "PR": {
+      "states": 10,
+      "cities": 0
+    },
+    "PS": {
+      "states": 16,
+      "cities": 0
+    },
+    "PT": {
+      "states": 20,
+      "cities": 1312
+    },
+    "PW": {
+      "states": 16,
+      "cities": 16
+    },
+    "PY": {
+      "states": 17,
+      "cities": 140
+    },
+    "QA": {
+      "states": 8,
+      "cities": 15
+    },
+    "RE": {
+      "states": 0,
+      "cities": 0
+    },
+    "RO": {
+      "states": 42,
+      "cities": 8081
+    },
+    "RS": {
+      "states": 26,
+      "cities": 334
+    },
+    "RU": {
+      "states": 84,
+      "cities": 5545
+    },
+    "RW": {
+      "states": 5,
+      "cities": 12
+    },
+    "SA": {
+      "states": 13,
+      "cities": 382
+    },
+    "SB": {
+      "states": 10,
+      "cities": 7
+    },
+    "SC": {
+      "states": 24,
+      "cities": 8
+    },
+    "SD": {
+      "states": 18,
+      "cities": 71
+    },
+    "SE": {
+      "states": 20,
+      "cities": 800
+    },
+    "SG": {
+      "states": 0,
+      "cities": 0
+    },
+    "SH": {
+      "states": 0,
+      "cities": 0
+    },
+    "SI": {
+      "states": 211,
+      "cities": 311
+    },
+    "SJ": {
+      "states": 0,
+      "cities": 0
+    },
+    "SK": {
+      "states": 8,
+      "cities": 233
+    },
+    "SL": {
+      "states": 4,
+      "cities": 90
+    },
+    "SM": {
+      "states": 9,
+      "cities": 9
+    },
+    "SN": {
+      "states": 14,
+      "cities": 73
+    },
+    "SO": {
+      "states": 16,
+      "cities": 46
+    },
+    "SR": {
+      "states": 10,
+      "cities": 13
+    },
+    "SS": {
+      "states": 10,
+      "cities": 1
+    },
+    "ST": {
+      "states": 2,
+      "cities": 5
+    },
+    "SV": {
+      "states": 14,
+      "cities": 100
+    },
+    "SX": {
+      "states": 0,
+      "cities": 0
+    },
+    "SY": {
+      "states": 14,
+      "cities": 142
+    },
+    "SZ": {
+      "states": 4,
+      "cities": 34
+    },
+    "TC": {
+      "states": 0,
+      "cities": 0
+    },
+    "TD": {
+      "states": 23,
+      "cities": 50
+    },
+    "TF": {
+      "states": 0,
+      "cities": 0
+    },
+    "TG": {
+      "states": 5,
+      "cities": 22
+    },
+    "TH": {
+      "states": 78,
+      "cities": 1240
+    },
+    "TJ": {
+      "states": 4,
+      "cities": 70
+    },
+    "TK": {
+      "states": 0,
+      "cities": 0
+    },
+    "TL": {
+      "states": 12,
+      "cities": 50
+    },
+    "TM": {
+      "states": 6,
+      "cities": 30
+    },
+    "TN": {
+      "states": 24,
+      "cities": 157
+    },
+    "TO": {
+      "states": 5,
+      "cities": 8
+    },
+    "TR": {
+      "states": 81,
+      "cities": 1347
+    },
+    "TT": {
+      "states": 16,
+      "cities": 25
+    },
+    "TV": {
+      "states": 8,
+      "cities": 9
+    },
+    "TW": {
+      "states": 22,
+      "cities": 40
+    },
+    "TZ": {
+      "states": 31,
+      "cities": 299
+    },
+    "UA": {
+      "states": 26,
+      "cities": 1804
+    },
+    "UG": {
+      "states": 125,
+      "cities": 91
+    },
+    "UM": {
+      "states": 0,
+      "cities": 0
+    },
+    "US": {
+      "states": 66,
+      "cities": 19819
+    },
+    "UY": {
+      "states": 19,
+      "cities": 155
+    },
+    "UZ": {
+      "states": 14,
+      "cities": 135
+    },
+    "VA": {
+      "states": 0,
+      "cities": 0
+    },
+    "VC": {
+      "states": 6,
+      "cities": 9
+    },
+    "VE": {
+      "states": 25,
+      "cities": 136
+    },
+    "VG": {
+      "states": 0,
+      "cities": 0
+    },
+    "VI": {
+      "states": 3,
+      "cities": 20
+    },
+    "VN": {
+      "states": 63,
+      "cities": 467
+    },
+    "VU": {
+      "states": 6,
+      "cities": 7
+    },
+    "WF": {
+      "states": 0,
+      "cities": 0
+    },
+    "WS": {
+      "states": 11,
+      "cities": 20
+    },
+    "XK": {
+      "states": 7,
+      "cities": 0
+    },
+    "YE": {
+      "states": 21,
+      "cities": 342
+    },
+    "YT": {
+      "states": 0,
+      "cities": 0
+    },
+    "ZA": {
+      "states": 9,
+      "cities": 314
+    },
+    "ZM": {
+      "states": 10,
+      "cities": 71
+    },
+    "ZW": {
+      "states": 10,
+      "cities": 109
+    }
+  }
+}

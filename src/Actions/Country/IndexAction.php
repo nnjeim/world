@@ -24,6 +24,8 @@ class IndexAction extends BaseAction implements ActionInterface
 		'name',
 	];
 
+	protected array $computedFields = ['flag'];
+
 	protected array $availableFields = [
 		'id',
 		'iso2',
@@ -61,8 +63,9 @@ class IndexAction extends BaseAction implements ActionInterface
 
 		// cache
 		$this->data = ($search === null && $isCacheEnabled)
-			? collect(Cache::rememberForever(
-				$this->cacheKey,
+			? collect(Cache::remember(
+				\Nnjeim\World\Data\WorldDataCache::prefix() . $this->cacheKey,
+				config('world.cache.ttl', 86400),
 				fn () => $this->indexQuery($search)->toArray()
 			))
 			: $this->indexQuery($search);

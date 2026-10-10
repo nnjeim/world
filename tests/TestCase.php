@@ -37,6 +37,10 @@ abstract class TestCase extends OrchestraTestCase
 	{
 		parent::setUp();
 
+		if (! defined('LARAVEL_START')) {
+			define('LARAVEL_START', microtime(true));
+		}
+
 		$this->artisan('migrate', [
 			'--database' => 'sqlite',
 			'--force' => true,

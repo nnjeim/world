@@ -17394,7 +17394,7 @@
         "id": 4885,
         "name": "Tai Po District",
         "country_id": 98,
-        "country_code": "KH",
+        "country_code": "HK",
         "country_name": "Hong Kong S.A.R.",
         "state_code": "NTP",
         "type": null,
@@ -55119,5 +55119,77 @@
         "type": null,
         "latitude": "34.15430000",
         "longitude": "3.50310000"
+    },
+    {
+        "id": 5162,
+        "name": "George Town",
+        "country_id": 41,
+        "country_code": "KY",
+        "country_name": "Cayman Islands",
+        "state_code": "GT",
+        "type": "district",
+        "latitude": "19.28908000",
+        "longitude": "-81.36981000",
+        "geonameId": 10346796
+    },
+    {
+        "id": 5163,
+        "name": "West Bay",
+        "country_id": 41,
+        "country_code": "KY",
+        "country_name": "Cayman Islands",
+        "state_code": "WB",
+        "type": "district",
+        "latitude": "19.38039000",
+        "longitude": "-81.38869000",
+        "geonameId": 10375968
+    },
+    {
+        "id": 5164,
+        "name": "Bodden Town",
+        "country_id": 41,
+        "country_code": "KY",
+        "country_name": "Cayman Islands",
+        "state_code": "BT",
+        "type": "district",
+        "latitude": "19.28210000",
+        "longitude": "-81.25797000",
+        "geonameId": 10375969
+    },
+    {
+        "id": 5165,
+        "name": "North Side",
+        "country_id": 41,
+        "country_code": "KY",
+        "country_name": "Cayman Islands",
+        "state_code": "NS",
+        "type": "district",
+        "latitude": "19.34824000",
+        "longitude": "-81.20849000",
+        "geonameId": 10375970
+    },
+    {
+        "id": 5166,
+        "name": "East End",
+        "country_id": 41,
+        "country_code": "KY",
+        "country_name": "Cayman Islands",
+        "state_code": "EE",
+        "type": "district",
+        "latitude": "19.29976000",
+        "longitude": "-81.11052000",
+        "geonameId": 10375971
+    },
+    {
+        "id": 5167,
+        "name": "Sister Islands",
+        "country_id": 41,
+        "country_code": "KY",
+        "country_name": "Cayman Islands",
+        "state_code": "SI",
+        "type": "district",
+        "latitude": "19.72195000",
+        "longitude": "-79.78958000",
+        "geonameId": 10375972
     }
 ]

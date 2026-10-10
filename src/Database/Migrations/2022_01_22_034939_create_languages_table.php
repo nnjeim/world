@@ -11,6 +11,10 @@ return new class extends BaseMigration
 	 */
 	public function up(): void
 	{
+		if (Schema::hasTable(config('world.migrations.languages.table_name'))) {
+			return;
+		}
+
 		Schema::create(config('world.migrations.languages.table_name'), function (Blueprint $table) {
 			$table->id();
 			$table->char('code', 2);
@@ -18,13 +22,5 @@ return new class extends BaseMigration
 			$table->string('name_native');
 			$table->char('dir', 3);
 		});
-	}
-
-	/**
-	 * Reverse the migrations.
-	 */
-	public function down(): void
-	{
-		Schema::dropIfExists(config('world.migrations.languages.table_name'));
 	}
 };

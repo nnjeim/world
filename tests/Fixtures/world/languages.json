@@ -1,0 +1,14 @@
+[
+    {
+        "code": "fr",
+        "name": "French",
+        "name_native": "Français",
+        "dir": "ltr"
+    },
+    {
+        "code": "ro",
+        "name": "Romanian",
+        "name_native": "Română",
+        "dir": "ltr"
+    }
+]

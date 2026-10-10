@@ -66,7 +66,7 @@ class IndexAction extends BaseAction implements ActionInterface
             $cacheTtl = config('world.geolocate.cache_ttl', 86400);
 
             $this->data = $isCacheEnabled ? collect(Cache::remember(
-                $this->cacheKey,
+                \Nnjeim\World\Data\WorldDataCache::prefix() . $this->cacheKey,
                 $cacheTtl,
                 fn () => $this->performGeolocation($ip)->toArray()
             )) : $this->performGeolocation($ip);

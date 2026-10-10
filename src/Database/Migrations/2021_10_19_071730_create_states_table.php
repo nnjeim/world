@@ -11,6 +11,10 @@ return new class extends BaseMigration
      */
     public function up(): void
     {
+        if (Schema::hasTable(config('world.migrations.states.table_name'))) {
+            return;
+        }
+
         Schema::create(config('world.migrations.states.table_name'), function (Blueprint $table) {
             $table->id();
             $table->foreignId('country_id');
@@ -22,13 +26,5 @@ return new class extends BaseMigration
                 }
             }
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists(config('world.migrations.states.table_name'));
     }
 };

@@ -11,18 +11,14 @@ return new class extends BaseMigration
      */
     public function up(): void
     {
+        if (Schema::hasTable(config('world.migrations.timezones.table_name'))) {
+            return;
+        }
+
         Schema::create(config('world.migrations.timezones.table_name'), function (Blueprint $table) {
             $table->id();
             $table->foreignId('country_id');
             $table->string('name');
         });
-    }
-
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists(config('world.migrations.timezones.table_name'));
     }
 };
