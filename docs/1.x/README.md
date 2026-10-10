@@ -74,7 +74,7 @@ The World is a Laravel package that provides a comprehensive list of countries, 
 - [Schema](#schema)
 - [Configuration](#configuration)
 - [Testing](#testing)
-- 
+-
 ### Installation
 
 First, set your application environment to local:
@@ -109,7 +109,7 @@ php artisan vendor:publish --tag=world --force
 2. Run the migrations:
 
 ```bash
-php artisan migrate 
+php artisan migrate
 ```
 3. Seed the database:
 
@@ -147,17 +147,17 @@ For detailed information on recent changes, please see the [CHANGELOG](https://g
 ### Contributing
 
 We welcome contributions! For details on how to get started, please review our [CONTRIBUTING](https://github.com/nnjeim/world/blob/1.1.39/CONTRIBUTING.md) guidlines.
-  
-Examples  
+
+Examples
 --------
 Explore the API examples on our live site:
 
-List all countries:  
-https://world.bmbc.cloud/api/countries  
-Search for a country:   
-https://world.bmbc.cloud/api/countries?search=rom  
-Get states by country code:  
-https://world.bmbc.cloud/api/states?filters[country_code]=RO&fields=cities  
+List all countries:
+https://world.bmbc.cloud/api/countries
+Search for a country:
+https://world.bmbc.cloud/api/countries?search=rom
+Get states by country code:
+https://world.bmbc.cloud/api/states?filters[country_code]=RO&fields=cities
 
 ### Usage
 
@@ -191,7 +191,7 @@ response (object)
     .
   ],
 }
-``` 
+```
 
 Use the API countries endpoint:
 
@@ -219,7 +219,7 @@ if ($action->success) {
 }
 ```
 
-Response: 
+Response:
 ```
 (object)
 {
@@ -270,17 +270,17 @@ use Nnjeim\World\WorldHelper;
 
 new class {
     protected $world;
-    
+
     public function __construct(WorldHelper $world) {
         $this->world = $world;
     }
-    
+
     $action = $this->world->cities([
         'filters' => [
             'country_id' => 182,
         ],
     ]);
-    
+
     if ($action->success) {
         $cities = $action->data;
     }
@@ -290,7 +290,7 @@ new class {
 Use the API cities endpoint:
 
 ```
-https://myDomain.local/api/cities?filters[country_code]=RO 
+https://myDomain.local/api/cities?filters[country_code]=RO
 ```
 
 ### Available actions
@@ -453,8 +453,8 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 | Method      | GET                                                                                                                                 |
 | Route       | `/{prefix}/countries`                                                                                                               |
 | Parameters* | comma separated fields (countries table fields in addition to states, cities, currency and timezones), array filters, string search |
-| Example     | `/api/countries?fields=iso2,cities&filters[phone_code]=44  `                                                                        |   
-| response    | success, message, data                                                                                                              |  
+| Example     | `/api/countries?fields=iso2,cities&filters[phone_code]=44  `                                                                        |
+| response    | success, message, data                                                                                                              |
 
 #### States
 
@@ -463,8 +463,8 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 | Method      | GET                                                                                                          |
 | Route       | `/{prefix}/states`                                                                                           |
 | Parameters* | comma separated fields (states table fields in addition to country and cities), array filters, string search |
-| Example     | `/api/states?fields=country,cities&filters[country_code]=RO`                                                 |   
-| response    | success, message, data                                                                                       |   
+| Example     | `/api/states?fields=country,cities&filters[country_code]=RO`                                                 |
+| response    | success, message, data                                                                                       |
 
 #### Cities
 
@@ -473,8 +473,8 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 | Method      | GET                                                                                                         |
 | Route       | `/{prefix}/cities`                                                                                          |
 | Parameters* | comma separated fields (cities table fields in addition to country and state), array filters, string search |
-| Example     | `/api/cities?fields=country,state&filters[country_code]=RO`                                                 |   
-| response    | success, message, data                                                                                      | 
+| Example     | `/api/cities?fields=country,state&filters[country_code]=RO`                                                 |
+| response    | success, message, data                                                                                      |
 
 #### Timezones
 
@@ -483,8 +483,8 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 | Method      | GET                                                                                                      |
 | Route       | `/{prefix}/timezones`                                                                                    |
 | Parameters* | comma separated fields (timezones table fields in addition to the country), array filters, string search |
-| Example     | `/api/timezones?fields=country&filters[country_code]=RO`                                                 |   
-| response    | success, message, data                                                                                   | 
+| Example     | `/api/timezones?fields=country&filters[country_code]=RO`                                                 |
+| response    | success, message, data                                                                                   |
 
 #### Currencies
 
@@ -493,7 +493,7 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 | Method      | GET                                                                                                       |
 | Route       | `/{prefix}/currencies`                                                                                    |
 | Parameters* | comma separated fields (currencies table fields in addition to the country), array filters, string search |
-| Example     | `/api/currencies?fields=code&filters[country_code]=RO`                                                    |   
+| Example     | `/api/currencies?fields=code&filters[country_code]=RO`                                                    |
 | response    | success, message, data                                                                                    |
 
 #### Languages
@@ -518,7 +518,7 @@ All routes can be prefixed by any string. Ex.: `admin`, `api`...
 
 ### Localization
 
-The available locales are 
+The available locales are
 ```
 ar, az, bn, br, de, en, es, fa, fr, hr, hu, hy, it, ja, kr, ne, nl, pl, pt, ro, ru, sw, tr and zh.
 ```
@@ -530,7 +530,7 @@ Header option
 accept-language=locale
 ```
 
-Alternatively, you can use specific locale with the `World` Facade `setLocale('locale')` helper method. Example: 
+Alternatively, you can use specific locale with the `World` Facade `setLocale('locale')` helper method. Example:
 
 ```php
 World::setLocale('zh')->countries();
@@ -540,8 +540,8 @@ World::setLocale('zh')->countries();
 
 <p><img src="https://raw.githubusercontent.com/nnjeim/world/1.1.39/schema.jpg" width="800px" /></p>
 
-### Configuration  
-The configuration for the World package is located in the world.php file.  
+### Configuration
+The configuration for the World package is located in the world.php file.
 If you're upgrading from a previous version, you may want to re-publish the config file:
 
 ```bash
@@ -571,21 +571,21 @@ World::withCaching()->countries();
 The override is reset after that action. Cache keys include Laravel's active locale, so localized results are stored separately.
 
 ### Countries restrictions
-Countries can be restricted while seeding the database either by adding the ISO2 country codes in the `allowed_countries` or `disallowed_countries` array lists.  
+Countries can be restricted while seeding the database either by adding the ISO2 country codes in the `allowed_countries` or `disallowed_countries` array lists.
 
-#### Supported Locales  
+#### Supported Locales
 A list of the accepted locales which relate to the localized [`lang/` files](https://github.com/nnjeim/world/tree/1.1.39/resources/lang).
 
-#### Modules enablement  
-The states, cities, timezones, currencies and languages modules can be optionally disabled.    
-Please note that the cities module depends on the states module.  
+#### Modules enablement
+The states, cities, timezones, currencies and languages modules can be optionally disabled.
+Please note that the cities module depends on the states module.
 
-#### Routes  
-If you don't wish to use the packages as an API service, you can disable all the routes by assigning `false` to `routes`.  
+#### Routes
+If you don't wish to use the packages as an API service, you can disable all the routes by assigning `false` to `routes`.
 
-#### Migrations  
-It offers the ability to enable or disable the database fields.  
-When changing this configuration the database should be dropped and the seeder should be re-run.  
+#### Migrations
+It offers the ability to enable or disable the database fields.
+When changing this configuration the database should be dropped and the seeder should be re-run.
 
 ### Requirements
 
