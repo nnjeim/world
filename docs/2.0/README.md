@@ -1,6 +1,6 @@
-# World 2.0.0 documentation
+# World 2.0 documentation
 
-This guide applies to **World 2.0.0**. For installed 1.x packages, use the
+This guide applies to **World 2.0.x**, including the current **2.0.1** release. For installed 1.x packages, use the
 [World 1.x documentation](../1.x/README.md). Existing 1.1 tags retain their original code.
 
 Read the [upgrade guide](UPGRADE.md) before moving an existing installation to 2.0.

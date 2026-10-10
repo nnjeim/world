@@ -2,6 +2,12 @@
 
 All notable changes to `nnjeim/world` will be documented in this file
 
+## 2.0.1 - 2026-10-10
+
+- Fixed country, currency and language searches bypassing supplied filters through an ungrouped `OR` condition, including empty searches
+- Added regression coverage for both search fields, matching and excluding filters, and searches without filters
+- No schema, configuration or runtime requirement changes from 2.0.0
+
 ## 2.0.0 - 2026-10-10
 
 ### Changes to maintenance behavior

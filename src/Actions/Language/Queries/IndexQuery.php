@@ -37,9 +37,10 @@ class IndexQuery
 
 		$query->when(
 			$this->search !== null,
-			fn ($q) => $q
+			fn ($q) => $q->where(fn ($searchQuery) => $searchQuery
 				->where('code', 'like', '%' . $this->search . '%')
 				->orWhere('name', 'like', '%' . $this->search . '%')
+			)
 		);
 
 		return $query->get();
